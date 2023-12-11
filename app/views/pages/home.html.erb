@@ -1,0 +1,41 @@
+<div class="row mt-5">
+  <div class="col-12">
+    <h1>Autograder Generator</h1>
+  </div>
+  <div class="col-12">
+    <form data-controller="pages" data-action="pages#submit">
+      <div class="row">
+        <div class="col">
+          <h3>Your Problem Statement</h3>
+          <textarea required name="problem_statement" class="form-control" rows="16" placeholder="Add your problem statement here.."></textarea>
+        </div>
+        <div class="col">
+          <h3>The Instructor Solution</h3>
+          <textarea required name="instructor_solution" class="form-control" rows="16" placeholder="Add the instructor solution here.."></textarea>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <h4>What are you looking to generate?</h4>
+          <%= select_tag(:output_type, options_for_select([["Test Case Inputs", :inputs], ["Unit Tests", :unit_tests]], :inputs ), { class: "form-control form-control-lg", "data-controller" => "pages", "data-action" => "pages#switchOutputType" }) %>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div class="d-grid">
+            <button id="submit" type="submit" name="submitButton" class="btn btn-primary btn-lg">Generate</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="response-div" class="row mt-5 d-none">
+  <div class="col-12">
+    <h3>Response</h3>
+  </div>
+  <div class="col-12">
+    <h4 class="mt-4">Inputs <span id="response-badge" class="badge bg-success"></span></h4>
+    <textarea disabled id="response-area" class="form-control" rows="16"></textarea>
+  </div>
+</div>
