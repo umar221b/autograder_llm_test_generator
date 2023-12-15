@@ -1,0 +1,13 @@
+<h1>LLM queries</h1>
+
+<div id="llm_queries">
+  <% @llm_queries.each do |llm_query| %>
+    <%= render 'llm_queries/llm_query_index', llm_query: llm_query %>
+    <p>
+      <%= link_to "Show this LLM query", llm_query %>
+      <hr>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New LLM query", new_llm_query_path %>

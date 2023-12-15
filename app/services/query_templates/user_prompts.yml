@@ -1,0 +1,62 @@
+detailed_problem_statement: |
+  Problem Statement:
+  {{1}}
+
+  Optimal Solution:
+  ```
+  {{2}}
+  ```
+
+inputs: |
+  Scenario Section:
+
+  {{1}}
+  
+  Input Format Section:
+  
+  {{2}}
+  
+  Output Format Section:
+  
+  {{3}}
+  
+  Example Section:
+  
+  {{4}}
+  
+  Limits Section:
+  
+  {{5}}
+  
+  Optimal Solution Section:
+    
+  ```
+  {{6}}
+  ```
+
+unit_tests: |
+  Scenario Section:
+
+  {{1}}
+  
+  Input Format Section:
+  
+  {{2}}
+  
+  Output Format Section:
+  
+  {{3}}
+  
+  Example Section:
+  
+  {{4}}
+  
+  Limits Section:
+  
+  {{5}}
+  
+  Optimal Solution Section:
+  
+  ```
+  {{6}}
+  ```

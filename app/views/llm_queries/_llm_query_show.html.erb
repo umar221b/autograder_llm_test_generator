@@ -1,0 +1,54 @@
+<div id="<%= dom_id llm_query %>">
+  <h2 class="mb-4">LLM Query</h2>
+  <p><strong>Problem statement:</strong></p>
+  <pre>
+<%= llm_query.problem_statement %>
+  </pre>
+
+  <p><strong>Instructor solution:</strong></p>
+    <pre>
+<%= llm_query.instructor_solution %>
+    </pre>
+
+  <p><strong>Instructor solution digest:</strong> <%= llm_query.instructor_solution_digest %></p>
+
+  <p><strong>AI model:</strong> <%= llm_query.ai_model %></p>
+
+  <p><strong>Temperature:</strong> <%= llm_query.temperature %></p>
+
+  <p><strong>Finish reason:</strong> <%= llm_query.finish_reason %></p>
+
+  <p><strong>Completed response:</strong> <%= llm_query.completed_response %></p>
+
+  <p><strong>Response:</strong></p>
+  <pre>
+<%= llm_query.response %>
+  </pre>
+
+  <p><strong>Input tokens:</strong> <%= llm_query.input_tokens %></p>
+
+  <p><strong>Output tokens:</strong> <%= llm_query.output_tokens %></p>
+</div>
+<div class="mt-5">
+  <% if llm_query.llm_query_messages %>
+    <h2 class="mb-4">LLM Query Messages</h2>
+    <div class="accordion" id="llm_query_messages">
+      <% llm_query.llm_query_messages.each do |llm_query_message| %>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#llm_query_message_<%= llm_query_message.id %>" aria-expanded="false" aria-controls="llm_query_message_<%= llm_query_message.id %>">
+              <%= llm_query_message.role %>
+            </button>
+          </h2>
+          <div id="llm_query_message_<%= llm_query_message.id %>" class="accordion-collapse collapse" data-bs-parent="#llm_query_messages">
+            <div class="accordion-body">
+                <pre>
+<%= llm_query_message.content %>
+                </pre>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

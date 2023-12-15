@@ -1,7 +1,7 @@
 class ApplicationService
   include ActiveModel::Validations
 
-  def initialize; end
+  def initialize(*args); end
   def perform; end
 
   def run

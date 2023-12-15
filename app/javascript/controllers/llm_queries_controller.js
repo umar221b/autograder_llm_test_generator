@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 import axios from "lib/axios";
 
-const SUBMIT_ENDPOINT = '/submit';
+const SUBMIT_ENDPOINT = '/llm_queries';
 
 function setInputs(target, enable) {
     target.problem_statement.disabled = enable;
@@ -12,7 +12,6 @@ function setInputs(target, enable) {
 export default class extends Controller {
     submit(event) {
         event.preventDefault();
-
         const responseDiv = document.getElementById("response-div");
         if (! responseDiv.classList.contains('d-none') && !confirm('Are you sure? This will remove your previous request.'))
             return
@@ -29,7 +28,7 @@ export default class extends Controller {
             output_type: event.target.output_type.value
         }
 
-        axios.post(SUBMIT_ENDPOINT, { autograding_request: params }).then((resp) => {
+        axios.post(SUBMIT_ENDPOINT, { llm_query: params }).then((resp) => {
             const responseDiv = document.getElementById("response-div");
 
             const responseBadge = document.getElementById("response-badge");
