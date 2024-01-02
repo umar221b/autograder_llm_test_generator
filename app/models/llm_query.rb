@@ -6,6 +6,11 @@ class LlmQuery < ApplicationRecord
 
   has_many :llm_query_messages, inverse_of: :llm_query
 
+  def code
+    code_regex = /`{3}([\w]*)\n([\S\s]+?)\n`{3}/
+    content.match(code_regex)
+  end
+
   private
 
   def response_fields_exist

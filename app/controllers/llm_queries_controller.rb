@@ -41,7 +41,7 @@ class LlmQueriesController < ApplicationController
         service = nil
       end
 
-      if
+      if service
         if service.run
           tokens[0] +=  service.data[:llm_query].input_tokens
           tokens[1] += service.data[:llm_query].output_tokens

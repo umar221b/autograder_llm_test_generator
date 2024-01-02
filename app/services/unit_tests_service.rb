@@ -48,11 +48,9 @@ class UnitTestsService < LlmQueryService
     add_query_response_fields(finish_reason, content, output_token_count)
     save_query_log
 
-    # get the code
-    regex = /`{3}([\w]*)\n([\S\s]+?)\n`{3}/
-    code = content.match(regex)
+    code = @llm_query&.to_s
 
-    @data = { message: content, code: code.to_s, llm_query: @llm_query }
+    @data = { message: content, code: code, llm_query: @llm_query }
   end
 
   private
