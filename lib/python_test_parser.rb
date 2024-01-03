@@ -1,6 +1,7 @@
 class PythonTestParser
   attr_reader :code
 
+  INSTRUCTOR_SOL_METHOD = 'instructor_solution'.freeze
   IMPORTS_REGEX = /(from.+|import.+)/
   CLASS_REGEX = /class.+/
   METHOD_NAMES_REGEX = /def\s(\S+)\(/
@@ -20,7 +21,8 @@ class PythonTestParser
     end
 
     def method_code(code, method_name)
-      code.match(method_code_regex(method_name))[1]
+      matches = code.match(method_code_regex(method_name))
+      matches ? matches[1] : nil
     end
 
     def uncommented_method_code(code, method_name)
@@ -31,13 +33,19 @@ class PythonTestParser
       code.match(MAIN_REGEX)[1]
     end
 
-    def method_code_regex(method)
-      /([ \t]+def #{method}[\s\S]+?)([ ]+def|if __name__)/
+    def instructor_solution(code)
+      uncommented_method_code(code, INSTRUCTOR_SOL_METHOD)
     end
 
     private
 
+    def method_code_regex(method)
+      /([ \t]*def #{method}[\s\S]+?)([ ]+def|if __name__|class)/
+    end
+
     def remove_comments(code)
+      return nil unless code
+
       code.gsub(/[ \t]+#.+\n/, '')
     end
   end
@@ -61,7 +69,7 @@ class PythonTestParser
 
     @method_dependencies = {}
     method_names.each do |non_test_method_name|
-      next if non_test_method_name.start_with?('test_') # only work on non-test methods
+      next if non_test_method_name.start_with?('test_') || non_test_method_name == INSTRUCTOR_SOL_METHOD # only work on non-test methods
       method_names.each do |method_name|
         next if non_test_method_name == method_name  # method cannot be a dependant of itself
         if method_codes[method_name].include?(non_test_method_name)
@@ -97,7 +105,13 @@ class PythonTestParser
     @main ||= PythonTestParser.main(@code)
   end
 
+  def instructor_solution
+    @instructor_solution ||= uncommented_method_code('instructor_solution')
+  end
+
   def full_test_method_code(method_name)
+    return nil unless method_names.include?(method_name)
+
     all_test_method_codes = [uncommented_method_code(method_name)]
 
     if method_dependencies.key?(method_name)
@@ -106,6 +120,8 @@ class PythonTestParser
       end
     end
 
-    imports.join("\n") + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
+
+    puts imports, "==========", instructor_solution, "==========", class_definition, "==========", all_test_method_codes.join("\n"), "==========", main
+    imports.join("\n") + "\n" + instructor_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
   end
 end

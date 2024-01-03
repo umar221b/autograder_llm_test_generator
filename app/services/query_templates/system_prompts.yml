@@ -31,5 +31,22 @@ unit_tests: |
   After you generate the edge case descriptions, please reflect on them to make sure they cover all edge cases. If there are any mistakes point them out.
   
   After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the edge cases.
+
+  Finally, provide python3 code that contains complete unit tests for the problem. The unit tests should be generated as follows:
   
-  Finally, provide python3 code that contains unit tests for the problem that cover all the improved edge cases in addition to another 20 completely random test cases, if possible. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description. Import the solution to be tested from a file called "solution". Make sure you write a separate function for each test. Do not attempt to fix the optimal solution if the tests fail.
+  1. Import the unittest library.
+  2. Import the solution to be tested from a file called "solution".
+  3. Add the optimal solution to the file as a function called "instructor_solution".
+  4. Create a class that contains unit tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
+  5. Each test must call the "instructor_solution" function and assert that its result is equal to the tested solution.  For example, if the tested solution is called "calculate_result":
+  
+  ```
+  def test_empty_array(self):
+    to_test = calculate_result(10)
+    expected = instructor_solution(10)
+    self.assertEqual(to_test, expected)
+  ```
+  
+  6. Make sure you write a separate function for each test.
+  7. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
+  8. Do not attempt to run the tests or change the provided optimal solution.

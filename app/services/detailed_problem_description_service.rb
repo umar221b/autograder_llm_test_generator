@@ -25,16 +25,16 @@ class DetailedProblemDescriptionService < LlmQueryService
     add_query_request_fields(input_token_count, messages)
     return unless save_query_log
 
-    response = @client.chat(
-      parameters: {
-        model: Rails.application.credentials.dig(:openai, :model),
-        response_format: { type: "json_object" },
-        messages: messages,
-        temperature: Rails.application.credentials.dig(:openai, :temperature),
-      }
-    )
+    # response = @client.chat(
+    #   parameters: {
+    #     model: Rails.application.credentials.dig(:openai, :model),
+    #     response_format: { type: "json_object" },
+    #     messages: messages,
+    #     temperature: Rails.application.credentials.dig(:openai, :temperature),
+    #   }
+    # )
 
-    # response = fake_response
+    response = fake_response
 
     finish_reason = response.dig("choices", 0, "finish_reason")
     content = response.dig("choices", 0, "message", "content")
@@ -49,7 +49,7 @@ class DetailedProblemDescriptionService < LlmQueryService
   private
 
   def fake_response
-    content = { "scenario": "We need to determine if a given string contains the substring 'xyz' that is not directly preceded by a period (.). The presence of 'xyz' without a leading period should return True, while 'xyz' with a leading period or its absence should return False.", "inputs": "A single string parameter that needs to be checked for the occurrence of 'xyz' without a period directly before it.", "outputs": "A boolean value, True if 'xyz' appears in the string without being directly preceded by a period, otherwise False.", "example": "xyz_there('abcxyz') → True; xyz_there('abc.xyz') → False; xyz_there('xyz.abc') → True", "limits": "The function should perform efficiently on typical string lengths where string operations are considered O(n) time complexity. There are no specific memory or time limits provided, but the solution should avoid unnecessary computation." }
+    content = { "scenario": "The task is to create a function that processes a given string to return a new string constructed from every other character of the original string, starting with the first character.", "inputs": "A string (denoted as 'str' in the solution). This string is the input from which the new string will be created.", "outputs": "A string. This is a new string formed by concatenating every other character from the input string, starting with the first character.", "example": "1. string_bits('Hello') → 'Hlo' 2. string_bits('Hi') → 'H' 3. string_bits('Heeololeo') → 'Hello'", "limits": "Time Complexity: O(n), Space Complexity: O(n), Memory Limits: Not specified, Input Length: Not explicitly limited." }
     response = { choices: [{ finish_reason: "stop", message: { content: JSON.dump(content) } }] }
     response.with_indifferent_access
   end

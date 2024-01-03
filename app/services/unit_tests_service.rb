@@ -32,23 +32,23 @@ class UnitTestsService < LlmQueryService
     add_query_request_fields(input_token_count, messages)
     return unless save_query_log
 
-    response = @client.chat(
-      parameters: {
-        model: Rails.application.credentials.dig(:openai, :model),
-        messages: messages,
-        temperature: Rails.application.credentials.dig(:openai, :temperature),
-      })
+    # response = @client.chat(
+    #   parameters: {
+    #     model: Rails.application.credentials.dig(:openai, :model),
+    #     messages: messages,
+    #     temperature: Rails.application.credentials.dig(:openai, :temperature),
+    #   })
 
-    # response = fake_response
+    response = fake_response
 
     finish_reason = response.dig("choices", 0, "finish_reason")
     content = response.dig("choices", 0, "message", "content")
     output_token_count = content ? OpenAI.rough_token_count(content.to_s) : 0
 
     add_query_response_fields(finish_reason, content, output_token_count)
-    save_query_log
+    return unless save_query_log
 
-    code = @llm_query&.to_s
+    code = @llm_query.code&.to_s
 
     @data = { message: content, code: code, llm_query: @llm_query }
   end
@@ -56,93 +56,83 @@ class UnitTestsService < LlmQueryService
   private
 
   def fake_response
-    content = """
-      Based on the problem description and constraints, let's identify the edge cases to test the provided solution:
+    content = <<-TEXT
+Based on the problem description and the provided solution, we need to identify and create test cases that cover various edge scenarios. Let's consider the edge cases based on the input limits and constraints.
 
-1. **Empty String**: The string is empty (`""`). The expected output should be `False` as there is no occurrence of \"xyz\".
+### Edge Cases
 
-2. **String Without \"xyz\"**: The string does not contain the substring \"xyz\" at all (e.g., `\"abc\"`). The expected output should be `False`.
+1. **Empty String**: The input string is empty (`""`). The expected output should also be an empty string.
+2. **Single Character String**: The input string contains only one character (e.g., `"a"`). The output should be the same as the input.
+3. **String with All Identical Characters**: The input string contains all identical characters (e.g., `"aaaaaa"`). The output should be every other character starting from the first, which would be a string with half the length of the input if the input length is even, or half plus one if the input length is odd.
+4. **String with Alternate Characters**: The input string has a pattern where every alternate character is different (e.g., `"ababab"`). The output should be the first of each pair of characters.
+5. **String with Spaces or Special Characters**: The input string includes spaces or special characters (e.g., `"h e l l o"`). Spaces and special characters should be treated as normal characters.
+6. **Very Long String**: The input string is very long (but within memory limits). This tests the function's ability to handle large inputs efficiently.
+7. **String with Unicode Characters**: The input string includes Unicode characters (e.g., emojis, characters in different languages).
+8. **String with Numbers and Letters**: The input string includes a mix of numbers and letters (e.g., `"a1b2c3"`).
 
-3. **String With Only \"xyz\"**: The string consists of only \"xyz\" (e.g., `\"xyz\"`). The expected output should be `True`.
+### Reflection
 
-4. **String With \"xyz\" Preceded by a Period**: The string contains \"xyz\" but it is always preceded by a period (e.g., `\".xyz\"` or `\"abc.xyz\"`). The expected output should be `False`.
+Upon reflection, these edge cases seem to cover a wide range of possibilities for the input string, including various lengths, characters, and types. The cases account for typical scenarios as well as some less common but possible situations, such as strings with special characters or very long strings.
 
-5. **String With Multiple \"xyz\" Occurrences**: The string contains multiple occurrences of \"xyz\", with some being valid and others preceded by a period (e.g., `\"abc.xyzxyz\"`). The expected output depends on the presence of a valid \"xyz\" substring.
+### Revised Edge Cases
 
-6. **Long String With \"xyz\" at the End**: A long string where \"xyz\" occurs at the very end (e.g., `\"a\" * 10000 + \"xyz\"`). This tests the efficiency of the algorithm.
+After reflection, the edge cases appear comprehensive and well-considered. They should sufficiently test the robustness of the function across various input scenarios.
 
-7. **String with Separated \"xyz\" Characters**: The string contains separated \"xyz\" characters not forming the substring \"xyz\" (e.g., `\"x.y.z\"`). The expected output should be `False`.
+### Unit Test Code
 
-8. **\"xyz\" With Additional Characters**: The string contains \"xyz\" with additional characters either at the beginning, in the middle, or at the end (e.g., `\"axyzb\"`, `\"xayz\"`, `\"xyaz\"`). The expected output should be `False` in these cases.
-
-Reflection:
-- The edge cases cover different scenarios including the presence and absence of the \"xyz\" substring, its position in the string, and its relationship with the preceding character.
-- The optimal solution seems to skip two characters after encountering a period. This approach might miss valid \"xyz\" occurrences if they start within two characters after a period.
-- The solution checks for the sequence \"xyz\" character by character, which is efficient, but the skipping logic might lead to incorrect results in some cases.
-
-Adjustments based on Reflection:
-- An additional edge case should be included where \"xyz\" occurs within two characters after a period (e.g., `\".axyz\"`). The expected output should be `True` as the \"xyz\" is not directly preceded by a period.
-
-Now, I will proceed to write Python unit tests for these edge cases, including 20 random test cases, and import the solution from a file named \"solution\".
+Now, let's create the unit test code in Python. This code will use the `unittest` library and will include tests for the edge cases described above. Additionally, it will include 100 random test cases.
 
 ```python
 import unittest
-import random
 import string
-from solution import xyz_there
+import random
+from solution import string_bits as tested_solution
 
-class TestXyzThere(unittest.TestCase):
+def instructor_solution(str):
+    new_str = ""
+    for i in range(0, len(str)):
+        if i % 2 == 0:
+            new_str += str[i]
+    return new_str
+
+class TestStringBitsFunction(unittest.TestCase):
+
     def test_empty_string(self):
-        self.assertFalse(xyz_there(""))
+        self.assertEqual(tested_solution(""), instructor_solution(""))
 
-    def test_string_without_xyz(self):
-        self.assertFalse(xyz_there(\"abc\"))
+    def test_single_character(self):
+        self.assertEqual(tested_solution("a"), instructor_solution("a"))
 
-    def test_string_with_only_xyz(self):
-        self.assertTrue(xyz_there(\"xyz\"))
+    def test_identical_characters(self):
+        self.assertEqual(tested_solution("aaaaaa"), instructor_solution("aaaaaa"))
 
-    def test_string_with_xyz_preceded_by_period(self):
-        self.assertFalse(xyz_there(\".xyz\"))
-        self.assertFalse(xyz_there(\"abc.xyz\"))
+    def test_alternate_characters(self):
+        self.assertEqual(tested_solution("ababab"), instructor_solution("ababab"))
 
-    def test_string_with_multiple_xyz(self):
-        self.assertTrue(xyz_there(\"abc.xyzxyz\"))
+    def test_string_with_spaces(self):
+        self.assertEqual(tested_solution("h e l l o"), instructor_solution("h e l l o"))
 
-    def test_long_string_with_xyz_at_end(self):
-        self.assertTrue(xyz_there(\"a\" * 10000 + \"xyz\"))
+    def test_very_long_string(self):
+        long_str = "a" * 10000
+        self.assertEqual(tested_solution(long_str), instructor_solution(long_str))
 
-    def test_string_with_separated_xyz_characters(self):
-        self.assertFalse(xyz_there(\"x.y.z\"))
+    def test_unicode_characters(self):
+        self.assertEqual(tested_solution("🙂🙃🙂🙃🙂"), instructor_solution("🙂🙃🙂🙃🙂"))
 
-    def test_xyz_with_additional_characters(self):
-        self.assertFalse(xyz_there(\"axyzb\"))
-        self.assertFalse(xyz_there(\"xayz\"))
-        self.assertFalse(xyz_there(\"xyaz\"))
-
-    def test_xyz_within_two_chars_after_period(self):
-        self.assertTrue(xyz_there(\".axyz\"))
-
-    def generate_random_string(self, length):
-        return ''.join(random.choices(string.ascii_lowercase + '.', k=length))
+    def test_numbers_letters_mix(self):
+        self.assertEqual(tested_solution("a1b2c3"), instructor_solution("a1b2c3"))
 
     def test_random_cases(self):
-        for _ in range(20):
-            random_str = self.generate_random_string(random.randint(1, 100))
-            with self.subTest(random_str=random_str):
-                # The test here is less about correctness and more about handling varied inputs
-                self.assertIn(xyz_there(random_str), [True, False])
+        for _ in range(100):
+            random_str = ''.join(random.choices(string.ascii_letters + string.digits, k=random.randint(1, 100)))
+            self.assertEqual(tested_solution(random_str), instructor_solution(random_str))
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
-
 ```
 
-The Python unit tests for the specified edge cases and additional random test cases have been written successfully. However, I encountered a `ModuleNotFoundError` because the `solution` module, which should contain the `xyz_there` function, is not present in this environment.
-
-In a typical setup, these tests would be executed in an environment where the `solution` module is available. For now, the tests are ready and can be used to verify the correctness and robustness of the provided solution when integrated into an appropriate Python development environment.
-
-If you have any further questions or need assistance with another aspect of this task, feel free to ask!
-    """
+Note: The `solution` module should contain the `string_bits` function that we are testing. The `instructor_solution` function is included as a reference to compare against the tested solution.
+TEXT
 
 
 

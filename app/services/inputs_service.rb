@@ -47,7 +47,7 @@ class InputsService < LlmQueryService
     output_token_count = content ? OpenAI.rough_token_count(content) : 0
 
     add_query_response_fields(finish_reason, content, output_token_count)
-    save_query_log
+    return unless save_query_log
 
     @data = { message: content, llm_query: @llm_query }
   end

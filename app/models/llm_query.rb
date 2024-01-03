@@ -8,7 +8,7 @@ class LlmQuery < ApplicationRecord
 
   def code
     code_regex = /`{3}([\w]*)\n([\S\s]+?)\n`{3}/
-    content.match(code_regex)
+    response.match(code_regex)
   end
 
   private
