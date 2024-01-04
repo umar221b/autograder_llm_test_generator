@@ -11,6 +11,7 @@
 5. LLM: Generate test cases based on the detailed problem description:
     1. Find edge cases
     2. Reflect on them 
-    3. Generate tests (edge + random) 
-    4. Run them if possible
+    3. Generate tests (edge + random)
+       - Tests compare the result of calling the student's function with the result of calling the instructor solution on the same input 
+    4. Run them if possible (not possible - student solution is missing in this workflow)
 6. Run tests and drop any test that crashes the instructor solution
