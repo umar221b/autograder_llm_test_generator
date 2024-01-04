@@ -15,5 +15,5 @@
     3. Generate tests (edge + random)
        - For matching output: Tests are only inputs.
        - For unit tests: tests compare the result of calling the student's function with the result of calling the instructor solution on the same input
-       - Note: The LLM was not able to run the reference solution to generate the outputs. It expects wrong outputs for the tests
+       - Note: The LLM was not able to run the reference solution to generate the outputs. It expects wrong outputs for the tests, even when it says it did run the solution to generate the expected outputs
 7. Run tests and drop any test that crashes the instructor solution
