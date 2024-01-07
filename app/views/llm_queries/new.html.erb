@@ -20,7 +20,7 @@
       <div class="row mt-4">
         <div class="col">
           <h4>What are you looking to generate?</h4>
-          <%= select_tag(:output_type, options_for_select([["Test Case Inputs", :inputs], ["Unit Tests", :unit_tests]], :inputs ), { class: "form-control form-control-lg", "data-controller" => "llm_queries", "data-action" => "llm_queries#switchOutputType" }) %>
+          <%= select_tag(:query_type, options_for_select([["Test Case Inputs", :matching_outputs], ["Unit Tests", :unit_tests]], :matching_outputs ), { class: "form-control form-control-lg", "data-controller" => "llm_queries", "data-action" => "llm_queries#switchOutputType" }) %>
         </div>
       </div>
       <div class="row mt-3">

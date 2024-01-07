@@ -1,5 +1,8 @@
 <div id="<%= dom_id llm_query %>">
   <h2 class="mb-4">LLM Query</h2>
+
+  <p><strong>Query type:</strong> <%= llm_query.query_type.humanize %></p>
+
   <p><strong>Problem statement:</strong></p>
   <pre>
 <%= llm_query.problem_statement %>
@@ -22,7 +25,7 @@
 
   <p><strong>Response:</strong></p>
   <pre>
-<%= llm_query.response %>
+<%= llm_query.query_pretty_json %>
   </pre>
 
   <p><strong>Input tokens:</strong> <%= llm_query.input_tokens %></p>
@@ -40,7 +43,7 @@
               <%= llm_query_message.role %>
             </button>
           </h2>
-          <div id="llm_query_message_<%= llm_query_message.id %>" class="accordion-collapse collapse" data-bs-parent="#llm_query_messages">
+          <div id="llm_query_message_<%= llm_query_message.id %>" class="accordion-collapse collapse">
             <div class="accordion-body">
                 <pre>
 <%= llm_query_message.content %>

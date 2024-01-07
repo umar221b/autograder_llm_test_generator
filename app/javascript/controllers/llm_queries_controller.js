@@ -6,7 +6,7 @@ const SUBMIT_ENDPOINT = '/llm_queries';
 function setInputs(target, enable) {
     target.problem_statement.disabled = enable;
     target.instructor_solution.disabled = enable;
-    target.output_type.disabled = enable;
+    target.query_type.disabled = enable;
 }
 
 export default class extends Controller {
@@ -25,7 +25,7 @@ export default class extends Controller {
         let params = {
             problem_statement: event.target.problem_statement.value,
             instructor_solution: event.target.instructor_solution.value,
-            output_type: event.target.output_type.value
+            query_type: event.target.query_type.value
         }
 
         axios.post(SUBMIT_ENDPOINT, { llm_query: params }).then((resp) => {
@@ -37,7 +37,7 @@ export default class extends Controller {
             const responseTextarea = document.getElementById("response-area");
             responseTextarea.innerHTML = resp.data.data.message;
 
-            if (event.target.output_type.value === 'unit_tests') {
+            if (event.target.query_type.value === 'unit_tests') {
                 const responseCodeTextarea = document.getElementById("response-code-area");
                 responseCodeTextarea.innerHTML = resp.data.data.code;
             }
@@ -56,7 +56,7 @@ export default class extends Controller {
     }
     switchOutputType(event) {
         const responseDiv = document.getElementById("response-div");
-        if (event.target.value === 'inputs')
+        if (event.target.value === 'matching_outputs')
             responseDiv.innerHTML = '<div class="col-12"> <h3>Response</h3> </div> <div class="col-12"> <h4 class="mt-4">Inputs <span id="response-badge" class="badge bg-success"></span></h4> <textarea disabled id="response-area" class="form-control" rows="16"></textarea> </div>'
         else if (event.target.value === 'unit_tests')
             responseDiv.innerHTML = '<div class="col-12"> <h3>Response</h3> </div> <div class="col-6"> <h4 class="mt-4">Full Response <span id="response-badge" class="badge bg-success"></span></h4> <textarea disabled id="response-area" class="form-control" rows="16"></textarea> </div> <div class="col-6"> <h4 class="mt-4">Extracted Code</h4> <textarea disabled id="response-code-area" class="form-control" rows="16"></textarea> </div>'

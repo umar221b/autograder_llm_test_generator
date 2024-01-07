@@ -12,7 +12,7 @@ detailed_problem_statement: |
   Here is the format:
   Print a native JSON object that only contains the following keys: "scenario", "inputs", "outputs", "example", "limits". The value of each key must be a string that corresponds to the appropriate value from the detailed problem statement. The JSON object must not have any comments in it.
 
-inputs: |
+matching_outputs: |
   Here is a step-by-step guide that you should follow to answer me.
   
   You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections. With each edge case description, generate a plain text example for that edge case.
@@ -21,7 +21,7 @@ inputs: |
   
   After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the edge cases or their plain text examples.
 
-  Finally, provide a native JSON output that contains all the improved edge cases in addition to another 20 completely random test cases, if possible. The input of the random test cases you generate must be within any limits defined in the Input Format Section in the problem description. The native JSON file must start with an array at the root that contains the cases. Each case has only one key: "input" which is a string that contains all the input. Do not include the output of the case in your response. The inputs should be ready as is without any further computation or evaluation. Do not add comments inside the JSON.
+  Finally, provide a native JSON output that contains all the improved edge cases in addition to another 100 completely random test cases, if possible. The input of the random test cases you generate must be within any limits defined in the Input Format Section in the problem description. The native JSON file must start with an array at the root that contains the cases. Each case has only one key: "input" which is a string that contains all the input. Do not include the output of the case in your response. The inputs should be ready as is without any further computation or evaluation. Do not add comments inside the JSON.
 
 unit_tests: |
   Here is a step-by-step guide that you should follow to answer me.

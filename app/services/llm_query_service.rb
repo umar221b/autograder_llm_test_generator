@@ -15,13 +15,14 @@ class LlmQueryService < ApplicationService
     get_template('user', template_name, *args)
   end
 
-  def new_query_log
+  def new_query_log(query_type)
     @llm_query = LlmQuery.new(
       problem_statement: @problem_statement,
       instructor_solution: @instructor_code,
       instructor_solution_digest: Digest::MD5.hexdigest(@instructor_code),
       ai_model: Rails.application.credentials.dig(:openai, :model),
       temperature: Rails.application.credentials.dig(:openai, :temperature),
+      query_type: query_type
     )
   end
 

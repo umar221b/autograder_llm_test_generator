@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_13_201957) do
     t.text "response"
     t.integer "input_tokens", null: false
     t.integer "output_tokens"
+    t.string "query_type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["instructor_solution_digest"], name: "index_llm_queries_on_instructor_solution_digest"

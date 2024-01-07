@@ -11,6 +11,7 @@ class CreateLlmQueries < ActiveRecord::Migration[7.0]
       t.text :response
       t.integer :input_tokens, null: false
       t.integer :output_tokens
+      t.string :query_type, null: false
 
       t.timestamps
     end

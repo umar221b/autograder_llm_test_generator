@@ -1,23 +1,24 @@
 require 'json'
 
 class UnitTestsService < LlmQueryService
-  def initialize(detailed_problem_statement, instructor_code)
+  def initialize(problem_statement, detailed_problem_statement, instructor_code)
     super
-    @problem_statement = JSON.parse(detailed_problem_statement)
+    @problem_statement = problem_statement
+    @detailed_problem_statement = detailed_problem_statement
     @instructor_code = instructor_code
     @client = OpenAI::Client.new
   end
 
   def perform
-    new_query_log
+    new_query_log(LlmQuery::QUERY_TYPE_UNIT_TESTS)
 
-    system_query = get_system_template('unit_tests')
-    user_query = get_user_template('unit_tests',
-                                   @problem_statement["scenario"],
-                                   @problem_statement["inputs"],
-                                   @problem_statement["outputs"],
-                                   @problem_statement["example"],
-                                   @problem_statement["limits"],
+    system_query = get_system_template(LlmQuery::QUERY_TYPE_UNIT_TESTS)
+    user_query = get_user_template(LlmQuery::QUERY_TYPE_UNIT_TESTS,
+                                   @detailed_problem_statement["scenario"],
+                                   @detailed_problem_statement["inputs"],
+                                   @detailed_problem_statement["outputs"],
+                                   @detailed_problem_statement["example"],
+                                   @detailed_problem_statement["limits"],
                                    @instructor_code
     )
 

@@ -121,7 +121,21 @@ class PythonTestParser
     end
 
 
-    puts imports, "==========", instructor_solution, "==========", class_definition, "==========", all_test_method_codes.join("\n"), "==========", main
+    imports.join("\n") + "\n" + instructor_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
+  end
+
+  def build_tests()
+    return nil unless method_names.include?(method_name)
+
+    all_test_method_codes = [uncommented_method_code(method_name)]
+
+    if method_dependencies.key?(method_name)
+      method_dependencies[method_name].each do |dependant_on_method|
+        all_test_method_codes << uncommented_method_code(dependant_on_method)
+      end
+    end
+
+
     imports.join("\n") + "\n" + instructor_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
   end
 end

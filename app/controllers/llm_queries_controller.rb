@@ -24,17 +24,20 @@ class LlmQueriesController < ApplicationController
 
     tokens = [0, 0]
     if problem_description_service.run
-      tokens[0] +=  problem_description_service.data[:llm_query].input_tokens
-      tokens[1] += problem_description_service.data[:llm_query].output_tokens
-      case llm_query_params[:output_type]
-      when 'inputs'
-        service = InputsService.new(
-          problem_description_service.data[:message],
+      @llm_query = problem_description_service.data[:llm_query]
+      tokens[0] +=  @llm_query.input_tokens
+      tokens[1] += @llm_query.output_tokens
+      case llm_query_params[:query_type]
+      when 'matching_outputs'
+        service = MatchingOutputsService.new(
+          llm_query_params[:problem_statement],
+          @llm_query.query_json,
           llm_query_params[:instructor_solution]
         )
       when 'unit_tests'
         service = UnitTestsService.new(
-          problem_description_service.data[:message],
+          llm_query_params[:problem_statement],
+          @llm_query.query_json,
           llm_query_params[:instructor_solution]
         )
       else
@@ -54,7 +57,7 @@ class LlmQueriesController < ApplicationController
         render json: { error: 'Invalid output type' }, status: :bad_request
       end
     else
-      render json: { error: problem_description_service.errors.full_messages.join(', and') }, status: :bad_request
+      render json: { error: problem_description_service.errors.full_messages.join(', and ') }, status: :bad_request
     end
   end
 
@@ -66,6 +69,6 @@ class LlmQueriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def llm_query_params
-      params.require(:llm_query).permit(:problem_statement, :instructor_solution, :output_type)
+      params.require(:llm_query).permit(:problem_statement, :instructor_solution, :query_type)
     end
 end
