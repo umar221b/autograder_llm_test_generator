@@ -16,8 +16,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_13_201957) do
 
   create_table "llm_queries", force: :cascade do |t|
     t.text "problem_statement", null: false
-    t.text "instructor_solution", null: false
-    t.string "instructor_solution_digest", null: false
+    t.text "reference_solution", null: false
+    t.string "reference_solution_digest", null: false
     t.string "ai_model", null: false
     t.float "temperature", null: false
     t.string "finish_reason"
@@ -28,7 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_13_201957) do
     t.string "query_type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["instructor_solution_digest"], name: "index_llm_queries_on_instructor_solution_digest"
+    t.index ["reference_solution_digest"], name: "index_llm_queries_on_reference_solution_digest"
   end
 
   create_table "llm_query_messages", force: :cascade do |t|

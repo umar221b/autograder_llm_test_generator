@@ -7,14 +7,14 @@
   </div>
   <div class="col-12 mt-4">
     <form data-controller="llm_queries" data-action="llm_queries#submit">
-      <div class="row">
-        <div class="col">
+      <div class="row gy-3">
+        <div class="col-12 col-md-6">
           <h3>Your Problem Statement</h3>
           <textarea required name="problem_statement" class="form-control" rows="16" placeholder="Add your problem statement here.."></textarea>
         </div>
-        <div class="col">
-          <h3>The Instructor Solution</h3>
-          <textarea required name="instructor_solution" class="form-control" rows="16" placeholder="Add the instructor solution here.."></textarea>
+        <div class="col-12 col-md-6">
+          <h3>The Reference Solution</h3>
+          <textarea required name="reference_solution" class="form-control" rows="16" placeholder="Add the reference solution here.."></textarea>
         </div>
       </div>
       <div class="row mt-4">

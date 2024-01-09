@@ -1,7 +1,7 @@
 class PythonTestParser
   attr_reader :code
 
-  INSTRUCTOR_SOL_METHOD = 'instructor_solution'.freeze
+  REFERENCE_SOL_METHOD = 'reference_solution'.freeze
   IMPORTS_REGEX = /(from.+|import.+)/
   CLASS_REGEX = /class.+/
   METHOD_NAMES_REGEX = /def\s(\S+)\(/
@@ -33,8 +33,8 @@ class PythonTestParser
       code.match(MAIN_REGEX)[1]
     end
 
-    def instructor_solution(code)
-      uncommented_method_code(code, INSTRUCTOR_SOL_METHOD)
+    def reference_solution(code)
+      uncommented_method_code(code, REFERENCE_SOL_METHOD)
     end
 
     private
@@ -69,7 +69,7 @@ class PythonTestParser
 
     @method_dependencies = {}
     method_names.each do |non_test_method_name|
-      next if non_test_method_name.start_with?('test_') || non_test_method_name == INSTRUCTOR_SOL_METHOD # only work on non-test methods
+      next if non_test_method_name.start_with?('test_') || non_test_method_name == REFERENCE_SOL_METHOD # only work on non-test methods
       method_names.each do |method_name|
         next if non_test_method_name == method_name  # method cannot be a dependant of itself
         if method_codes[method_name].include?(non_test_method_name)
@@ -105,8 +105,8 @@ class PythonTestParser
     @main ||= PythonTestParser.main(@code)
   end
 
-  def instructor_solution
-    @instructor_solution ||= uncommented_method_code('instructor_solution')
+  def reference_solution
+    @reference_solution ||= uncommented_method_code('reference_solution')
   end
 
   def full_test_method_code(method_name)
@@ -121,7 +121,7 @@ class PythonTestParser
     end
 
 
-    imports.join("\n") + "\n" + instructor_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
+    imports.join("\n") + "\n" + reference_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
   end
 
   def build_tests()
@@ -136,6 +136,6 @@ class PythonTestParser
     end
 
 
-    imports.join("\n") + "\n" + instructor_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
+    imports.join("\n") + "\n" + reference_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
   end
 end

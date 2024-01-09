@@ -8,12 +8,12 @@
 <%= llm_query.problem_statement %>
   </pre>
 
-  <p><strong>Instructor solution:</strong></p>
+  <p><strong>Reference solution:</strong></p>
     <pre>
-<%= llm_query.instructor_solution %>
+<%= llm_query.reference_solution %>
     </pre>
 
-  <p><strong>Instructor solution digest:</strong> <%= llm_query.instructor_solution_digest %></p>
+  <p><strong>Reference solution digest:</strong> <%= llm_query.reference_solution_digest %></p>
 
   <p><strong>AI model:</strong> <%= llm_query.ai_model %></p>
 
@@ -25,7 +25,7 @@
 
   <p><strong>Response:</strong></p>
   <pre>
-<%= llm_query.query_pretty_json %>
+<%= query_response(llm_query) %>
   </pre>
 
   <p><strong>Input tokens:</strong> <%= llm_query.input_tokens %></p>

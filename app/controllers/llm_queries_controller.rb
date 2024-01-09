@@ -12,14 +12,16 @@ class LlmQueriesController < ApplicationController
 
   # GET /llm_queries/new
   def new
-    @llm_query = LlmQuery.new
   end
 
   # POST /llm_queries or /llm_queries.json
   def create
-    problem_description_service = DetailedProblemDescriptionService.new(
+    fake_matching_outputs_create_response # TODO: Remove
+    return
+
+    problem_description_service = LlmQueryServices::DetailedProblemDescriptionService.new(
       llm_query_params[:problem_statement],
-      llm_query_params[:instructor_solution]
+      llm_query_params[:reference_solution]
     )
 
     tokens = [0, 0]
@@ -29,16 +31,16 @@ class LlmQueriesController < ApplicationController
       tokens[1] += @llm_query.output_tokens
       case llm_query_params[:query_type]
       when 'matching_outputs'
-        service = MatchingOutputsService.new(
+        service = LlmQueryServices::MatchingOutputsService.new(
           llm_query_params[:problem_statement],
           @llm_query.query_json,
-          llm_query_params[:instructor_solution]
+          llm_query_params[:reference_solution]
         )
       when 'unit_tests'
-        service = UnitTestsService.new(
+        service = LlmQueryServices::UnitTestsService.new(
           llm_query_params[:problem_statement],
           @llm_query.query_json,
-          llm_query_params[:instructor_solution]
+          llm_query_params[:reference_solution]
         )
       else
         service = nil
@@ -46,8 +48,9 @@ class LlmQueriesController < ApplicationController
 
       if service
         if service.run
-          tokens[0] +=  service.data[:llm_query].input_tokens
-          tokens[1] += service.data[:llm_query].output_tokens
+          @llm_query = service.data[:llm_query]
+          tokens[0] +=  @llm_query.input_tokens
+          tokens[1] += @llm_query.output_tokens
 
           render json: { data: { **service.data, tokens: tokens } }
         else
@@ -69,6 +72,18 @@ class LlmQueriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def llm_query_params
-      params.require(:llm_query).permit(:problem_statement, :instructor_solution, :query_type)
+      params.require(:llm_query).permit(:problem_statement, :reference_solution, :query_type)
+    end
+
+    def fake_matching_outputs_create_response
+      @llm_query = LlmQuery.find_by(query_type: LlmQuery::QUERY_TYPE_MATCHING_OUTPUTS)
+
+      render json: { data: { message: @llm_query.query_pretty_json, llm_query: @llm_query, tokens: [@llm_query.input_tokens, @llm_query.output_tokens] } }
+    end
+
+    def fake_unit_tests_create_response
+      @llm_query = LlmQuery.find_by(query_type: LlmQuery::QUERY_TYPE_UNIT_TESTS)
+
+      render json: { data: { message: @llm_query.response, code: @llm_query.code&.to_s, llm_query: @llm_query, tokens: [@llm_query.input_tokens, @llm_query.output_tokens] } }
     end
 end

@@ -1,63 +1,64 @@
 require 'json'
 
-class UnitTestsService < LlmQueryService
-  def initialize(problem_statement, detailed_problem_statement, instructor_code)
-    super
-    @problem_statement = problem_statement
-    @detailed_problem_statement = detailed_problem_statement
-    @instructor_code = instructor_code
-    @client = OpenAI::Client.new
-  end
+module LlmQueryServices
+  class UnitTestsService < QueryService
+    def initialize(problem_statement, detailed_problem_statement, reference_solution)
+      super
+      @problem_statement = problem_statement
+      @detailed_problem_statement = detailed_problem_statement
+      @reference_solution = reference_solution
+      @client = OpenAI::Client.new
+    end
 
-  def perform
-    new_query_log(LlmQuery::QUERY_TYPE_UNIT_TESTS)
+    def perform
+      new_query_log(LlmQuery::QUERY_TYPE_UNIT_TESTS)
 
-    system_query = get_system_template(LlmQuery::QUERY_TYPE_UNIT_TESTS)
-    user_query = get_user_template(LlmQuery::QUERY_TYPE_UNIT_TESTS,
-                                   @detailed_problem_statement["scenario"],
-                                   @detailed_problem_statement["inputs"],
-                                   @detailed_problem_statement["outputs"],
-                                   @detailed_problem_statement["example"],
-                                   @detailed_problem_statement["limits"],
-                                   @instructor_code
-    )
+      system_query = get_system_template(LlmQuery::QUERY_TYPE_UNIT_TESTS)
+      user_query = get_user_template(LlmQuery::QUERY_TYPE_UNIT_TESTS,
+                                     @detailed_problem_statement["scenario"],
+                                     @detailed_problem_statement["inputs"],
+                                     @detailed_problem_statement["outputs"],
+                                     @detailed_problem_statement["example"],
+                                     @detailed_problem_statement["limits"],
+                                     @reference_solution
+      )
 
-    input_token_count = OpenAI.rough_token_count(system_query)
-    input_token_count += OpenAI.rough_token_count(user_query)
+      input_token_count = OpenAI.rough_token_count(system_query)
+      input_token_count += OpenAI.rough_token_count(user_query)
 
-    messages = [
-      { role: "system", content: system_query },
-      { role: "user", content: user_query }
-    ]
+      messages = [
+        { role: "system", content: system_query },
+        { role: "user", content: user_query }
+      ]
 
-    add_query_request_fields(input_token_count, messages)
-    return unless save_query_log
+      add_query_request_fields(input_token_count, messages)
+      return unless save_query_log
 
-    # response = @client.chat(
-    #   parameters: {
-    #     model: Rails.application.credentials.dig(:openai, :model),
-    #     messages: messages,
-    #     temperature: Rails.application.credentials.dig(:openai, :temperature),
-    #   })
+      # response = @client.chat(
+      #   parameters: {
+      #     model: Rails.application.credentials.dig(:openai, :model),
+      #     messages: messages,
+      #     temperature: Rails.application.credentials.dig(:openai, :temperature),
+      #   })
 
-    response = fake_response
+      response = fake_response # TODO: Remove
 
-    finish_reason = response.dig("choices", 0, "finish_reason")
-    content = response.dig("choices", 0, "message", "content")
-    output_token_count = content ? OpenAI.rough_token_count(content.to_s) : 0
+      finish_reason = response.dig("choices", 0, "finish_reason")
+      content = response.dig("choices", 0, "message", "content")
+      output_token_count = content ? OpenAI.rough_token_count(content.to_s) : 0
 
-    add_query_response_fields(finish_reason, content, output_token_count)
-    return unless save_query_log
+      add_query_response_fields(finish_reason, content, output_token_count)
+      return unless save_query_log
 
-    code = @llm_query.code&.to_s
+      code = @llm_query.code&.to_s
 
-    @data = { message: content, code: code, llm_query: @llm_query }
-  end
+      @data = { message: content, code: code, llm_query: @llm_query }
+    end
 
-  private
+    private
 
-  def fake_response
-    content = <<-TEXT
+    def fake_response
+      content = <<-TEXT
 Based on the problem description and the provided solution, we need to identify and create test cases that cover various edge scenarios. Let's consider the edge cases based on the input limits and constraints.
 
 ### Edge Cases
@@ -77,7 +78,7 @@ Upon reflection, these edge cases seem to cover a wide range of possibilities fo
 
 ### Revised Edge Cases
 
-After reflection, the edge cases appear comprehensive and well-considered. They should sufficiently test the robustness of the function across various input scenarios.
+After reflection, the edge cases appear comprehensive and well-considered. They should sufficiently test the robustness of the function across various input scenarios. 
 
 ### Unit Test Code
 
@@ -133,11 +134,12 @@ if __name__ == "__main__":
 ```
 
 Note: The `solution` module should contain the `string_bits` function that we are testing. The `instructor_solution` function is included as a reference to compare against the tested solution.
-TEXT
+  TEXT
 
 
 
-    response = { "choices": [{ "finish_reason": "stop", "message": { "content": content } }] }
-    response.with_indifferent_access
+      response = { "choices": [{ "finish_reason": "stop", "message": { "content": content } }] }
+      response.with_indifferent_access
+    end
   end
 end

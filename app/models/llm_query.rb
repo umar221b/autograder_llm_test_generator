@@ -7,13 +7,13 @@ class LlmQuery < ApplicationRecord
     QUERY_TYPE_UNIT_TESTS = 'unit_tests'.freeze
   ]
 
-  validates :problem_statement, :instructor_solution, :instructor_solution_digest, :ai_model, :temperature, :input_tokens, :query_type, presence: true
+  validates :problem_statement, :reference_solution, :reference_solution_digest, :ai_model, :temperature, :input_tokens, :query_type, presence: true
   validates :completed_response, inclusion: { in: [true, false] }
   validates :query_type, inclusion: { in: QUERY_TYPES }
 
   validate :response_fields_exist, if: :completed_response
 
-  has_many :llm_query_messages, inverse_of: :llm_query
+  has_many :llm_query_messages, inverse_of: :llm_query, dependent: :destroy
 
   def is_detailed_problem_statement?
     query_type == QUERY_TYPE_DETAILED_PROBLEM_STATEMENT

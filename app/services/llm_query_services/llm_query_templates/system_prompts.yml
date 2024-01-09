@@ -36,14 +36,14 @@ unit_tests: |
   
   1. Import the unittest library.
   2. Import the solution to be tested from a file called "solution".
-  3. Add the optimal solution to the file as a function called "instructor_solution".
+  3. Add the optimal solution to the file as a function called "reference_solution".
   4. Create a class that contains unit tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
-  5. Each test must call the "instructor_solution" function and assert that its result is equal to the tested solution.  For example, if the tested solution is called "calculate_result":
+  5. Each test must call the "reference_solution" function and assert that its result is equal to the tested solution.  For example, if the tested solution is called "calculate_result":
   
   ```
   def test_empty_array(self):
     to_test = calculate_result(10)
-    expected = instructor_solution(10)
+    expected = reference_solution(10)
     self.assertEqual(to_test, expected)
   ```
   
