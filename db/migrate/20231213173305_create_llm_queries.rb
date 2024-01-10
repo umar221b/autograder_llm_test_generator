@@ -4,6 +4,7 @@ class CreateLlmQueries < ActiveRecord::Migration[7.0]
       t.text :problem_statement, null: false
       t.text :reference_solution, null: false
       t.string :reference_solution_digest, null: false, index: true
+      t.string :programming_language, null: false
       t.string :ai_model, null: false
       t.float :temperature, null: false
       t.string :finish_reason

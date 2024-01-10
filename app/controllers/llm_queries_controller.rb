@@ -21,7 +21,8 @@ class LlmQueriesController < ApplicationController
 
     problem_description_service = LlmQueryServices::DetailedProblemDescriptionService.new(
       llm_query_params[:problem_statement],
-      llm_query_params[:reference_solution]
+      llm_query_params[:reference_solution],
+      llm_query_params[:programming_language]
     )
 
     tokens = [0, 0]
@@ -34,13 +35,15 @@ class LlmQueriesController < ApplicationController
         service = LlmQueryServices::MatchingOutputsService.new(
           llm_query_params[:problem_statement],
           @llm_query.query_json,
-          llm_query_params[:reference_solution]
+          llm_query_params[:reference_solution],
+          llm_query_params[:programming_language]
         )
       when 'unit_tests'
         service = LlmQueryServices::UnitTestsService.new(
           llm_query_params[:problem_statement],
           @llm_query.query_json,
-          llm_query_params[:reference_solution]
+          llm_query_params[:reference_solution],
+          llm_query_params[:programming_language]
         )
       else
         service = nil
@@ -72,7 +75,7 @@ class LlmQueriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def llm_query_params
-      params.require(:llm_query).permit(:problem_statement, :reference_solution, :query_type)
+      params.require(:llm_query).permit(:problem_statement, :reference_solution, :programming_language, :query_type)
     end
 
     def fake_matching_outputs_create_response

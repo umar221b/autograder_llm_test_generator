@@ -6,6 +6,7 @@ const SUBMIT_ENDPOINT = '/llm_queries';
 function setInputs(target, enable) {
     target.problem_statement.disabled = enable;
     target.reference_solution.disabled = enable;
+    target.programming_language.disabled = enable;
     target.query_type.disabled = enable;
 }
 
@@ -25,6 +26,7 @@ export default class extends Controller {
         let params = {
             problem_statement: event.target.problem_statement.value,
             reference_solution: event.target.reference_solution.value,
+            programming_language: event.target.programming_language.value,
             query_type: event.target.query_type.value
         }
 

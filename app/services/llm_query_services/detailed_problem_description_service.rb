@@ -2,10 +2,11 @@ require 'json'
 
 module LlmQueryServices
   class DetailedProblemDescriptionService < QueryService
-    def initialize(problem_statement, reference_solution)
+    def initialize(problem_statement, reference_solution, programming_language)
       super
       @problem_statement = problem_statement
       @reference_solution = reference_solution
+      @programming_language = programming_language
       @client = OpenAI::Client.new
     end
 
@@ -19,8 +20,8 @@ module LlmQueryServices
       input_token_count += OpenAI.rough_token_count(user_query)
 
       messages = [
-        { role: "system", content: system_query },
-        { role: "user", content: user_query }
+        { role: LlmQueryMessage::ROLE_SYSTEM, content: system_query },
+        { role: LlmQueryMessage::ROLE_USER, content: user_query }
       ]
 
       add_query_request_fields(input_token_count, messages)

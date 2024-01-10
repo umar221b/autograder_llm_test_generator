@@ -7,8 +7,14 @@ class LlmQuery < ApplicationRecord
     QUERY_TYPE_UNIT_TESTS = 'unit_tests'.freeze
   ]
 
+  PROGRAMMING_LANGUAGES = [
+    PROGRAMMING_LANGUAGE_C = 'c'.freeze,
+    PROGRAMMING_LANGUAGE_PYTHON3 = 'python3'.freeze
+  ]
+
   validates :problem_statement, :reference_solution, :reference_solution_digest, :ai_model, :temperature, :input_tokens, :query_type, presence: true
   validates :completed_response, inclusion: { in: [true, false] }
+  validates :programming_language, inclusion: { in: PROGRAMMING_LANGUAGES }
   validates :query_type, inclusion: { in: QUERY_TYPES }
 
   validate :response_fields_exist, if: :completed_response

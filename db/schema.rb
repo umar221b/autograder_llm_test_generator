@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_13_201957) do
     t.text "problem_statement", null: false
     t.text "reference_solution", null: false
     t.string "reference_solution_digest", null: false
+    t.string "programming_language", null: false
     t.string "ai_model", null: false
     t.float "temperature", null: false
     t.string "finish_reason"
