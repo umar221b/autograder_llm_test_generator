@@ -1,7 +1,7 @@
 require 'json'
 
 module LlmQueryServices
-  class DetailedProblemDescriptionService < QueryService
+  class GenerateDetailedProblemDescriptionService < QueryService
     def initialize(problem_statement, reference_solution, programming_language)
       super
       @problem_statement = problem_statement

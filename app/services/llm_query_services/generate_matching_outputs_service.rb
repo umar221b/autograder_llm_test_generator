@@ -1,7 +1,7 @@
 require 'json'
 
 module LlmQueryServices
-  class MatchingOutputsService < QueryService
+  class GenerateMatchingOutputsService < QueryService
     def initialize(problem_statement, detailed_problem_statement, reference_solution, programming_language)
       super
       @problem_statement = problem_statement

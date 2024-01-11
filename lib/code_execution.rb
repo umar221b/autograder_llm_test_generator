@@ -1,0 +1,2 @@
+require 'code_execution/runners/standard_runners/standard_c_runner'
+require 'code_execution/runners/standard_runners/standard_python3_runner'

@@ -58,9 +58,15 @@ export default class extends Controller {
     }
     switchOutputType(event) {
         const responseDiv = document.getElementById("response-div");
-        if (event.target.value === 'matching_outputs')
+        const programmingLanguageSelect = document.getElementById("programming_language");
+
+        if (event.target.value === 'matching_outputs') {
             responseDiv.innerHTML = '<div class="col-12"> <h3>Response</h3> </div> <div class="col-12"> <h4 class="mt-4">Inputs <span id="response-badge" class="badge bg-success"></span></h4> <textarea disabled id="response-area" class="form-control" rows="16"></textarea> </div>'
-        else if (event.target.value === 'unit_tests')
+            programmingLanguageSelect.innerHTML = '<option value="c">C</option><option selected="selected" value="python3">Python 3</option>'
+        }
+        else if (event.target.value === 'unit_tests') {
             responseDiv.innerHTML = '<div class="col-12"> <h3>Response</h3> </div> <div class="col-12 col-md-6"> <h4 class="mt-4">Full Response <span id="response-badge" class="badge bg-success"></span></h4> <textarea disabled id="response-area" class="form-control" rows="16"></textarea> </div> <div class="col-12 col-md-6"> <h4 class="mt-4">Extracted Code</h4> <textarea disabled id="response-code-area" class="form-control" rows="16"></textarea> </div>'
+            programmingLanguageSelect.innerHTML = '<option selected="selected" value="python3">Python 3</option>'
+        }
     }
 }

@@ -19,7 +19,7 @@ class LlmQueriesController < ApplicationController
     fake_matching_outputs_create_response # TODO: Remove
     return
 
-    problem_description_service = LlmQueryServices::DetailedProblemDescriptionService.new(
+    problem_description_service = LlmQueryServices::GenerateDetailedProblemDescriptionService.new(
       llm_query_params[:problem_statement],
       llm_query_params[:reference_solution],
       llm_query_params[:programming_language]
@@ -32,14 +32,14 @@ class LlmQueriesController < ApplicationController
       tokens[1] += @llm_query.output_tokens
       case llm_query_params[:query_type]
       when 'matching_outputs'
-        service = LlmQueryServices::MatchingOutputsService.new(
+        service = LlmQueryServices::GenerateMatchingOutputsService.new(
           llm_query_params[:problem_statement],
           @llm_query.query_json,
           llm_query_params[:reference_solution],
           llm_query_params[:programming_language]
         )
       when 'unit_tests'
-        service = LlmQueryServices::UnitTestsService.new(
+        service = LlmQueryServices::GenerateUnitTestsService.new(
           llm_query_params[:problem_statement],
           @llm_query.query_json,
           llm_query_params[:reference_solution],
