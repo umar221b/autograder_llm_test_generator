@@ -1,7 +1,7 @@
-require 'code_execution/runners/basic_c_runner'
+require 'code_execution/runners/i_o_runners/c_i_o_runner'
 
 module CodeExecution
-  class StandardCRunner < BasicCRunner
+  class StandardCIORunner < CIORunner
 
   private
     def run

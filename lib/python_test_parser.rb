@@ -124,18 +124,26 @@ class PythonTestParser
     imports.join("\n") + "\n" + reference_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
   end
 
-  def build_tests()
-    return nil unless method_names.include?(method_name)
+  def build_tests(excluded_tests)
+    excluded_tests = excluded_tests.each_with_object({}) { |el, h| h[el] = 1 }
 
-    all_test_method_codes = [uncommented_method_code(method_name)]
+    included_test_method_codes = {}
 
-    if method_dependencies.key?(method_name)
-      method_dependencies[method_name].each do |dependant_on_method|
-        all_test_method_codes << uncommented_method_code(dependant_on_method)
+    method_names.each do |method_name|
+      next if method_name == REFERENCE_SOL_METHOD
+      next if excluded_tests.key?(method_name)
+
+      included_test_method_codes[method_name] = uncommented_method_code(method_name)
+
+      if method_dependencies.key?(method_name)
+        method_dependencies[method_name].each do |dependant_on_method|
+          next if included_test_method_codes.key?(dependant_on_method)
+
+          included_test_method_codes[dependant_on_method] = uncommented_method_code(dependant_on_method)
+        end
       end
     end
-
-
-    imports.join("\n") + "\n" + reference_solution + "\n" + class_definition + "\n" + all_test_method_codes.join("\n") + "\n" + main
+    included_test_method_codes = included_test_method_codes.each_with_object([]) { |(_k, v), array| array << v }
+    imports.join("\n") + "\n" + reference_solution + "\n" + class_definition + "\n" + included_test_method_codes.join("\n") + "\n" + main
   end
 end

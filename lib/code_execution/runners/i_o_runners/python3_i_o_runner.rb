@@ -1,7 +1,7 @@
-require 'code_execution/runners/basic_runner'
+require 'code_execution/runners/i_o_runner'
 
 module CodeExecution
-  class BasicPython3Runner < BasicRunner
+  class Python3IORunner < IORunner
 
   private
     def prepare; end

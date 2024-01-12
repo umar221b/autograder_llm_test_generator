@@ -9,9 +9,9 @@ module RunCodeServices
     def perform
       case @llm_query.programming_language
       when LlmQuery::PROGRAMMING_LANGUAGE_C
-        runner_class = CodeExecution::StandardCRunner
+        runner_class = CodeExecution::StandardCIORunner
       when LlmQuery::PROGRAMMING_LANGUAGE_PYTHON3
-        runner_class = CodeExecution::StandardPython3Runner
+        runner_class = CodeExecution::StandardPython3IORunner
       else
         errors.add(:base, 'Unsupported programming language')
         return false

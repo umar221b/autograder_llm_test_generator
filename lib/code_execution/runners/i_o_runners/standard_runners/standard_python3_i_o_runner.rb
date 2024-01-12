@@ -1,7 +1,7 @@
-require 'code_execution/runners/basic_python3_runner'
+require 'code_execution/runners/i_o_runners/python3_i_o_runner'
 
 module CodeExecution
-  class StandardPython3Runner < BasicPython3Runner
+  class StandardPython3IORunner < Python3IORunner
 
   private
 

@@ -1,2 +1,3 @@
-require 'code_execution/runners/standard_runners/standard_c_runner'
-require 'code_execution/runners/standard_runners/standard_python3_runner'
+require 'code_execution/runners/i_o_runners/standard_runners/standard_c_i_o_runner'
+require 'code_execution/runners/i_o_runners/standard_runners/standard_python3_i_o_runner'
+require 'code_execution/runners/unit_test_runners/python3_unit_test_runner'

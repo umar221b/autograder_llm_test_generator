@@ -1,7 +1,7 @@
-require 'code_execution/runners/basic_runner'
+require 'code_execution/runners/i_o_runner'
 
 module CodeExecution
-  class BasicCRunner < BasicRunner
+  class CIORunner < IORunner
     OBJECT_FILE = 'tmp/code'.freeze
 
   private

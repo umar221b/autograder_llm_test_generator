@@ -1,7 +1,7 @@
-require 'code_execution/misc_models/input_output_test_case'
+require 'code_execution/models/input_output_test_case'
 
 module CodeExecution
-  class BasicRunner
+  class IORunner
     ERROR_FILE = 'tmp/error.txt'.freeze
 
     attr_reader :reference_solution, :inputs
@@ -12,17 +12,18 @@ module CodeExecution
     end
 
     def generate_test_outputs
-      create_code_file
-      write_to_code_file(@reference_solution)
-      close_code_file
+      write_file(code_file, @reference_solution)
 
       prepare
 
       tests = []
       @inputs.each do |input_json|
         stdin = input_json['input']
-        write_input(stdin)
+
+        write_file(input_file, stdin)
+
         run
+
         stdout = read_output
         stderr = read_error
         tests << CodeExecution::InputOutputTestCase.new(stdin, stdout, stderr)
@@ -55,20 +56,10 @@ module CodeExecution
       raise NotImplementedError, 'Implement the method output_file in a subclass to define the output filename'
     end
 
-    def create_code_file
-      @file = File.new(code_file, 'w')
-    end
-
-    def write_to_code_file(data_to_write)
-      @file.write(data_to_write)
-    end
-
-    def close_code_file
-      @file.close
-    end
-
-    def write_input(input)
-      %x( echo #{input} > #{input_file})
+    def write_file(filename, data_to_write)
+      file = File.new(filename, 'w')
+      file.write(data_to_write)
+      file.close
     end
 
     def read_output
