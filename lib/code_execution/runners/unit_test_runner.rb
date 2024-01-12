@@ -20,7 +20,7 @@ module CodeExecution
 
       failed_tests = extract_failed_tests
 
-      # clean
+      clean
 
       failed_tests
     end
