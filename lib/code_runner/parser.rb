@@ -36,6 +36,10 @@ module CodeRunner
         test_case.xpath('stdin/text')
       end
 
+      def extract_test_case_code(test_case)
+        test_case.xpath('testcode/text')
+      end
+
       def extract_test_case_expected_output(test_case)
         test_case.xpath('expected/text')
       end

@@ -1,7 +1,7 @@
 require 'code_runner/parser'
 
 module CodeRunner
-  class TestCase
+  class StdinTestCase
     attr_accessor :input, :output
 
     def initialize(xml_test_case)

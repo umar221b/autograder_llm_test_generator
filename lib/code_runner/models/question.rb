@@ -1,5 +1,7 @@
 require 'code_runner/parser'
-require 'code_runner/models/test_case'
+require 'code_runner/models/stdin_test_case'
+require 'code_runner/models/code_test_case'
+require 'code_runner/constants'
 
 module CodeRunner
   class Question
@@ -17,7 +19,12 @@ module CodeRunner
       test_cases = Parser.extract_question_test_cases(xml_question)
       @test_cases = []
       test_cases.each do |test_case|
-        @test_cases << TestCase.new(test_case)
+        case @problem_type
+        when Constants::TYPE_C_PROGRAM
+          @test_cases << StdinTestCase.new(test_case)
+        when Constants::TYPE_C_FUNCTION
+          @test_cases << CodeTestCase.new(@problem_type, test_case)
+        end
       end
     end
   end
