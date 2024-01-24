@@ -1,14 +1,13 @@
-require 'code_runner/parser'
 require 'code_runner/constants'
 
 module CodeRunner
   class CodeTestCase
     attr_accessor :code, :output
 
-    def initialize(problem_type, xml_test_case)
+    def initialize(problem_type, code, output)
       @problem_type = problem_type
-      @code = Parser.extract_test_case_code(xml_test_case)&.inner_html
-      @output = Parser.extract_test_case_expected_output(xml_test_case)&.inner_html
+      @code = code
+      @output = output
     end
 
     def full_test_code(student_answer)

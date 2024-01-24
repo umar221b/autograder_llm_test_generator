@@ -48,16 +48,16 @@ module CodeRunner
     attr_writer :document
     attr_reader :questions
 
-    def initialize(file_path)
+    def initialize(file_path, combine_cases = false)
       @document = Parser.parse_xml_document(file_path)
-      prepare_problem_from_document
+      prepare_problem_from_document(combine_cases)
     end
 
-    def prepare_problem_from_document
+    def prepare_problem_from_document(combine_cases)
       xml_questions = Parser.extract_questions(@document)
       @questions = []
       xml_questions.each do |xml_question|
-        @questions << Question.new(xml_question)
+        @questions << Question.new(xml_question, combine_cases)
       end
     end
   end
