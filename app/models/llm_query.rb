@@ -1,15 +1,12 @@
 require 'json'
 
 class LlmQuery < ApplicationRecord
+  include ProgrammingLanguages
+
   QUERY_TYPES = [
     QUERY_TYPE_DETAILED_PROBLEM_STATEMENT = 'detailed_problem_statement'.freeze,
     QUERY_TYPE_MATCHING_OUTPUTS = 'matching_outputs'.freeze,
     QUERY_TYPE_UNIT_TESTS = 'unit_tests'.freeze
-  ]
-
-  PROGRAMMING_LANGUAGES = [
-    PROGRAMMING_LANGUAGE_C = 'c'.freeze,
-    PROGRAMMING_LANGUAGE_PYTHON3 = 'python3'.freeze
   ]
 
   validates :problem_statement, :reference_solution, :reference_solution_digest, :ai_model, :temperature, :input_tokens, :query_type, presence: true
