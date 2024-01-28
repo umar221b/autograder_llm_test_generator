@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 308208  -->
+  <question type="coderunner">
+    <name>
+      <text>Ex 5 - Part 2 - MakeMove</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>For this exercise - <b>ONLY SUBMIT THE SINGLE FUNCTION</b> called <b>MakeMove</b>()</p><p></p><p><i>Your MakeMove() function can call the FindTile() function if you wish (a sample solution of FindTile() is available to the MakeMove() function). </i><br></p><p>The
+function should <i>swap the specified tile
+with the empty square</i> (which is represented by the value -1).&nbsp; Of course,
+this is only possible if the two squares are <i>adjacent</i>.&nbsp; If the specified
+tile is not next to the empty square then it cannot be moved (and the function
+must not modify the board)!</p><p></p><pre>void MakeMove(int board[NUM_ROWS][NUM_COLS], int tile)<br><br></pre><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_function</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>1</allornothing>
+    <penaltyregime>0, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>18</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+#define SEPARATOR "#<ab@17943918#@>#"
+
+/* The dimensions of the puzzle */
+#define NUM_ROWS 4
+#define NUM_COLS 4
+
+void FindTile(int board[NUM_ROWS][NUM_COLS], int tile, int *rowPos, int *colPos)
+{
+	// Find the position of the tile
+	int i, j, row, col;
+
+	// Locate the tile to move
+	row = 0;
+	col = 0;
+	for (i = 0; i < NUM_ROWS; i++) {
+		for (j = 0; j < NUM_COLS; j++) {
+			if (board[i][j] == tile) {
+				row = i;
+				col = j;
+			}
+		}
+	}
+	*rowPos = row;
+	*colPos = col;
+}
+
+/* Print the 2D array */
+void PrintBoard(int board[NUM_ROWS][NUM_COLS])
+{
+	int i, j;
+	for (i = 0; i < NUM_ROWS; i++) {
+		for (j = 0; j < NUM_COLS; j++) {
+			if (board[i][j] == -1) {
+				printf(" _ ");
+			} else if (board[i][j] > 9) {   // align two-digit numbers
+				printf(" %d", board[i][j]);
+			} else {
+				printf(" %d ", board[i][j]);
+			}
+		}
+		printf("\n");
+	}
+	printf("\n");
+}
+
+{{ STUDENT_ANSWER }}
+
+int main() {
+{% for TEST in TESTCASES %}
+   {
+    {{ TEST.testcode }};
+   }
+    {% if not loop.last %}printf("%s\n", SEPARATOR);{% endif %}
+{% endfor %}
+    return 0;
+}]]></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[void MakeMove(int board[NUM_ROWS][NUM_COLS], int tile)
+{
+
+	// Find the position of the tile
+	int row, col;
+	FindTile(board, tile, &row, &col);
+
+	// Find the empty tile which must be adjacent
+	if (row > 0) {
+		// Can test above
+		if (board[row-1][col] == -1) {
+			board[row-1][col] = tile;
+			board[row][col] = -1;
+		}
+	}
+
+	if (row < 3) {
+		// Can test below
+		if (board[row+1][col] == -1) {
+			board[row+1][col] = tile;
+			board[row][col] = -1;
+		}
+	}
+
+	if (col > 0) {
+		// Can test left
+		if (board[row][col-1] == -1) {
+			board[row][col-1] = tile;
+			board[row][col] = -1;
+		}
+	}
+
+	if (col < 3) {
+		// Can test right
+		if (board[row][col+1] == -1) {
+			board[row][col+1] = tile;
+			board[row][col] = -1;
+		}
+	}
+}
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{1, 2, 3, 4},
+	{5, 6, 7, 8},
+	{9, 10, 11, 12},
+	{-1, 13, 14, 15}
+};
+
+MakeMove(board, 9);
+
+PrintBoard(board);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 1  2  3  4
+ 5  6  7  8
+ _  10 11 12
+ 9  13 14 15
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{1, 2, 3, 4},
+	{5, 6, 7, 8},
+	{9, 10, -1, 12},
+	{13, 14, 15, 16}
+};
+MakeMove(board, 7);
+PrintBoard(board);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 1  2  3  4
+ 5  6  _  8
+ 9  10 7  12
+ 13 14 15 16
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{1, 2, 3, 4},
+	{5, 6, 7, 8},
+	{9, 10, -1, 12},
+	{13, 14, 15, 16}
+};
+MakeMove(board, 3);
+PrintBoard(board);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 1  2  3  4
+ 5  6  7  8
+ 9  10 _  12
+ 13 14 15 16</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{1, 2, -1, 4},
+	{5, 6, 7, 8},
+	{9, 10, 11, 12},
+	{3, 14, 15, 16}
+};
+MakeMove(board, 4);
+PrintBoard(board);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 1  2  4  _
+ 5  6  7  8
+ 9  10 11 12
+ 3  14 15 16</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{1, 2, -1, 4},
+	{5, 6, 7, 8},
+	{9, 10, 11, 12},
+	{3, 13, 14, 15}
+};
+MakeMove(board, 7);
+PrintBoard(board)</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 1  2  7  4
+ 5  6  _  8
+ 9  10 11 12
+ 3  13 14 15</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{1, 2, 7, 4},
+	{5, 6, -1, 8},
+	{9, 10, 11, 12},
+	{3, 13, 14, 15}
+};
+MakeMove(board, 6);
+PrintBoard(board)</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 1  2  7  4
+ 5  _  6  8
+ 9  10 11 12
+ 3  13 14 15</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{1, 2, 7, 4},
+	{5, -1, 6, 8},
+	{9, 10, 11, 12},
+	{3, 13, 14, 15}
+};
+MakeMove(board, 10);
+PrintBoard(board)</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 1  2  7  4
+ 5  10 6  8
+ 9  _  11 12
+ 3  13 14 15</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{1, 2, 7, 4},
+	{5, 10, 6, 8},
+	{9, -1, 11, 12},
+	{3, 13, 14, 15}
+};
+MakeMove(board, 11);
+PrintBoard(board)</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 1  2  7  4
+ 5  10 6  8
+ 9  11 _  12
+ 3  13 14 15</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{-1, 2, 3, 4},
+	{5, 6, 7, 8},
+	{9, 10, 11, 12},
+	{1, 13, 14, 15}
+};
+MakeMove(board, 1);
+PrintBoard(board);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> _  2  3  4
+ 5  6  7  8
+ 9  10 11 12
+ 1  13 14 15</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{5, 2, 3, 4},
+	{-1, 6, 7, 8},
+	{9, 10, 11, 12},
+	{1, 13, 14, 15}
+};
+MakeMove(board, 5);
+PrintBoard(board);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> _  2  3  4
+ 5  6  7  8
+ 9  10 11 12
+ 1  13 14 15</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{5, 2, 3, 4},
+	{12, 6, 7, 8},
+	{9, 10, 11, -1},
+	{1, 13, 14, 15}
+};
+MakeMove(board, 15);
+PrintBoard(board);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 5  2  3  4
+ 12 6  7  8
+ 9  10 11 15
+ 1  13 14 _</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>int board[NUM_ROWS][NUM_COLS] = {
+	{5, 2, 3, 4},
+	{12, 6, 7, 8},
+	{9, 10, 11, -1},
+	{1, 13, 14, 15}
+};
+MakeMove(board, 1);
+PrintBoard(board);</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text> 5  2  3  4
+ 12 6  7  8
+ 9  10 11 _
+ 1  13 14 15</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

@@ -7,6 +7,10 @@ module CodeRunner
       @output = output
     end
 
+    def test
+      @input
+    end
+
     def to_s
       "Input:\n#{@input}\nOutput:\n#{@output}"
     end

@@ -1,0 +1,7602 @@
+upi,time,try,answer,rawfraction
+aakm278,1695006653,1,"#include <stdio.h>
+
+int main()
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+}",1
+aasr483,1695028425,1,"int main(void)
+{ 
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0; 
+}",0
+aasr483,1695028433,2,"int main(void)
+{ 
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0; 
+}",0
+aasr483,1695028449,3,"int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",0
+aasr483,1695028572,4,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+abha257,1694829454,1,"#include <stdio.h> 
+int main(void)
+{
+	printf(""Greetings, \""ENNGEN131\""\n"");
+	return 0;
+}
+",0
+abha257,1694829469,2,"#include <stdio.h> 
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}
+",1
+ache725,1694864585,1,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""hello, world\n""); // Prints welcome message
+ return 0;
+ } ",0
+ache725,1694864740,2,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""hello, \""world\""""); // Prints welcome message
+ return 0;
+ } ",0
+ache725,1694864760,3,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""Greetings, \""ENGGEN131\""""); // Prints welcome message
+ return 0;
+ } ",1
+adav221,1695000886,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"");
+
+    return 0;
+}",0
+adav221,1695001481,2,"#include <stdio.h>
+
+int main()
+{
+    print(""Greetings, \""ENGGEN131\"");
+
+    return 0;
+}",0
+adav221,1695001559,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+adey750,1694944570,1,"#include <stdio.h>
+
+/* this is how you write a comment*/ 
+
+
+int main()
+{
+    printf(""Greetings ENGGEN131"");
+}",0
+adey750,1694944603,2,"#include <stdio.h>
+
+/* this is how you write a comment*/ 
+
+
+int main()
+{
+    printf(""Greetings,"");
+    printf(""ENGGEN131"")
+}",0
+adey750,1694944609,3,"#include <stdio.h>
+
+/* this is how you write a comment*/ 
+
+
+int main()
+{
+    printf(""Greetings,"");
+    printf(""ENGGEN131"");
+}",0
+adey750,1694944625,4,"#include <stdio.h>
+
+/* this is how you write a comment*/ 
+
+
+int main()
+{
+    printf(""Greetings, "");
+    printf(""ENGGEN131"");
+}",0
+adey750,1694944668,5,"#include <stdio.h>
+
+/* this is how you write a comment*/ 
+
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"" "");
+    
+}",1
+agou682,1695014144,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+ahac139,1694925593,1,"#include <stdio.h>
+
+int main(void) {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+ahua579,1694823843,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+}",1
+ahus071,1695007653,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN 131\"""");
+    return 0;
+}",0
+ahus071,1695007673,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+ajhz216,1694837757,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+ajhz318,1694833279,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+ajhz488,1695011206,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+ajin489,1694838287,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+ajoh511,1694827566,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+akam256,1694858247,1,"#include <stdio.h>
+
+int main()
+
+{
+prinftf(""Greetings"");
+
+return0;
+}",0
+akam256,1694858286,2,"#include <stdio.h>
+
+int main()
+
+{
+printf(""Greetings"");
+
+return0;
+}",0
+akam256,1694858339,3,"#include <stdio.h>
+
+int main()
+
+{
+printf(""Greetings"");
+
+return 0;
+}",0
+akam256,1694858359,4,"#include <stdio.h>
+
+int main()
+
+{
+printf(""Greetings, """"ENGGEN 131"""""");
+
+return 0;
+}",0
+akam256,1694858365,5,"#include <stdio.h>
+
+int main()
+
+{
+printf(""Greetings, ENGGEN 131"");
+
+return 0;
+}",0
+akam256,1694858377,6,"#include <stdio.h>
+
+int main()
+
+{
+printf(""Greetings, ""ENGGEN 131"""");
+
+return 0;
+}",0
+akam256,1694858397,7,"#include <stdio.h>
+
+int main()
+
+{
+printf(""Greetings, \""ENGGEN 131\"""");
+
+return 0;
+}",0
+akam256,1694858403,8,"#include <stdio.h>
+
+int main()
+
+{
+printf(""Greetings, \""ENGGEN131\"""");
+
+return 0;
+}",1
+akmu146,1694849480,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+akod059,1694856019,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+akri368,1694933825,1,"#include <stdio.h>
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}",1
+akwo440,1695017661,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""")
+	return 0;
+}",0
+akwo440,1695017669,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+}",1
+alum086,1694982276,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+amag544,1694957463,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+amah664,1695004713,1,"#include <stdio.h>
+
+/*This programme has been written by a millions of people !*/
+int main (void)
+{
+    printf(""Greetings, ""ENGGEN131"" !!\n"");
+
+    return 0; 
+}",0
+amah664,1695004740,2,"#include <stdio.h>
+
+/*This programme has been written by a millions of people !*/
+int main (void)
+{
+    printf(""Greetings, ""ENGGEN131"" \n"");
+
+    return 0; 
+}",0
+amah664,1695004785,3,"#include <stdio.h>
+
+/*This programme has been written by a millions of people !*/
+int main (void)
+{
+    printf(""Greetings, ENGGEN131 \n"");
+
+    return 0; 
+}",0
+amah664,1695005061,4,"#include <stdio.h>
+
+/*This programme has been written by a millions of people !*/
+int main (void)
+{
+    printf(""Greetings, \""ENGGEN131\"" \n"");
+
+    return 0; 
+}",1
+amar516,1694992680,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}",0
+amar516,1694992688,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ENGGEN131\n"");
+	return 0;
+}",0
+amar516,1694992724,3,"#include <stdio.h>
+
+int main(void)
+{
+	printf(Greetings, ""ENGGEN131""\n);
+	return 0;
+}",0
+amar516,1694992739,4,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}",0
+amar516,1694992972,5,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ''ENGGEN131''\n"");
+	return 0;
+}",0
+amar516,1694993675,6,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+amar704,1694773050,1,"#include <stdio.h>
+
+int main(viod)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",0
+amar704,1694773116,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+amar768,1694913400,1,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"""");
+return 0;
+}",0
+amar768,1694913506,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+amat407,1694837136,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+amur986,1694996766,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" "");
+	return 0;
+}
+",1
+anig922,1694987780,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}
+",0
+anig922,1694987787,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}
+",0
+anig922,1694987799,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131);
+
+    return 0;
+}
+",0
+anig922,1694987889,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}
+",0
+anig922,1694987908,5,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}
+",0
+anig922,1694987926,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}
+",0
+anig922,1694987992,7,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131/n"");
+
+    return 0;
+}
+",0
+anig922,1694988006,8,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""/n"");
+
+    return 0;
+}
+",0
+anig922,1694988023,9,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"");
+
+    return 0;
+}
+",0
+anig922,1694988030,10,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}
+",0
+anig922,1694988122,11,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \*ENGGEN131*\"");
+
+    return 0;
+}
+",0
+anig922,1694988157,12,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+aosm976,1695023929,1,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}",1
+apan786,1694946063,1,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greetings, \""ENGGEN131\"""")
+    return 0
+}",0
+apan786,1694946067,2,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+apat824,1694959365,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+apen181,1694845062,1,"#include <stdio.h>
+/* This program displays a welcome message */
+int main(void)
+{
+	printf(""Greetings , 'ENGGEN131'\n"");
+	return 0;
+}",0
+apen181,1694845098,2,"#include <stdio.h>
+/* This program displays a welcome message */
+int main(void)
+{
+	printf('Greetings, ""ENGGEN131""\n');
+	return 0;
+}",0
+apen181,1694845113,3,"#include <stdio.h>
+/* This program displays a welcome message */
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}",0
+apen181,1694845167,4,"#include <stdio.h>
+/* This program displays a welcome message */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131\n"");
+	return 0;
+}",0
+apen181,1694845308,5,"#include <stdio.h>
+/* This program displays a welcome message */
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+apre444,1695022351,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    
+    return 0;
+}",1
+apur448,1694941025,1,"#include <stdio.h>
+
+int main(void)
+{
+
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+    
+}",1
+aqu284,1694843412,1,"int main(void)
+{
+	printf(""Hello world!!\n"");
+	return 0;
+}",0
+aqu284,1694843580,2,"#include <stdio.h>
+int main(void)
+{
+	printf(""Hello world!!\n"");
+	return 0;
+}",0
+aqu284,1694843608,3,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}",0
+aqu284,1694843741,4,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+arah160,1694954390,1,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""hello, world (ENGGEN131!!)\n"" );
+    return 0;
+}",0
+arah160,1694954428,2,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""Greetings, ENGGEN131""\n"" );
+    return 0;
+}",0
+arah160,1694954449,3,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"" );
+    return 0;
+}",0
+arah160,1694954457,4,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""Greetings,""ENGGEN131""\n"" );
+    return 0;
+}",0
+arah160,1694954517,5,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""Greetings,ENGGEN131 \n"" );
+    return 0;
+}",0
+arah160,1694954610,6,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"" \n"" );
+    return 0;
+}",0
+arah160,1694954623,7,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""Greetings,ENGGEN131 \n"" );
+    return 0;
+}",0
+arah160,1694954872,8,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""n"" );
+    return 0;
+}",0
+arah160,1694954925,9,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" "" );
+    return 0;
+}",1
+arus530,1694827949,1,"#include <stdio.h>
+
+
+int main(void)
+{
+    printf(""hello, world\n"");
+    return 0;
+}",0
+arus530,1694828000,2,"#include <stdio.h>
+
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n"");
+    return 0;
+}",0
+arus530,1694828025,3,"#include <stdio.h>
+
+
+int main(void)
+{
+    printf(""Greetings, """"ENGGEN131""""\n"");
+    return 0;
+}",0
+aryu462,1695005717,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0; 
+
+}",0
+aryu462,1695005758,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""<Greetings, ""ENGGEN131"">\n"");
+    return 0; 
+
+}",0
+aryu462,1695005787,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""< Greetings, ""ENGGEN131"" >\n"");
+    return 0; 
+
+}",0
+aryu462,1695005840,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0; 
+
+}",0
+aryu462,1695005872,5,"#include <stdio.h>
+
+int main()
+{
+    printf(""ENGGEN131\n"");
+    return 0; 
+
+}",0
+aryu462,1695005891,6,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ENGGEN131\n"");
+    return 0; 
+
+}",0
+aryu462,1695005906,7,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0; 
+
+}",0
+aryu462,1695005922,8,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, """"""ENGGEN131""""""\n"");
+    return 0; 
+
+}",0
+aryu462,1695005961,9,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, (""ENGGEN131"")\n"");
+    return 0; 
+
+}",0
+aryu462,1695005975,10,"#include <stdio.h>
+
+int main()
+{
+    printf(Greetings, ""ENGGEN131""\n);
+    return 0; 
+
+}",0
+aryu462,1695006003,11,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0; 
+
+}",0
+aryu462,1695006174,12,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, """"ENGGEN131""""\n"");
+    return 0; 
+
+}",0
+aryu462,1695006198,13,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ENGGEN131""""\n"");
+    return 0; 
+
+}",0
+aryu462,1695006219,14,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, 'ENGGEN131'\n"");
+    return 0; 
+
+}",0
+aryu462,1695006315,15,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings,  ENGGEN131\n"");
+    printf(""           ""         ""\n"");
+    return 0; 
+
+}",0
+aryu462,1695006964,16,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0; 
+
+}",1
+asaa285,1694968805,1,"printf('Greetings, ""ENGGEN131""\n');",0
+asaa285,1694968912,2,"#include <stdio.h> 
+
+printf(""""""Greetings, ""ENGGEN131""\n"""""");",0
+asaa285,1694968968,3,"#include <stdio.h> 
+
+printf(""Greetings, \""ENGGEN131\""\n);",0
+asaa285,1694968982,4,"#include <stdio.h> 
+
+printf(""Greetings, \""ENGGEN131\""\n"");",0
+asaa285,1694969043,5,"#include <stdio.h> 
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+asaa285,1694974017,6,"#include <stdio.h> 
+
+int main(void)
+{
+    printf("" Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",0
+ashi565,1695002049,1,"#include<stdio.h>
+
+int main(){
+printf(""Greetings, "");
+printf(""\ENGGEN131\"");
+return 0;
+
+}",0
+ashi565,1695002212,2,"#include<stdio.h>
+
+int main(){
+printf(""Greetings, "");
+printf(""\""ENGGEN131\"""");
+return 0;
+
+}",1
+aski294,1694857549,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+atay777,1694838724,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+avan381,1694834769,1,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings \""ENGGEN131\"""");
+    
+    return 0;
+}",0
+avan381,1694834787,2,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+ayan607,1694841672,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+
+}
+",1
+bcar662,1694935622,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+besk864,1694911173,1,"print(""Greetings, \""ENGGEN131\"""");",0
+besk864,1694911190,2,"printf(""Greetings, \""ENGGEN131\"""");",0
+besk864,1694911994,3,"
+#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+
+
+
+",1
+bfla774,1694830854,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+blau034,1695021327,1,"#include <stdio.h>
+
+
+/* This program has been written by millions of people! */
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+}",1
+blin888,1694767403,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    
+    return 0;
+}",1
+bmac148,1694764857,1,"#include <stdio.h>
+
+int main(void)
+{
+ printf(""Greetings, \""ENGGEN131\""\n"");
+ return 0;
+}",1
+bora417,1694833236,1,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\""\n"");
+
+return 0;
+}",1
+bpak212,1695016922,1,"#include <stdio.h>
+
+int main (void)
+
+// create a form of greetings enggen131
+printf (""Greetings ENGGEN131:\n);
+
+return 0;
+",0
+bpak212,1695017050,2,"#include <stdio.h>
+
+int main ()
+
+// create a form of greetings enggen131
+printf (""Greetings ENGGEN131:\n);
+
+return 0;
+",0
+bpak212,1695017065,3,"#include <stdio.h>
+
+int main ()
+
+// create a form of greetings enggen131
+printf (""Greetings,ENGGEN131:\n);
+
+return 0;
+",0
+bpak212,1695017088,4,"#include <stdio.h>
+
+int main ()
+
+// create a form of greetings enggen131
+printf (""Greetings,ENGGEN131:\n"");
+
+return 0;
+",0
+bpak212,1695017143,5,"#include <stdio.h>
+
+int main ()
+// create a form of greetings enggen131
+printf (""Greetings,ENGGEN131:\n"");
+
+return 0;
+",0
+bpak212,1695017166,6,"#include <stdio.h>
+int main ()
+// create a form of greetings enggen131
+printf (""Greetings,ENGGEN131:\n"");
+return 0;",0
+bpak212,1695017200,7,"#include <stdio.h>
+int main ()
+
+// create a form of greetings enggen131
+printf (""Greetings,ENGGEN131:\n"");
+
+return 0;",0
+bril841,1694915485,1,"#include <studio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""/n"");
+    return 0;
+}",0
+bril841,1695008135,2,"#include <studio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",0
+bril841,1695008148,3,"
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",0
+bril841,1695008170,4,"#include <studio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",0
+bril841,1695008290,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+bwis161,1694909515,1,"#include <stdio.h>
+
+int main(void)
+{
+
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+
+}",1
+bwoo348,1694815495,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131"""""");
+
+    return 0;
+}",0
+bwoo348,1694815505,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""""");
+
+    return 0;
+}",0
+bwoo348,1694815531,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+byul423,1694848217,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+}",1
+cada577,1694854880,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Gretings, \""131\"""");
+
+    return 0;
+}",0
+cada577,1694854894,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""131\"""");
+
+    return 0;
+}",0
+cada577,1694854905,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+ccha854,1694770786,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, """"ENGGEN131"""""");
+
+    return 0;
+}
+",0
+ccha854,1694770919,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, """""");
+
+    return 0;
+}
+",0
+ccha854,1694770928,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, """""""");
+
+    return 0;
+}
+",0
+ccha854,1694771010,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+cdin152,1694854426,1,"#include <stdio.h>
+
+/* This program has been written by the whole of ENGGEN131! */
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+cdsi208,1695024096,1,"#include <stdio.h>
+
+int main(void)
+{
+     printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+cgal160,1694908898,1,"#include <stdio.h>
+
+int main();
+{
+	printf(""Greetings, \""ENGGEN131\"" "")
+
+		return 0;
+}",0
+cgal160,1694908996,2,"#include <stdio.h>
+
+int main();
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+		return 0;
+}",0
+cgal160,1694909004,3,"#include <stdio.h>
+
+int main();
+
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+		return 0;
+}",0
+cgal160,1694909009,4,"#include <stdio.h>
+
+int main()
+
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+		return 0;
+}",1
+chua804,1694851651,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}",0
+chua804,1694851657,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"");
+
+    return 0;
+}",0
+chua804,1694851715,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}",0
+chua804,1694851735,4,"#include <stdio.h>
+
+int main()
+{
+    printf(Greetings, ""ENGGEN131"");
+
+    return 0;
+}",0
+chua804,1694851747,5,"#include <stdio.h>
+
+int main()
+{
+    printf(""Hello World"");
+
+    return 0;
+}",0
+chua804,1694851756,6,"#include <stdio.h>
+
+int main()
+{
+    printf(""g"");
+
+    return 0;
+}",0
+chua804,1694851762,7,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings,"");
+
+    return 0;
+}",0
+chua804,1694851770,8,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}",0
+chua804,1694851782,9,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"" "");
+
+    return 0;
+}",0
+chua804,1694851809,10,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, (""ENGGEN131"")"");
+
+    return 0;
+}",0
+chua804,1694851856,11,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, (""ENGGEN131"""");
+
+    return 0;
+}",0
+chua804,1694851863,12,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""(""ENGGEN131"""");
+
+    return 0;
+}",0
+chua804,1694851906,13,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+cjun818,1695029231,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;",0
+cjun818,1695029248,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+clee482,1695001862,1,"#include <stdio.h>
+
+/* This program displays a 'Greetings, ""ENGGEN131' message */
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+clee482,1695001954,2,"#include <stdio.h>
+
+/* This program displays a 'Greetings, ""ENGGEN131"" message */
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131\""\n"");
+    return 0;
+}",0
+clee482,1695002391,3,"#include <stdio.h>
+
+/* This program displays a 'Greetings, ""ENGGEN131"" message */
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+cmac377,1694997393,1,"include <stdio.h>
+
+int main()
+{
+    printf(""Greetings,\""ENGGEN131\"""");
+    
+    return 0;
+}",0
+cmac377,1694997409,2,"include<stdio.h>
+
+int main()
+{
+    printf(""Greetings,\""ENGGEN131\"""");
+    
+    return 0;
+}",0
+cmac377,1694997430,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings,\""ENGGEN131\"""");
+    
+    return 0;
+}",0
+cmac377,1694997439,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+cmas527,1694919761,1,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+cmcm317,1694940862,1,"# include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" \n"");
+
+	return 0;
+}",1
+cnai408,1694959843,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf('Greetings, ""ENGGEN131"" ');
+
+    return 0;
+}",0
+cnai408,1694959895,2,"int main(void)
+{
+    printf""Greetings, ""ENGGEN131"" "");
+
+    return 0;
+}",0
+cnai408,1694959908,3,"int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"" "");
+
+    return 0;
+}",0
+cnai408,1694959936,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"" "");
+
+    return 0;
+}",0
+cnai408,1694959952,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (""ENGGEN131"" "");
+
+    return 0;
+}",0
+cnai408,1694959965,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (""ENGGEN131"") "");
+
+    return 0;
+}",0
+cnai408,1695021436,7,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" "");
+
+    return 0;
+}",1
+cnie825,1694922377,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}",0
+cnie825,1694922428,2,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, ""ENGGEN131"""""");
+
+    return 0;
+}",0
+cnie825,1694922526,3,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}",1
+coli772,1694986362,1,"#include <stdio.h>
+
+int main(void) {
+    printf(""Greetings, \""ENGGEN131\""\n"")
+    return 0;
+}",0
+coli772,1694986366,2,"#include <stdio.h>
+
+int main(void) {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+croa063,1695011921,1,l,0
+csan114,1694926584,1,"int main(void)
+{
+    printf(""Greetings \""ENGGEN131\"""");
+    
+    return 0;
+}",0
+csan114,1694926602,2,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h> 
+
+int main(void)
+{
+    printf(""Greetings \""ENGGEN131\"""");
+    
+    return 0;
+}",0
+csan114,1694926615,3,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h> 
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+cste189,1694822985,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+ctub889,1694925879,1,"#include <stdio.h>
+ 
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+
+}",0
+ctub889,1694925991,2,"#include <stdio.h>
+ 
+int main()
+{
+    printf(""Greetings, /""ENGGEN131/"""");
+
+    return 0;
+
+}",0
+ctub889,1694926002,3,"#include <stdio.h>
+ 
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+
+}",1
+cwei506,1694989338,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"")
+    
+    return 0;
+}
+",0
+cwei506,1694989349,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    
+    return 0;
+}
+",1
+cwu200,1694918772,1,"int main(void) {
+	printf(""Greetings, 'ENGGEN131'\n"");
+}",0
+cwu200,1694918941,2,"#include <stdio.h>
+
+int main(void) {
+	printf(""Greetings, \""ENGGEN131\""\n"");
+}",1
+dhah941,1695009188,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""")
+    return 0;
+}",0
+dhah941,1695009194,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+dkur670,1694995497,1,"#include <stdio.h>
+
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131"""");
+	
+return 0;
+}",0
+dkur670,1694995543,2,"#include <stdio.h>
+
+
+int main()
+{
+	printf(""Greetings, ""ENGGEN131"""");
+	
+return 0;
+}",0
+dkur670,1694995559,3,"#include <stdio.h>
+
+
+int main()
+{
+	printf(""Greetings, ""ENGGEN131"");
+	
+return 0;
+}",0
+dkur670,1694995607,4,"#include <stdio.h>
+
+
+int main()
+{
+	printf(""Greetings, ""ENGGEN131"""");
+	
+	return 0;
+}",0
+dkur670,1694996031,5,"#include <stdio.h>
+
+
+int main()
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	
+	return 0;
+}",1
+dmun793,1694926927,1,"#include <stdio.h>
+
+int main()
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}
+",1
+dpar783,1694867113,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Hello World"");
+
+    return 0;
+}",0
+dpar783,1694867152,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+dpet289,1694842577,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+drob588,1694965460,1,"#include <stdio.h>
+
+int main(void) 
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+droj056,1694927031,1,"#include <stdio.h>
+ int main(void)
+ {
+ printf(""Greetings, \""ENGGEN131\"""");
+ return 0;
+ } 
+",1
+dryu303,1694867918,1,"print(""Greetings, ""ENGGEN131"""")",0
+dryu303,1695025596,2,"int main(void)
+ {
+ printf(""Greetings, ""ENGGEN131"""");
+ return 0;
+ } ",0
+dryu303,1695025615,3,"int main(void)
+ {
+ print(""Greetings, ""ENGGEN131"""");
+ return 0;
+ } ",0
+dryu303,1695025675,4,"
+ print(""Greetings, ""ENGGEN131"""");
+ return 0;
+",0
+dryu303,1695025783,5,"#include <stdio.h>
+ /* This program displays a welcome message */
+ int main(void)
+ {
+ printf(""hello, world\n"");
+ return 0;
+ } 
+",0
+dryu303,1695025793,6,"#include <stdio.h>
+ /* This program displays a welcome message */
+ int main(void)
+ {
+ printf(""Greetings, ""ENGGEN131"""");
+ return 0;
+ } 
+",0
+dryu303,1695025805,7,"#include <stdio.h>
+ /* This program displays a welcome message */
+ int main(void)
+ {
+ printf('Greetings, ""ENGGEN131""');
+ return 0;
+ } 
+",0
+dryu303,1695025935,8,"#include <stdio.h>
+ /* This program displays a welcome message */
+ int main(void)
+ {
+ printf(""Greetings, \""ENGGEN131\"""");
+ return 0;
+ } 
+",1
+dsin316,1694774552,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf('Greetings, ""ENGGEN131""');
+    return 0;
+}",0
+dsin316,1694774816,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+dstr542,1694923261,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" "");
+		return 0;
+}",1
+dsut709,1695009635,1,"#include <stdio.h>
+int main(void)
+{
+ printf(""Greeting, \""ENGGEN131\"""");
+ return 0;
+}",0
+dsut709,1695009831,2,"#include <stdio.h>
+int main(void)
+{
+ printf(""Greetings, \""ENGGEN131\"""");
+ return 0;
+}",1
+dver839,1695005405,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+dvu878,1694993411,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return;
+}",0
+dvu878,1694993431,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+}",1
+dvu878,1694993438,3,"#include <stdio.h>
+
+int main()
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+}",1
+dyu343,1694988975,1,"
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",0
+dyu343,1694988991,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+ealg928,1695025539,1,"#include <stdio.h>
+
+int main() 
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    
+    return 0;
+}",1
+eara128,1695029268,1,"#include <stdio.h>
+
+int main (void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+echa931,1695003612,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+eche101,1694920277,1,"int main()
+{
+   printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",0
+eche101,1694920307,2,"#include <stdio.h>
+
+int main()
+{
+   printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+eejl688,1695016668,1,prinf(hello world),0
+eejl688,1695017109,2,"main()
+{
+    printf(""hello world"");
+}",0
+eejl688,1695017430,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""hello world"");
+    return 0;
+}",0
+eejl688,1695017479,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0;
+}",0
+eejl688,1695017657,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131"");
+    return 0;
+}",0
+eejl688,1695017781,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+ehan360,1695028973,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+
+    printf(""Greetings, \""ENGGEN131\"""");
+}
+",1
+ejeo051,1694939402,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+elau447,1695001594,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}
+",1
+ema340,1694867422,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greeting, \""ENGGEN131\"""");
+    
+    return 0;
+}",0
+ema340,1694867448,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+emar179,1695010979,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+}",1
+eqiu349,1694867117,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    
+    return 0;
+}",0
+eqiu349,1694873418,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    
+    return 0;
+}",1
+esia821,1694946006,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" \n"");
+	return 0;
+}",1
+evic904,1694930786,1,"int main()
+{
+	printf(“Hello, \""world""\n”);
+
+    return 0;
+}
+",0
+evic904,1694932147,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+}",1
+eyeo346,1694839311,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+    
+}
+",1
+fesp714,1695014820,1,"#include <stdio.h>
+
+int main ()
+{
+    printf(""Greetings,\""ENGGEN131\""\n"");
+    return 0;
+}",0
+fesp714,1695014828,2,"#include <stdio.h>
+
+int main ()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+fobr691,1694943926,1,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""ENGGEN131\n""); // Prints welcome message
+ return 0;
+ } ",0
+fobr691,1694944101,2,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""Greetings, ENGGEN131\n""); // Prints welcome message
+ return 0;
+ } ",0
+fobr691,1694944115,3,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""Greetings, ""ENGGEN131""\n""); // Prints welcome message
+ return 0;
+ } ",0
+fobr691,1694945019,4,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""Greetings, \""ENGGEN131\""\n""""); // Prints welcome message
+ return 0;
+ } ",0
+fobr691,1694945037,5,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""Greetings, \""ENGGEN131\""\n""); // Prints welcome message
+ return 0;
+ } ",1
+fwil727,1694818994,1,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131""\n"");
+return 0;
+}",0
+fwil727,1694819017,2,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, ENGGEN131\n"");
+return 0;
+}",0
+fwil727,1694819042,3,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, """"ENGGEN131""""\n"");
+return 0;
+}",0
+fwil727,1694819066,4,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, """"ENGGEN131""\n"");
+return 0;
+}",0
+fwil727,1694819195,5,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\""\n"");
+return 0;
+}",1
+fyan180,1695014579,1,"/*Hello, my name is Francis. This is my code :)*/
+#include <stdio.h>
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"")   
+    return 0;
+}",0
+fyan180,1695014602,2,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+gcha636,1694915828,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\"" \n"");
+    return 0;
+}
+",1
+gjom886,1694934548,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""World\""n"");
+
+    return 0;
+}",0
+gjom886,1694934577,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""n"");
+
+    return 0;
+}",0
+gjom886,1694934587,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"");
+
+    return 0;
+}",0
+gjom886,1694934599,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}",1
+gmoh887,1695015754,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+gren419,1695024110,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""Enggen131\"""");
+
+    return 0;
+}
+",0
+gren419,1695024124,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+gvan573,1694992907,1,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"""");
+return 0;
+}",0
+gvan573,1694992997,2,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}",1
+gzho986,1694820546,1,"#include <stdio.h>
+ /*
+ Here is my first program!
+ */
+ int main(void)
+ {
+ printf(""Greetings, ""ENGGEN131""""\n""); // Prints welcome message
+ return 0;
+ }",0
+gzho986,1694820575,2,"
+ int main(void)
+ {
+ printf(""Greetings, ""ENGGEN131""""\n""); 
+ return 0;
+ }",0
+gzho986,1694820618,3,"
+ int main(void)
+ {
+ printf(""Greetings, ENGGEN131 \n""); 
+ return 0;
+ }",0
+gzho986,1694821008,4,"#include <stdio.h> 
+ int main(void)
+ {
+ printf(""Greetings, ENGGEN131 \n""); 
+ return 0;
+ }",0
+gzho986,1694821023,5,"#include <stdio.h> 
+ int main(void)
+ {
+ printf(""Greetings, ""ENGGEN131"" \n""); 
+ return 0;
+ }",0
+gzho986,1694821088,6,"#include <stdio.h> 
+ int main(void)
+ {
+ printf(""Greetings, 'ENGGEN131' \n""); 
+ return 0;
+ }",0
+gzho986,1694821120,7,"#include <stdio.h> 
+ int main(void)
+ {
+ printf(""Greetings, ""ENGGEN131"""" \n""); 
+ return 0;
+ }",0
+gzho986,1694821134,8,"#include <stdio.h> 
+ int main(void)
+ {
+ printf(""Greetings, """"ENGGEN131"""" \n""); 
+ return 0;
+ }",0
+gzho986,1694821206,9,"#include <stdio.h> 
+ int main(void)
+ {
+ printf(""Greetings, ""\""ENGGEN131""\"" \n""); 
+ return 0;
+ }",0
+gzho986,1694821247,10,"#include <stdio.h> 
+ int main(void)
+ {
+ printf(""Greetings, \""ENGGEN131\"""" \n""); 
+ return 0;
+ }",0
+gzho986,1694821266,11,"#include <stdio.h> 
+ int main(void)
+ {
+ printf(""Greetings, \""ENGGEN131\"" \n""); 
+ return 0;
+ }",1
+hgou636,1694770700,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+hhos693,1695021452,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0: 
+}",0
+hhos693,1695021469,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0;
+}",0
+hhos693,1695022546,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+hkim807,1694989384,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+hlee999,1694821797,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" \n"");
+		return 0;
+}
+",1
+hly852,1694948623,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+hpan363,1695017159,1,"// Hello :)
+#include <stdio.h>
+
+int main(void) {
+    // this is printing the text: ""Greetings, ""ENGGEN131"" ""
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+hpir641,1694851087,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+hrob997,1694994650,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+hson435,1695022666,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf('Greetings, ""ENGGEN131');
+    return 0;
+}",0
+hson435,1695022831,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""hello, world\n"");
+    
+    return 0;
+}",0
+hson435,1695022852,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""""");
+    
+    return 0;
+}",0
+hson435,1695022858,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    
+    return 0;
+}",0
+hson435,1695022892,5,"#include <stdio.h>
+
+int main(void)
+{
+    chicken = ""ENGGEN131"";
+    printf(""Greetings, "", chicken);
+    
+    return 0;
+}",0
+hson435,1695022906,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings"");
+    
+    return 0;
+}",0
+hson435,1695024246,7,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131"");
+    
+    return 0;
+}",0
+hson435,1695027067,8,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+htew916,1694868294,1,"# include <stdio.h>
+
+/* Here is my first program */
+
+int main (void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+htew916,1694868351,2,"# include <stdio.h>
+
+/* Here is my first program */
+
+int main(void)
+{
+    printf(""Greetings, (ENGGEN131)\n"");
+    return 0;
+}",0
+htew916,1694868380,3,"# include <stdio.h>
+
+/* Here is my first program */
+
+int main(void)
+{
+    printf(""Greetings, 'ENGGEN131'\n"");
+    return 0;
+}",0
+htew916,1694868397,4,"# include <stdio.h>
+
+/* Here is my first program */
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+htew916,1694868442,5,"# include <stdio.h>
+
+/* Here is my first program */
+
+int main(void)
+{
+    printf(""Greetings, + ""ENGGEN131""\n"");
+    return 0;
+}",0
+htew916,1694868459,6,"# include <stdio.h>
+
+/* Here is my first program */
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+htew916,1694868536,7,"# include <stdio.h>
+
+/* Here is my first program */
+
+int main(void) 
+
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+hye071,1695009153,1,"/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+iche428,1694991924,1,"#include <stdio.h>
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+ihoo440,1694780100,1,"#include<stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+}",1
+imoh000,1695009849,1,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, ENGGEN131\n"");
+return 0;
+}
+
+",0
+imoh000,1695009928,2,"#include <stdio.h>
+
+int main()
+
+{
+	printf(""\Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+
+}",0
+imoh000,1695009960,3,"#include <stdio.h>
+
+int main()
+
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+
+}",1
+ixu871,1694864954,1,"#include <stdio.h>
+
+int main(void)
+{
+printf(Greetings, ""ENGGEN131"");
+return 0; 
+}
+",0
+ixu871,1694864983,2,"#include <stdio.h>
+
+int main(void)
+{
+printf('Greetings', ""ENGGEN131"");
+return 0; 
+}
+",0
+ixu871,1694865041,3,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"""");
+return 0; 
+}
+",0
+ixu871,1694865054,4,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ENGGEN131"");
+return 0; 
+}
+",0
+ixu871,1694865075,5,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, (""ENGGEN131"")"");
+return 0; 
+}
+",0
+ixu871,1694865087,6,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ENGGEN131"");
+return 0; 
+}
+",0
+ixu871,1694865100,7,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"""""");
+return 0; 
+}
+",0
+ixu871,1694865105,8,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"""");
+return 0; 
+}
+",0
+ixu871,1694865155,9,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ENGGEN131/n"");
+return 0; 
+}
+",0
+ixu871,1694865488,10,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ENGGEN131"");
+return 0; 
+}
+",0
+ixu871,1694865535,11,"#include <stdio.h>
+
+int main(void)
+d = ""ENGGEN131""
+{
+printf(""Greetings,"" + d);
+return 0; 
+}
+",0
+ixu871,1694865547,12,"#include <stdio.h>
+
+int main(void)
+d = char (""ENGGEN131"")
+{
+printf(""Greetings,"" + d);
+return 0; 
+}
+",0
+ixu871,1694865558,13,"#include <stdio.h>
+
+int main(void)
+d = char (""ENGGEN131"")
+{
+printf(""Greetings, d"");
+return 0; 
+}
+",0
+ixu871,1694865641,14,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ENGGEN131"");
+return 0; 
+}
+",0
+ixu871,1694865654,15,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, 'ENGGEN131"");
+return 0; 
+}
+",0
+ixu871,1694865666,16,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"""");
+return 0; 
+}
+",0
+ixu871,1694865682,17,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"" "");
+return 0; 
+}
+",0
+ixu871,1694865689,18,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ENGGEN131"");
+return 0; 
+}
+",0
+ixu871,1694865762,19,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0; 
+}
+",1
+ixu871,1694865798,20,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \]ENGGEN131\]);
+return 0; 
+}
+",0
+ixu871,1694865806,21,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \'ENGGEN131\');
+return 0; 
+}
+",0
+ixu871,1694865812,22,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"");
+return 0; 
+}
+",0
+ixu871,1694865825,23,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0; 
+}
+",1
+jbag235,1694992153,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}",0
+jbag235,1694992204,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+jbam701,1694834060,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+
+}	",1
+jbis394,1694835957,1,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131""\n"");
+return 0;
+}",0
+jbis394,1694836010,2,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131""\n"");
+return 0;
+}",0
+jbis394,1694836034,3,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\""\n"");
+return 0;
+}",1
+jbru537,1695016825,1,"#include <stdio.h>
+
+int main(void)
+
+{
+printf(""hello, world\n"");
+return 0;
+}
+
+",0
+jbru537,1695017024,2,"#include <stdio.h>
+
+int main(void)
+
+{
+printf(""Greetings, \""ENGGEN131\"" \n"");
+return 0;
+}
+
+",1
+jbuc296,1695007330,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131"");
+    return 0;
+}
+",0
+jbuc296,1695007461,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+jcha513,1694854481,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+jcha972,1694990102,1,"#include <stdio.h>
+
+int main () 
+{
+    printf(""Greetings, \""ENGGEN131"""")
+
+    return 0;
+}",0
+jcha972,1694990113,2,"#include <stdio.h>
+
+int main () 
+{
+    printf(""Greetings, \""ENGGEN131"""");
+
+    return 0;
+}",0
+jcha972,1694990165,3,"#include <stdio.h>
+
+int main () 
+{
+    printf(""Greetings, \""ENGGEN131""\"");
+
+    return 0;
+}",0
+jcha972,1694990198,4,"#include <stdio.h>
+
+int main () 
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+jche456,1695010557,1,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}
+",1
+jchi648,1694988468,1,"#include<stdio.h>
+
+int main(void) {
+
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+
+}",1
+jdal353,1695027247,1,"int main() {
+    printf(""Greetings, %cENGGEN131%c\n"", '""', '""');
+    return 0; // Indicate successful execution
+}",0
+jdal353,1695027262,2,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, %cENGGEN131%c\n"", '""', '""');
+    return 0; // Indicate successful execution
+}",1
+jdea126,1694788947,1,"#include <stdio.h>
+
+int main(void)
+{
+
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+jdu853,1694836775,1,"#include <stdio.h>
+
+/* This prints a greeting */
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+}",1
+jfet156,1694861646,1,"#include <stdio.h>
+     
+      int main(void)
+      {
+            printf(""hello, \""world\""\n"");
+return 0; }",0
+jfet156,1694861671,2,"#include <stdio.h>
+     
+      int main(void)
+      {
+            printf(""Greetings, \""ENGGEN131\""\n"");
+return 0; }",1
+jhor229,1694854056,1,"#inculde <stdio.h>
+int main (void)
+    {
+        printf(""Greetings, """"ENGGEN131"""");
+    }",0
+jhor229,1694854108,2,"#define _crt_secure_nowarnings
+#inculde <stdio.h>
+int main (void)
+    {
+        printf(""Greetings, """"ENGGEN131"""");
+    }",0
+jhor229,1694854139,3,"#define _CRT_SECURE_NOWARNINGS
+#inculde <stdio.h>
+int main (void)
+    {
+        printf(""Greetings, """"ENGGEN131"""");
+    }",0
+jhor229,1694854146,4,"#define _CRT_SECURE_NO_WARNINGS
+#inculde <stdio.h>
+int main (void)
+    {
+        printf(""Greetings, """"ENGGEN131"""");
+    }",0
+jhor229,1694854216,5,"#include <stdio.h> 
+
+ int main(void) 
+ { 
+ printf(""Greetings, """"ENGGEN131"""");
+ return 0; 
+ } ",0
+jhor229,1694854231,6,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h> 
+
+ int main(void) 
+ { 
+ printf(""Greetings, """"ENGGEN131"""");
+ return 0; 
+ } ",0
+jhor229,1694854249,7,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h> 
+
+ int main(void) 
+ { 
+ printf(""Greetings, """"ENGGEN131""""):
+ return 0; 
+ } ",0
+jhor229,1694854517,8,"#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main() {
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+jhor229,1694854525,9,"#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main() {
+    printf(""Greetings, """"ENGGEN131""""\n"");
+    return 0;
+}",0
+jhor229,1694854577,10,"#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main() {
+    printf(""Greetings, """"ENGGEN131"""");
+    return 0;
+}",0
+jhor229,1694854597,11,"#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main() {
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+jhor229,1694854605,12,"#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main() {
+    printf(""Greetings, """"ENGGEN131""\n"");
+    return 0;
+}",0
+jhor229,1694854610,13,"#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main() {
+    printf(""Greetings, """"ENGGEN131"""");
+    return 0;
+}",0
+jhor229,1694854639,14," #include <stdio.h> 
+ /* This program displays a welcome message */ 
+ int main(void) 
+ { 
+ printf(""hello, world\n""); 
+ return 0; 
+ } 
+",0
+jhor229,1694854661,15,"#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main() {
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+jhor229,1694854815,16,"#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+int main() {
+    printf(""Greetings, ""ENGGEN131""\n"");;
+    return 0;
+}",0
+jhor229,1694854845,17," #include <stdio.h> 
+ /* This program displays a welcome message */ 
+ int main(void) 
+ { 
+ printf(""hello, world\n""); 
+ return 0; 
+ } 
+",0
+jhor229,1694854913,18," #include <stdio.h> 
+ /* This program displays a welcome message */ 
+ int main(void) 
+ { 
+ printf(""Greetings, ENGGEN131""); 
+ return 0; 
+ } 
+",0
+jhor229,1694854939,19," #include <stdio.h> 
+ /* This program displays a welcome message */ 
+ int main(void) 
+ { 
+ printf(""Greetings, 'ENGGEN131'""); 
+ return 0; 
+ } 
+",0
+jhor229,1694855051,20," #include <stdio.h> 
+ /* This program displays a welcome message */ 
+ int main(void) 
+ { 
+ printf(""\""Greetings, ""ENGGEN131""""""\""); 
+ return 0; 
+ } 
+",0
+jhor229,1694855498,21," #include <stdio.h> 
+ /* This program displays a welcome message */ 
+ int main(void) 
+ { 
+  printf(""\""Greetings, ""ENGGEN131""\""""); 
+ return 0; 
+ } 
+",0
+jhor229,1694855743,22,"#include <stdio.h>
+
+int main()
+{
+   printf(""\""Hello World !!\"""");
+}",0
+jhor229,1694855765,23,"#include <stdio.h>
+
+int main()
+{
+   printf(""\Greetings, ""ENGGEN131""\"""");
+}",0
+jhor229,1694855940,24,"#include <stdio.h>
+
+int main()
+{
+   printf(""Greetings, ""\""ENGGEN131\"""");
+}
+
+printf(""\""Hello World !!\"""");",0
+jhor229,1694855946,25,"#include <stdio.h>
+
+int main()
+{
+   printf(""Greetings, ""\""ENGGEN131\"""");
+}
+",0
+jhor229,1694856125,26,"#include <stdio.h>
+
+int main()
+{
+   printf(""Greetings, """"\""ENGGEN131\"""");
+}
+
+printf(""\""Hello World !!\"""");",0
+jhor229,1694856130,27,"#include <stdio.h>
+
+int main()
+{
+   printf(""Greetings, """"\""ENGGEN131\"""");
+}
+",1
+jjon350,1694948792,1,"#include <stdio.h>
+
+int main (void)
+{
+    printf(""Greetings,\""ENGGEN 131\""\n"");
+    return 0;
+}",0
+jjon350,1694948820,2,"#include <stdio.h>
+
+int main (void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+jlah077,1694829898,1,"#include <stdio.h>
+
+void main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return;
+}",0
+jlah077,1694829912,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+jlal056,1694922572,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+}",1
+jlew699,1694918144,1,"int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",0
+jlew699,1694918164,2,"int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",0
+jlew699,1694918235,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+jli463,1694826968,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN 131\"""");
+	return 0;
+}",0
+jli463,1694827003,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+jli917,1694937067,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+jlia948,1694870451,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+jmak320,1694944827,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf('Greetings, ""ENGGEN131"" ');
+    return 0;
+}",0
+jmak320,1694945022,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" \n"");
+    return 0;
+}",1
+jmei608,1694834504,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+}",1
+jpat915,1694829424,1,"#include <stdio.h>
+int main()
+{
+printf(""Greetings, \""ENGGEN131"");
+return 0;
+}",0
+jpat915,1694829454,2,"#include <stdio.h>
+int main()
+{
+printf(""Greetings, \""ENGGEN131"""");
+return 0;
+}",0
+jpat915,1694829469,3,"#include <stdio.h>
+int main()
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}",1
+jpaz106,1695004103,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n "");
+	return 0;
+}",1
+jsan813,1695013174,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+jsch842,1694997259,1,"printf(""Greetings, \""ENGGEN131\""n"");",0
+jsch842,1694997306,2,"#include <stdio.h>
+printf(""Greetings, \""ENGGEN131\""n"");",0
+jsch842,1694997348,3,"#include <stdio.h>
+int main() {
+printf(""Greetings, \""ENGGEN131\""n"");
+return 0;
+}",0
+jsch842,1694997359,4,"#include <stdio.h>
+int main() {
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}",1
+jsch842,1694997616,5,"#include <stdio.h>
+int main(void) 
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}",1
+jshe464,1695006976,1,"int main(void)
+{
+    double r1 = 5;
+    double r2 = 3;
+    scanf_s(""%.2f%.2f"",&r1,&r2);
+    int r3 = 0;
+    r3=(r1 ^ r1) * 3.14159 - (r2 ^ r2) * 3.14159;
+    printf(""Larger:\n"");
+    printf(""Smaller:\n"");
+    printf(""Area: %.2f  cm^2\n"", r3);
+    return 0;",0
+jshe464,1695006989,2,"int main(void)
+{
+    double r1 = 5;
+    double r2 = 3;
+    scanf(""%.2f%.2f"",&r1,&r2);
+    int r3 = 0;
+    r3=(r1 ^ r1) * 3.14159 - (r2 ^ r2) * 3.14159;
+    printf(""Larger:\n"");
+    printf(""Smaller:\n"");
+    printf(""Area: %.2f  cm^2\n"", r3);
+    return 0;",0
+jshe464,1695011220,3,"#include <stdio.h>
+int r1 = 5;
+int r2 = 3;
+int main(void)
+{
+    printf(""Larger:\n"");
+    scanf_s(""%d"", &r1);
+    printf(""Smaller:\n"");
+    scanf_s(""%d"", &r2);
+    double r3 = 0;
+    r3 = (r1 * r1) * 3.14159 - (r2 * r2) * 3.14159;
+    printf(""Area: %.3f cm^2\n"", r3);
+    return 0;
+}",0
+jshe464,1695011232,4,"#include <stdio.h>
+int r1 = 5;
+int r2 = 3;
+int main(void)
+{
+    printf(""Larger:\n"");
+    
+    printf(""Smaller:\n"");
+   
+    double r3 = 0;
+    r3 = (r1 * r1) * 3.14159 - (r2 * r2) * 3.14159;
+    printf(""Area: %.3f cm^2\n"", r3);
+    return 0;
+}",0
+jshi444,1694837848,1,"#include <stdio.h>
+
+int main(void)
+{
+
+	printf(""Greetings, \""ENGGEN131\"" "");
+
+	return 0;
+}",1
+jshr431,1694948892,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+}",1
+jsin385,1694929689,1,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Grettings, //ENGGEN131//"")
+    return 0;
+    
+}",0
+jsin385,1694929755,2,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Grettings, \\ENGGEN131\\"")
+    return 0;
+    
+}",0
+jsin385,1694930016,3,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Grettings, \\ENGGEN131\n\"")
+    return 0;
+    
+}",0
+jsin385,1694930026,4,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Grettings, \\ENGGEN131\n\"");
+    return 0;
+    
+}",0
+jsin385,1694930129,5,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Grettings, \ ""ENGGEN131\n"");
+    return 0;
+    
+}",0
+jsin385,1694930176,6,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Grettings, \ ""ENGGEN131\"""");
+    
+    return 0;
+    
+}",0
+jsin385,1694930195,7,"#include <stdio.h>
+
+int main()
+
+{
+    printf(""Grettings, \ ""ENGGEN131\"""");
+    
+    return 0;
+    
+}",0
+jsin385,1694930267,8,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greetings, \""ENGGEN131\ "");
+    
+    return 0;
+    
+}",0
+jsin385,1694930292,9,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greetings, \""ENGGEN131\ """");
+    
+    return 0;
+    
+}",0
+jsin385,1694930311,10,"#include <stdio.h>
+
+int main()
+
+{
+    printf(""Greetings, \""ENGGEN131\ """");
+    
+    return 0;
+    
+}",0
+jsin385,1694930377,11,"#include <stdio.h>
+
+int main()
+
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    
+    return 0;
+    
+}",0
+jsin385,1694930429,12,"#include <stdio.h>
+
+int main()
+
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+    
+}",1
+jsta466,1694768675,1,"#include<stdio.h>
+
+int main()
+{
+    printf(""Hello World"");
+}",0
+jsta466,1694768690,2,"#include<stdio.h>
+
+int main()
+{
+    printf(""ENGGEN131"");
+}",0
+jsta466,1694768709,3,"#include<stdio.h>
+
+int main()
+{
+    printf(""Greeting, ""ENGGEN131"""""");
+}",0
+jsta466,1694768869,4,"#include<stdio.h>
+
+int main()
+{
+    printf(""Greeting, \""ENGGEN131\"");
+}",0
+jsta466,1694768887,5,"#include<stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+}",1
+jsta466,1694768897,6,"#include<stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+}",1
+jsun284,1694835072,1,"Console.WriteLine(""Greetings, ENGGEN131"");",0
+jsun284,1694835096,2,"WriteLine(""Greetings, ENGGEN131"");",0
+jwil813,1694833936,1,"#include <stdio.h>
+
+int	main(void)
+{
+	printf(""Grettings, \""ENGGEN131\"""");
+	return 0;
+}",0
+jwil813,1694833951,2,"#include <stdio.h>
+
+int	main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+jwon253,1694938074,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+jyua529,1694833825,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+jzho786,1694922616,1,"#include <stdio.h>
+stdio NOT studio
+
+int main(void)
+
+{
+	printf(Greetings, ""ENGGEN131""\n”);
+
+	return 0;
+}
+",0
+jzho786,1694922625,2,"#include <stdio.h>
+
+int main(void)
+
+{
+	printf(Greetings, ""ENGGEN131""\n”);
+
+	return 0;
+}
+",0
+jzho786,1694922644,3,"#include <stdio.h>
+
+int main(void)
+
+{
+	printf(""Greetings, ""ENGGEN131""\n”);
+
+	return 0;
+}
+",0
+jzho786,1694922710,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n”);
+    
+    return 0;
+}
+",0
+jzho786,1694922765,5,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+kcao565,1694844789,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+kcao657,1694933596,1,"printf(""Greetings, \""ENGGEN131\"""")",0
+kcao657,1694933655,2,"int main ()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",0
+kcao657,1694933662,3,"
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",0
+kcao657,1694933675,4,"
+    printf(""Greetings, \""ENGGEN131\"""");
+",0
+kcao657,1694933701,5,"printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+",0
+kcao657,1694933857,6,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}
+
+",1
+kgra470,1694936374,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+kjoe685,1694953688,1,"#include <stdio.h>
+
+// generic comment
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN121\"""");
+	return 0;
+}",0
+kjoe685,1694953703,2,"#include <stdio.h>
+
+// generic comment
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+kjun638,1694916546,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131 \n"");
+
+    return 0
+}",0
+kjun638,1694916682,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131 \n"");
+
+    return 0;
+}",0
+kjun638,1694916702,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"" \n"");
+
+    return 0;
+}",0
+kjun638,1694916715,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, 'ENGGEN131' \n"");
+
+    return 0;
+}",0
+kjun638,1694916823,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" \n"");
+
+    return 0;
+}",1
+kkha484,1694927042,1,"#include <stdio.h>
+
+int main(){
+
+    printf(""Greetings, \""ENGGEN131\"" \n"");\
+
+    return 0;
+
+}",1
+klam376,1694873782,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+kluc619,1694916767,1,"int main() {
+  printf(""Greetings, ""ENGGEN131"""");
+  return 0;
+}",0
+kluc619,1694916813,2,"int main() {
+  printf(""Greetings, "" + ""ENGGEN131"");
+  return 0;
+}",0
+kluc619,1694916822,3,"int main() {
+  printf(""Greetings, "");
+  return 0;
+}",0
+kluc619,1694916830,4,"int main(void) {
+  printf(""Greetings, "");
+  return 0;
+}",0
+kluc619,1694916863,5,"#include <stdio.h>
+
+int main(void) {
+  printf(""Greetings, "");
+  return 0;
+}",0
+kluc619,1694916883,6,"#include <stdio.h>
+
+int main(void) {
+  printf(""Greetings, ""ENGGEN131"" "");
+  return 0;
+}",0
+kluc619,1694916891,7,"#include <stdio.h>
+
+int main(void) {
+  printf(""Greetings, 'ENGGEN131' "");
+  return 0;
+}",0
+kluc619,1694916978,8,"#include <stdio.h>
+
+int main(void) {
+    x = ""ENGGEN131""
+  printf(""Greetings, ""x"" "");
+  return 0;
+}",0
+kluc619,1694916990,9,"#include <stdio.h>
+
+int main(void) {
+    x = ""ENGGEN131"";
+  printf(""Greetings, ""x"" "");
+  return 0;
+}",0
+kluc619,1694917086,10,"#include <stdio.h>
+
+int main(void) {
+  printf(""Greetings, """"ENGGEN131"""""");
+  return 0;
+}",0
+kluc619,1694917195,11,"#include <stdio.h>
+
+int main(void) {
+  printf(""Greetings, \""ENGGEN131\"""");
+  return 0;
+}",1
+kmcv530,1694921108,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+kqua446,1694798961,1,"printf(""Greetings, \""ENGGEN131\"""")",0
+kqua446,1694798986,2,"printf(""Greetings, \""ENGGEN131\"""");",0
+kqua446,1694799045,3,"int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",0
+kqua446,1694799076,4,"int main(void)
+{
+    printf(""Greetings, ENGGEN131"");
+    return 0;
+}",0
+kqua446,1694799339,5,"int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0;
+}",0
+kqua446,1694799461,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0;
+}",0
+kqua446,1694799475,7,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+ksai757,1694926446,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+ksik996,1694830024,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+kwil604,1694999318,1,"#include <stdio.h>
+
+int main(int argc, const char * argv[]) {
+    
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+kwil604,1694999350,2,"#include <stdio.h>
+
+int main(void) {
+    
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+kwil604,1694999362,3,"int main(void) {
+    
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+kwil604,1694999904,4,"#include <stdio.h>
+
+int main(void) {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+kyoo839,1694767183,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+kzha391,1694939772,1,"#include <stdio.h>
+
+/* Here is a program that prints a message */
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+} ",1
+laba812,1694931758,1,"#include <stdio.h>
+
+int main(void)
+{ 
+    printf(""Greetings, ""ENGGEN131""/n "");
+    return 0;
+}",0
+laba812,1694931917,2,"#include <stdio.h>
+
+int main(void)
+{ 
+    printf(""Greetings, \""ENGGEN131\""/n "" );
+    return 0;
+}",0
+laba812,1694931925,3,"#include <stdio.h>
+
+int main(void)
+{ 
+    printf(""Greetings, \""ENGGEN131\"" "" );
+    return 0;
+}",1
+lcam453,1695026309,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+lche668,1694940716,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+ldam917,1694929144,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""ENGGEN131\n"");
+    return 0;
+}",0
+ldam917,1694929188,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131\n"""");
+    return 0;
+}",0
+ldam917,1694929200,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n);
+    return 0;
+}",0
+ldam917,1694929208,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n"");
+    return 0;
+}",0
+ldam917,1694929227,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (""ENGGEN131\n"")"""");
+    return 0;
+}",0
+ldam917,1694929243,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131\n"""");
+    return 0;
+}",0
+ldam917,1694929255,7,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+ldam917,1694929395,8,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+lfan827,1694859564,1,"int main(void)
+{
+    print(""Greetings, ""ENGGEN131"""")
+    return 0;
+}",0
+lfan827,1694859630,2,"int main(void)
+{
+    print(""Greetings, ENGGEN131)
+    return 0;
+}",0
+lfan827,1695020969,3,"include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",0
+lfan827,1695021004,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+lhal844,1694850883,1,"#include <stdio.h>
+
+void main()
+{
+    printf(""Greetings, \""ENGGEN131\"""")
+}",0
+lhal844,1694850898,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+lhua313,1694949784,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}
+",0
+lhua313,1694949808,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"" "");
+
+    return 0;
+}
+",0
+lhua313,1694949826,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Hello World"");
+
+    return 0;
+}
+",0
+lhua313,1694949865,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"" "");
+
+    return 0;
+}
+",0
+lhua313,1694950074,5,"#include <stdio.h>
+
+int main()
+{
+    printf(""Hello \""World\"");
+
+    return 0;
+}",0
+lhua313,1694950096,6,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings \""ENGGEN131\"");
+
+    return 0;
+}",0
+lhua313,1694950150,7,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings \""ENGGEN131\"""");
+
+    return 0;
+}",0
+lhua313,1694950156,8,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+ljer106,1694782085,1,"printf('Greetings, ""ENGGEN131""')",0
+ljer106,1694782202,2,"printf('Greetings, ""ENGGEN131""');",0
+ljer106,1694782313,3,"int main(void)
+{
+    printf('Greetings, ""ENGGEN131""');
+    return 0;
+}",0
+ljer106,1694782331,4,"int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0;
+}",0
+ljer106,1694936013,5,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+ljon623,1694924368,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+ljun123,1695031635,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""  /\\-----/\\\n"");
+	printf("" /  \\---/  \\\n"");
+	printf(""< Lab Seven >\n"");
+	printf("" \\  /---\\  /\n"");
+	printf(""  \\/-----\\/\n"");
+	return 0;
+}
+",0
+llei074,1694849666,1,"#include <stdio.h>
+
+/* Here is a program that prints messages*/
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131"""");
+
+	return 0;
+
+}",0
+llei074,1694849711,2,"#include <stdio.h>
+
+/* Here is a program that prints messages*/
+int main()
+{
+	printf(""Greetings, ""ENGGEN131"""");
+
+	return 0;
+
+}",0
+llei074,1694849745,3,"#include <stdio.h>
+
+int main()
+{
+	printf(""Greetings, ENGGEN131"");
+
+	return 0;
+
+}",0
+llei074,1694849759,4,"#include <stdio.h>
+
+int main()
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+
+}",1
+llia622,1694858788,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+llu744,1695019853,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings \""ENGGEN131\"""");
+
+    return 0;
+}
+",0
+llu744,1695019862,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+lmen032,1694946326,1,"#include <stdio.h>
+
+int main(){
+
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0;
+}",0
+lmen032,1694946343,2,"#include <stdio.h>
+
+int main(){
+
+    printf(""Greetings, ""ENGGEN131""""\n);
+    return 0;
+}",0
+lmen032,1694946400,3,"#include <stdio.h>
+
+int main(){
+
+    printf(""Greetings, \""ENGGEN131\""""\n);
+    return 0;
+}",0
+lmen032,1694946495,4,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+lsal082,1695002494,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}
+",0
+lsal082,1695002549,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ENGGEN131\n"");
+	return 0;
+}
+",0
+lsal082,1695002573,3,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}
+",0
+lsal082,1695002634,4,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, 'ENGGEN131'\n"");
+	return 0;
+}
+",0
+lsal082,1695003847,5,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}
+",1
+lsen376,1694942946,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+lsha172,1694993325,1,"#include <stdio.h>
+
+int main(void)
+{
+    int x;
+    x = 12345;
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+
+    return 0;
+}
+",0
+lsha172,1694994102,2,"#include <stdio.h>
+
+int main(void)
+{
+    int x;
+
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+
+    return 0;
+}
+",0
+lsha172,1694994115,3,"#include <stdio.h>
+
+int main(void)
+{
+ 
+
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+
+    return 0;
+}
+",1
+lspu128,1694825281,1,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greeting, ENGGEN131\n"")
+    return 0;
+}",0
+lspu128,1694825305,2,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greeting, ENGGEN131\n"");
+    return 0;
+}",0
+lspu128,1694825313,3,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greetings, ENGGEN131\n"");
+    return 0;
+}",0
+lspu128,1694825323,4,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+lspu128,1694825331,5,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greetings, ENGGEN131\n"");
+    return 0;
+}",0
+lspu128,1694825570,6,"#include <stdio.h>
+
+int main(void)
+
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+lvan346,1694952539,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+}",1
+lvin900,1694993529,1,"#include<stdio.h>
+
+int main() {
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+mcam799,1694870710,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN 131\"""");
+    return 0;
+}
+",0
+mcam799,1694870725,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+mdav506,1694770051,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}   ",1
+mdea492,1694908420,1,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\""""); 
+return 0;
+}",1
+mfle888,1694912961,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+mfuj750,1694900904,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGNE131\""\n"");
+	return 0;
+}",0
+mfuj750,1694900926,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+mger154,1694932747,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}   ",1
+mhua821,1694938092,1,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+mkab524,1694956927,1,"#include <stdio.h>
+
+/* Here is a program that prints a message */
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+}",1
+mket106,1694967007,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN 131\""\n"");
+    return 0;
+}",0
+mket106,1694967024,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+mkim670,1694783231,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    return 0;
+}",0
+mkim670,1694796913,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+mkim719,1695003067,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+mmak111,1695009339,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}
+",1
+mman402,1694842137,1,"#include <stdio.h>
+int main ()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+mmas199,1694983053,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+mmoh456,1694811319,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings"",""ENGGEN131"");
+	return 0;",0
+mmoh456,1694811450,2,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings"", ""ENGGEN131"");
+	return 0;
+}",0
+mmoh456,1694811483,3,"#include <stdio.h>
+int main(void)
+{
+	printf(Greetings, ""ENGGEN131"");
+	return 0;
+}",0
+mmoh456,1694813079,4,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings,\""ENGGEN131\""\n"");
+
+	return 0;
+}",0
+mmoh456,1694813108,5,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+}",1
+mnay503,1695004606,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n""); 
+
+    return 0;
+}
+
+
+",1
+mnic190,1694996762,1,"printf(""Hello World!"");",0
+mnic190,1694996788,2,"int main() {
+  printf(""Hello World!"");
+  return 0;
+}",0
+mnic190,1694996826,3,"#include <stdio.h>
+
+int main() {
+  printf(""Hello World!"");
+  return 0;
+}",0
+mnic190,1694996848,4,"#include <stdio.h>
+
+int main() {
+  printf(""Greetings, ""ENGGEN131"""");
+  return 0;
+}",0
+mnic190,1694996913,5,"#include <stdio.h>
+
+int main() {
+  printf(""Greetings, \""ENGGEN131\"");
+  return 0;
+}",0
+mnic190,1694996929,6,"#include <stdio.h>
+
+int main() {
+  printf(""Greetings, \""ENGGEN131\"""");
+  return 0;
+}",1
+mpar342,1695018078,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+mpat501,1694780948,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+mran851,1694919252,1,"#include<stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131"""" \n"");
+
+		return 0;
+}",0
+mran851,1694919392,2,"#include<stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" \n"");
+
+		return 0;
+}",1
+mshi672,1694908499,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN 131\""\n"");
+		return 0;
+}",0
+mshi672,1694908519,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+		return 0;
+}",1
+msil440,1695022184,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf""(Greetings, ENGGEN131\n)"";
+    
+    return 0;
+}",0
+msil440,1695022242,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n"");
+    
+    return 0;
+}",0
+msil440,1695022254,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"");
+    
+    return 0;
+}",0
+msil440,1695022293,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    
+    return 0;
+}",0
+msil440,1695022317,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf((""Greetings, (""ENGGEN131"")"");
+    
+    return 0;
+}",0
+msil440,1695022334,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n"";
+    
+    return 0;
+}",0
+msil440,1695022359,7,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n"");
+    
+    return 0;
+}",0
+msil440,1695022396,8,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, """"ENGGEN131""""\n);
+    
+    return 0;
+}",0
+msil440,1695022410,9,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, """"ENGGEN131\n"""""");
+    
+    return 0;
+}",0
+msil440,1695022421,10,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, """"ENGGEN131\n"");
+    
+    return 0;
+}",0
+msil440,1695022429,11,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, """"ENGGEN131\n"""");
+    
+    return 0;
+}",0
+msil440,1695022488,12,"#include <stdio.h>
+
+int main(void)
+{
+    printf(Greetings, ""ENGGEN131\n"");
+    
+    return 0;
+}",0
+msil440,1695022497,13,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n"");
+    
+    return 0;
+}",0
+msil440,1695022670,14,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    
+    return 0;
+}",1
+msu975,1694840305,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131"""");
+	return 0;
+}",0
+msu975,1694840323,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ENGGEN131"""");
+	return 0;
+}",0
+msu975,1694840340,3,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ENGGEN131""\n"");
+	return 0;
+}",0
+msu975,1694840523,4,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}",0
+msu975,1694840794,5,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""""""""""""""""""""""""""""""""""""""""""""""""""Greetings, ""ENGGEN131"""""""""""""""""""""");
+	return 0;
+}",0
+msu975,1694842169,6,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""""""");
+	return 0;
+}",1
+mtam709,1694993742,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+mtha724,1694830205,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+nask472,1694850991,1,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}",1
+ndas832,1694818929,1,"int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",0
+ndas832,1694818981,2,"#include <stdio.h>
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+ndso791,1694825076,1,"#include <stdio.h>
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+    
+}",1
+ngan146,1694913048,1,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings, ""ENGGEN131"" "")
+}",0
+ngan146,1694913082,2,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings, ENGGEN131 "")
+    
+    return 0;
+}",0
+ngan146,1694913089,3,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings, ENGGEN131 "");
+    
+    return 0;
+}",0
+ngan146,1694913096,4,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings, ""ENGGEN131"" "");
+    
+    return 0;
+}",0
+ngan146,1694913108,5,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings, 'ENGGEN131' "");
+
+    return 0;
+}",0
+ngan146,1694913116,6,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings, """"ENGGEN131"""" "");
+
+    return 0;
+}",0
+ngan146,1694913270,7,"#include <stdio.h>
+
+int main(void)
+{
+    
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+ngna565,1694929855,1,"
+#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+nhut042,1694990687,1,"/*Author: Nicholas Hutt*/
+
+#include <stdio.h>
+
+int main()
+{
+    double a;
+    double d;
+    double n;
+    double sum;
+    
+    printf(""Enter the first value in the sequence:\n"");
+    scanf(""%lf"", &a);
+    
+    printf(""Enter the difference between consecutive values:\n"");
+    scanf(""%lf"", &d);
+    
+    printf(""Enter the number of values in the sequence:\n"");
+    scanf(""%lf"", &n);
+    
+    sum = (n * a) + (n / 2) * (d * n - d);
+    
+    printf(""Sum = %.0lf"", sum);
+    
+    return 0;
+}",0
+nhut042,1695004996,2,"/*Author: Nicholas Hutt*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+    
+    int large;
+    int small;
+    int items;
+    int largecount;
+    int smallcount;
+    int scrapcount;
+
+
+    printf(""Large capacity:\n"");
+    scanf(""%d"", &large);
+    
+    printf(""Small capacity:\n"");
+    scanf(""%d"", &small);
+    
+    printf(""Number of items:\n"");
+    scanf(""%d"", &items);
+    
+    printf(""hello"");
+    printf(""%d"", items);
+    printf(""%d"", small);
+    printf(""%d"", large);
+    
+    largecount = items / large;
+    
+    
+    
+    items = items - (large * largecount);
+    
+    smallcount = items / smallcount;
+    
+    scrapcount = items - (small * smallcount);
+    
+    
+    
+    printf(""Allocated:\n - Large: %d\n - Small: %d\n - Scrap: %d"", largecount, smallcount ,scrapcount);
+    return 0;
+
+}
+",0
+nhut042,1695005049,3,"/*Author: Nicholas Hutt*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+    
+    int large;
+    int small;
+    int items;
+    int largecount;
+    int smallcount;
+    int scrapcount;
+
+
+    printf(""Large capacity:\n"");
+    scanf(""%d"", &large);
+    
+    printf(""Small capacity:\n"");
+    scanf(""%d"", &small);
+    
+    printf(""Number of items:\n"");
+    scanf(""%d"", &items);
+    
+    printf(""hello"");
+    printf(""%d"", items);
+    printf(""%d"", small);
+    printf(""%d"", large);
+    
+    largecount = items / large;
+    
+    
+    
+    items = items - (large * largecount);
+    
+    smallcount = items / small;
+    
+    scrapcount = items - (small * smallcount);
+    
+    
+    
+    printf(""Allocated:\n - Large: %d\n - Small: %d\n - Scrap: %d"", largecount, smallcount ,scrapcount);
+    return 0;
+
+}
+",0
+nhut042,1695005063,4,"/*Author: Nicholas Hutt*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+    
+    int large;
+    int small;
+    int items;
+    int largecount;
+    int smallcount;
+    int scrapcount;
+
+
+    printf(""Large capacity:\n"");
+    scanf(""%d"", &large);
+    
+    printf(""Small capacity:\n"");
+    scanf(""%d"", &small);
+    
+    printf(""Number of items:\n"");
+    scanf(""%d"", &items);
+    
+    
+    
+    largecount = items / large;
+    
+    items = items - (large * largecount);
+    
+    smallcount = items / small;
+    
+    scrapcount = items - (small * smallcount);
+    
+    
+    
+    printf(""Allocated:\n - Large: %d\n - Small: %d\n - Scrap: %d"", largecount, smallcount ,scrapcount);
+    return 0;
+
+}
+",0
+nhut042,1695006318,5,"/*Author: Nicholas Hutt*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    int steps;
+    char nextletter;
+    int reps;
+    int ogsteps;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    
+    printf(""Enter steps:\n"");
+    scanf(""%d"", &ogsteps);
+    
+    steps = ogsteps;
+    
+    if (steps > 25)
+    {
+        reps = steps / 26;
+        printf(""reps %d\n"", reps);
+        
+        steps = steps - (reps * 26);
+    }
+    
+    
+    
+    if (letter + steps < 91)
+    {
+        nextletter = (char)(letter + steps);
+    }
+    else
+    {
+        nextletter = (char)((letter + steps) - 26);
+    }
+    
+    printf(""%c -- %d --> %c"", letter, ogsteps ,nextletter);
+    return 0;
+
+}
+
+
+",0
+nlal162,1694954306,1,"#include <stdio.h>
+
+int main()
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+nmah920,1694940798,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+}",1
+nrub019,1694820536,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+nrub019,1694820548,2,"#include <stdio.h>
+
+int main(void) {
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+nthe160,1694854172,1,"#include <stdio.h>
+
+int main()
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+ntia856,1694835208,1,"#include <stdio.h>
+/*
+Here is my first program!
+*/
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n""); // Prints welcome message
+    return 0;
+}",0
+ntia856,1694835223,2,"#include <stdio.h>
+/*
+Here is my first program!
+*/
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n""); // Prints welcome message
+    return 0;
+}",0
+ntia856,1694835268,3,"#include <stdio.h>
+/*
+Here is my first program!
+*/
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"" ""ENGGEN131""); // Prints welcome message
+    return 0;
+}",0
+ntia856,1694835287,4,"#include <stdio.h>
+/*
+Here is my first program!
+*/
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""\n"" ); // Prints welcome message
+    return 0;
+}",0
+ntia856,1694835397,5,"#include <stdio.h>
+/*
+Here is my first program!
+*/
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"" ); 
+    return 0;
+}",1
+nwei818,1694764468,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+obar199,1695018430,1,"printf(""Greetings, \""ENGGEN131\"""")",0
+obar199,1695018438,2,"printf(""Greetings, \""ENGGEN131\"""");",0
+obar199,1695018994,3,"#include <stdio.h>
+
+int main2(void) {
+
+	printf(""Greetings, \""ENGGEN131\"""");
+}",0
+obar199,1695019033,4,"#include <stdio.h>
+
+int main(void) {
+
+	printf(""Greetings, \""ENGGEN131\"""");
+}",1
+oguo680,1694858827,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+opat597,1694944823,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return(0);
+}",1
+opre469,1694830012,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+}",1
+orow585,1694841089,1,"#include <stdio.h>
+
+int main()
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+}",1
+osko432,1694934779,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+pchh683,1695012052,1,"#include <stdio.h>
+int main(void)
+{
+
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	
+
+	return 0; 
+}",1
+pfil701,1695021819,1,"include <stdio.h>
+
+int main()
+
+{
+printf (""Greetings, ENGGEN131"");
+
+return = 0;
+}",0
+pfil701,1695021862,2,"include <stdio.h>
+
+int main()
+
+{
+printf (""Greetings, ENGGEN131"");
+
+return 0;
+}",0
+pfil701,1695021891,3,"#include <stdio.h>
+
+int main()
+
+{
+printf (""Greetings, ENGGEN131"");
+
+return 0;
+}",0
+pfil701,1695021907,4,"#include <stdio.h>
+
+int main()
+
+{
+printf (""Greetings, ""ENGGEN131"");
+
+return 0;
+}",0
+pfil701,1695021943,5,"#include <stdio.h>
+
+int main()
+
+{
+printf (""Greetings, '(""ENGGEN131"")'"");
+
+return 0;
+}",0
+pfil701,1695022231,6,"#include <stdio.h>
+
+int main()
+
+{
+printf (""Greetings, \""ENGGEN131\"""");
+
+return 0;
+}",1
+pfil701,1695022243,7,"#include <stdio.h>
+
+int main()
+
+{
+printf (""Greetings, \""ENGGEN131""\"");
+
+return 0;
+}",0
+pfil701,1695022254,8,"#include <stdio.h>
+
+int main()
+
+{
+printf (""Greetings, \""ENGGEN131\"""");
+
+return 0;
+}",1
+ppax865,1695019088,1,"int main()
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}
+",0
+ppax865,1695019122,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}
+",0
+ppax865,1695019129,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""""");
+
+    return 0;
+}
+",0
+ppax865,1695019159,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+pper327,1694854352,1,"#include <stdio.h>
+int main(void)
+{
+	printf (""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+pwil422,1694946223,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+pyou182,1694848113,1,"#include <stdio.h>
+/*This program displays a message*/
+
+int main(void)
+{
+    printf(Greetings, ""ENGGEN131"" \n);
+    return 0;
+}",0
+pyou182,1694848152,2,"#include <stdio.h>
+/*This program displays a message*/
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"" \n"");
+    return 0;
+}",0
+pyou182,1694848251,3,"#include <stdio.h>
+/*This program displays a message*/
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" \n"");
+    return 0;
+}",1
+qzho943,1694920912,1,"
+#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""" )
+    return 0;
+}
+",0
+qzho943,1694920964,2,"
+#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""" );
+    return 0;
+}
+",1
+raic989,1694929305,1,"#include <stdio.h>
+
+int main(void)
+{
+ printf(""Greetings, ENGGEN131"");
+ return 0;
+    
+}",0
+raic989,1694930353,2,"#include <stdio.h>
+
+int main(void)
+{
+ printf(""Greetings, \""ENGGEN131\"""");
+ return 0;
+    
+}",1
+rchi339,1694929617,1,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\""\n"");
+
+return 0;
+}",1
+rdic384,1695003874,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}",0
+rdic384,1695004693,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+rgre692,1694996038,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+rhen291,1695035805,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGEN131\""\n"");
+	return 0;
+}",0
+rhen291,1695035823,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+rhua827,1694994462,1,"#include <stdio.h> 
+
+int main()
+{
+    printf(""Greetings"", ""ENGGEN131"");
+
+    return 0;
+}",0
+rhua827,1694994503,2,"#include <stdio.h> 
+
+int main()
+{
+    printf(""Greetings\""ENGGEN131\""\"");
+
+    return 0;
+}",0
+rhua827,1694995973,3,"#include <stdio.h> 
+
+int main()
+{
+    printf(""Greetings \""ENGGEN131\"""");
+
+    return 0;
+}",0
+rhua827,1694995987,4,"#include <stdio.h> 
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+rmar633,1694937683,1,"#include <stdio.h>
+
+int
+main()
+{
+
+    printf(""Greetings, \""ENGGEN131\"""")  ;  
+
+    return 0;
+}
+
+",1
+rmur989,1694928708,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Hello World"");
+
+    return 0;
+}
+",0
+rmur989,1694928739,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+rsha769,1694826909,1,"#include <stdio.h>
+
+int main (void)
+
+{
+    printf(""Greetings, \""ENGGEN131\"" \n"");
+    return 0;
+}",1
+rsha970,1694832534,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+rsin531,1694945983,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}
+",0
+rsin531,1694946007,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}
+",0
+rsin531,1694946052,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings"", ""ENGGEN131"");
+
+    return 0;
+}
+",0
+rsin531,1694946143,4,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings"""","" ""ENGGEN131"");
+
+    return 0;
+}
+",0
+rsin531,1694946152,5,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings"""",""  ""ENGGEN131"");
+
+    return 0;
+}
+",0
+rsin531,1694946157,6,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings"" "","" ""ENGGEN131"");
+
+    return 0;
+}
+",0
+rsin531,1694946287,7,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings"");
+    printf("","");
+    printf("""""");
+    printf(""ENGGEN131"")
+    printf("""""")
+    
+
+    return 0;
+}
+",0
+rsin531,1694946297,8,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings"");
+    printf("","");
+    printf("""""");
+    printf(""ENGGEN131"");
+    printf("""""");
+    
+
+    return 0;
+}
+",0
+rsin531,1694946314,9,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings"");
+    printf("","");
+    printf(""ENGGEN131"");
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946407,10,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"" );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946419,11,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131"" );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946428,12,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131""\ );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946439,13,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"" );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946452,14,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131""\ );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946458,15,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131"" );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946464,16,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131 );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946470,17,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131"""" );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946474,18,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131"" );
+    
+    
+    
+
+    return 0;
+}
+",0
+rsin531,1694946506,19,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""" );
+    
+    
+    
+
+    return 0;
+}
+",1
+rtan654,1695002827,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+sali153,1694906360,1,"#include <stdio.h>
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+sbas887,1694857714,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"" "");
+    
+}",0
+sbas887,1694863206,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" "");
+    
+}",1
+sbha564,1694778374,1,"printf(""Greetings, \""ENGGEN131\""\n"");
+",0
+sbha564,1694778383,2,"int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",0
+sbha564,1694941173,3,"int main() 
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",0
+sbha564,1694941230,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, /""ENGGEN131/"""");
+
+    return 0;
+
+    
+}",0
+sbha564,1694941252,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+
+    
+}",1
+scar362,1694922776,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return(0);
+}   ",0
+scar362,1694922799,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, 'ENGGEN131'"");
+    return(0);
+}   ",0
+scar362,1694922830,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return(0);
+}   ",0
+scar362,1694922862,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, "" ENGGEN131 """");
+    return(0);
+}   ",0
+scar362,1694922930,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131""\"");
+    return(0);
+}   ",0
+scar362,1694922936,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return(0);
+}   ",1
+schb278,1695030975,1,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, ENGGEN131"")
+    return 0;
+
+}",0
+schb278,1695031017,2,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, ENGGEN131"");
+    return 0;
+
+}",0
+schb278,1695031030,3,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, ""ENGGEN131"""""");
+    return 0;
+
+}",0
+schb278,1695031041,4,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, """"ENGGEN131"""");
+    return 0;
+
+}",0
+schb278,1695031053,5,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, ENGGEN131"");
+    return 0;
+
+}",0
+schb278,1695031092,6,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, (""ENGGEN131"")"");
+    return 0;
+
+}",0
+schb278,1695031100,7,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0;
+
+}",0
+schb278,1695031108,8,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, ENGGEN131"");
+    return 0;
+
+}",0
+schb278,1695032751,9,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, ""\ENGGEN131\"""""");
+    return 0;
+
+}",0
+schb278,1695032758,10,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, ""\ENGGEN131\"""");
+    return 0;
+
+}",0
+schb278,1695032784,11,"#include <stdio.h> 
+int main(void)
+
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+
+}",1
+schu718,1694867167,1,"include <stdio.h> 
+
+int main(void)
+
+{ 
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+    
+}
+",0
+schu718,1694867177,2,"#include <stdio.h> 
+
+int main(void)
+
+{ 
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+    
+}
+",1
+scol559,1694924329,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+sdal739,1694948134,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+sden589,1695014249,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+sfry192,1694936228,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""ENGGEN131"");
+    
+    return 0;
+
+
+}",0
+sfry192,1694936280,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings,""ENGGEN131"""");
+    
+    return 0;
+
+
+}",0
+sfry192,1694936358,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings,ENGGEN131);
+    
+    return 0;
+
+
+}",0
+sfry192,1694936388,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings"""",ENGGEN131"");
+    
+    return 0;
+
+
+}",0
+sfry192,1694936666,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings,\""ENGGEN131\"""");
+    
+    return 0;
+
+
+}",0
+sfry192,1694936704,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+
+
+}",1
+sgib237,1694910959,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}
+",1
+shan333,1695005005,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, """"ENGGEN131""""\n"");
+    return 0;
+}
+",0
+shan333,1695005219,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+
+",1
+shan790,1694832829,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+shsa718,1695003758,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf (""Greetings, \""ENGGEN131\"""");
+    return 0;
+}
+",1
+shum116,1694770062,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings,\""ENGGEN131\""\n"");
+	return 0;
+}
+",0
+shum116,1694770167,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}
+",1
+sjai563,1694935028,1,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    
+    return 0;
+}
+",1
+sjob296,1694861391,1,"#include <stdio.h> 
+
+int main(void) 
+{ 
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}",0
+sjob296,1694861417,2,"#include <stdio.h> 
+
+int main(void) 
+{ 
+	printf(""Greetings, ENGGEN131\n"");
+	return 0;
+}",0
+sjob296,1694862057,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" \n"");
+    return 0;
+}
+",1
+skan221,1694915316,1,"#include <stdio.h>
+
+/* This program displays a welcome message */ int main (void)
+{
+    printf(""Hello,world\n"");
+    return 0;
+}",0
+skan221,1694915661,2,"#include <stdio.h>
+
+/* This program displays a welcome message */ int main (void)
+{
+    printf(""Hello \ ""World\"""");
+    return 0;
+}",0
+skop291,1694927886,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}",0
+skop291,1694927934,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (ENGGEN131!);
+
+    return 0;
+}",0
+skop291,1694927939,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (ENGGEN131!)"";
+
+    return 0;
+}",0
+skop291,1694927961,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (ENGGEN131!)\n"";
+
+    return 0;
+}",0
+skop291,1694928011,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""hello, world\n"";
+
+    return 0;
+}",0
+skop291,1694928466,6,"#include <stdio.h>
+
+int main()
+{
+    printf(""greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",0
+skop291,1694928475,7,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+slie508,1694986438,1,"#include <stdio.h>
+
+int main() 
+{
+    printf(""Greetings, ""ENGGEN131"" \n"");
+    return 0;
+}
+",0
+slie508,1694986586,2,"#include <stdio.h>
+
+int main() 
+{
+    printf(""Greetings, """"ENGGEN131"""" \n"");
+    return 0;
+}
+",0
+slie508,1694986669,3,"#include <stdio.h>
+
+int main() 
+{
+    printf(""Greetings, \""ENGGEN131\""""\n"");
+    return 0;
+}
+",0
+slie508,1694986683,4,"#include <stdio.h>
+
+int main() 
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+sluo487,1694910251,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}
+",1
+snas404,1695006028,1,"#include <stdio.h>
+
+/* Here is a program that prints a message */
+int main(void)
+{
+	printf(""Greetings \""ENGGEN131\""\n"");
+
+	return 0;
+}",0
+snas404,1695006068,2,"#include <stdio.h>
+
+/* Here is a program that prints a message */
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+}",1
+span558,1694839158,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+spar820,1695000856,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}
+
+",1
+sran136,1694856072,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+ssan467,1694919425,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" "");
+	return 0;
+}",1
+ssey266,1694959639,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, 'ENGGEN 131'\n"");
+    return 0;
+}",0
+ssey266,1694959971,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN 131\""\n"");
+    return 0;
+}",0
+ssey266,1694960005,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+sum778,1694910307,1,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+
+		return 0;
+}",0
+sum778,1694910335,2,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, """"ENGGEN131""\n"");
+
+		return 0;
+}",0
+sum778,1694910366,3,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131\n"");
+
+		return 0;
+}",0
+sum778,1694910386,4,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n);
+
+		return 0;
+}",0
+sum778,1694910409,5,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131""\n);
+
+		return 0;
+}",0
+sum778,1694910455,6,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131"")\n;
+
+		return 0;
+}",0
+sum778,1694910472,7,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131"");\n;
+
+		return 0;
+}",0
+sum778,1694910491,8,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131"");/n;
+
+		return 0;
+}",0
+sum778,1694910518,9,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131"");\n"";
+
+		return 0;
+}",0
+sum778,1694910525,10,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131"");\n;
+
+		return 0;
+}",0
+sum778,1694910573,11,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131"");
+
+		return 0;
+}",0
+sum778,1694910588,12,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131"""""");
+
+		return 0;
+}",0
+sum778,1694910596,13,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ENGGEN131"");
+
+		return 0;
+}",0
+sum778,1694910635,14,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131"");
+
+		return 0;
+}",0
+sum778,1694910645,15,"#include <stdio.h>
+
+/*this program has been wriiten by millions of people! */
+int main(void)
+{
+	printf(""Greetings, """"ENGGEN131"""");
+
+		return 0;
+}",0
+sum778,1694911859,16,"#include <stdio.h>
+
+/*this program has been written by millions of people! */
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+}",1
+sval918,1694953956,1,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n"");
+    return: 0;
+    
+}",0
+sval918,1694953978,2,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main()
+{
+    printf(""Greetings, ENGGEN131""\n);
+    return: 0;
+    
+}",0
+sval918,1694954025,3,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n"");
+    return 0;
+    
+}",0
+sval918,1694954040,4,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"" \n"");
+    return 0;
+    
+}",0
+sval918,1694954057,5,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131"""" \n);
+    return 0;
+    
+}",0
+sval918,1694954073,6,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings, 'ENGGEN131'"" \n);
+    return 0;
+    
+}",0
+sval918,1694954144,7,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings, 'ENGGEN131' ""\n)
+    return 0;
+    
+}",0
+sval918,1694955011,8,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings"" + '""ENGGEN131""'\n)
+    return 0;
+    
+}",0
+sval918,1694955035,9,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings"" + '""ENGGEN131""'\n);
+    return 0;
+    
+}",0
+sval918,1694955078,10,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings"" + '""ENGGEN131'\n"");
+    return 0;
+    
+}",0
+sval918,1694955435,11,"#include <stdio.h>
+
+/* This program displays a welcome message */
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"" );
+    return 0;
+    
+}",1
+swan472,1694927581,1,"#include <stdio.h> 
+int main();
+{
+    printf(""Greetings,\""ENGGEN131\"""");
+    return 0;
+}",0
+swan472,1694927669,2,"#include <stdio.h>
+
+int main() {
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}
+",1
+tbar968,1694837329,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+		return 0;
+}",1
+tbed601,1695003800,1,"#incluse <stdio.h>
+{
+int main(void)
+printf(""Greetings, /""ENGGEN131"""");
+return 0;
+}",0
+tbed601,1695003958,2,"#incluse <stdio.h>
+#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}
+",0
+tbed601,1695003978,3,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}
+",1
+tbri557,1694926496,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+tche867,1694925444,1,"#include <stdio.h> 
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+tcoo725,1694860957,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" );
+
+    return 0;
+}",0
+tcoo725,1694861026,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"" );
+
+    return 0;
+}",1
+tden200,1694826284,1,"#include<stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131"" \n"");
+	return 0;
+}",0
+tden200,1694826379,2,"#include<stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, (""ENGGEN131"") \n"");
+	return 0;
+}",0
+tden200,1694826443,3,"#include<stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ENGGEN131 \n"");
+	return 0;
+}",0
+tden200,1694827597,4,"#include<stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" \n"");
+	return 0;
+}",1
+tdha392,1694841209,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+
+	return 0;
+
+}",0
+tdha392,1694960565,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+
+}",1
+tdu824,1694861281,1,"#include <stdio.h>
+int main(void)
+{ 
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+tfai092,1694924071,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+tfai653,1694930836,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGEN131\""\n"");
+
+    return 0; 
+}
+",0
+tfai653,1694930851,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0; 
+}
+",1
+thar970,1694839749,1,"printf(""Greetings, \""ENGGEN131\"""");",0
+thar970,1694839771,2,"#include <stdio.h>
+int main(){
+    printf(""Greetings, \""ENGGEN131\"""");    
+}
+
+",1
+thid924,1694999323,1,"printf(""Greetings, \""ENGGEN131\"""")",0
+thid924,1694999336,2,"printf(""Greetings, /""ENGGEN131/"""")",0
+thid924,1694999382,3,"printf(""Greetings, \""ENGGEN131"""")",0
+thid924,1694999402,4,"printf(""Greetings, \""ENGGEN131\"""")",0
+thid924,1695006696,5,"#include <stdio.h>
+int main(void)
+{
+
+	printf(""Greetings, \""ENGGEN131\"""");
+
+}",1
+thua238,1694918610,1,"#include <stdio.h>
+
+int main(void)
+{
+    /*display greeting to ENGGEN 131*/
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}
+",1
+tkan918,1695030079,1,"#include <stdio.h> 
+int main(void)
+{ 
+printf(""ENGGEN131"");
+return 0;
+} ",0
+tkan918,1695030088,2,"#include <stdio.h> 
+int main(void)
+{ 
+printf(""Greetings, ENGGEN131"");
+return 0;
+} ",0
+tkan918,1695030102,3,"#include <stdio.h> 
+int main(void)
+{ 
+printf(""Greetings, \""ENGGEN131\"""""");
+return 0;
+} ",0
+tkan918,1695030121,4,"#include <stdio.h> 
+int main(void)
+{ 
+printf(""Greetings, """"ENGGEN131"""";
+return 0;
+} ",0
+tkan918,1695030126,5,"#include <stdio.h> 
+int main(void)
+{ 
+printf(""Greetings, """"ENGGEN131"""");
+return 0;
+} ",0
+tkan918,1695030156,6,"#include <stdio.h> 
+int main(void)
+{ 
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+} ",1
+tlal352,1695016641,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+tlin438,1694950710,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+
+	return 0;
+
+}",1
+tluu816,1694920900,1,"#include <stdio.h>
+/*here is a program that prints the message ""Hello, world (ENGGEN131)""*/
+int main <void>
+{
+    printf(""Greetings, ""ENGGEN131"""")
+
+    return 0;
+}",0
+tluu816,1694920931,2,"#include <stdio.h>
+/*here is a program that prints the message ""Hello, world (ENGGEN131)""*/
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""")
+
+    return 0;
+}",0
+tluu816,1694920955,3,"#include <stdio.h>
+/*here is a program that prints the message ""Hello, world (ENGGEN131)""*/
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}",0
+tluu816,1694921007,4,"#include <stdio.h>
+/*here is a program that prints the message ""Hello, world (ENGGEN131)""*/
+int main()
+{
+    printf(""Greetings, ENGGEN131"");
+
+    return 0;
+}",0
+tluu816,1694921374,5,"#include <stdio.h>
+/*here is a program that prints the message ""Hello, world (ENGGEN131)""*/
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+tmcl219,1694825377,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+
+    return 0;
+}
+",1
+tsan986,1694846868,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+    
+    
+}",1
+ttho505,1694934490,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings \""ENGGEN131\"""");
+        return 0;
+}",0
+ttho505,1694934497,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+        return 0;
+}",1
+twol698,1694924974,1,"int main(){
+    printf(""Greetings, \""ENGGEN131\"" "");
+    return 0;
+}",0
+twol698,1694925038,2,"#include<stdio.h>
+
+int main(){
+    printf(""Greetings, \""ENGGEN131\"" "");
+    return 0;
+}",1
+tyou333,1694841397,1,"#include <stdio.h>
+
+int main(void) {
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+tyou421,1694824017,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+tzho903,1695003389,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}
+",1
+uali517,1694891935,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+vlai276,1694951480,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ""ENGGEN131""/n"")
+    return 0;
+}",0
+vlai276,1694951706,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, """"ENGGEN131""""""/n"")
+    return 0;
+}",0
+vlai276,1694951759,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (ENGGEN131)/n"")
+    return 0;
+}",0
+vlai276,1694951801,4,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (ENGGEN131)/n"");
+    return 0;
+}",0
+vlai276,1694952042,5,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"");
+    return 0;
+}",0
+vlai276,1694952090,6,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, ENGGEN131\n);
+    return 0;
+}",0
+vlai276,1694952098,7,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, (ENGGEN131)\n);
+    return 0;
+}",0
+vlai276,1694952182,8,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"");
+    return 0;
+}",0
+vlai276,1694952199,9,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+vpat188,1694804633,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+vpol480,1694831982,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"" \n"");
+    return 0;
+}",1
+vto869,1695009079,1,"#include <stdio.h>
+/*This program displays a welcome message*/
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"" \n"");
+	return 0;
+
+}",1
+vwu693,1694995453,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+wlin709,1694988452,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;",0
+wlin709,1694988489,2,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+}",0
+wlin709,1694988545,3,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131""\n"");
+	return 0;
+}",0
+wlin709,1694988596,4,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+}",1
+wliy226,1695001686,1,"#include <stdio.h>
+int main() {
+   printf(""Greetings, ""ENGGEN131"");
+   return 0;
+}
+",0
+wliy226,1695001706,2,"#include <studio.h>
+int main(void) {
+   printf(""Greetings, ""ENGGEN131"");
+   return 0;
+}
+",0
+wliy226,1695001711,3,"#include <studio>
+int main(void) {
+   printf(""Greetings, ""ENGGEN131"");
+   return 0;
+}
+",0
+wliy226,1695001716,4,"
+int main(void) {
+   printf(""Greetings, ""ENGGEN131"");
+   return 0;
+}
+",0
+wmas516,1694841614,1,"int main
+{
+    printf(""Greetings, ENGGEN131"");
+    return(0);
+}",0
+wmas516,1694841618,2,"int main{
+    printf(""Greetings, ENGGEN131"");
+    return(0);
+}",0
+wmas516,1694841652,3,"#include <stdio.h>
+int main{
+    printf(""Greetings, ENGGEN131"");
+    return(0);
+}",0
+wmas516,1694841683,4,"#include <stdio.h>
+int main(){
+    printf(""Greetings, ENGGEN131"");
+    return(0);
+}",0
+wmas516,1694841703,5,"#include <stdio.h>
+int main(){
+    printf(""Greetings, """"ENGGEN131"""""");
+    return(0);
+}",0
+wmas516,1694841785,6,"#include <stdio.h>
+int main(){
+    printf(""Greetings,\$ENGGEN131\$"");
+    return(0);
+}",0
+wmas516,1694841827,7,"#include <stdio.h>
+int main(){
+    printf(""Greetings,""+""\$""+""ENGGEN131""+""\$"");
+    return(0);
+}",0
+wmas516,1694841854,8,"#include <stdio.h>
+int main(){
+    printf(""Greetings,\$+ENGGEN131\$"");
+    return(0);
+}",0
+wmas516,1694841965,9,"#include <stdio.h>
+int main(){
+    printf(""Greetings,\ ENGGEN131\ "");
+    return(0);
+}",0
+wmas516,1694841971,10,"#include <stdio.h>
+int main(){
+    printf(""Greetings,\$ ENGGEN131\$ "");
+    return(0);
+}",0
+wmas516,1694841987,11,"#include <stdio.h>
+int main(){
+    printf(""Greetings,\""ENGGEN131\"""");
+    return(0);
+}",0
+wmas516,1694841994,12,"#include <stdio.h>
+int main(){
+    printf(""Greetings, \""ENGGEN131\"""");
+    return(0);
+}",1
+wmas516,1694859016,1,"#include <stdio.h>
+#include <math.h>
+int main(void) {
+	char letter;
+	int step;
+	char newloc;
+	int temp;
+	printf(""Enter letter:"");
+	scanf(""%c"",&letter);
+	printf(""\nEnter steps:"");
+    scanf(""%d"", &step);
+  	if (step > 25) {
+	    temp = round(((step / 26.f) - (step / 26)) * 26.f);
+    }
+    else {
+	    temp = step;
+    }
+
+    newloc = letter + temp;
+    
+    if (newloc > 90) {
+    	newloc -= 26;
+    }
+    else if (newloc < 65) {
+    	newloc += 26;
+    }
+
+	printf(""\n%c -- %d --> %c"", letter, step, newloc);
+
+	return 0;
+}",0
+wmas516,1694859038,2,"#include <stdio.h>
+
+int main(void) {
+	char letter;
+	int step;
+	char newloc;
+	int temp;
+	printf(""Enter letter:"");
+	scanf(""%c"",&letter);
+	printf(""\nEnter steps:"");
+    scanf(""%d"", &step);
+  	if (step > 25) {
+	    temp = (step / 26.f) - (step / 26)) * 26.f;
+    }
+    else {
+	    temp = step;
+    }
+
+    newloc = letter + temp;
+    
+    if (newloc > 90) {
+    	newloc -= 26;
+    }
+    else if (newloc < 65) {
+    	newloc += 26;
+    }
+
+	printf(""\n%c -- %d --> %c"", letter, step, newloc);
+
+	return 0;
+}",0
+wmas516,1694859052,3,"#include <stdio.h>
+
+int main(void) {
+	char letter;
+	int step;
+	char newloc;
+	int temp;
+	printf(""Enter letter:"");
+	scanf(""%c"",&letter);
+	printf(""\nEnter steps:"");
+    scanf(""%d"", &step);
+  	if (step > 25) {
+	    temp = ((step / 26.f) - (step / 26)) * 26.f;
+    }
+    else {
+	    temp = step;
+    }
+
+    newloc = letter + temp;
+    
+    if (newloc > 90) {
+    	newloc -= 26;
+    }
+    else if (newloc < 65) {
+    	newloc += 26;
+    }
+
+	printf(""\n%c -- %d --> %c"", letter, step, newloc);
+
+	return 0;
+}",0
+wmas516,1694859086,4,"#include <stdio.h>
+
+int main(void) {
+	char letter = ""Q"";
+	int step = 123;
+	char newloc;
+	int temp;
+	printf(""Enter letter:"");
+	//scanf(""%c"",&letter);
+	printf(""\nEnter steps:"");
+    //scanf(""%d"", &step);
+  	if (step > 25) {
+	    temp = ((step / 26.f) - (step / 26)) * 26.f;
+    }
+    else {
+	    temp = step;
+    }
+
+    newloc = letter + temp;
+    
+    if (newloc > 90) {
+    	newloc -= 26;
+    }
+    else if (newloc < 65) {
+    	newloc += 26;
+    }
+
+	printf(""\n%c -- %d --> %c"", letter, step, newloc);
+
+	return 0;
+}",0
+wmas516,1694859096,5,"#include <stdio.h>
+
+int main(void) {
+	char letter = 'Q';
+	int step = 123;
+	char newloc;
+	int temp;
+	printf(""Enter letter:"");
+	//scanf(""%c"",&letter);
+	printf(""\nEnter steps:"");
+    //scanf(""%d"", &step);
+  	if (step > 25) {
+	    temp = ((step / 26.f) - (step / 26)) * 26.f;
+    }
+    else {
+	    temp = step;
+    }
+
+    newloc = letter + temp;
+    
+    if (newloc > 90) {
+    	newloc -= 26;
+    }
+    else if (newloc < 65) {
+    	newloc += 26;
+    }
+
+	printf(""\n%c -- %d --> %c"", letter, step, newloc);
+
+	return 0;
+}",0
+wmas516,1694859118,6,"#include <stdio.h>
+#include <math.h>
+int main(void) {
+	char letter = 'Q';
+	int step = 123;
+	char newloc;
+	int temp;
+	printf(""Enter letter:"");
+	//scanf(""%c"",&letter);
+	printf(""\nEnter steps:"");
+    //scanf(""%d"", &step);
+  	if (step > 25) {
+	    temp = round(((step / 26.f) - (step / 26)) * 26.f);
+    }
+    else {
+	    temp = step;
+    }
+
+    newloc = letter + temp;
+    
+    if (newloc > 90) {
+    	newloc -= 26;
+    }
+    else if (newloc < 65) {
+    	newloc += 26;
+    }
+
+	printf(""\n%c -- %d --> %c"", letter, step, newloc);
+
+	return 0;
+}",0
+wwu295,1694851907,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+xche362,1694920592,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+xkan320,1694814014,1,"#include <stdio.h>
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"""");
+return 0;
+}
+",1
+xtan207,1694985138,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+yayo322,1694947929,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+ybha528,1694859435,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131\n"""");
+	return 0
+
+}",0
+ybha528,1694859477,2,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ENGGEN131\n"");
+	return 0
+
+}",0
+ybha528,1694859523,3,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ENGGEN131\n"");
+	return 0;
+
+}",0
+ybha528,1694859537,4,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, ""ENGGEN131""\n"");
+	return 0;
+
+}",0
+ybha528,1694859663,5,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \ ""ENGGEN131\""\n"");
+	return 0;
+
+}",0
+ybha528,1694859710,6,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\""\n"");
+	return 0;
+
+}",1
+ycho749,1695000716,1,"#include <stdio.h>
+
+int main() 
+{
+
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+
+}",1
+ycho749,1695001842,2,"#include <stdio.h>
+
+int main() 
+{
+
+    printf(""Greetings, ""ENGGEN131"""");
+    return 0;
+
+}",0
+ycho749,1695001847,3,"#include <stdio.h>
+
+int main() 
+{
+
+    printf(""Greetings, ""ENGGEN131"");
+    return 0;
+
+}",0
+ycho749,1695001853,4,"#include <stdio.h>
+
+int main() 
+{
+
+    printf(""Greetings, ""\ENGGEN131\"");
+    return 0;
+
+}",0
+ycho749,1695001905,5,"#include <stdio.h>
+
+int main() 
+{
+
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+
+",0
+ycho749,1695001942,6,"#include <stdio.h>
+
+int main() 
+{
+
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+
+}",1
+ycho760,1694947506,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings \""Enggen 131\"" "");
+
+    return 0;
+}",0
+ycho760,1694947543,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""Enggen 131\"" "");
+
+    return 0;
+}",0
+ycho760,1694947574,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"" "");
+
+    return 0;
+}",1
+ydar075,1694991697,1,"#include <stdio.h>
+
+int main(void) {
+	printf(""Greetings, \""ENGGEN131\"" "");
+	return 0;
+}",1
+yilm466,1694834385,1,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"""")
+
+return 0
+}",0
+yilm466,1694834398,2,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, ""ENGGEN131"""");
+
+return 0
+}",0
+yilm466,1694834870,3,"#include <stdio.h>
+
+int main(void)
+{
+printf(""Greetings, \""ENGGEN131\"" "");
+
+return 0;
+}",1
+ykwa219,1694843719,1,"#include <stdio.h>
+
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+ylee818,1694910564,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, ""ENGGEN131"""");
+
+    return 0;
+}",0
+ylee818,1694911536,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+ytse120,1694764313,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+zcra120,1694764864,1,"#include <stdio.h>
+
+int main()
+{
+    printf(""Hello World"");
+
+    return 0;
+}",0
+zcra120,1694764971,2,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131""\"");
+
+    return 0;
+}",0
+zcra120,1694764987,3,"#include <stdio.h>
+
+int main()
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+
+    return 0;
+}",1
+zfu276,1694820731,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    printf(""  /\\-----/\\\n"");
+    printf("" /  \\---/  \\\n"");
+    printf(""< Lab Seven >\n"");
+    printf("" \\  /---\\  /\n"");
+    printf(""  \\/-----\\/"");
+
+    return 0;
+}",0
+zgas053,1695013839,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+
+}",1
+zhon780,1695027136,1,"// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    cout << ""Greetings, \""ENGGEN131\"""" << endl;
+    
+    return 0;
+}",0
+zhon780,1695027142,2,"// Online C++ compiler to run C++ program online
+#include iostream
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    cout << ""Greetings, \""ENGGEN131\"""" << endl;
+    
+    return 0;
+}",0
+zhon780,1695027233,3,"// Online C++ compiler to run C++ program online
+#include <stdio.h>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    cout << ""Greetings, \""ENGGEN131\"""" << endl;
+    
+    return 0;
+}",0
+zhon780,1695027245,4,"// Online C++ compiler to run C++ program online
+#include <stdio.h>
+
+int main() {
+    // Write C++ code here
+    std::cout << ""Greetings, \""ENGGEN131\"""" << endl;
+    
+    return 0;
+}",0
+zhon780,1695027285,5,"// Online C++ compiler to run C++ program online
+#include <stdio.h>
+
+int main() {
+    // Write C++ code here
+    printf (""Greetings, \""ENGGEN131\"""");
+    
+    return 0;
+}",1
+zliu578,1694846492,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+
+	return 0;
+}",1
+zpen457,1694936805,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"");
+    return 0;
+}",0
+zpen457,1694936848,2,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\"""");
+    return 0;
+}",1
+zshi453,1694770299,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Greetings, \""ENGGEN131\""\n"");
+    return 0;
+}",1
+zyah987,1694813573,1,"#include <stdio.h>
+int main(void)
+{
+	printf(""Greetings, \""ENGGEN131\"""");
+	return 0;
+}",1
+zzol692,1695024506,1,"#include <stdio.h>
+int main(void)
+{
+
+	printf(""Greetings, \""ENGGEN131\"" \n"");
+
+	return 0;
+}",1

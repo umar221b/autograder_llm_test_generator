@@ -6,7 +6,7 @@ module ProgrammingLanguages
   PROGRAMMING_LANGUAGES = [
     PROGRAMMING_LANGUAGE_C = 'c'.freeze,
     PROGRAMMING_LANGUAGE_PYTHON3 = 'python3'.freeze
-  ]
+  ].freeze
 
   included do
   end

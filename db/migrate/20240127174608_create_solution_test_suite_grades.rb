@@ -8,6 +8,6 @@ class CreateSolutionTestSuiteGrades < ActiveRecord::Migration[7.0]
       t.timestamps
     end
 
-    add_index :solution_test_suite_grades, [:test_suite_id, :solution_id]
+    add_index :solution_test_suite_grades, [:test_suite_id, :solution_id], name: 'solution_test_suite_index'
   end
 end

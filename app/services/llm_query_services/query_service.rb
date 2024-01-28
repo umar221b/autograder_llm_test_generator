@@ -20,7 +20,6 @@ module LlmQueryServices
       @llm_query = LlmQuery.new(
         problem_statement: @problem_statement,
         reference_solution: @reference_solution,
-        reference_solution_digest: Digest::MD5.hexdigest(@reference_solution),
         programming_language: @programming_language,
         ai_model: Rails.application.credentials.dig(:openai, :model),
         temperature: Rails.application.credentials.dig(:openai, :temperature),

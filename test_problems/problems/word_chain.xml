@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 312029  -->
+  <question type="coderunner">
+    <name>
+      <text>Word chain</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Carefully review the "word chain" game, as described in the Lab 11 preparation document and illustrated in class:</p><p>Define the following function:<br></p><pre>&nbsp;&nbsp;&nbsp; int OneLetterDifference(char *word1, char *word2)</pre><p>This function takes two words as inputs.&nbsp; You can assume that both words will have come from a word list containing words of length 4, and therefore both words will be of length 4.&nbsp; This function must compare each word – character by character – and return true (i.e. 1) only if there is exactly one character that differs between the two words.&nbsp; Apart from this one character, all other characters must be identical and in the same positions.</p><p>Note: The constant WORD_LENGTH is defined to be 5 (this provides space for the characters in the word and the null terminating character). <br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_function</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>1</allornothing>
+    <penaltyregime>0, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>18</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+#define SEPARATOR "#<ab@17943918#@>#"
+
+#define WORD_LENGTH 5
+
+{{ STUDENT_ANSWER }}
+
+int main() {
+{% for TEST in TESTCASES %}
+   {
+    {{ TEST.testcode }};
+   }
+    {% if not loop.last %}printf("%s\n", SEPARATOR);{% endif %}
+{% endfor %}
+    return 0;
+}]]></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer>int OneLetterDifference(char *word1, char *word2)
+{
+	int i = 0;
+	int diff = 0;
+
+	while (word1[i] != '\0') {
+		if (word1[i] != word2[i]) {
+			diff++;
+		}
+		i++;
+	}
+	return diff == 1;
+}
+</answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald>{}</templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char word1[WORD_LENGTH] = "able";
+char word2[WORD_LENGTH] = "ably";
+
+if (OneLetterDifference(word1, word2)) {
+   printf("The words differ by just one character");
+} else {
+   printf("The words do not differ by just one character");
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>The words differ by just one character</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char word1[WORD_LENGTH] = "rear";
+char word2[WORD_LENGTH] = "beat";
+char word3[WORD_LENGTH] = "bear";
+
+printf("a: %d\n", OneLetterDifference(word1, word2));
+printf("b: %d\n", OneLetterDifference(word1, word3));
+printf("c: %d\n", OneLetterDifference(word2, word3));
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>a: 0
+b: 1
+c: 1
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char word1[WORD_LENGTH] = "able";
+char word2[WORD_LENGTH] = "abet";
+
+if (OneLetterDifference(word1, word2)) {
+   printf("The words differ by just one character");
+} else {
+   printf("The words do not differ by just one character");
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>The words do not differ by just one character</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char word1[WORD_LENGTH] = "best";
+char word2[WORD_LENGTH] = "beat";
+char word3[WORD_LENGTH] = "bear";
+
+printf("a: %d\n", OneLetterDifference(word1, word2));
+printf("b: %d\n", OneLetterDifference(word1, word3));
+printf("c: %d\n", OneLetterDifference(word2, word3));
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>a: 1
+b: 0
+c: 1
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char word1[WORD_LENGTH] = "aaaa";
+char word2[WORD_LENGTH] = "aaaa";
+
+if (OneLetterDifference(word1, word2)) {
+   printf("The words differ by just one character");
+} else {
+   printf("The words do not differ by just one character");
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>The words do not differ by just one character</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char word1[WORD_LENGTH] = "aaaa";
+char word2[WORD_LENGTH] = "aaba";
+
+if (OneLetterDifference(word1, word2)) {
+   printf("The words differ by just one character");
+} else {
+   printf("The words do not differ by just one character");
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>The words differ by just one character</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

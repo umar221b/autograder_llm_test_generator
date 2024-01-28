@@ -1,0 +1,10445 @@
+upi,time,try,answer,rawfraction
+aasr483,1695028944,1,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    // Input a aphabetial letter
+    printf(""Enter letter: "");
+    scanf("" %c"", &inputLetter);  
+
+    // Check if the input character is a lowercase letter
+    if (inputLetter >= 'a' && inputLetter <= 'z') {
+        // Calculate the next letter
+        nextLetter = inputLetter + 1;
+
+        // Display the input letter, arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""Invalid input. Please enter a lowercase letter.\n"");
+    }
+
+    return 0;
+}",0
+aasr483,1695028953,2,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    // Input a aphabetial letter
+    printf(""Enter letter: \n"");
+    scanf("" %c"", &inputLetter);  
+
+    // Check if the input character is a lowercase letter
+    if (inputLetter >= 'a' && inputLetter <= 'z') {
+        // Calculate the next letter
+        nextLetter = inputLetter + 1;
+
+        // Display the input letter, arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""Invalid input. Please enter a lowercase letter.\n"");
+    }
+
+    return 0;
+}",0
+aasr483,1695029035,3,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    // Input a aphabetial letter
+    printf(""Enter letter: \n"");
+    scanf("" %c"", &inputLetter);  
+
+    // Check if the input character is a lowercase letter
+    if (inputLetter >= 'a' && inputLetter <= 'z') || | (inputLetter >= 'A' && inputLetter <= 'Y')){
+        // Calculate the next letter
+        nextLetter = inputLetter + 1;
+
+        // Display the input letter, arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""Invalid input. Please enter a lowercase letter.\n"");
+    }
+
+    return 0;
+}",0
+aasr483,1695029044,4,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    // Input a aphabetial letter
+    printf(""Enter letter: \n"");
+    scanf("" %c"", &inputLetter);  
+
+    // Check if the input character is a lowercase letter
+    if (inputLetter >= 'a' && inputLetter <= 'z') || (inputLetter >= 'A' && inputLetter <= 'Y')){
+        // Calculate the next letter
+        nextLetter = inputLetter + 1;
+
+        // Display the input letter, arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""Invalid input. Please enter a lowercase letter.\n"");
+    }
+
+    return 0;
+}",0
+aasr483,1695029090,5,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    // User enters an input
+    printf(""Enter letter : "");
+    scanf("" %c"", &inputLetter); 
+
+    // Check if the entered character is a valid letter
+    if ((inputLetter >= 'a' && inputLetter <= 'y') || (inputLetter >= 'A' && inputLetter <= 'Y')) {
+        // Calculate the next letter
+        nextLetter = inputLetter + 1;
+
+        // Display the input letter, arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""Invalid input. Please enter a letter between 'a'-'y' or 'A'-'Y'.\n"");
+    }
+
+    return 0;
+}",0
+aasr483,1695029097,6,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    // User enters an input
+    printf(""Enter letter : \n"");
+    scanf("" %c"", &inputLetter); 
+
+    // Check if the entered character is a valid letter
+    if ((inputLetter >= 'a' && inputLetter <= 'y') || (inputLetter >= 'A' && inputLetter <= 'Y')) {
+        // Calculate the next letter
+        nextLetter = inputLetter + 1;
+
+        // Display the input letter, arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""Invalid input. Please enter a letter between 'a'-'y' or 'A'-'Y'.\n"");
+    }
+
+    return 0;
+}",0
+aasr483,1695029104,7,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    // User enters an input
+    printf(""Enter letter: \n"");
+    scanf("" %c"", &inputLetter); 
+
+    // Check if the entered character is a valid letter
+    if ((inputLetter >= 'a' && inputLetter <= 'y') || (inputLetter >= 'A' && inputLetter <= 'Y')) {
+        // Calculate the next letter
+        nextLetter = inputLetter + 1;
+
+        // Display the input letter, arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""Invalid input. Please enter a letter between 'a'-'y' or 'A'-'Y'.\n"");
+    }
+
+    return 0;
+}",1
+abha257,1694830495,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h> 
+int main(void)
+{
+	char input;
+	char output;
+	printf(""Enter a letter: \n"");
+	scanf(""%c"", &input);
+	output = (char)(input + 1);
+	printf(""%c -> %c"", input,output);
+	return 0;
+}
+",0
+abha257,1694830507,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h> 
+int main(void)
+{
+	char input;
+	char output;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &input);
+	output = (char)(input + 1);
+	printf(""%c -> %c"", input,output);
+	return 0;
+}
+",1
+ache725,1694866272,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"" , &x);
+
+    x = x + 1;
+
+    printf(""%c"", x);
+    
+    return 0;
+
+}",0
+ache725,1694866617,2,"#include <stdio.h>
+
+int main(void)
+{
+    char y;
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"" , &x);
+
+    y = x + 1;
+
+    printf(""%c -> %c"",x ,y);
+    
+    return 0;
+
+}",1
+adav221,1695023989,1,"#include <stdio.h>
+
+int main() {
+    char letter;
+
+    printf(""Enter letter: "");
+    scanf("" %c"", &letter);
+
+    if (letter >= 'a' && letter < 'z') {
+        char nextLetter = letter + 1;
+        printf(""%c -> %c\n"", letter, nextLetter);
+    }
+
+    return 0;
+}",0
+adav221,1695024087,2,"#include <stdio.h>
+
+int main() {
+    char letter;
+
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &letter);
+
+    if (letter >= 'a' && letter < 'z') {
+        char nextLetter = letter + 1;
+        printf(""%c -> %c\n"", letter, nextLetter);
+    }
+
+    return 0;
+}",0
+adav221,1695025809,3,"#include <stdio.h>
+
+int main() {
+    char letter;
+
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &letter);
+
+    if ((letter >= 'a' && letter < 'z') || (letter >= 'A' && letter < 'Z')) {
+        char nextLetter;
+        
+        printf(""%c -> %c\n"", letter, nextLetter);
+    } 
+
+    return 0;
+}",0
+adav221,1695026113,4,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+    printf(""Enter letter: "");
+    scanf("" %c"", &inputLetter);
+
+    if ((inputLetter >= 'a' && inputLetter < 'z') || (inputLetter >= 'A' && inputLetter < 'Z')) {
+        char nextLetter = inputLetter + 1;
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+  
+    }
+
+    return 0;
+}",0
+adav221,1695026125,5,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+    printf(""Enter letter: \n"");
+    scanf("" %c"", &inputLetter);
+
+    if ((inputLetter >= 'a' && inputLetter < 'z') || (inputLetter >= 'A' && inputLetter < 'Z')) {
+        char nextLetter = inputLetter + 1;
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+  
+    }
+
+    return 0;
+}",1
+adey750,1694945932,1,"#include <stdio.h>
+
+/* this is how you write a comment*/ 
+
+
+int main()
+{
+    char firstLetter;
+    char nextLetter;
+    printf(""Enter letter:"");
+    scanf(""%c"",&firstLetter);
+    
+    nextLetter = firstLetter + 1; 
+    printf (""%c -> %c"",firstLetter,nextLetter);
+    
+}
+",0
+adey750,1694946058,2,"#include <stdio.h>
+
+/* this is how you write a comment*/ 
+
+
+int main()
+{
+    char firstLetter;
+    char nextLetter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&firstLetter);
+    
+    nextLetter = firstLetter + 1; 
+    printf (""%c -> %c"",firstLetter,nextLetter);
+    
+}
+",1
+agou682,1695015947,1,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+    printf(""Enter letter: "");
+    scanf("" %c"", &inputLetter);
+
+
+    // Calculate the next letter by wrapping around the alphabet
+    char nextLetter = (inputLetter == 'z') ? 'a' : (inputLetter == 'Z') ? 'A' : inputLetter + 1;
+
+    printf(""\n%c -> %c\n"", inputLetter, nextLetter);
+
+    return 0;
+}
+",1
+ahac139,1695025878,1,"#include <stdio.h>
+
+int main(void) {
+    printf(""Enter letter:\n"");
+     char c;
+    scanf(""%c"", &c);
+    printf(""%c -> %c"", c, c+1);
+    return 0;
+}",1
+ahua579,1694824914,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+	char letter;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &letter);
+	char newLetter;
+	newLetter = (letter + 1);
+	printf(""%c -> %c"", letter,newLetter);
+	return 0;
+}
+",1
+ahus071,1695009461,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&input);
+    printf(""%c -> %c"",input, (char)(input+1));
+    return 0;
+}",1
+ajhz318,1694839890,1,"#include <stdio.h>
+int main(void)
+{
+    int input;
+    int input_2;
+    
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &input_2);
+    
+    input = (char)(input_2 + 1);
+    printf(""%c -> %c"", input_2, input);
+
+    return 0; 
+}",0
+ajhz318,1694840574,2,"#include <stdio.h>
+int main(void)
+{
+    char input;
+    char input_2;
+    
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &input_2);
+    
+    input = (char)(input_2 + 1);
+    printf(""%c -> %c"", input_2, input);
+
+    return 0; 
+}",1
+ajhz488,1695012149,1,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &a);
+    printf(""%c -> %c"", a, a+1);
+    return 0;
+}",1
+ajin489,1694838306,1,"#include <stdio.h>
+
+int main(void) {
+    char letter, nextLetter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+
+    nextLetter = (char)(letter + 1);
+    printf(""%c -> %c"", letter, nextLetter);
+    return 0;
+}
+",1
+ajoh511,1694828272,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    int result;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    
+    result = x + 1;
+    printf(""%c -> %c"", x, result);
+    
+    return 0;
+    
+}",1
+akam256,1694933566,1,"#include <stdio.h>
+
+int main()
+
+{
+    
+    int x;
+    printf(""Enter value:"");
+    
+    scanf(""%d"", &x);
+    
+    x = x + 1;
+    
+    printf(""Result = %d"", x);
+    
+    return 0;
+   
+}",0
+akam256,1694933606,2,"#include <stdio.h>
+
+int main()
+
+{
+    
+    int x;
+    printf(""Enter letter:"");
+    
+    scanf(""%d"", &x);
+    
+    x = x + 1;
+    
+    printf(""-> %d"", x);
+    
+    return 0;
+   
+}",0
+akam256,1694933628,3,"#include <stdio.h>
+
+int main()
+
+{
+    
+    int x;
+    printf(""Enter letter:"");
+    
+    scanf(""%d"", &x);
+    
+    printf(""%d"")
+    
+    x = x + 1;
+    
+    printf(""-> %d"", x);
+    
+    return 0;
+   
+}",0
+akam256,1694933632,4,"#include <stdio.h>
+
+int main()
+
+{
+    
+    int x;
+    printf(""Enter letter:"");
+    
+    scanf(""%d"", &x);
+    
+    printf(""%d"");
+    
+    x = x + 1;
+    
+    printf(""-> %d"", x);
+    
+    return 0;
+   
+}",0
+akam256,1694933644,5,"#include <stdio.h>
+
+int main()
+
+{
+    
+    int x;
+    printf(""Enter letter:"");
+    
+    scanf(""%d"", &x);
+    
+    printf(""%d"", x);
+    
+    x = x + 1;
+    
+    printf(""-> %d"", x);
+    
+    return 0;
+   
+}",0
+akam256,1694933673,6,"#include <stdio.h>
+
+int main()
+
+{
+    
+    char x;
+    printf(""Enter letter:\n"");
+    
+    scanf(""%c"", &x);
+    
+    printf(""%c"", x);
+    
+    x = x + 1;
+    
+    printf(""-> %c"", x);
+    
+    return 0;
+   
+}",0
+akam256,1694933679,7,"#include <stdio.h>
+
+int main()
+
+{
+    
+    char x;
+    printf(""Enter letter:\n"");
+    
+    scanf(""%c"", &x);
+    
+    printf(""%c"", x);
+    
+    x = x + 1;
+    
+    printf("" -> %c"", x);
+    
+    return 0;
+   
+}",1
+akmu146,1694851055,1,"#include <stdio.h>
+
+int main()
+{
+    
+    char input;
+    char output;
+    scanf(""%c"", &input);
+    output = input + 1;
+    printf(""Enter value:\n%c -> %c"", input, output);
+    return 0;
+}
+
+",0
+akmu146,1694851085,2,"#include <stdio.h>
+
+int main()
+{
+    
+    char input;
+    char output;
+    scanf(""%c"", &input);
+    output = input + 1;
+    printf(""Enter letter:\n%c -> %c"", input, output);
+    return 0;
+}
+
+",1
+akod059,1694861883,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &letter);
+
+	char nextLetter = letter + 1;
+
+	printf(""%c -> %c"", letter, nextLetter);
+
+	return 0;
+}",1
+akri368,1694944680,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char l1;
+	char l2;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &l1);
+
+	l2 = l1 + 1;
+
+	printf(""%c -> %c\n"", l1, l2);
+
+	return 0;
+}",1
+akwo440,1695021804,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    printf(""Enter letter:"");
+    scanf(""%p"", input);
+    printf(""\n%p -> %p"",(char)input,(char)(input+1));
+    return 0;
+}",0
+akwo440,1695021871,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:"");
+    scanf(""%c"", input);
+    printf(""\n%c -> %c"",(char)input,(char)(input+1));
+    return 0;
+}",0
+amag544,1694960016,1,"#include <stdio.h>
+
+int main(void)
+{
+    char character, ans;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &character);
+    
+    ans = character + 1;
+    printf(""%c -> %c"", character, ans);
+    
+    
+    return 0;
+}",1
+amar768,1694914976,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+
+    printf(""%x -> %c\n"", x, x+1);
+
+    return 0;
+}
+
+",0
+amar768,1694915069,2,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+
+    printf(""%c -> %c\n"", x, x+1);
+
+    return 0;
+}
+
+",1
+amat407,1694839282,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+
+    char y;
+    y=x+1;
+    printf(""%c -> %c"",x,y);
+
+    return 0;
+}",1
+amur986,1694997667,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+	char x;
+	char y;
+	printf(""Enter letter:"");
+	scanf(""%c"", &x);
+	y = x +1;
+	printf(""\n%c -> %c"", x, y);
+
+	return 0;
+}
+",1
+anig922,1694990590,1,"#include <stdio.h>
+
+int main(void)
+{
+    int letter;
+    int next letter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter );
+    next letter = letter + 1;
+    printf(""%c -> %c"", letter, next letter);
+}",0
+anig922,1694990613,2,"#include <stdio.h>
+
+int main(void)
+{
+    int letter;
+    int nextletter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter );
+    next letter = letter + 1;
+    printf(""%c -> %c"", letter, nextletter);
+}",0
+anig922,1694990619,3,"#include <stdio.h>
+
+int main(void)
+{
+    int letter;
+    int nextletter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter );
+    nextletter = letter + 1;
+    printf(""%c -> %c"", letter, nextletter);
+}",0
+anig922,1694990658,4,"#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    char nextletter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter );
+    nextletter = letter + 1;
+    printf(""%c -> %c"", letter, nextletter);
+}",1
+aosm976,1695024700,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void) 
+{
+    char input, next_letter;
+
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+
+    if (input == 122 || input == 90) {
+        next_letter = input - 25;
+    }
+    else {
+        next_letter = input + 1;
+    }
+
+    printf(""\n%c -> %c"", input, next_letter);
+
+    return 0;
+}",1
+apan786,1694946308,1,"#include <stdio.h>
+
+int main(void)
+
+{
+    char a, b;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &a);
+    
+    b = a + 1;
+    
+    printf(""%c -> %c"", a, b);
+}",1
+apat824,1695003682,1,"#include <stdio.h>
+
+int main()
+{
+    char x ;
+    char y ;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    
+    printf(""%c -> %c"", x, y);
+
+    return 0;
+}
+",1
+apen181,1694850164,1,"#include <stdio.h>
+
+int main(void) {
+    char alpha;
+    char sum;
+
+
+    printf(""Enter a value : \n"");
+    scanf_s(""%c"", &alpha);
+    sum = alpha + 1;
+    printf(""%c -> %c "",alpha, sum);
+    return 0;
+",0
+apen181,1694850175,2,"#include <stdio.h>
+
+int main(void) {
+    char alpha;
+    char sum;
+
+
+    printf(""Enter a value : \n"");
+    scanf(""%c"", &alpha);
+    sum = alpha + 1;
+    printf(""%c -> %c "",alpha, sum);
+    return 0;
+",0
+apen181,1694850183,3,"#include <stdio.h>
+
+int main(void) {
+    char alpha;
+    char sum;
+
+
+    printf(""Enter a value : \n"");
+    scanf(""%c"", &alpha);
+    sum = alpha + 1;
+    printf(""%c -> %c "",alpha, sum);
+    return 0;
+}",0
+apen181,1694850220,4,"#include <stdio.h>
+
+int main(void) {
+    char alpha;
+    char sum;
+
+
+    printf(""Enter value:\n"");
+    scanf_s(""%c"", &alpha);
+    sum = alpha + 1;
+    printf(""%c -> %c "",alpha, sum);
+    return 0;
+
+    
+}",0
+apen181,1694850226,5,"#include <stdio.h>
+
+int main(void) {
+    char alpha;
+    char sum;
+
+
+    printf(""Enter value:\n"");
+    scanf(""%c"", &alpha);
+    sum = alpha + 1;
+    printf(""%c -> %c "",alpha, sum);
+    return 0;
+
+    
+}",0
+apen181,1694850245,6,"#include <stdio.h>
+
+int main(void) {
+    char alpha;
+    char sum;
+
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &alpha);
+    sum = alpha + 1;
+    printf(""%c -> %c "",alpha, sum);
+    return 0;
+
+    
+}",1
+apre444,1695027085,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    printf(""Enter letter:"");
+    scanf(""%c"", &input);
+    char next= input + 1;
+    printf(""%c -> %c"", input, next);
+    return 0;
+}",0
+apre444,1695027146,2,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    printf(""Enter letter:"");
+    scanf(""%c"", &input);
+    char next= input + 1;
+    printf(""%c -> %c\n"", input, next);
+    return 0;
+}",0
+apre444,1695027155,3,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    printf(""Enter letter:""\n);
+    scanf(""%c"", &input);
+    char next= input + 1;
+    printf(""%c -> %c\n"", input, next);
+    return 0;
+}",0
+apre444,1695027182,4,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    char next= input + 1;
+    printf(""%c -> %c\n"", input, next);
+    return 0;
+}",1
+apur448,1694941973,1,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &a);
+
+    b = a + 1;
+    printf(""%c -> %c\n"", a, b);
+
+    return 0;
+}",1
+aqu284,1695023132,1,"#include <stdio.h>
+int main(void)
+{
+    int input;
+    int output;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &input);
+    
+    output = char(input);
+    output = output + 1;
+    output = char(output);
+    
+    printf(""%s -> %s"", input, output);
+
+return 0;
+}",0
+aqu284,1695023199,2,"#include <stdio.h>
+int main(void)
+{
+    int input;
+    int output;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &input);
+    
+    output = int(input);
+    output = output + 1;
+    output = char(output);
+    
+    printf(""%s -> %s"", input, output);
+
+return 0;
+}",0
+aqu284,1695023247,3,"#include <stdio.h>
+int main(void)
+{
+    char input;
+    int output;
+    char other
+    
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &input);
+    
+    output = int(input);
+    output = output + 1;
+    other = char(output);
+    
+    printf(""%s -> %s"", input, other);
+
+return 0;
+}",0
+aqu284,1695023282,4,"#include <stdio.h>
+int main(void)
+{
+    char input;
+    int inter;
+    char output
+    
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &input);
+    
+    inter = int(input);
+    inter = inter + 1;
+    output = char(inter);
+    
+    printf(""%s -> %s"", input, output);
+
+return 0;
+}",0
+aqu284,1695023451,5,"#include <stdio.h>
+int main(void)
+{
+    char input;
+    int inter;
+    char output
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    inter = int(input);
+    inter = inter + 1;
+    output = char(inter);
+    
+    printf(""%c -> %c"", input, output);
+
+return 0;
+}",0
+aqu284,1695023603,6,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    printf(""%c, input"")
+
+return 0;
+}",0
+aqu284,1695023674,7,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    printf(""%i, input"")
+
+return 0;
+}",0
+aqu284,1695023702,8,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    printf(""%c, input"");
+
+return 0;
+}",0
+aqu284,1695023722,9,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    printf(""%i, input"");
+
+return 0;
+}",0
+aqu284,1695026992,10,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+
+return 0;
+}",0
+aqu284,1695027010,11,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(input)
+
+return 0;
+}",0
+aqu284,1695027343,12,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    int val = (int)input;
+    val = val + 1;
+    
+    char output = (char)val;
+    printf(""%c"", output);
+
+        return 0;
+}",0
+aqu284,1695027369,13,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    int val = (int)input;
+    val = val + 1;
+    
+    char output = (char)val;
+    printf(""%c -> %c"", input, output);
+
+        return 0;
+}",1
+asaa285,1694969398,1,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    printf("""");
+    scanf(""%s"", &a);
+    printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694969414,2,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    printf("""");
+    scanf(""%s"", &a);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694969428,3,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    scanf(""%s"", &a);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694969492,4,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    scanf(""%s"", &a);
+    printf(""%s"", &a)
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694969502,5,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    scanf(""%s"", &a);
+    printf(""%s"", &a);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694969734,6,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    char b;
+    printf(""Enter letter:"")
+    scanf(""%s"", &a);
+    b = (char)(((int)a) + 1);
+    printf(""%s -> %s"", &a, &b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694969744,7,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    char b;
+    printf(""Enter letter:"");
+    scanf(""%s"", &a);
+    b = (char)(((int)a) + 1);
+    printf(""%s -> %s"", &a, &b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970098,8,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    char b;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    b = (char)(((int)a) + 1);
+    printf(""%s -> %s"", a, b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970112,9,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    char b;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    b = (char)(((int)a) + 1);
+    printf(""%s -> %s"", &a, b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970124,10,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    char b;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    b = (char)(((int)a) + 1);
+    printf(""%s -> %s"", &a, &b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970158,11,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    char b;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    b = (char)(((int)a) + 1);
+    printf(""%s -> "", &a);
+    printf(""%s"", &b)
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970162,12,"#include <stdio.h> 
+
+int main(void)
+{
+    char a;
+    char b;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    b = (char)(((int)a) + 1);
+    printf(""%s -> "", &a);
+    printf(""%s"", &b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970195,13,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)(((int)a) + 1);
+    printf(""%s -> "", &holder);
+    printf(""%s"", &b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970225,14,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)(((int)a) + 1);
+    printf(""%s -> "", &holder);
+    printf(b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970240,15,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)(((int)a) + 1);
+    printf(""%s -> "", &holder);
+    printf(""%s"",b);
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970255,16,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)(((int)a) + 1);
+    printf(""%s -> "", &holder);
+    printf(""%s"",char(b));
+    // printf(""%d x 2 = %d"", i, i*2);
+    return 0;
+}",0
+asaa285,1694970344,17,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)(((int)a) + 1);
+    printf(""%s -> "", &holder);
+    printf(""%s"",char(b));
+    return 0;
+}",0
+asaa285,1694970357,18,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)(((int)a) + 1);
+    printf(""%s -> "", &holder);
+    printf(""%s"",(char)b);
+    return 0;
+}",0
+asaa285,1694970368,19,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char(((int)a) + 1));
+    printf(""%s -> "", &holder);
+    printf(""%s"",b);
+    return 0;
+}",0
+asaa285,1694970389,20,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = char((((int)a) + 1));
+    printf(""%s -> "", &holder);
+    printf(""%s"",b);
+    return 0;
+}",0
+asaa285,1694970407,21,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (((int)a) + 1);
+    printf(""%s -> "", &holder);
+    printf(""%s"",b);
+    return 0;
+}",0
+asaa285,1694970415,22,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (((int)a) + 1);
+    printf(""%s -> "", &holder);
+    printf(""%s"",&b);
+    return 0;
+}",0
+asaa285,1694970441,23,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (((int)a) + 1);
+    printf(""%s -> %s"", &holder, &b);
+    return 0;
+}",0
+asaa285,1694970519,24,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)((int)a + 1);
+    printf(""%s -> %s"", &holder, &b);
+    return 0;
+}",0
+asaa285,1694970541,25,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b, holder;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)((int)a + 1);
+    printf(""%s -> %s"", &a, &b);
+    return 0;
+}",0
+asaa285,1694970552,26,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    holder = a;
+    b = (char)((int)a + 1);
+    printf(""%s -> %s"", &a, &b);
+    return 0;
+}",0
+asaa285,1694970558,27,"#include <stdio.h> 
+
+int main(void)
+{
+    char a, b;
+    printf(""Enter letter:\n"");
+    scanf(""%s"", &a);
+    b = (char)((int)a + 1);
+    printf(""%s -> %s"", &a, &b);
+    return 0;
+}",0
+ashi565,1695002773,1,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+printf(""Enter letter: \n"");
+scanf("" %c"", &inputLetter);
+
+
+if (inputLetter >= 'a' && inputLetter < 'z') {
+printf(""%c -> %c\n"", inputLetter, inputLetter + 1);
+    }
+    
+else if (inputLetter >= 'A' && inputLetter < 'Z') {
+printf(""%c -> %c\n"", inputLetter, inputLetter + 1);
+    }
+   
+else {
+printf(""Invalid input. Please enter a letter between 'a' and 'y' or 'A' and 'Y'.\n"");
+}
+
+return 0;
+}
+",1
+aski294,1694858221,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    char nextLetter;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+
+    nextLetter = letter + 1;
+
+    printf(""%c -> %c"", letter, nextLetter);
+
+    return 0;
+}",1
+atay777,1694841247,1,"#include <stdio.h>
+
+int main()
+{
+    char letter='a';
+    char newletter='b';
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&letter);
+    newletter=letter+1;
+    printf(""%c -> %c"", letter, newletter);
+    
+}
+",1
+avan381,1694836702,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    output = (char)(input + 1);
+    
+    printf(""%c -> %c"", input, output);
+    
+    
+    return 0;
+}",1
+ayan607,1694842280,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    output = input + 1;
+    
+    printf(""%c -> %c"", input, output);
+}
+",1
+bcar662,1694939184,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char LetterIn;
+    char LetterOut;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &LetterIn);
+
+    LetterOut = LetterIn + 1;
+
+    printf(""%c -> %c"", LetterIn, LetterOut);
+
+    return 0;
+}",1
+blin888,1694819117,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input = 'G';
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+
+    printf(""%c -> %c\n"", input, input +1);
+
+    return 0;
+}",1
+bora417,1694833314,1,"#define  _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+char x;
+char y;
+printf(""Enter letter:\n"");
+scanf(""%c"",&x);
+y = (char)(x + 1);
+printf(""%c -> %c"",x,y);
+return 0; 
+}
+",1
+bwis161,1694922689,1,"
+#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &letter);
+	letter = (char)(letter+ 1);
+	printf(""Results = %c"", letter);
+
+	return 0;
+}
+",0
+bwis161,1694922921,2,"
+#include <stdio.h>
+
+int main(void)
+{
+	char l, letter;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &l);
+	letter = (char)(l + 1);
+	printf(""%c -> %c"", l, letter);
+
+	return 0;
+}
+",1
+bwoo348,1694815852,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+
+    printf(""%d -> %d"", x, x+1);
+    return 0;
+}",0
+bwoo348,1694815862,2,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+
+    printf(""%c -> %c"", x, x+1);
+    return 0;
+}",1
+byul423,1694849427,1,"#include <stdio.h>
+int main(void)
+{
+	char x;
+	printf(""Enter letter: \n"");
+
+	scanf(""%c"", &x);
+
+	char c = x + 1;
+
+	printf(""%c -> %c"", x, c);
+
+	return 0;
+}",1
+cada577,1694862004,1,"#include <stdio.h>
+
+int main()
+{
+    char letter, output;
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &letter);
+  
+  int input;
+  input = (int)(letter + 1);
+  
+  output = (char)(input);
+  
+  printf(""%c -> %c"", letter, output);
+
+    return 0;
+}",1
+ccha854,1694840510,1,"#include <stdio.h>
+
+
+int main() {
+    
+    char x;
+    
+    printf(""Input letter: "");
+    scanf(""%c"", &x);
+    int x1=x;
+
+    char result;
+    result = x1+1;
+    printf(""%c"", result);
+    
+    return 0;
+
+}
+",0
+ccha854,1694840656,2,"#include <stdio.h>
+
+
+int main() {
+    
+    char x;
+    
+   // printf(""Input letter: "");
+    scanf(""%c"", &x);
+    int x1=x;
+
+    char result;
+    result = x1+1;
+    printf(""%c -> %c"", x, result);
+    
+    return 0;
+
+}",0
+ccha854,1694840748,3,"#include <stdio.h>
+
+
+int main() {
+    
+    char x;
+    
+   // printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    int x1=x;
+
+    char result;
+    result = x1+1;
+    printf(""Enter letter: \n%c -> %c"", x, result);
+    
+    return 0;
+
+}",1
+ccha854,1694840785,4,"#include <stdio.h>
+
+
+int main() {
+    
+    char x;
+    
+    scanf(""%c"", &x);
+    int x1=x;
+
+    char result;
+    result = x1+1;
+    printf(""Enter letter: \n%c -> %c"", x, result);
+    
+    return 0;
+
+}",1
+cdin152,1694858340,1,"#include <stdio.h>
+
+/* This program displays the next letter in the 
+alphabet from a user input alphabetical letter*/
+int main(void)
+{
+	char letter, new_letter;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"",&letter);
+
+	new_letter = (char)(letter + 1);
+
+	printf(""%c -> %c"",letter,new_letter);
+
+	return 0; 
+}",1
+cdin152,1694860443,2,"#include <stdio.h>
+
+/* This program displays the next letter in the... 
+alphabet from a user input alphabetical letter*/
+int main(void)
+{
+	char letter, new_letter;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"",&letter);
+
+	new_letter = (char)(letter + 1);
+
+	printf(""%c -> %c"",letter,new_letter);
+
+	return 0; 
+}",1
+cdsi208,1695025889,1,"#include <stdio.h>
+
+int main() {
+    char input;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    printf(""%c -> %c"", input, input + 1);
+   
+
+    return 0; 
+}",1
+cgal160,1694913821,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	char x;
+	char y;
+	printf(""Enter value: "");
+	scanf(""%c"", &x);
+	y = x + 1;
+	printf(""%c -> %c"", x, y);
+	return 0;
+}",0
+cgal160,1694913830,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	char x;
+	char y;
+	printf(""Enter value:\n"");
+	scanf(""%c"", &x);
+	y = x + 1;
+	printf(""%c -> %c"", x, y);
+	return 0;
+}",0
+cgal160,1694913844,3,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	char x;
+	char y;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+	y = x + 1;
+	printf(""%c -> %c"", x, y);
+	return 0;
+}",1
+chua804,1694935850,1,"#include <stdio.h>
+
+int main()
+{
+    int x;
+    int y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    
+    
+    
+    printf(""%d -> = %d"",x,y);
+    
+    return 0;
+}",0
+chua804,1694935876,2,"#include <stdio.h>
+
+int main()
+{
+    int x;
+    int y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    
+
+    printf(""%c -> = %c"",x,y);
+    
+    return 0;
+}",0
+chua804,1694935895,3,"#include <stdio.h>
+
+int main()
+{
+    int x;
+    int y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", ""%c"",x,y);
+    
+
+    printf(""%c -> = %c"",x,y);
+    
+    return 0;
+}",0
+chua804,1694936042,4,"#include <stdio.h>
+
+int main()
+{
+    int x;
+    int y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"",x);
+    
+    y=x+1
+    printf(""%c -> = %c"",x,y);
+    
+    return 0;
+}",0
+chua804,1694936229,5,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"",&x);
+    
+    y=x+1;
+    printf(""%c -> %c"",x,y);
+    
+    return 0;
+}",1
+cjun818,1695031058,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	char result;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+
+	result = x + 1;
+
+	printf(""%c -> %c"", x, result);
+
+	return 0;
+}",1
+clee482,1695004106,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    char output;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    output = input + 1;
+    
+    printf(""%c -> %c"", input, output);
+    
+    return 0;
+
+}",1
+cmas527,1694923097,1,"#include <stdio.h>
+
+int main(void)
+{
+char x;
+char y;
+printf(""Enter letter:\n"");
+scanf(""%c"", &x);
+printf(""%c"", x);
+y=x+1;
+
+printf(""-> %c"", y);
+
+
+
+return 0;
+}
+",0
+cmas527,1694923154,2,"#include <stdio.h>
+
+int main(void)
+{
+char x;
+char y;
+printf(""Enter letter:\n"");
+scanf(""%c"", &x);
+printf(""%c"", x);
+y=x+1;
+
+printf("" -> %c"", y);
+
+
+
+return 0;
+}
+",1
+cmcm317,1694946258,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char output;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	output = input + 1;
+
+	printf(""%c -> %c"", input, output);
+
+	return 0;
+}",1
+cnai408,1695021675,1,"#include <stdio.h>
+
+int main()
+{
+    char start;
+    int calculation;
+    char final;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &start);
+    
+    calculation = (char) start + 1;
+    
+    final = (char) calculation;
+    
+    printf(""%c -> %c"", start, final);
+    return 0;
+}",1
+cnie825,1694923262,1,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+    // Prompt the user to enter a letter
+    printf(""Enter letter: "");
+    scanf("" %c"", &inputLetter);
+    
+     char nextLetter = inputLetter + 1;
+
+        // Display the input letter, the arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);",0
+cnie825,1694923276,2,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+    // Prompt the user to enter a letter
+    printf(""Enter letter: "");
+    scanf("" %c"", &inputLetter);
+    
+     char nextLetter = inputLetter + 1;
+
+        // Display the input letter, the arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+        
+}",0
+cnie825,1694928630,3,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+    // Prompt the user to enter a letter
+    printf(""Enter letter:\n "");
+    scanf("" %c"", &inputLetter);
+    
+     char nextLetter = inputLetter + 1;
+
+        // Display the input letter, the arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+        
+}",0
+cnie825,1694928640,4,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+    // Prompt the user to enter a letter
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &inputLetter);
+    
+     char nextLetter = inputLetter + 1;
+
+        // Display the input letter, the arrow, and the next letter
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+        
+}",1
+coli772,1694986536,1,"#include <stdio.h>
+
+int main(void) {
+    char letter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    printf(""%c -> %c"", letter, letter+1);
+    return 0;
+}",1
+csan114,1694926779,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char letter;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    letter = input + 1;
+    
+    printf(""%c -> %c"", input, letter);
+    
+    return 0;
+}",1
+cste189,1694824353,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+int main(void)
+{
+	char x;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &x);
+
+	char new;
+	
+	new = x + 1;
+
+	printf(""%c -> %c"", x, new);
+
+	return 0;
+}",1
+ctub889,1694929727,1,"#include <stdio.h>
+
+
+
+int main()
+{
+    char in;
+    char out;
+    printf(""Enter Letter:\n"");
+    scanf(""%c"", &in);
+    out = in + 1;
+    printf(""%c -> %c"", in, out);
+}",0
+ctub889,1694929750,2,"#include <stdio.h>
+
+
+
+int main()
+{
+    char in;
+    char out;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &in);
+    out = in + 1;
+    printf(""%c -> %c"", in, out);
+}",1
+cwei506,1694996216,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    int x;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", %input);
+    
+    x = input + 1;
+    
+    print(""%c -> %d"", input, x);
+    
+    return 0;
+}",0
+cwei506,1694996228,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    int x;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    x = input + 1;
+    
+    print(""%c -> %d"", input, x);
+    
+    return 0;
+}",0
+cwei506,1694996269,3,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    int x;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    x = input + 1;
+    
+    printf(""%c -> %d"", input, x);
+    
+    return 0;
+}",0
+cwei506,1694996283,4,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    int x;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    x = input + 1;
+    x = 'x'
+    
+    printf(""%c -> %d"", input, x);
+    
+    return 0;
+}",0
+cwei506,1694996287,5,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    int x;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    x = input + 1;
+    x = 'x';
+    
+    printf(""%c -> %d"", input, x);
+    
+    return 0;
+}",0
+cwei506,1694996311,6,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    int x;
+    char y;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    x = input + 1;
+    y = 'x';
+    
+    printf(""%c -> %c"", input, y);
+    
+    return 0;
+}",0
+cwei506,1694996331,7,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char y;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    x = input + 1;
+    y = 'x';
+    
+    printf(""%c -> %c"", input, y);
+    
+    return 0;
+}",0
+cwei506,1694996343,8,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char y;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    y = input + 1;
+    y = 'y';
+    
+    printf(""%c -> %c"", input, y);
+    
+    return 0;
+}",0
+cwei506,1694996361,9,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char y;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    y = input + 1;
+    
+    printf(""%c -> %c"", input, y);
+    
+    return 0;
+}",1
+dhah941,1695011086,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+    int inputAscii;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    inputAscii = (int)input;
+    inputAscii++;
+    output = (char)inputAscii;
+
+    printf(""%c -> %c"", input, output);
+
+    return 0;
+}",1
+dmun793,1694927450,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char finalInput = input + 1;
+
+	printf(""%c -> %c"", input, finalInput);
+	return 0;
+}
+",1
+dpar783,1694919331,1,"#include <studio.h>
+
+int main(void)
+{
+    printf(""Enter value:\n"")
+}",0
+dpar783,1694919340,2,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Enter value:\n"")
+}",0
+dpar783,1694919350,3,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Enter value:\n"");
+    return 0;
+}",0
+dpar783,1694919641,4,"#include <stdio.h>
+
+int main(void)
+{
+    int letterinteger;
+    printf(""Enter letter:\n"");
+    scanf(""%d"", &letterinteger);
+    
+    int newletterinteger;
+    newletterinteger = letterinteger + 1;
+    printf(""%c -> %c"", letterinteger, newletterinteger);
+    
+    return 0;
+}",0
+dpar783,1694919741,5,"#include <stdio.h>
+
+int main(void)
+{
+    int letterinteger;
+    printf(""Enter letter:\n"");
+    scanf(""%d"", &letterinteger);
+    
+    int newletterinteger;
+    newletterinteger = letterinteger + 1;
+    printf(""%d -> %d"", letterinteger, newletterinteger);
+    
+    return 0;
+}",0
+dpar783,1694919904,6,"#include <stdio.h>
+
+int main(void)
+{
+    char letterinteger;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letterinteger);
+    
+    int newletterinteger;
+    newletterinteger = char(double(letterinteger) + 1);
+    printf(""%c -> %c"", letterinteger, newletterinteger);
+    
+    return 0;
+}",0
+dpar783,1694920581,7,"#include <stdio.h>
+
+int main(void)
+{
+    int letterinteger;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letterinteger);
+    
+    int newletterinteger;
+    newletterinteger = letterinteger + 1;
+    char newletterinteger;
+    
+    printf(""%c -> %c"", letterinteger, newletterinteger);
+    
+    return 0;
+}",0
+dpar783,1694920627,8,"#include <stdio.h>
+
+int main(void)
+{
+    char letterinteger;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letterinteger);
+    int letterinteger;
+    
+    int newletterinteger;
+    newletterinteger = letterinteger + 1;
+    char newletterinteger;
+    
+    printf(""%c -> %c"", letterinteger, newletterinteger);
+    
+    return 0;
+}",0
+dpar783,1694920656,9,"#include <stdio.h>
+
+int main(void)
+{
+    char letterinteger;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letterinteger);
+    letterinteger = int letterinteger;
+    
+    int newletterinteger;
+    newletterinteger = letterinteger + 1;
+    newletterinteger = char newletterinteger;
+    
+    printf(""%c -> %c"", letterinteger, newletterinteger);
+    
+    return 0;
+}",0
+dpar783,1694920821,10,"#include <stdio.h>
+
+int main(void)
+{
+    char letterinteger;
+    printf(""Enter letter:\n"");
+    scanf(""%d"", &letterinteger);
+    
+    char newletterinteger;
+    newletterinteger = letterinteger + 1;
+    
+    printf(""%c -> %c"", letterinteger, newletterinteger);
+    
+    return 0;
+}",0
+dpar783,1694920945,11,"#include <stdio.h>
+
+int main(void)
+{
+    char letterinteger;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letterinteger);
+    
+    char newletterinteger;
+    newletterinteger = letterinteger + 1;
+    
+    printf(""%c -> %c"", letterinteger, newletterinteger);
+    
+    return 0;
+}",1
+dpet289,1694843157,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    int letter;
+    int letter1;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter);
+
+    letter1 = letter + 1;
+
+    printf(""%c -> %c"", letter, letter1);
+
+    return 0;
+}",0
+dpet289,1694843184,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    char letter1;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter);
+
+    letter1 = letter + 1;
+
+    printf(""%c -> %c"", letter, letter1);
+
+    return 0;
+}",1
+drob588,1694967706,1,"#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+int main(void)
+{
+	char letter; 
+	char newletter;
+	printf(""Enter letter: \n"");
+	scanf(""%s"", &letter);
+
+	newletter = (char)(letter + 1);
+
+	disp(""%c -> %c"", letter, newletter);
+	return 0;
+}",0
+drob588,1694998796,2,"#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char letter2;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &letter);
+	letter2 = (char)(letter + 1);
+	printf(""%c -> %c"", letter, letter2);
+	return 0;
+}",1
+droj056,1694929058,1,"#define _CRT_SECURE_NO_WARNINGS 
+
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char nextLetter;
+
+	printf(""Please enter letter: "");
+	scanf(""%c"", &input);
+
+	nextLetter = input + 1;
+
+	printf(""%c -> %c"", input, nextLetter);
+
+	return 0;
+}",0
+droj056,1694929125,2,"#define _CRT_SECURE_NO_WARNINGS 
+
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char nextLetter;
+
+	printf(""Enter letter: "");
+	scanf(""%c"", &input);
+
+	nextLetter = input + 1;
+
+	printf(""%c -> %c"", input, nextLetter);
+
+	return 0;
+}",0
+droj056,1694929138,3,"#define _CRT_SECURE_NO_WARNINGS 
+
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char nextLetter;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &input);
+
+	nextLetter = input + 1;
+
+	printf(""%c -> %c"", input, nextLetter);
+
+	return 0;
+}",1
+dryu303,1695026910,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char a;
+    scanf(""%c"", &x);
+    a=x+1;
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c"", x, a);
+}
+",1
+dsin316,1694775583,1,"#include <stdio.h>
+
+int main(void)
+{
+    int input;
+    int times;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    times = input + 1;
+    printf(""%c -> %c"", input, times);
+
+}",0
+dsin316,1694775679,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char times;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    times = input + 1;
+    printf(""%c -> %c"", input, times);
+
+}",1
+dstr542,1694927515,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+int main(void)
+{
+	char input;
+	char output;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	output = (char)(input + 1);
+
+	printf(""%c -> %c"", input, output);
+
+	return 0;
+
+}",1
+dsut709,1695015763,1,"/*Takes an input character value and then displays the next letter
+in ASCII sequence*/
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+	char input;
+	char output;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+	output = (char)(input + 1);
+	printf(""%c -> %c"", input, output);
+	return 0;
+}",1
+dver839,1695010431,1,"# include <stdio.h>
+/*The program prompts the user to enter a letter of the alphabet and 
+displays the next letter that follows the input letter.*/
+int main(void)
+{
+	char a; 
+	printf(""Enter letter: \n"");
+	scanf("" %c"", &a);
+	char b; 
+	b = a + 1;
+	printf(""%c -> %c\n"", a, b);
+}",1
+dvu878,1695000722,1,"#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char result;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+
+	result = letter + 1;
+
+	printf(""%c -> %c"", letter, result);
+
+
+	return 0;
+}",0
+dvu878,1695000740,2,"#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char result;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &letter);
+
+	result = letter + 1;
+
+	printf(""%c -> %c"", letter, result);
+
+
+	return 0;
+}",1
+eara128,1695029296,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char arr[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    char arr1[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    int i;
+    for (i = 0; i < sizeof(arr); i++){
+        if (arr[i] == input) {
+            printf(""%c -> %c"", input, arr[i+1]);
+        } else if (arr1[i] == input) {
+            printf(""%c -> %c"", input, arr1[i+1]);
+        }
+    
+    }
+
+    return 0;
+}
+",1
+echa931,1695005217,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char answer;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    answer = input + 1;
+
+    printf(""%c -> %c"", input, answer);
+
+    return 0;
+}",1
+eche101,1694921758,1,"#include <stdio.h>
+
+int main()
+{
+   char x;
+   scanf(""%c"", &x);
+   
+   printf(""Enter letter:\n"");
+   printf(""a -> b"");
+    return 0;
+}",0
+eche101,1694921903,2,"#include <stdio.h>
+
+int main()
+{
+   char x;
+   scanf(""%c"", &x);
+   char s = x + 1;
+   printf(""Enter letter:\n"");
+   printf(""%c -> %c"", x, s);
+    return 0;
+}",1
+ehan360,1695029834,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+
+	char originalLetter;
+	char letter;
+
+	printf(""Enter a letter: \n"");
+	scanf(""%c"", &originalLetter);
+	letter = originalLetter + 1;
+	printf(""%c -> %c"", originalLetter, letter);
+
+
+}
+
+
+",0
+ehan360,1695029846,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+
+	char originalLetter;
+	char letter;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &originalLetter);
+	letter = originalLetter + 1;
+	printf(""%c -> %c"", originalLetter, letter);
+
+
+}
+
+
+",1
+ejeo051,1694940519,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    char output;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    output = input + 1;
+    printf(""%c -> %c"", input, output);
+   
+}
+
+",1
+elau447,1695002203,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", x);
+    y = x + 1;
+    printf(""%c -> %c"", x,y);
+
+    return 0;
+}",0
+elau447,1695002209,2,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"", x,y);
+
+    return 0;
+}",0
+elau447,1695002216,3,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"", x,y);
+
+    return 0;
+}",1
+ema340,1694867566,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    int nextChar;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    nextChar = input + 1;
+    printf(""%c -> %c"", input, nextChar);
+    
+    return 0;
+}",1
+eqiu349,1694954380,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char ch;
+	char x;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &ch);
+
+	x = ch + 1;
+
+	printf(""%c -> %c"", ch, x);
+	return 0;
+}",1
+esia821,1694949548,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+
+    char y;
+    y = x + 1;
+
+    printf(""%c -> %c"", x, y);
+    return 0;
+}
+",1
+evic904,1694992232,1,"#include <stdio.h>
+
+int main()
+{
+	char x;
+	int a;
+
+	printf(""Enter Letter:"");
+	scanf(""%c"", &x);
+
+	a = (int)(1);
+	int b = x + a;
+
+	printf(""%c -> %c"", x, b);
+
+	return 0;
+}",0
+evic904,1694992256,2,"#include <stdio.h>
+
+int main()
+{
+	char x;
+	int a;
+
+	printf(""Enter Letter:\n"");
+	scanf(""%c"", &x);
+
+	a = (int)(1);
+	int b = x + a;
+
+	printf(""%c -> %c"", x, b);
+
+	return 0;
+}",0
+evic904,1694992267,3,"#include <stdio.h>
+
+int main()
+{
+	char x;
+	int a;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+
+	a = (int)(1);
+	int b = x + a;
+
+	printf(""%c -> %c"", x, b);
+
+	return 0;
+}",1
+eyeo346,1694908944,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char result;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    result = (char)(input + 1);
+    
+    printf(""%c -> %c"", input, result);
+    
+    return 0;
+    
+}
+",1
+fesp714,1695016541,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    
+    printf(""Enter letter: "");
+    scanf(""%c"", &x);
+    
+    char result = x + 1;
+    
+    printf(""%c -> %c"",x,result);
+    
+    return 0';
+}",0
+fesp714,1695016548,2,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    
+    printf(""Enter letter: "");
+    scanf(""%c"", &x);
+    
+    char result = x + 1;
+    
+    printf(""%c -> %c"",x,result);
+    
+    return 0;
+}",0
+fesp714,1695016557,3,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    
+    char result = x + 1;
+    
+    printf(""%c -> %c"",x,result);
+    
+    return 0;
+}",1
+gjom886,1694941469,1,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter: \n"");
+    scanf(%c, &letter)
+    printf(""%c --> $c\n"", letter++);
+    return 0;
+}
+",0
+gjom886,1694941479,2,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter: \n"");
+    scanf(%c, &letter);
+    printf(""%c --> $c\n"", letter++);
+    return 0;
+}
+",0
+gjom886,1694941509,3,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter: \n"");
+    scanf(%c, &letter);
+    printf(""%c -> $c\n"",letter,  letter++);
+    return 0;
+}
+",0
+gjom886,1694941571,4,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter: \n"");
+    scanf(%c, &letter);
+    printf(""%c -> $c\n"",letter,  letter + 1);
+    return 0;
+}
+",0
+gjom886,1694941585,5,"#include <stdio.h>
+
+int main() {
+    char letter;
+    printf(""Enter letter: "");
+    scanf(""%c"", &letter);
+    printf(""%c -> %c\n"", letter, letter + 1);
+    return 0;
+}
+",0
+gjom886,1694941651,6,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter: \n"");
+    scanf(%c, &letter)
+    printf(""%c --> %c\n"",letter, letter++);
+    return 0;
+}
+",0
+gjom886,1694941667,7,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter: \n"");
+    scanf(%c, &letter)
+    printf(""%c --> %c\n"",letter, letter + 1);
+    return 0;
+}
+",0
+gjom886,1694941675,8,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter: \n"");
+    scanf(%c, &letter);
+    printf(""%c --> %c\n"",letter, letter + 1);
+    return 0;
+}
+",0
+gjom886,1694941703,9,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter: \n"");
+    scanf(""%c"", &letter);
+    printf(""%c --> %c\n"",letter, letter + 1);
+    return 0;
+}
+",0
+gjom886,1694941715,10,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter);
+    printf(""%c --> %c\n"",letter, letter + 1);
+    return 0;
+}
+",0
+gjom886,1694941728,11,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter);
+    printf(""%c -> %c\n"",letter, letter++);
+    return 0;
+}
+",0
+gjom886,1694941739,12,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter);
+    printf(""%c -> %c\n"",letter, letter+ 1);
+    return 0;
+}
+",1
+gmoh887,1695016454,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    char result;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    result = letter + 1;
+    printf(""%c -> %c"", letter, result);
+    return 0;
+}
+",1
+gvan573,1695003272,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+char main(void)
+{
+	char letter, nextLetter;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &letter);
+
+	nextLetter = letter + 1;
+
+	printf(""%c -> %c \n"", letter, nextLetter);
+
+	return 0;
+}",0
+gvan573,1695003296,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char letter, nextLetter;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &letter);
+
+	nextLetter = letter + 1;
+
+	printf(""%c -> %c \n"", letter, nextLetter);
+
+	return 0;
+}",1
+gzho986,1694824319,1,"#include <stdio.h> 
+
+int main()
+{
+    int Input;
+    printf (""Enter letter: \n"");
+    scanf (""%c"", &Input);
+    
+    char nextLetter = Input +1;
+    
+    printf (""%c -> %c "", Input, nextLetter);
+}",0
+gzho986,1694824361,2,"#include <stdio.h> 
+
+int main()
+{
+    char Input;
+    printf (""Enter letter: \n"");
+    scanf (""%c"", &Input);
+    
+    char nextLetter = Input +1;
+    
+    printf (""%c -> %c "", Input, nextLetter);
+}",1
+hgou636,1694772103,1,"#include <stdio.h>
+
+int main(void)
+{
+    int x;
+    printf(""Enter letter: "");
+    scanf(""%c"", &x);
+    char(x);
+    y = x + 1;
+    char(y)
+    printf(""%c -> %c"", x, y)
+    return 0;
+}",0
+hgou636,1694772176,2,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    printf(""Enter letter: "");
+    scanf(""%c"", &x);
+    char(x);
+    y = x + 1;
+    char(y)
+    printf(""%c -> %c"", x, y)
+    return 0;
+}",0
+hgou636,1694772226,3,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter: "");
+    scanf("" %c"", &x);
+    y = x + 1;
+    char(y)
+    printf(""%c -> %c"", x, y)
+    return 0;
+}",0
+hgou636,1694772277,4,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter: "");
+    scanf(""%c"", &x);
+    y = x + 1;
+    char(y)
+    printf(""%c -> %c"", x, y)
+    return 0;
+}",0
+hgou636,1694772327,5,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    char(y)
+    printf(""%c -> %c\n"", x, y)
+    return 0;
+}",0
+hgou636,1694772331,6,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter: "");
+    scanf(""%c"", &x);
+    y = x + 1;
+    char(y)
+    printf(""%c -> %c\n"", x, y)
+    return 0;
+}",0
+hgou636,1694772383,7,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter: "");
+    scanf("" %c"", &x);
+    y = x + 1;
+    printf(""%c -> %c\n"", x, y)
+    return 0;
+}",0
+hgou636,1694772458,8,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter: "");
+    scanf("" %c"", &x);
+    y = x + 1;
+    printf(""%c -> %c\n"", x, y);
+    return 0;
+}",0
+hgou636,1694772469,9,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf("" %c"", &x);
+    y = x + 1;
+    printf(""%c -> %c\n"", x, y);
+    return 0;
+}",1
+hkim807,1694993326,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+
+    output = input + 1;
+
+    printf(""%c -> %c"", input, output);
+
+    
+}",1
+hlee999,1694845598,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{ 
+	char x;
+	char result;
+	printf(""Enter letter:\n"");
+
+	scanf(""%c"", &x);
+	
+	result = x + 1;
+
+	printf(""%c -> %c"", x, result);
+	
+	return 0;
+}",1
+hly852,1694952763,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    input = (char)(input + 1);
+    printf(""Result = %c"", input);
+    
+    return 0;
+}
+",0
+hly852,1694952842,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char next_letter;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    next_letter = (char)(input + 1);
+    printf(""%c -> %c"", input, next_letter);
+    
+    return 0;
+}",1
+hpan363,1695019098,1,"#include <stdio.h>
+
+int main(void)
+{
+    char letter, betterLetter;
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &letter);
+    betterLetter = letter + 1;
+    printf(""%c -> %c"", letter, betterLetter);
+    
+    return 0;
+}",1
+hpir641,1694852820,1,"#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char nextletter;
+	printf(""Enter letter:\n"");
+	scanf_s(""%c"", &letter);
+	nextletter = letter + 1;
+	printf(""%c -> %c"", letter, nextletter);
+	return 0;
+}",0
+hpir641,1694852839,2,"#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char nextletter;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &letter);
+	nextletter = letter + 1;
+	printf(""%c -> %c"", letter, nextletter);
+	return 0;
+}",1
+hrob997,1694995808,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x; 
+	char result; 
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+
+	result = x + 1;
+
+	printf(""%c -> %c"", x,result);
+	return 0;
+
+}",1
+hson435,1695030927,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%d"", &x);
+    x = x + 1;
+    printf(""%c"", &x);
+
+    return 0;
+}",0
+hson435,1695031019,2,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    x = x + 1;
+    printf(""%c"", &x);
+
+    return 0;
+}",0
+hson435,1695031267,3,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+    printf(""%c"", &x);
+    x = x + 1;
+    printf(""%c"", &x);
+
+    return 0;
+}",0
+hson435,1695032363,4,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"", x, y);
+    return 0;
+}",1
+iche428,1694992489,1,"#include <stdio.h>
+int main(void)
+{
+    int x;
+    printf(""Enter letter:\n"");
+    scanf(""%d"",&x);
+    printf(""%c -> %c"",x,(x+1));
+    return 0;
+}",0
+iche428,1694992543,2,"#include <stdio.h>
+int main(void)
+{
+    int x;
+    printf(""Enter letter:\n"");
+    scanf(""%d"",&x);
+    y = x+1;
+    printf(""%c -> %c"",x,y);
+    return 0;
+}",0
+iche428,1694992562,3,"#include <stdio.h>
+int main(void)
+{
+    char x,y;
+    printf(""Enter letter:\n"");
+    scanf(""%d"",&x);
+    y = x+1;
+    printf(""%c -> %c"",x,y);
+    return 0;
+}",0
+iche428,1694992583,4,"#include <stdio.h>
+char main(void)
+{
+    char x,y;
+    printf(""Enter letter:\n"");
+    scanf(""%d"",&x);
+    y = x+1;
+    printf(""%c -> %c"",x,y);
+    return 0;
+}",0
+iche428,1694992615,5,"#include <stdio.h>
+int main(void)
+{
+    char x,y;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x);
+    y = x+1;
+    printf(""%c -> %c"",x,y);
+    return 0;
+}",1
+ihoo440,1694780128,1,"#include<stdio.h>
+
+int main()
+{
+    char let;
+    int nlet;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &let);
+    
+    nlet = (let + 1);
+
+    printf(""%c -> %c"", let, nlet);
+}",1
+imoh000,1695011796,1,"#include <stdio.h>
+
+int main()
+{
+    int x, original;
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &x);
+    original = x;
+    x = x + 1;
+    
+    printf(""%c -> %c"", original, x); 
+    
+    return 0;
+}
+",0
+imoh000,1695011856,2,"#include <stdio.h>
+
+int main()
+{
+    char x, original;
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &x);
+    original = x;
+    x = x + 1;
+    
+    printf(""%c -> %c"", original, x); 
+    
+    return 0;
+}
+",1
+ixu871,1694916414,1,"include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%d, &input);
+
+INPUTd = double(INPUT);
+OUTPUT = INPUTd + 1;
+OUTPUT = char(OUTPUT);
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);",0
+ixu871,1694916424,2,"include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%d, &input);
+
+INPUTd = double(INPUT);
+OUTPUT = INPUTd + 1;
+OUTPUT = char(OUTPUT);
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0)
+}",0
+ixu871,1694916433,3,"#include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%d, &input);
+
+INPUTd = double(INPUT);
+OUTPUT = INPUTd + 1;
+OUTPUT = char(OUTPUT);
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0)
+}",0
+ixu871,1694916444,4,"#include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%d, &input);
+
+INPUTd = double(INPUT);
+OUTPUT = INPUTd + 1;
+OUTPUT = char(OUTPUT);
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916481,5,"#include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%d, &INPUT);
+
+INPUTd = double(INPUT);
+OUTPUT = INPUTd + 1;
+OUTPUT = char(OUTPUT);
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916486,6,"#include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%d, &INPUT);
+
+INPUT = double(INPUT);
+OUTPUT = INPUTd + 1;
+OUTPUT = char(OUTPUT);
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916490,7,"#include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%d, &INPUT);
+
+INPUT = double(INPUT);
+OUTPUT = INPUT + 1;
+OUTPUT = char(OUTPUT);
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916569,8,"#include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%d, &INPUT);
+
+OUTPUT = INPUT + 1;
+
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916577,9,"#include <stdio.h>
+
+int main(void)
+{
+int INPUT;
+int OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%c, &INPUT);
+
+OUTPUT = INPUT + 1;
+
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916592,10,"#include <stdio.h>
+
+int main(void)
+{
+char INPUT;
+char OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%c, &INPUT);
+
+OUTPUT = INPUT + 1;
+
+
+printf(""Enter letter: \n%d INPUT -> %d OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916603,11,"#include <stdio.h>
+
+int main(void)
+{
+char INPUT;
+char OUTPUT;
+
+printf(""Enter letter: "");
+scanf (%c, &INPUT);
+
+OUTPUT = INPUT + 1;
+
+
+printf(""Enter letter: \n%c INPUT -> %c OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916612,12,"#include <stdio.h>
+
+int main(void)
+{
+char INPUT;
+char OUTPUT;
+
+printf(""Enter letter: "");
+scanf (""%c"", &INPUT);
+
+OUTPUT = INPUT + 1;
+
+
+printf(""Enter letter: \n%c INPUT -> %c OUTPUT"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916629,13,"#include <stdio.h>
+
+int main(void)
+{
+char INPUT;
+char OUTPUT;
+
+printf(""Enter letter: "");
+scanf (""%c"", &INPUT);
+
+OUTPUT = INPUT + 1;
+
+
+printf(""Enter letter: \n%c -> %c"", INPUT, OUTPUT);
+return(0);
+}",0
+ixu871,1694916636,14,"#include <stdio.h>
+
+int main(void)
+{
+char INPUT;
+char OUTPUT;
+
+printf(""Enter letter: "");
+scanf (""%c"", &INPUT);
+
+OUTPUT = INPUT + 1;
+
+
+printf(""\n%c -> %c"", INPUT, OUTPUT);
+return(0);
+}",1
+jbag235,1695006576,1,"#include <stdio.h>
+
+int main() {
+
+    char letter1;
+    char letter2;
+
+    printf(""Enter Letter: \n"");
+    scanf(""%c"", &letter1);
+
+    letter2  = letter1 + 1;
+
+    printf(""%c -> %c"", letter1, letter2);
+
+    return 0;
+}",0
+jbag235,1695007789,2,"#include <stdio.h>
+
+int main() {
+
+    char letter1;
+    char letter2;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter1);
+
+    letter2  = letter1 + 1;
+
+    printf(""%c -> %c"", letter1, letter2);
+
+    return 0;
+}",1
+jbam701,1694836980,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &letter);
+
+	char let;
+	let = letter + 1;
+
+	printf(""%c -> %c"", letter, let);
+
+
+	return 0;
+
+}",1
+jbis394,1694950598,1,"#include <stdio.h>
+int main(void)
+{
+char input = 'G';
+input = (char)(input + 1);
+printf(""Result = %c"", input);
+return 0;
+}",0
+jbis394,1694950851,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+int a;
+printf(""Enter value:\n"");
+scanf(""%d"", &a);
+printf(""%d x 2 = %d\n"", a, 2*a);
+return 0;
+}
+
+
+#include <stdio.h>
+int main(void)
+{
+char g;
+printf(""Enter letter:\n"");
+scanf(""%d"", &g);
+input = (char)(input + 1);
+printf(""%d -> %c"", &g, input);
+return 0;
+}",0
+jbis394,1694950857,3,"#include <stdio.h>
+int main(void)
+{
+char g;
+printf(""Enter letter:\n"");
+scanf(""%d"", &g);
+input = (char)(input + 1);
+printf(""%d -> %c"", &g, input);
+return 0;
+}",0
+jbis394,1694950881,4,"#include <stdio.h>
+int main(void)
+{
+char g;
+printf(""Enter letter:\n"");
+scanf(""%c"", &g);
+input = (char)(input + 1);
+printf(""%d -> %c"", &g, input);
+return 0;
+}",0
+jbis394,1694950886,5,"#include <stdio.h>
+int main(void)
+{
+char g;
+printf(""Enter letter:\n"");
+scanf(""%c"", &g);
+input = (char)(input + 1);
+printf(""%c -> %c"", &g, input);
+return 0;
+}",0
+jbis394,1694950979,6,"#include <stdio.h>
+int main(void)
+{
+char g;
+printf(""Enter letter:\n"");
+scanf(""%c"", &g);
+char h
+h = g + 1;
+printf(""%c -> %c"", &g, &h);
+return 0;
+}",0
+jbis394,1694951886,7,"#include <stdio.h>
+int main(void)
+{
+char g;
+printf(""Enter letter:\n"");
+scanf(""%c"", &g);
+char h;
+h = g + 1;
+printf(""%c -> %c"", &g, &h);
+return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    char L;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &L);
+    char N = L + 1;
+    printf(""%c -> %c\n"", L, N);
+    return 0;
+}",0
+jbis394,1694951913,8,"#include <stdio.h>
+
+int main(void)
+{
+    char L;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &L);
+    char N = L + 1;
+    printf(""%c -> %c\n"", L, N);
+    return 0;
+}",1
+jbuc296,1695014927,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char x, answer;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    answer = x + 1;
+    printf(""%c -> %c"", x, answer);
+
+    return 0;
+}
+",1
+jcha513,1694855996,1,"#include <stdio.h>
+
+int main()
+{
+    int x;
+    int y;
+    printf(""Enter letter:"");
+    scanf(""%c"", &x);
+    
+    y = x+1;
+    
+    printf(""\n%c -> %c"", x,y);
+    
+    return 0;
+}",0
+jcha513,1694856019,2,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter:"");
+    scanf(""%c"", &x);
+    
+    y = x+1;
+    
+    printf(""\n%c -> %c"", x,y);
+    
+    return 0;
+}",1
+jcha972,1694990717,1,"#include <stdio.h>
+
+int main () 
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    y = x+1;
+    printf(""%c -> %c"", x, y);
+
+    return 0;
+}",1
+jche456,1695011402,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char a, b;
+    printf(""Enter letter: "");
+    scanf(""%c"", &a);
+    b = (char)(a + 1);
+    printf(""%c -> %c"", a, b);
+    return 0;
+}
+",0
+jche456,1695011415,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char a, b;
+    printf(""Enter letter: "");
+    scanf(""%c"", &a);
+    b = (char)(a + 1);
+    printf(""\n%c -> %c"", a, b);
+    return 0;
+}
+",1
+jchi648,1694989312,1,"#include<stdio.h>
+
+int main(void) {
+
+    char a;
+    printf(""Enter value:\n"");
+    scanf(""%c"", &a);
+    char b = (char)(a+1);
+    printf(""%c -> %c"", a, b);
+    return 0;
+
+}
+",0
+jchi648,1694989322,2,"#include<stdio.h>
+
+int main(void) {
+
+    char a;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &a);
+    char b = (char)(a+1);
+    printf(""%c -> %c"", a, b);
+    return 0;
+
+}
+",1
+jdu853,1694912081,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    char output = (char) (input + 1);
+    printf(""%c -> %c"", input , output);
+
+    return 0;
+}",1
+jfet156,1694870340,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+int main(void)
+{
+    
+char input;
+char result;
+
+printf(""Enter letter: "");
+scanf(""%c"", &input);
+
+result = input + 1;
+
+printf(""%c -> %c"", input, result);
+
+return 0;
+}
+",0
+jfet156,1694870350,2,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+int main(void)
+{
+    
+char input;
+char result;
+
+printf(""Enter letter: \n"");
+scanf(""%c"", &input);
+
+result = input + 1;
+
+printf(""%c -> %c"", input, result);
+
+return 0;
+}
+",1
+jjon350,1694952428,1,"#include <stdio.h>
+
+int main(void)
+{   
+    int x;
+    int Result;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    
+    Result= x + 1;
+    
+    printf(""%c -> %c"", x, Result);
+
+    return 0;
+}",0
+jjon350,1694952781,2,"#include <stdio.h>
+
+int main(void)
+{   
+    char x;
+    char Result;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    
+    Result= x + 1;
+    
+    printf(""%c -> %c"", x, Result);
+
+    return 0;
+}",1
+jlah077,1694830950,1,"#include <stdio.h>
+
+int main()
+{
+	char x;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+	printf(""%c -> %c"", (int) x, (int) x + 1);
+	return 0;
+}",1
+jlal056,1694923406,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	char result;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+
+	result = x + 1;
+
+	printf(""%c -> %c\n"", x, result);
+
+	return 0;
+}",1
+jlew699,1694919670,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    printf(""Enter letter: \n"");
+    
+    scanf(""%c"", &input);
+    
+    printf(""%c -> %c\n"", input, input +1);
+    
+   
+    
+    return 0;
+}",1
+jli463,1694828424,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	printf(""Enter letter:"");
+	scanf(""%c"", &x);
+
+	printf(""%c -> %c"", x, x + 1);
+	return 0;
+}",0
+jli463,1694828437,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+
+	printf(""%c -> %c"", x, x + 1);
+	return 0;
+}",1
+jli917,1694937625,1,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+    
+    printf(""Enter letter: "");
+    scanf("" %c"", &inputLetter);  // Note the space before %c to consume any preceding whitespace
+    
+    char nextLetter;
+    
+    if (inputLetter >= 'a' && inputLetter < 'z') {
+        nextLetter = inputLetter + 1;
+    } else if (inputLetter >= 'A' && inputLetter < 'Z') {
+        nextLetter = inputLetter + 1;
+    } else {
+        printf(""Invalid input. Please enter a letter between 'a' and 'z' or 'A' and 'Z'.\n"");
+        return 1;  // Exit with an error code
+    }
+    
+    printf(""%c -> %c\n"", inputLetter, nextLetter);
+    
+    return 0;
+}
+",0
+jli917,1694937651,2,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+    
+    printf(""Enter letter: /n"");
+    scanf("" %c"", &inputLetter);  // Note the space before %c to consume any preceding whitespace
+    
+    char nextLetter;
+    
+    if (inputLetter >= 'a' && inputLetter < 'z') {
+        nextLetter = inputLetter + 1;
+    } else if (inputLetter >= 'A' && inputLetter < 'Z') {
+        nextLetter = inputLetter + 1;
+    } else {
+        printf(""Invalid input. Please enter a letter between 'a' and 'z' or 'A' and 'Z'.\n"");
+        return 1;  // Exit with an error code
+    }
+    
+    printf(""%c -> %c\n"", inputLetter, nextLetter);
+    
+    return 0;
+}
+",0
+jli917,1694937666,3,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+    
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &inputLetter);  // Note the space before %c to consume any preceding whitespace
+    
+    char nextLetter;
+    
+    if (inputLetter >= 'a' && inputLetter < 'z') {
+        nextLetter = inputLetter + 1;
+    } else if (inputLetter >= 'A' && inputLetter < 'Z') {
+        nextLetter = inputLetter + 1;
+    } else {
+        printf(""Invalid input. Please enter a letter between 'a' and 'z' or 'A' and 'Z'.\n"");
+        return 1;  // Exit with an error code
+    }
+    
+    printf(""%c -> %c\n"", inputLetter, nextLetter);
+    
+    return 0;
+}
+",1
+jlia948,1694871170,1,"#include <stdio.h>
+
+int main()
+{
+    int input;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, input+1);
+    return 0;
+}",0
+jlia948,1694871246,2,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, input+1);
+    return 0;
+}",1
+jmak320,1694947521,1,"#include <stdio.h>
+int main(void)
+{
+	char input;
+	char output;
+
+	output = input + 1;
+
+	sprintf(""%c"",&input);
+	printf(""Enter a letter:\n%c -> %c\n"",input ,output);
+	
+	return 0;
+}",0
+jmak320,1694947656,2,"#include <stdio.h>
+int main(void)
+{
+	char input;
+	char output;
+
+	output = input + 1;
+
+	scanf(""%c"",&input);
+	printf(""Enter a letter:\n%c -> %c\n"",input ,output);
+	
+	return 0;
+}
+",0
+jmak320,1694947968,3,"#include <stdio.h>
+int main(void)
+{
+	char input;
+	char output;
+
+	output = (char)(input + 1);
+
+	scanf(""%c"",&input);
+	printf(""Enter a letter:\n%c -> %c\n"",input, output);
+	
+	return 0;
+}",0
+jmak320,1694948012,4,"#include <stdio.h>
+int main(void)
+{
+	char input;
+	char output;
+
+	output = (char)(input + 1);
+
+	scanf(""%c"", &input);
+	printf(""Enter a letter:\n%c -> %c\n"",input, output);
+	
+	return 0;
+}",0
+jmak320,1694948173,5,"#include <stdio.h>
+int main(void)
+{
+	char input;
+	char output;
+
+	
+
+	scanf(""%c"", &input);
+	output = (char)(input + 1);
+	printf(""Enter a letter:\n%c -> %c\n"",input, output);
+	
+	return 0;
+}",0
+jmak320,1694948198,6,"#include <stdio.h>
+int main(void)
+{
+	char input;
+	char output;
+
+	
+	scanf(""%c"", &input);
+	output = (char)(input + 1);
+	
+	printf(""Enter letter:\n%c -> %c\n"",input, output);
+	
+	return 0;
+}",1
+jmei608,1694840775,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char c;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &c);
+
+	printf(""%c -> %c"",c ,c + 1);
+
+	return 0;
+}",1
+jpaz106,1695006602,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+	
+	char result;
+	result = input + 1;
+	
+	printf(""%c -> %c"", input, result);
+	
+	return 0;
+	
+}",1
+jsan813,1695013659,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+        char result;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+
+    result = x + 1;
+
+    printf(""%c -> %c"", x, result);
+
+    return 0;
+}",1
+jsch842,1694998550,1,"#include <stdio.h>
+int main(void)
+{
+    int input
+    int output
+    printf(""Enter letter: "");
+    scanf(""%d"", &input);
+    output = input + 1
+    printf(""%d -> %d, input, output);
+    return 0;
+}",0
+jsch842,1694998573,2,"#include <stdio.h>
+int main(void)
+{
+    int input;
+    int output;
+    printf(""Enter letter: "");
+    scanf(""%d"", &input);
+    output = input + 1
+    printf(""%d -> %d, input, output);
+    return 0;
+}",0
+jsch842,1694998642,3,"#include <stdio.h>
+int main(void)
+{
+    int inputLetter;
+    int outputLetter;
+    printf(""Enter letter: "");
+    scanf(""%d"", &inputLetter);
+    outputLetter = inputLetter + 1
+    printf(""%d -> %d, inputLetter, outputLetter);
+    return 0;
+}",0
+jsch842,1694998735,4,"#include <stdio.h>
+int main(void)
+{
+    char input, output;
+    printf(""Enter letter: "");
+    scanf(""%d"", &input);
+    output = input + 1
+    printf(""%d -> %d, inputLetter, outputLetter);
+    return 0;
+}",0
+jsch842,1694998772,5,"#include <stdio.h>
+int main(void)
+{
+    char input, output;
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    output = input + 1
+    printf(""%c -> %c, inputLetter, outputLetter);
+    return 0;
+}",0
+jsch842,1694998788,6,"#include <stdio.h>
+int main(void)
+{
+    char input, output;
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    output = input + 1;
+    printf(""%c -> %c, inputLetter, outputLetter);
+    return 0;
+}",0
+jsch842,1694998801,7,"#include <stdio.h>
+int main(void)
+{
+    char input, output;
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    output = input + 1;
+    printf(""%c -> %c"", inputLetter, outputLetter);
+    return 0;
+}",0
+jsch842,1694998813,8,"#include <stdio.h>
+int main(void)
+{
+    char input, output;
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    output = input + 1;
+    printf(""%c -> %c"", input, output);
+    return 0;
+}",0
+jsch842,1694998830,9,"#include <stdio.h>
+int main(void)
+{
+    char input, output;
+    printf(""Enter letter: \n"");
+    scanf(""%d"", &input);
+    output = input + 1;
+    printf(""%d -> %d"", input, output);
+    return 0;
+}",0
+jsch842,1694998853,10,"#include <stdio.h>
+int main(void)
+{
+    char input, output;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    output = input + 1;
+    printf(""%c -> %c"", input, output);
+    return 0;
+}",1
+jshi444,1694838726,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+
+	// Question 3
+	// printf(""Greetings, \""ENGGEN131\"" "");
+
+
+	// Question 4
+
+	/*
+	
+	int x;
+	int result;
+
+	printf(""Enter value:\n"");
+	scanf(""%d"", &x);
+
+	result = x * 2;
+
+	printf(""%d x 2 = %d"", x, result);
+
+	*/
+
+	// Question 5
+	
+	char letter;
+	char new_letter;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &letter);
+	 
+
+	new_letter = letter + 1;
+
+	printf(""%c -> %c"", letter, new_letter);
+
+	return 0;
+}",1
+jshr431,1694958933,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    Next_l = (char)(input + 1);
+
+    printf(""%c -> %c\n"", input, Next_L);
+
+    return 0;
+}",0
+jshr431,1694958967,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    Next_l = (char)(input + 1);
+
+    printf(""%c -> %c\n"", input, Next_L);
+
+    return 0;
+}",0
+jshr431,1694959086,3,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    Next_l = (char)(input + 1);
+
+    printf(""%c -> %c\n"", input, Next_L);
+
+    return 0;
+}",0
+jshr431,1694959142,4,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    Next_l = (char)(input + 1);
+
+    printf(""%c -> %c\n"", input, Next_l);
+
+    return 0;
+}",0
+jshr431,1694960052,5,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    char Next_l = (char)(input + 1);
+
+    printf(""%c -> %c\n"", input, Next_l);
+
+    return 0;
+}",1
+jsin385,1694937645,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 1;
+    
+    printf(""Enter letter:\n"");
+    
+    return 0;
+    
+}",0
+jsin385,1694937796,2,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    
+    printf(""Enter letter:\n"");
+    
+    return 0;
+    
+}",0
+jsin385,1694937886,3,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    
+    printf(""Enter letter:\n"");
+    sscanf(""%d"", &a)
+    
+    return 0;
+    
+}",0
+jsin385,1694937894,4,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    
+    printf(""Enter letter:\n"");
+    sscanf(""%d"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694937930,5,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    
+    printf(""Enter letter:\n"");
+    sscanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694937937,6,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938014,7,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> \n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938023,8,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c ->\n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938108,9,"#include <stdio.h>
+
+int main(void)
+{
+    char 65;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c ->\n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938134,10,"#include <stdio.h>
+
+int main(void)
+{
+    char 65;
+    a = 65;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c ->\n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938148,11,"#include <stdio.h>
+
+int main(void)
+{
+    a = 65;
+    char 65;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c ->\n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938167,12,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+
+    printf(""Enter letter:\n"");
+    printf(""%c ->\n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938205,13,"#include <stdio.h>
+
+int main(void)
+{
+    char 65;
+
+    printf(""Enter letter:\n"");
+    printf(""%c ->\n"", 65);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938232,14,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    a = 65;
+
+    printf(""Enter letter:\n"");
+    printf(""%c ->\n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938257,15,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    a = 97;
+
+    printf(""Enter letter:\n"");
+    printf(""%c ->\n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938345,16,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    a = 97;
+
+    printf(""Enter letter:\n"");
+    printf(""%c -> a++ \n"", a);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938375,17,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    a = 97;
+    b = a++
+
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c \n"", a, b);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938384,18,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    a = 97;
+    b = a++
+
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938391,19,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    a = 97;
+    b = a++;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938400,20,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    a = 97;
+    b = a++;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    
+    return 0;
+    
+}",0
+jsin385,1694938517,21,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    a = 97;
+    b = a++;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", ""%c"", &a, &b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938542,22,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    a = 97;
+    b = a++;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    scanf(""%c"", &b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938560,23,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    a = 97;
+    b = a + 1;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    scanf(""%c"", &b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938595,24,"#include <stdio.h>
+
+int main(void)
+{
+    char 97;
+    char 98;
+    a = 97;
+    b = a + 1;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    scanf(""%c"", &b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938602,25,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    a = 97;
+    b = a + 1;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    scanf(""%c"", &b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938727,26,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    scanf(""%c"", &b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938740,27,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    
+    x = 97;
+    y = a + 1;
+    
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    scanf(""%c"", &b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938746,28,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    
+    a = 97;
+    b = a + 1;
+    
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    scanf(""%c"", &a);
+    scanf(""%c"", &b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938879,29,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    
+    a = 97;
+    scanf(""%c"", &a);
+    b = a + 1;
+    scanf(""%c"", &b);
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938947,30,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    
+    a = 97;
+    scanf(""%c"", &a);
+    
+    b = a + 1;
+    scanf(""%c"", &b);
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    
+    return 0;
+    
+}",0
+jsin385,1694938976,31,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    
+    a = 97;
+    scanf(""%c"", &a);
+    
+    a = a + 1;
+    scanf(""%c"", &b);
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    
+    return 0;
+    
+}",0
+jsin385,1694939017,32,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    
+    a = 97;
+    scanf(""%c"", &a);
+    
+    b = a + 1;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c\n"", a, b);
+    
+    return 0;
+    
+}",1
+jsta466,1694833824,1,"#include <stdio.h>
+
+int main()
+{
+    int letter;
+    int outt;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    outt = (letter + 1);
+    printf(""%c -> %c"",letter, outt);
+
+}",0
+jsta466,1694833867,2,"#include <stdio.h>
+
+int main()
+{
+    int letter;
+    int outt;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    outt = (letter + 1);
+    printf(""%d-> %d"",letter, outt);
+
+}",0
+jsta466,1694834403,3,"#include <stdio.h>
+
+int main()
+{
+    int letter;
+    char outt;
+    printf(""Enter letter:\n"");
+    scanf(""%d"", &letter);
+    outt = (letter + 1);
+    printf(""%c-> %c\n"",letter, outt);
+
+}",0
+jsta466,1694834455,4,"#include <stdio.h>
+
+int main()
+{
+    int letter;
+    char outt;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    outt = (letter + 1);
+    printf(""%c-> %c\n"",letter, outt);
+
+}",0
+jsta466,1694834508,5,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    char outt;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    outt = (letter + 1);
+    printf(""%c-> %c\n"",letter, outt);
+
+}",0
+jsta466,1694834515,6,"#include <stdio.h>
+
+int main()
+{
+    char letter;
+    char outt;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    outt = (letter + 1);
+    printf(""%c -> %c\n"",letter, outt);
+
+}",1
+jwil813,1694841656,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	char y;
+
+		printf(""Enter letter: \n"");
+	scanf(""%c"", &x);
+
+	y = x + 1;
+
+	printf(""%c -> %c"", x, y);
+
+
+}",1
+jwon253,1694941268,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char nextLetter;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    nextLetter = (char)(input + 1);
+
+    printf(""%c -> %c\n"", input, nextLetter);
+
+    return 0;
+}",1
+jyua529,1694834568,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char result;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    
+    result = x + 1;
+    
+    printf(""%c -> %c"", x, result);
+    
+    return 0;
+   
+
+}",1
+jzho786,1694925252,1,"#include <stdio.h>
+
+int main(void)
+
+{
+    
+
+char inputLetter;
+
+    int input;
+
+    printf(""Enter letter: \n"");
+    
+    scanf(""%c"", &inputLetter);
+    
+    printf(%c -> %c\n"", inputLetter, inputLetter + 1);
+
+    return 0;
+}",0
+jzho786,1694925318,2,"#include <stdio.h>
+
+int main(void) {
+    char inputLetter;
+
+    printf(""Enter letter: \n"");
+    
+    scanf("" %c"", &inputLetter);  
+
+    printf(""%c -> %c\n"", inputLetter, inputLetter + 1); 
+    return 0;
+}
+",1
+jzho786,1694925379,3,"#include <stdio.h>
+
+int main() 
+{
+    char inputLetter;
+
+    printf(""Enter letter: \n"");
+    
+    scanf("" %c"", &inputLetter);  
+
+    printf(""%c -> %c\n"", inputLetter, inputLetter + 1); 
+    return 0;
+}
+",1
+kcao565,1694852242,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+	char input, result;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &input);
+
+	result = input + 1;
+	printf(""%c -> %c"", input, result);
+
+	return 0;
+}",1
+kcao657,1694950299,1,"#define _CRT_SECURE_NO_WARNINGS	
+#include <stdio.h> 
+int main(void)
+{
+	char input, output;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	output = (char)(input + 1);
+	printf(""%c -> %c"", input, output);
+
+	return 0;
+}
+",1
+kgra470,1694986853,1,"#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+int main(void)
+{
+	char x, z;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &x);
+	z = x + 1;
+	printf(""%c -> %c"", x, z);
+	return 0;
+}",1
+kjoe685,1694956325,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	char y;
+	printf(""Enter letter: "");
+	scanf(""%c"", &x);
+
+	y = (char)(x + 1);
+
+	printf(""\n%c -> %c"", x, y);
+	return 0;
+}",1
+kjun638,1694936107,1,"#include <stdio.h>
+
+int main()
+{
+    char character, next_character;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", character);
+
+    next_character = character + 1; 
+
+    printf(""%c -> %c"", character, next_character);
+
+    return 0;
+}",0
+kjun638,1694936129,2,"#include <stdio.h>
+
+int main()
+{
+    char character
+    char next_character;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", character);
+
+    next_character = character + 1; 
+
+    printf(""%c -> %c"", character, next_character);
+
+    return 0;
+}",0
+kjun638,1694936148,3,"#include <stdio.h>
+
+int main()
+{
+    char character;
+    char next_character;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", character);
+
+    next_character = character + 1; 
+
+    printf(""%c -> %c"", character, next_character);
+
+    return 0;
+}",0
+kjun638,1694936158,4,"#include <stdio.h>
+
+char main()
+{
+    char character;
+    char next_character;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", character);
+
+    next_character = character + 1; 
+
+    printf(""%c -> %c"", character, next_character);
+
+    return 0;
+}",0
+kjun638,1694936166,5,"#include <stdio.h>
+
+int main()
+{
+    char character;
+    char next_character;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", character);
+
+    next_character = character + 1; 
+
+    printf(""%c -> %c"", character, next_character);
+
+    return 0;
+}",0
+kjun638,1694936204,6,"#include <stdio.h>
+
+int main()
+{
+    char character, next_character;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &character);
+
+    next_character = character + 1; 
+
+    printf(""%c -> %c"", character, next_character);
+
+    return 0;
+}",1
+kkha484,1694943981,1,"#include <stdio.h>
+
+int main(){
+    
+    char Letter
+    printf(""Enter letter:\n"");
+    scanf(""%c"", Letter);
+    
+    char NewLetter 
+    int NumberProcess
+    NumberProcess = int(Letter) + 1;
+    NewLetter = char(NumberProcess);
+    
+    fprintf(""%c -> %c"", Letter, NewLetter);
+}",0
+kkha484,1694944084,2,"#include <stdio.h>
+
+int main(){
+    
+    char Letter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &Letter);
+    
+    char NewLetter 
+    int NumberProcess
+    NumberProcess = (int)Letter + 1;
+    NewLetter = (char)NumberProcess;
+    
+    fprintf(""%c -> %c\n"", Letter, NewLetter);
+}",0
+kkha484,1694944104,3,"#include <stdio.h>
+
+int main(){
+    
+    char Letter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &Letter);
+    
+    char NewLetter 
+    int NumberProcess
+    NumberProcess = (int)(Letter) + 1;
+    NewLetter = (char)(NumberProcess);
+    
+    fprintf(""%c -> %c\n"", Letter, NewLetter);
+}",0
+kkha484,1694944129,4,"#include <stdio.h>
+
+int main(){
+    
+    char Letter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &Letter);
+    
+    char NewLetter 
+    int NumberProcess
+    NumberProcess = (int)(Letter) + 1;
+    NewLetter = (char)(NumberProcess);
+    
+    fprintf(""%c -> %c\n"", Letter, NewLetter);
+    
+    return 0;
+}",0
+kkha484,1694944232,5,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(){
+    
+    char Letter;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &Letter);
+    
+    char NewLetter 
+    int NumberProcess
+    
+    NumberProcess = (int)(Letter) + 1;
+    NewLetter = (char)(NumberProcess);
+    
+    fprintf(""%c -> %c\n"", Letter, NewLetter);
+    
+    return 0;
+}",0
+kkha484,1694944371,6,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(){
+    
+    char Letter;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &Letter);
+    
+    char NewLetter 
+    int NumberProcess
+    
+    NumberProcess = (int)(Letter) + 1;
+    NewLetter = (char)(NumberProcess);
+    
+    printf(""%c -> %c\n"", Letter, NewLetter);
+    
+    return 0;
+}",0
+kkha484,1694944405,7,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(){
+    
+    char Letter;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &Letter);
+    
+    char NewLetter;
+    int NumberProcess;
+    
+    NumberProcess = (int)(Letter) + 1;
+    NewLetter = (char)(NumberProcess);
+    
+    printf(""%c -> %c\n"", Letter, NewLetter);
+    
+    return 0;
+}",1
+klam376,1694874909,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char y;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+
+     y = x + 1;
+    printf(""%c -> %c\n"", x, y);
+    return 0;
+}",1
+kluc619,1694917918,1,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  scanf(%char, letter);
+  
+  return 0;
+}",0
+kluc619,1694917928,2,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  scanf(%c, letter);
+  
+  return 0;
+}",0
+kluc619,1694917980,3,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  scanf(""%c"", letter);
+  
+  return 0;
+}",0
+kluc619,1694917996,4,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  scanf(""%c"", &letter);
+  
+  return 0;
+}",0
+kluc619,1694918143,5,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  scanf(""%c"", &letter);
+  printf(""%c"", ++letter)
+  return 0;
+}",0
+kluc619,1694918148,6,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  scanf(""%c"", &letter);
+  printf(""%c"", ++letter);
+  return 0;
+}",0
+kluc619,1694918201,7,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  print(""Enter letter:\n"")
+  scanf(""%c"", &letter);
+  printf(""%c -> %c"", letter, ++letter);
+  return 0;
+}",0
+kluc619,1694918209,8,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  print(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+  printf(""%c -> %c"", letter, ++letter);
+  return 0;
+}",0
+kluc619,1694918229,9,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  printf(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+  printf(""%c -> %c"", letter, ++letter);
+  return 0;
+}",0
+kluc619,1694918250,10,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  printf(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+  printf(""%c -> %c"", ++letter, letter);
+  return 0;
+}",0
+kluc619,1694918264,11,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  printf(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+  printf(""%c"", ++letter);
+  return 0;
+}",0
+kluc619,1694918280,12,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  printf(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+  printf(""%c -> %c"" , letter , ++letter);
+  return 0;
+}",0
+kluc619,1694918345,13,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  printf(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+  char letter2 = ++letter;
+  printf(""%c -> %c"" , letter , letter2);
+  return 0;
+}",0
+kluc619,1694918368,14,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  printf(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+
+  printf(""%c -> %c"" , letter);
+  return 0;
+}",0
+kluc619,1694918386,15,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  printf(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+  char letter2 = ++letter;
+  printf(""%c -> %c"" , letter, letter2);
+  return 0;
+}",0
+kluc619,1694918393,16,"#include <stdio.h>
+
+int main(void) {
+  
+  char letter;
+  
+  printf(""Enter letter:\n"");
+  scanf(""%c"", &letter);
+  char letter2 = letter + 1;
+  printf(""%c -> %c"" , letter, letter2);
+  return 0;
+}",1
+kmcv530,1694922973,1,"#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    int next;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    next = letter + 1;
+    printf(""%c -> %c"", letter, next);
+    
+}",1
+kqua446,1694800463,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    
+    
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, alphabet)
+}",0
+kqua446,1694800481,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    string alphabet[26] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    
+    
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, alphabet)
+}",0
+kqua446,1694800487,3,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    str alphabet[26] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    
+    
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, alphabet)
+}",0
+kqua446,1694800517,4,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    
+    
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, alphabet)
+}",0
+kqua446,1694800526,5,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    
+    
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, alphabet)
+}",0
+kqua446,1694800589,6,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    
+    
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, alphabet);
+    
+    return 0;
+}",0
+kqua446,1694800643,7,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    
+    
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, alphabet);
+    
+    return 0;
+}",0
+kqua446,1694800960,8,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        if (alphabet[index][1] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][1]);
+        }
+        
+    }
+    
+    return 0;
+}",0
+kqua446,1694800997,9,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        printf(index);
+        if (alphabet[index][1] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][1]);
+        }
+        
+    }
+    
+    return 0;
+}",0
+kqua446,1694801029,10,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        printf(""%d"", index);
+        if (alphabet[index][1] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][1]);
+        }
+        
+    }
+    
+    return 0;
+}",0
+kqua446,1694801061,11,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        printf(""%c\n"", alphabet[index][0]);
+        if (alphabet[index][1] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][0]);
+        }
+        
+    }
+    
+    return 0;
+}",0
+kqua446,1694801069,12,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        if (alphabet[index][1] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][0]);
+        }
+        
+    }
+    
+    return 0;
+}",0
+kqua446,1694801103,13,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        printf(""%c -> %c\n"", input, alphabet[index + 1][0]);
+        if (alphabet[index][1] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][0]);
+        }
+        
+    }
+    
+    return 0;
+}",0
+kqua446,1694801114,14,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        printf(""%c -> %c\n"", input, alphabet[index + 1][0]);
+        if (alphabet[index][0] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][0]);
+        }
+        
+    }
+    
+    return 0;
+}",0
+kqua446,1694801135,15,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        if (alphabet[index][0] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][0]);
+        }
+        
+    }
+    
+    return 0;
+}",0
+kqua446,1694801280,16,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char alphabet[26][1] = {""a"", ""b"", ""c"", ""d"", ""e"", ""f"", ""g"", ""h"", ""i"", ""j"", ""k"",
+        ""l"", ""m"", ""n"", ""o"", ""p"", ""q"", ""r"", ""s"", ""t"", ""u"", ""v"", ""w"", ""x"", ""y"", 
+        ""z""
+    };
+    char bigalpha[26][1] = {""A"", ""B"", ""C"", ""D"", ""E"", ""F"", ""G"", ""H"", ""I"", ""J"", ""K"",
+        ""L"", ""M"", ""N"", ""O"", ""P"", ""Q"", ""R"", ""S"", ""T"", ""U"", ""V"", ""W"", ""X"", ""Y"", 
+        ""Z""
+    };
+    int index;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    for (index = 0; index < 26; index++) {
+        if (alphabet[index][0] == input) {
+            printf(""%c -> %c"", input, alphabet[index + 1][0]);
+        }
+        else if (bigalpha[index][0] == input) {
+            printf(""%c -> %c"", input, bigalpha[index + 1][0]);
+        }
+        
+    }
+    
+    return 0;
+}",1
+ksai757,1694926478,1,"# include <stdio.h>
+
+int main(void)
+{
+    char inputLetter;
+
+    printf(""Enter letter: "");
+    scanf("" %c"", &inputLetter);
+    printf(""\n"");
+
+    char nextLetter = inputLetter + 1;
+
+    printf(""%c -> %c\n"", inputLetter, nextLetter);
+
+    return 0;
+}",1
+ksik996,1694830689,1,"#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    printf(""Enter letter:\n"")l;
+    scanf(%c, &letter);
+    char letter2 = letter + 1;
+    printf(""%c -> %c"", letter, letter2)
+}",0
+ksik996,1694830703,2,"#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    printf(""Enter letter:\n"")l;
+    scanf(""%c"", &letter);
+    char letter2 = letter + 1;
+    printf(""%c -> %c"", letter, letter2)
+}",0
+ksik996,1694830706,3,"#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    printf(""Enter letter:\n"")l;
+    scanf(""%c"", &letter);
+    char letter2 = letter + 1;
+    printf(""%c -> %c"", letter, letter2);
+}",0
+ksik996,1694830713,4,"#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    char letter2 = letter + 1;
+    printf(""%c -> %c"", letter, letter2);
+}",1
+kyoo839,1694768863,1,"#include <stdio.h>
+
+int main(void)
+{
+
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+
+    char y;
+    y = x + 1;
+    
+    printf(""%c -> %c"", x, y);
+
+    return 0;
+}",1
+kzha391,1694945348,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+    x = x + 1;
+    printf(""Enter Letter : a -> %d/n"", x);
+
+    return 0;
+}",0
+kzha391,1694945361,2,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+    x = x + 1;
+    printf(""Enter Letter : a -> b"", x);
+
+    return 0;
+}",0
+kzha391,1694945393,3,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+    x = x + 1;
+    printf(""Enter Letter : a -> %d"", x);
+
+    return 0;
+}",0
+kzha391,1694945407,4,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+    x = x + 1;
+    printf(""Enter Letter\n: a -> %d"", x);
+
+    return 0;
+}",0
+kzha391,1694945418,5,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+    x = x + 1;
+    printf(""Enter Letter: \n a -> %d"", x);
+
+    return 0;
+}",0
+kzha391,1694945445,6,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+    x = x + 1;
+    
+    %d = 'b'
+    printf(""Enter Letter: \na -> %d"", x);
+
+    return 0;
+}",0
+kzha391,1694945457,7,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+    x = x + 1;
+    
+    printf(""Enter Letter: \na -> %d"", x);
+
+    return 0;
+}",0
+kzha391,1694945483,8,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+    b = x + 1;
+    
+    printf(""Enter Letter: \na -> %d"", b);
+
+    return 0;
+}",0
+kzha391,1694945521,9,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+
+   x + 1 = 'b';
+    
+    printf(""Enter Letter: \na -> %d"", b);
+
+    return 0;
+}",0
+kzha391,1694945548,10,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+    
+    x = x + 1;
+    printf(""Enter Letter: \na -> %d"", b);
+
+    return 0;
+}",0
+kzha391,1694945559,11,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+    
+    x = x + 1;
+    printf(""Enter Letter: \na -> %d"", x);
+
+    return 0;
+}",0
+kzha391,1694945584,12,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+    
+    x = x + 1;
+    printf(""Enter Letter: \na -> x"");
+
+    return 0;
+}",0
+kzha391,1694945600,13,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+    
+    x = x + 1;
+    printf(""Enter Letter: \na -> b"");
+
+    return 0;
+}",0
+kzha391,1694945615,14,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    x = 'a';
+    
+    x = x + 1;
+    printf(""Enter letter: \na -> b"");
+
+    return 0;
+}",0
+kzha391,1694945690,15,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    
+    y = x + 1;
+    printf(""Enter letter: \nx -> y"");
+
+    return 0;
+}",0
+laba812,1694946007,1,"#include <stdio.h>
+
+int main(void)
+
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x);
+    
+    char y;
+    
+    y = x + 1;
+    
+    printf(""%c -> %c"",x,y);
+    return 0;
+    
+}",1
+lcam453,1695027781,1,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    printf(""Enter a letter: \n"");
+    scanf(""%c"", &a);
+    int asciiValue = a;
+    int newAscii = asciiValue + 1;
+    char b = (char)newAscii;
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}",0
+lcam453,1695027841,2,"#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &a);
+    int asciiValue = a;
+    int newAscii = asciiValue + 1;
+    char b = (char)newAscii;
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}",1
+lche668,1694940792,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+
+    char output = (char)(input + 1);
+
+    printf(""%c -> %c"", input, output);
+    return 0;
+}",1
+ldam917,1694931731,1,"#include <stdio.h>
+int main(void)
+{
+    char letter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"",&letter);
+    char nextletter=letter+1;
+    printf(""%c -> %c\n"",letter,nextletter);
+    return 0;
+}",1
+lhal844,1694851469,1,"#include <stdio.h>
+
+int main()
+{
+    char letter, letter2;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    letter2 = letter + 1;
+    printf(""%c -> %c"", letter, letter2);
+
+    return 0;
+}",1
+ljer106,1694937908,1,"#include <stdio.h>
+
+int main()
+{   
+    char x;
+    char final;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    final = x + 1;
+    printf(""%c -> %c"", x, final);
+
+    return 0;
+}",1
+llei074,1694853663,1,"#include <stdio.h>
+
+int main()
+{
+	char x;
+	char y;
+	scanf(""%c"", &x);
+
+	y = x + 1;
+
+	printf(""Enter letter:\n%c -> %c"", x,y);
+
+	return 0;
+}",1
+llia622,1694860857,1,"#include <stdio.h>
+
+int main() {
+    char inputLetter;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &inputLetter);
+
+    // Check if the input is an lowercase letter
+    if (inputLetter >= 'a' && inputLetter < 'z') {
+        char nextLetter = inputLetter + 1;
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    }
+    // Check if the input is a uppercase letter
+    else if (inputLetter >= 'A' && inputLetter < 'Z') {
+        char nextLetter = inputLetter + 1;
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    }
+
+    return 0;
+}",1
+lmen032,1695007857,1,"#include <stdio.h>
+
+int main(void){
+   char x;
+   char y;
+
+    printf(""Enter Value:    \n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"", x, y);
+
+    return 0;
+}",0
+lmen032,1695007875,2,"#include <stdio.h>
+
+int main(void){
+   char x;
+   char y;
+
+    printf(""Enter letter:    \n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"", x, y);
+
+    return 0;
+}",1
+lsen376,1694947022,1,"#include <stdio.h>
+
+int main(void)
+{
+
+    char x;
+    int y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c \n"", x, y);
+
+    return 0;
+}
+",1
+lsha172,1694994484,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""char input = "");
+    scanf(""%c"", &input);
+    input = input+1; 
+    
+    printf(""Result = %c"", input);
+    
+    
+
+    return 0;
+}",0
+lsha172,1694994507,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    input = input+1; 
+    
+    printf(""Result = %c"", input);
+    
+    
+
+    return 0;
+}",0
+lsha172,1694994549,3,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:\n "");
+    scanf(""%c"", &input);
+    input = input+1; 
+    
+    printf(""a -> %c"", input);
+    
+    
+
+    return 0;
+}",0
+lsha172,1694994563,4,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    input = input+1; 
+    
+    printf(""a -> %c"", input);
+    
+    
+
+    return 0;
+}",0
+lsha172,1694994605,5,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char x;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    input = x+1; 
+    
+    printf(""%c -> %c"", input, x);
+    
+    
+
+    return 0;
+}",0
+lsha172,1694994678,6,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char x;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    x = input+1; 
+    
+    printf(""%c -> %c"", input, x);
+    
+    
+
+    return 0;
+}",1
+lvin900,1695023367,1,"#include <stdio.h>
+
+int letterplusone() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf_s(""%c"", &input);
+
+	char output = input + 1;
+
+	printf(""'%c' -> '%c'\n"", input, input + 1);
+
+	return 0;
+}",0
+lvin900,1695023381,2,"#include <stdio.h>
+
+int letterplusone() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char output = input + 1;
+
+	printf(""'%c' -> '%c'\n"", input, input + 1);
+
+	return 0;
+}",0
+lvin900,1695023392,3,"#include <stdio.h>
+
+int letterplusone() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char output = input + 1;
+
+	printf(""'%c' -> '%c'\n"", output, input + 1);
+
+	return 0;
+}",0
+lvin900,1695023403,4,"#include <stdio.h>
+
+int main() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char output = input + 1;
+
+	printf(""'%c' -> '%c'\n"", output, input + 1);
+
+	return 0;
+}",0
+lvin900,1695023415,5,"#include <stdio.h>
+
+int main() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char output = input + 1;
+
+	printf(""'%c' -> '%c'\n"", input, input + 1);
+
+	return 0;
+}",0
+lvin900,1695023421,6,"#include <stdio.h>
+
+int main() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char input = input + 1;
+
+	printf(""'%c' -> '%c'\n"", input, input + 1);
+
+	return 0;
+}",0
+lvin900,1695023434,7,"#include <stdio.h>
+
+int main() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char output = input + 1;
+
+	printf(""'%c' -> '%c'\n"", output, input + 1);
+
+	return 0;
+}",0
+lvin900,1695023447,8,"#include <stdio.h>
+
+int main() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char output = input + 1;
+
+	printf(""%c -> %c\n"", output, input + 1);
+
+	return 0;
+}",0
+lvin900,1695023489,9,"#include <stdio.h>
+
+int main() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	char output = input + 1;
+
+	printf(""%c -> %c\n"", input, output);
+
+	return 0;
+}",1
+mcam799,1694942173,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    char letterafter;
+
+    printf(""Enter letter:"");
+    scanf(""%c"", &letter);
+
+    letterafter = letter + 1;
+
+    printf(""%c -> %c"", letter, letterafter);
+
+    return 0;
+}
+",0
+mcam799,1694942222,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    char letterafter;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+
+    letterafter = letter + 1;
+
+    printf(""%c -> %c"", letter, letterafter);
+
+    return 0;
+}
+",1
+mche403,1694853937,1,"#include <stdio.h>
+
+int main() {
+    char input;
+
+    printf(""Enter letter: "");
+    scanf("" %c"", &input);
+
+    if ((input >= 'a' && input < 'z') || (input >= 'A' && input < 'Z')) {
+        char next_letter = input + 1;
+        printf(""%c -> %c\n"", input, next_letter);
+    } else {
+        printf(""Invalid input. Please enter letter from 'a' to 'y' or 'A' to 'Y'.\n"");
+    }
+
+    return 0;
+}",0
+mche403,1694853950,2,"#include <stdio.h>
+
+int main() {
+    char input;
+
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &input);
+
+    if ((input >= 'a' && input < 'z') || (input >= 'A' && input < 'Z')) {
+        char next_letter = input + 1;
+        printf(""%c -> %c\n"", input, next_letter);
+    } else {
+        printf(""Invalid input. Please enter letter from 'a' to 'y' or 'A' to 'Y'.\n"");
+    }
+
+    return 0;
+}",1
+mdav506,1694770085,1,"#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char nextletter;
+
+	printf(""Enter letter: \n"");
+	scanf("" %c"", &letter);
+
+	nextletter = letter + 1;
+
+	printf(""%c -> %c"", letter, nextletter);
+
+    return 0;
+}",1
+mfle888,1694914974,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(“Enter letter:”);
+    scanf(“%c”,&x);
+
+    printf(""%x -> %c\n"", x, x+1)
+
+    return 0;
+}
+",0
+mfle888,1694915008,2,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x);
+
+    printf(""%x -> %c\n"", x, x+1)
+
+    return 0;
+}
+",0
+mfle888,1694915025,3,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x);
+
+    printf(""%x -> %c\n"",x,x+1)
+
+    return 0;
+}
+",0
+mfle888,1694915051,4,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x);
+
+    printf(""%x -> %c\n"", x, x+1);
+
+    return 0;
+}
+",0
+mfle888,1694915078,5,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x);
+
+    printf(""%c -> %c\n"", x, x+1);
+
+    return 0;
+}
+",1
+mfuj750,1694901014,1,"#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+int main(void)
+{
+	char input;
+	char nextLetter;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	nextLetter = (char)(input + 1);
+	printf(""%c -> %c"", input, nextLetter);
+
+	return 0;
+}",1
+mger154,1694933451,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char z;
+    
+    printf(""Enter letter:\n"")
+    scanf(""%d"", x)
+
+    z = x + 1;
+
+    printf(""%c -> %c\n"", x, z);
+
+    return 0;
+}   ",0
+mger154,1694933461,2,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char z;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%d"", x);
+
+    z = x + 1;
+
+    printf(""%c -> %c\n"", x, z);
+
+    return 0;
+}   ",0
+mger154,1694933474,3,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char z;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", x);
+
+    z = x + 1;
+
+    printf(""%c -> %c\n"", x, z);
+
+    return 0;
+}   ",0
+mger154,1694933726,4,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char z;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+
+    z = x + 1;
+
+    printf(""%c -> %c\n"", x, z);
+
+    return 0;
+}   ",1
+mhua821,1694945671,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input); 
+    output = (char)(input + 1);
+
+    printf(""%c -> %c\n"", input, output);
+
+    return 0;
+}",1
+mkab524,1695018691,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+	char x;
+	char result;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+
+	result = (char)(x + 1);
+
+	printf(""%c -> %c"", x, result);
+
+	return 0;
+}",1
+mket106,1694968488,1,"#include <stdio.h>
+
+int main(void) 
+{
+    char x;
+    char y;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+
+    y = x + 1;
+
+    printf(""%c -> %c\n"", x, y);
+
+    return 0;
+} ",1
+mkim670,1694923534,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char result;
+    
+    printf(""Enter letter:"");
+    scanf(""%C"", &input);
+    
+    result = input + 1;
+    
+    printf(""%c -> %c"", input, result);
+    
+    return 0
+}",0
+mkim670,1694923547,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char result;
+    
+    printf(""Enter letter:"");
+    scanf(""%c"", &input);
+    
+    result = input + 1;
+    
+    printf(""%c -> %c"", input, result);
+    
+    return 0
+}",0
+mkim670,1694923561,3,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char result;
+    
+    printf(""Enter letter:"");
+    scanf(""%c"", &input);
+    
+    result = input + 1;
+    
+    printf(""%c -> %c"", input, result);
+    
+    return 0;
+}",0
+mkim670,1694923627,4,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char result;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    result = input + 1;
+    
+    printf(""%c -> %c"", input, result);
+    
+    return 0;
+}",1
+mkim719,1695005095,1,"#include <stdio.h>
+
+int main(void)
+{
+    char character;
+    printf(""Enter value:"");
+    scanf(""%c"", &character);
+    
+    printf(""%c -> %c\n"", character, character + 1);
+
+    return 0;
+}
+",0
+mkim719,1695005105,2,"#include <stdio.h>
+
+int main(void)
+{
+    char character;
+    printf(""Enter value:\n"");
+    scanf(""%c"", &character);
+    
+    printf(""%c -> %c\n"", character, character + 1);
+
+    return 0;
+}
+",0
+mkim719,1695005118,3,"#include <stdio.h>
+
+int main(void)
+{
+    char character;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &character);
+    
+    printf(""%c -> %c\n"", character, character + 1);
+
+    return 0;
+}
+",1
+mmak111,1695010330,1,"#include <stdio.h>
+int main(void)
+{
+	char x;
+	printf(""Enter letter: "");
+	scanf(""%c"", &x);
+	printf(""%c -> %c"", x, x+1);
+
+	return 0;
+}
+",0
+mmak111,1695010339,2,"#include <stdio.h>
+int main(void)
+{
+	char x;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &x);
+	printf(""%c -> %c"", x, x+1);
+
+	return 0;
+}
+",1
+mman402,1694976518,1,"#include <stdio.h>
+int main (void)
+{
+    char letter;
+    char nextLetter;
+    printf (""Enter letter:\n"");
+    scanf(""%c"",&letter);
+
+nextLetter= letter+1;
+printf(""%c -> %c"", letter, nextLetter);
+return 0;
+}",1
+mmas199,1694999540,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input); 
+    printf(""%c -> %c\n"", input, input + 1);
+    return 0;
+}
+
+",1
+mmoh456,1694817679,1,"#include <stdio.h>
+int main(void)
+{
+	char x;
+	char Result;
+
+	printf(""Enter letter:"");
+	scanf(""%c"", x);
+
+	Result = x+1
+
+	printf(""\n %c -> %c \n"", x, Result);
+	return 0;
+}",0
+mmoh456,1694817824,2,"#include <stdio.h>
+int main(void)
+{
+	char x;
+	char Result;
+
+	printf(""Enter letter:"");
+	scanf(""%c"", &x);
+
+	Result = x+1
+
+	printf(""\n %c -> %c \n"", x, Result);
+	return 0;
+}",0
+mmoh456,1694817865,3,"#include <stdio.h>
+int main(void)
+{
+	char x;
+	char Result;
+
+	printf(""Enter letter:"");
+	scanf(""%c"", &x);
+
+	Result = x + 1;
+
+	printf(""\n %c -> %c \n"", x, Result);
+	return 0;
+}",0
+mmoh456,1694817900,4,"#include <stdio.h>
+int main(void)
+{
+	char x;
+	char Result;
+
+	printf(""Enter letter:"");
+	scanf(""%c"", &x);
+
+	Result = x + 1;
+
+	printf(""\n%c -> %c \n"", x, Result);
+	return 0;
+}",1
+mnay503,1695005116,1,"#include <stdio.h>
+
+int main() {
+    char input;
+
+    printf(""Enter letter: "");
+    scanf("" %c"", &input); 
+
+    if (input >= 'a' && input <= 'z') {
+    
+    char nextLetter = input + 1;
+
+    printf(""%c -> %c\n"", input, nextLetter);
+    } else if (input >= 'A' && input <= 'Z') {
+ 
+    char nextLetter = input + 1;
+
+
+    printf(""%c -> %c\n"", input, nextLetter);
+    } else {
+
+    printf(""Invalid input. Please enter a letter of the alphabet.\n"");
+    }
+
+    return 0;
+}
+",0
+mnay503,1695031788,2,"#include <stdio.h>
+
+int main() {
+    char input;
+
+    printf(""Enter letter: \n"");
+    scanf("" %c"", &input); 
+
+    if (input >= 'a' && input <= 'z') {
+    
+    char nextLetter = input + 1;
+
+    printf(""%c -> %c\n"", input, nextLetter);
+    } else if (input >= 'A' && input <= 'Z') {
+ 
+    char nextLetter = input + 1;
+
+
+    printf(""%c -> %c\n"", input, nextLetter);
+    } else {
+
+    printf(""Please enter a letter of the alphabet.\n"");
+    }
+
+    return 0;
+}
+",1
+mpar342,1695020900,1,"#include <stdio.h>
+
+int main() 
+{
+    char input;
+
+    printf(""Enter letter: "");
+    scanf("" %c"", &input);
+
+    if (input >= 'a' && input < 'z') {
+        input++;
+    } else if (input >= 'A' && input < 'Z') {
+        input++;
+    }
+
+    printf(""%c -> %c\n"", input - 1, input);
+
+    return 0;
+}",0
+mpar342,1695020965,2,"#include <stdio.h>
+
+int main() 
+{
+    char input;
+
+    printf(""Enter letter:\n "");
+    scanf("" %c"", &input);
+
+    if (input >= 'a' && input < 'z') {
+        input++;
+    } else if (input >= 'A' && input < 'Z') {
+        input++;
+    }
+
+    printf(""%c -> %c\n"", input - 1, input);
+
+    return 0;
+}",0
+mpar342,1695020975,3,"#include <stdio.h>
+
+int main() 
+{
+    char input;
+
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &input);
+
+    if (input >= 'a' && input < 'z') {
+        input++;
+    } else if (input >= 'A' && input < 'Z') {
+        input++;
+    }
+
+    printf(""%c -> %c\n"", input - 1, input);
+
+    return 0;
+}",1
+mpat501,1694780979,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+char a ;
+printf(""Enter letter: \n"");
+scanf(""%c"", &a);
+printf(""%c -> %c\n"", a, a+1 );
+return 0;
+}",1
+mran851,1694922314,1,"#include<stdio.h>
+
+int main();
+{
+    char input;
+    printf(""Enter letter %c\n"");
+}",0
+mran851,1694922332,2,"#include<stdio.h>
+
+int main();
+{
+    char input;
+    printf(""Enter letter %c\n"");
+    
+    return 0;
+}",0
+mran851,1694922370,3,"#include<stdio.h>
+
+int main(void);
+{
+    char input;
+    printf(""Enter letter %c\n"");
+    
+    return 0;
+}",0
+mran851,1694922899,4,"#include<stdio.h>
+
+int main(void);
+{
+    char letter;
+    char nextLetter;
+    
+    printf(""Enter letter: "");
+    scanf("" %c"" , &letter);
+    
+    if(letter >= 'a' && letter < 'z')
+    nextLetter = letter + 1;
+    
+        if(letter=z)
+        nextLetter = 'a';
+        
+        printf(""%c -> %c"" , letter , nextLetter);
+    
+    return 0;
+}",0
+mshi672,1694911318,1,"#include <stdio.h>
+
+int main(void)
+{
+	char user_input;
+	char next_letter;
+
+	printf(""Enter letter:\n"");
+	scanf_s(""%c"", &user_input);
+	next_letter = (char)(user_input + 1);
+	printf(""%c -> %c"", user_input, next_letter);
+	return 0;
+}",0
+mshi672,1694911323,2,"#include <stdio.h>
+
+int main(void)
+{
+	char user_input;
+	char next_letter;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &user_input);
+	next_letter = (char)(user_input + 1);
+	printf(""%c -> %c"", user_input, next_letter);
+	return 0;
+}",1
+msu975,1694848621,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+
+{
+	int ASCIIValue1;
+	int ASCIIValue2;
+	char character;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c, &character"");
+
+	ASCIIValue1 = (double)(character);
+		ASCIIValue2 = ASCIIValue1 + 1;
+
+		printf(""%c -> %c"", ASCIIValue1, ASCIIValue2);
+
+		return 0;
+}",0
+msu975,1694852852,2,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+
+{
+	
+	char character;
+	char character1;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &character);
+
+	character = (double)(character);
+	character1 = (double)(character) + 1;
+	character = (char)(character);
+	character1 = (char)(character1);
+
+		printf(""%c -> %c"", character, character1);
+
+		return 0;
+}",1
+mtam709,1695000517,1,"#include <stdio.h>
+
+int main()
+{
+    int a;
+    int b;
+    printf(""Enter letter:"");
+    scanf(""%c"", &a);
+    
+    b = a + 1;
+    
+    printf(""\n%c -> %c"", a, b);
+
+    return 0;
+}",0
+mtam709,1695000580,2,"#include <stdio.h>
+
+int main()
+{
+    char a;
+    char b;
+    printf(""Enter letter:"");
+    scanf(""%c"", &a);
+    
+    b = a + 1;
+    
+    printf(""\n%c -> %c"", a, b);
+
+    return 0;
+}
+",1
+mtha724,1694831061,1,"#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    printf(""Enter letter: "");
+    scanf(""%c"", &letter);
+    printf(""\n%c -> %c"", letter, (letter + 1));
+    return 0;
+}",1
+ndas832,1694822482,1,"#include <stdio.h>
+
+int main()
+{ 
+    char x; 
+    printf(""Enter letter:\n""); 
+    scanf(""%c"", &x); 
+    
+    x = x + 1; 
+    printf(""%c -> %c\n"", x-1, x);
+
+    return 0;
+}
+",1
+ndso791,1694825671,1,"#include <stdio.h>
+int main(void)
+{
+    int a;
+    printf(""Enter letter: \n"")
+    scanf(""%c"", &a)
+    
+    a = (char)(a + 1);
+    printf(""Result = %c"", a);
+    return 0;
+}",0
+ndso791,1694825680,2,"#include <stdio.h>
+int main(void)
+{
+    int a;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &a);
+    
+    a = (char)(a + 1);
+    printf(""Result = %c"", a);
+    return 0;
+}",0
+ndso791,1694825709,3,"#include <stdio.h>
+int main(void)
+{
+    char a;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &a);
+    
+    a = (char)(a + 1);
+    printf(""Result = %c"", a);
+    return 0;
+}",0
+ndso791,1694825787,4,"#include <stdio.h>
+int main(void)
+{
+    char a;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &a);
+    
+    printf(""%c -> %c"", a,((char)(a + 1)));
+    return 0;
+}",1
+ngna565,1694932001,1,"
+#include <stdio.h>
+
+int main(void)
+
+{
+    char a;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%d"", &a);
+    
+    printf(""\%a -> %(a+1)\n"", a, a + 1);
+
+    return 0;
+}
+",0
+ngna565,1694932337,2,"#include <stdio.h>
+
+int main()
+
+{
+    char a;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &a);
+    
+    char letteraftera = a + 1;
+    
+    printf(""%a -> %c\n"", a, letteraftera);
+
+    return 0;
+}",0
+ngna565,1694932450,3,"#include <stdio.h>
+
+int main()
+
+{
+    char a;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &a);
+    
+    char letteraftera = a + 1;
+    
+    printf(""%c -> %c\n"", a, letteraftera);
+
+    return 0;
+}",1
+nlal162,1694956159,1,"#include <stdio.h>
+
+int main()
+{
+	int result; 
+	int input;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	result = input + 1;
+
+	printf(""%c -> %c"",input, result);
+	return 0;
+}
+",0
+nlal162,1694956178,2,"#include <stdio.h>
+
+int main()
+{
+	char result; 
+	char input;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	result = input + 1;
+
+	printf(""%c -> %c"",input, result);
+	return 0;
+}
+",1
+nmah920,1694943405,1,"#include <stdio.h> 
+int main(void)
+{
+    char letter;
+    char next_letter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    next_letter = letter + 1;
+    printf(""%c -> %c"", letter, next_letter);
+}",1
+nrub019,1694821088,1,"#include <stdio.h>
+
+int main(void) {
+
+    int x;
+    int y;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x);
+
+    y = x + 1;
+
+    printf(""%c -> %c"",x,y);
+
+}
+",0
+nrub019,1694821254,2,"#include <stdio.h>
+
+int main(void) {
+
+    char x;
+    char y;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x);
+
+    y = x + 1;
+
+    printf(""%c -> %c"",x,y);
+
+}
+",1
+nthe160,1695020120,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	int steps;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &letter);
+
+	int asciiletter = (int)letter;
+	int asciifinalletter;
+
+	asciifinalletter = asciiletter + 1;
+	char finalletter = (char)asciifinalletter;
+	printf(""%c -> %c\n"",letter,finalletter);
+
+	return 0;
+}",0
+nthe160,1695020152,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &letter);
+
+	int asciiletter = (int)letter;
+	int asciifinalletter;
+
+	asciifinalletter = asciiletter + 1;
+	char finalletter = (char)asciifinalletter;
+	printf(""%c -> %c\n"",letter,finalletter);
+
+	return 0;
+}",1
+ntia856,1694864666,1,"#include <stdio.h>
+
+int main() {
+    char letter; 
+
+    printf(""Enter letter: \n"");
+
+    scanf(""%c"", &letter);
+
+    int result = letter + 1;
+
+    printf(""%c -> %c"", letter, result); 
+
+
+}",1
+nwei818,1694764492,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main() {
+	char input;
+
+	printf(""Enter letter:\n"");
+	scanf("" %c"", &input);
+
+	char next = (char)(input + 1);
+	printf(""%c -> %c\n"", input, next);
+
+	return 0;
+}",1
+oguo680,1694863747,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    char input_new;
+    input_new = (char)(input + 1);
+    printf(""%c -> %c"", input, input_new);
+    return 0;
+}",1
+opat597,1694945957,1,"#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+    char new;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+
+    new = letter + 1;
+    printf(""%c -> %c"", letter, new);
+
+    return 0;
+
+}",1
+opre469,1694994057,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char a;
+		
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &a);
+
+	char b;
+	b = a + 1;
+
+	printf(""%c -> %c"", a, b);
+
+	return 0;
+
+}",1
+orow585,1694841736,1,"#include <stdio.h>
+
+int main()
+{
+	char ltr;
+	char output;
+
+	printf(""Enter letter:"");
+	scanf(""%c"", &ltr);
+
+	output = ltr + 1;
+	printf(""\n%c -> %c"", ltr, output);
+
+	return 0;
+}",1
+osko432,1694935170,1,"#include <stdio.h>
+
+int main()
+{
+    char one;
+    printf(""Enter letter:"");
+    scanf(""%c"",&one);
+    printf(""\n%c -> %c"",one,one+1);
+    return 0;
+}",1
+pchh683,1695012981,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input = 'G';
+    
+    input = (char)(input + 1);
+    printf(""%c"", input);
+    
+    return 0; 
+         
+}
+",0
+pchh683,1695013525,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input, output;
+    printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+    
+    output = (char)(input + 1);
+    printf(""%c -> %c\n"", input, output);
+    
+    return 0; 
+         
+}",1
+ppax865,1695020103,1,"#include <stdio.h>
+
+int main(){
+    char input;
+    int inputcomp;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    inputcomp = (int)input + 1;
+    inputcomp = (char)inputcomp;
+    printf(""%c -> %c"",input,inputcomp);
+}",1
+pper327,1694855557,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+
+    printf(""Please enter a letter of the alphabet: "");
+    scanf(""%c"", &input);
+
+    output = (input + 1);
+
+    printf(""%c -> %c \n"", input, output);
+
+    return 0;
+}",0
+pper327,1694855583,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+
+    printf(""Please enter a letter of the alphabet: "");
+    printf(""\n"");
+    scanf(""%c"", &input);
+
+    output = (input + 1);
+
+    printf(""%c -> %c \n"", input, output);
+
+    return 0;
+}",0
+pper327,1694855597,3,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+
+    printf(""Enter letter: "");
+    printf(""\n"");
+    scanf(""%c"", &input);
+
+    output = (input + 1);
+
+    printf(""%c -> %c \n"", input, output);
+
+    return 0;
+}",1
+pyou182,1694861822,1,"/*This code takes a letter of the alphabet and 
+displays the next letter*/
+#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter:"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"", x, y);
+}",0
+pyou182,1694861965,2,"/*This code takes a letter of the alphabet and 
+displays the next letter*/
+#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter:"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""\n%c -> %c"", x, y);
+}
+",1
+qzho943,1694917884,1,"
+#include <stdio.h>
+
+int main()
+{
+    char x1;
+    char x2;
+   
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&x1);
+    x2 = x1+1;
+    printf(""%c -> %c"",x1,x2);
+
+    return 0;
+}
+",1
+raic989,1694931234,1,"int main(void)
+{
+    char a,b;
+    printf(""Enter letter: \n"");
+    scanf(""%c"",&a);
+    b=a+1;
+    printf(""%c -> %c"",a,b);
+    return 0;
+ 
+}",0
+raic989,1694931262,2,"#include <stdio.h>
+
+int main(void)
+{
+    char a,b;
+    printf(""Enter letter: \n"");
+    scanf(""%c"",&a);
+    b=a+1;
+    printf(""%c -> %c"",a,b);
+    return 0;
+ 
+}",1
+rchi339,1694937107,1,"#include <stdio.h>
+
+int main()
+{
+	char x;
+	char y;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"",&x);
+
+	y = x + 1;
+
+	printf(""%c -> %c"", x, y);
+		
+	return 0;
+}",1
+rdic384,1695006681,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input = 'G';
+    
+    input = (char) (input + 1);
+    printf(""Result = %c"", input);
+
+    return 0;
+}",0
+rdic384,1695007294,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char a;
+    char b;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &a);
+    
+    b = a + 1;
+    
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}",1
+rgre692,1694996673,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(%c , &x);
+    y = char(x+1);
+    printf(%c - > %c, x, y);
+    
+
+    return 0;
+}",0
+rgre692,1694996689,2,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(%c , &x);
+    y = (char)(x+1);
+    printf(%c - > %c, x, y);
+    
+
+    return 0;
+}",0
+rgre692,1694996722,3,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    
+    printf(""Enter letter: \n"");
+    scanf(%c , &x);
+    y = char(x+1);
+    printf(%c - > %c, x, y);
+    
+
+    return 0;
+}",0
+rgre692,1694996772,4,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"" , &x);
+    y = char(x+1);
+    printf(""%c - > %c"", x, y);
+    
+
+    return 0;
+}",0
+rgre692,1694996787,5,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"" , &x);
+    y = (char)(x+1);
+    printf(""%c - > %c"", x, y);
+    
+
+    return 0;
+}",0
+rgre692,1694996803,6,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"" , &x);
+    y = (char)(x+1);
+    printf(""%c-> %c"", x, y);
+    
+
+    return 0;
+}",0
+rgre692,1694996810,7,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"" , &x);
+    y = (char)(x+1);
+    printf(""%c -> %c"", x, y);
+    
+
+    return 0;
+}",1
+rhua827,1694995874,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:"");
+    scanf(""%c"", &x); 
+    
+    x = x + 1; 
+    
+    printf(""Result = %c"", x);
+
+    return 0;
+}",0
+rhua827,1694996059,2,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:""\n"""""");
+    scanf(""%c"", &x); 
+    
+    x = x + 1; 
+    
+    printf(""Result = %c"", x);
+
+    return 0;
+}",0
+rhua827,1694996089,3,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x); 
+    
+    x = x + 1; 
+    
+    printf(""Result = %c"", x);
+
+    return 0;
+}",0
+rhua827,1694996124,4,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x); 
+    
+    x = x + 1; 
+    
+    printf(""x -> %c"", x);
+
+    return 0;
+}",0
+rhua827,1694996130,5,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x); 
+    
+    x = x + 1; 
+    
+    printf(""a -> %c"", x);
+
+    return 0;
+}",0
+rhua827,1694996144,6,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x); 
+    
+    x1 = x + 1; 
+    
+    printf(""x1 -> %c"", x);
+
+    return 0;
+}",0
+rhua827,1694996148,7,"#include <stdio.h>
+
+int main()
+{
+    char x1;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x); 
+    
+    x1 = x + 1; 
+    
+    printf(""x1 -> %c"", x);
+
+    return 0;
+}",0
+rhua827,1694996166,8,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x); 
+    
+    x = x + 1; 
+    
+    printf(""x -> %c"", x);
+
+    return 0;
+}",0
+rhua827,1694996181,9,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x); 
+    
+    x = x + 1; 
+    
+    printf(""a -> %c"", x);
+
+    return 0;
+}",0
+rmar633,1694938773,1,"#include <stdio.h>
+
+int main()
+{
+    char input, answer;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    answer = input + 1;
+    
+    printf(""%c -> %c"", input, answer);
+
+    return 0;
+}",1
+rmur989,1694930367,1,"#include <stdio.h>
+
+int main()
+{
+    char a;
+    char b;
+    printf(""Enter letter:""""\n"");
+    scanf(""%c"", &x);
+    
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}
+",0
+rmur989,1694930378,2,"#include <stdio.h>
+
+int main()
+{
+    char a;
+    char b;
+    printf(""Enter letter:""""\n"");
+    scanf(""%c"", &a);
+    
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}
+",0
+rmur989,1694930435,3,"#include <stdio.h>
+
+int main()
+{
+    char a;
+    char b;
+    printf(""Enter letter:""""\n"");
+    scanf(""%c"", &a);
+    b = toupper(a);
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}
+",0
+rmur989,1694930468,4,"#include <stdio.h>
+
+int main()
+{
+    char a;
+    char b;
+    printf(""Enter letter:""""\n"");
+    scanf(""%c"", &a);
+    b = a
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}
+",0
+rmur989,1694930475,5,"#include <stdio.h>
+
+int main()
+{
+    char a;
+    char b;
+    printf(""Enter letter:""""\n"");
+    scanf(""%c"", &a);
+    b = a;
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}
+",0
+rmur989,1694930499,6,"#include <stdio.h>
+
+int main()
+{
+    char a;
+    char b;
+    printf(""Enter letter:""""\n"");
+    scanf(""%c"", &a);
+    b = a+1;
+    printf(""%c -> %c"", a, b);
+
+    return 0;
+}
+",1
+rsha769,1694826945,1,"#include <stdio.h>
+
+int main(void)
+
+{
+
+    char input;
+    char newletter;
+
+    printf(""Enter letter:\n""); 
+    scanf(""%c"", &input);
+
+    newletter = input+1;
+
+    printf(""%c -> %c"", input, newletter);
+    return 0;
+
+}
+",1
+rsha970,1694842604,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+
+    printf(""Enter letter: """"\n"");
+    scanf("" %c"", &input);
+
+    char nextLetter = input + 1;
+
+    printf(""%c -> %c\n"", input, nextLetter);
+
+    return 0;
+}",1
+rtan654,1695002905,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+
+{
+ char x;
+ int result;
+ printf(""Enter letter:\n"");
+ scanf(""%c"", &x);
+
+result = x + 1;
+
+ printf(""%c -> %c\n"", x, result);
+    return 0;
+}",1
+sali153,1694906993,1,"#include <stdio.h>
+int main()
+{
+    char input;
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &input);
+    printf(""%c -> %c"",input,input+1);
+    return 0;
+
+}",1
+sbas887,1694879706,1,"#include <stdio.h>
+
+int main(void)
+{
+    char y;
+    char x;
+    printf(""Enter letter:"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"", x, y);
+}
+",0
+sbas887,1694879725,2,"#include <stdio.h>
+
+int main(void)
+{
+    char y;
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"", x, y);
+}
+",1
+schu718,1694867788,1,"#include <stdio.h>
+
+int main(void)
+
+{
+    double letter
+    double new_letter
+    
+    printf(""Enter letter: \n"");
+    scanf(%lf, &letter);
+    
+    new_letter = letter + 1;
+    printf(%lf)
+    
+    
+}",0
+schu718,1694867799,2,"#include <stdio.h>
+
+int main(void)
+
+{
+    double letter;
+    double new_letter;
+    
+    printf(""Enter letter: \n"");
+    scanf(%lf, &letter);
+    
+    new_letter = letter + 1;
+    printf(%lf);
+    
+    return 0;
+    
+}",0
+schu718,1694867827,3,"#include <stdio.h>
+
+int main(void)
+
+{
+    double letter;
+    double new_letter;
+    
+    printf(""Enter letter: \n"");
+    scanf(%lf, &letter);
+    
+    new_letter = letter + 1;
+    printf(""%lf -> %lf"", letter, new_letter);
+    
+    return 0;
+    
+}",0
+schu718,1694867852,4,"#include <stdio.h>
+
+int main(void)
+
+{
+    double letter;
+    double new_letter;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%lf"", &letter);
+    
+    new_letter = letter + 1;
+    printf(""%lf -> %lf"", letter, new_letter);
+    
+    return 0;
+    
+}",0
+schu718,1694867887,5,"#include <stdio.h>
+
+int main(void)
+
+{
+    char letter;
+    char new_letter;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &letter);
+    
+    new_letter = letter + 1;
+    printf(""%c -> %c"", letter, new_letter);
+    
+    return 0;
+    
+}",1
+scol559,1694935819,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include ""AtoB.h""
+
+int main(void)
+{
+	char input;
+	char final;
+
+	printf(""Enter Letter:\n"");
+	scanf(""%c"", &input);
+
+	final = input + 1;
+	
+	printf(""%c -> %c"", input, final);
+	return 0;
+}",0
+scol559,1694935854,2,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char final;
+
+	printf(""Enter Letter:\n"");
+	scanf(""%c"", &input);
+
+	final = input + 1;
+	
+	printf(""%c -> %c"", input, final);
+	return 0;
+}",0
+scol559,1694935875,3,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char final;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	final = input + 1;
+	
+	printf(""%c -> %c"", input, final);
+	return 0;
+}",1
+sdal739,1694949096,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    int something;
+    printf(""Enter letter:"");
+    scanf(""%c"", &something);
+    printf(""\n%c -> %c"", something, something+1);
+    return 0;
+}",0
+sdal739,1694949162,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char something;
+    printf(""Enter letter:"");
+    scanf(""%c"", &something);
+    printf(""\n%c -> %c"", something, something+1);
+    return 0;
+}
+",1
+sden589,1695014596,1,"#include <stdio.h>
+
+int main() 
+{
+    char input;
+
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &input);
+
+    
+        char nextLetter = input + 1;
+        printf(""%c -> %c"", input, nextLetter);
+    
+
+    return 0;
+}
+",1
+sfry192,1694946119,1,"#include <stdio.h>
+
+int main(void)
+{
+    char ch;
+    int x,y;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &ch);
+    x = ch;
+    y = ch + 1;
+    printf(""%c -> %c"",x,y);
+
+    return 0
+}",0
+sfry192,1694946356,2,"#include <stdio.h>
+
+int main(void)
+{
+    char ch;
+    int x,y;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &ch);
+    x = ch;
+    y = ch + 1;
+    printf(""%c -> %c"",x,y);
+
+    return 0;
+}",1
+sgib237,1694922892,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    scanf(""%c"", &x);
+    int y = (int)x;
+    y = y+1;
+    char z = (char)y;
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c"", x, z);
+    
+    return 0;
+}",1
+shan790,1694833226,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    char ans;
+    ans = x + 1;
+    printf(""%c -> %c\n"", x, ans);
+}
+",1
+shsa718,1695004705,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{ 
+    char x;
+
+    /* Prompt user to enter letter */
+    printf (""Enter letter:\n"");
+    scanf (""%c"", &x);
+
+    /* Display next letter to user */
+    printf (""%c -> %c"", x, (x+1));
+
+    return 0;
+}
+",1
+shum116,1694827749,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char result;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    result = x + 1;
+    
+    printf(""%c -> % c"", x, result);
+    return 0;
+}
+",0
+shum116,1694827814,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char result;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    result = x + 1;
+    
+    printf(""%c -> %c"", x, result);
+    return 0;
+}
+",1
+sjai563,1694944706,1,"#include <stdio.h>
+
+int main() 
+{
+    char letter;
+    scanf("" %c"", &letter);
+
+    char nextLetter = letter + 1;
+
+    printf(""Enter letter: \n%c -> %c"", letter, nextLetter);
+   
+    return 0;
+}",1
+sjob296,1694863345,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+
+    // Prompt the user for a letter
+    printf(""Enter letter:\n"");
+
+    // Read the user's input as a character
+    scanf("" %c"", &input);
+
+    // Calculate the next letter in the alphabet
+    char nextLetter = (char)(input + 1);
+
+    // Display the input letter, arrow, and the next letter
+    printf(""%c -> %c\n"", input, nextLetter);
+
+    return 0;
+}
+",1
+skop291,1695001228,1,"Write a program that prompts the user to enter a letter of the alphabet.  The program should then display the next letter that follows the input letter.  The output should also include the original letter and a stylized arrow.
+
+NOTE: You can assume that the input will not be 'z' or 'Z' (although, you should test your program to see what happens in these cases!)
+
+
+
+For example:
+
+Input	Result
+a
+Enter letter:
+a -> b",0
+skop291,1695001250,2,"#include <stdio.h>
+
+int main() {
+    char letter;
+
+    // Prompt the user to enter a letter of the alphabet
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+
+    // Display the original letter, a stylized arrow, and the next letter
+    printf(""%c -> %c\n"", letter, letter + 1);
+
+    return 0;
+}
+",1
+slie508,1695002731,1,"#include <stdio.h>
+
+int main(void)
+{
+    char a, b;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &a);
+
+    b = a + 1;
+
+    printf(""%c -> %c\n"", a, b);
+
+    return 0;
+}",1
+sluo487,1694911867,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input, x;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    x = (char)(input + 1);
+    printf(""%c --> %c\n"", input, x);
+
+    return 0;
+}",0
+sluo487,1694911877,2,"#include <stdio.h>
+
+int main(void)
+{
+    char input, x;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+    
+    x = (char)(input + 1);
+    printf(""%c -> %c\n"", input, x);
+
+    return 0;
+}",1
+snas404,1695009411,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	char result;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+
+	result = x + 1;
+	printf(""%c -> %c\n"", x, result);
+
+	return 0;
+}",1
+span558,1694839219,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    scanf (""%c"" , &input);
+    
+    char output = input + 1;
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c"", input,output);
+
+    return 0;
+}
+",1
+spar820,1695005863,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    
+    char y;
+    
+    y = x + 1;
+    
+    printf(""%c -> %c"", x, y);
+    
+    return 0;
+}
+
+",1
+sran136,1694858570,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    char output;
+    printf(""Enter a letter: "");
+    scanf(""%c"", &input);
+    
+    output = input + 1;
+    
+    ""\n"";
+    printf(""%c -> %c"", input, output);
+
+    return 0;
+}
+",0
+sran136,1694858593,2,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    char output;
+    printf(""Enter a letter: "");
+    scanf(""%c"", &input);
+    
+    output = input + 1;
+    
+    
+    printf(""\n""""%c -> %c"", input, output);
+
+    return 0;
+}
+",0
+sran136,1694858613,3,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    char output;
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    
+    output = input + 1;
+    
+    
+    printf(""\n""""%c -> %c"", input, output);
+
+    return 0;
+}
+",1
+ssan467,1694922290,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	int a;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &a);
+
+	printf(""%c -> %c"", a, (a + 1));
+
+	return 0;
+}",0
+ssan467,1694922873,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &input);
+
+	printf(""%c -> %c"", input, (input + 1));
+
+	return 0;
+}",1
+sum778,1694942982,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char A; 
+
+	printf(""Enter letter: "");
+	scanf(""%c"", &input);
+
+	A = (char)(input + 1);
+	printf(""%c -> %c"", input, A);
+
+	return 0;
+}",0
+sum778,1694943027,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char A; 
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &input);
+
+	A = (char)(input + 1);
+	printf(""%c -> %c"", input, A);
+
+	return 0;
+}",1
+swan472,1694928394,1,"# include <stdio.h>
+
+int main()
+{
+    char Input,next;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &Input);
+    next = Input +1 ;
+    printf(""%c -> %c"", Input, next);
+    return 0;
+}",1
+tbar968,1694840956,1,"#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	printf(""Enter a letter:\n"");
+	scanf(""%c"", &x);
+	printf(""%c -> %c"", x, x + 1);
+	return 0;
+}",0
+tbar968,1694841024,2,"#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+	printf(""%c -> %c"", x, x + 1);
+	return 0;
+}",1
+tbed601,1695006301,1,"#include <stdio.h>
+
+int main(void)
+{
+    char l1;
+    char l2;
+   
+     printf(""enter letter: \n"");
+        scanf(""%c"", &l1 );
+    
+        l2 = l1 + 1;
+ 
+         printf(""%c -> %c"", l1,l2);
+
+    return 0;
+}
+",0
+tbed601,1695006313,2,"#include <stdio.h>
+
+int main(void)
+{
+    char l1;
+    char l2;
+   
+     printf(""Enter letter: \n"");
+        scanf(""%c"", &l1 );
+    
+        l2 = l1 + 1;
+ 
+         printf(""%c -> %c"", l1,l2);
+
+    return 0;
+}
+",1
+tbri557,1694946867,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &x);
+    y = x + 1;
+    printf(""%c -> %c"",x, y);
+
+    return 0;
+}",1
+tche867,1694926153,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h> 
+
+int main(void)
+{
+	char a;
+	scanf(""%c"", &a);
+	printf(""Enter letter:\n"");
+	printf(""%c -> %c"",a,a-32);
+
+	return 0;
+}
+",0
+tche867,1694926194,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h> 
+
+int main(void)
+{
+	char a;
+	scanf(""%c"", &a);
+	printf(""Enter letter:\n"");
+	printf(""%c -> %c"",a,a+1);
+
+	return 0;
+}
+",1
+tdha392,1694994460,1,"#include <stdio.h>
+
+int main(void)
+{
+    printf(""Enter letter :\n"");
+    scanf(%c, &input);
+    
+    printf(""%c -> %c"", input, input + 1);
+
+	return 0;
+}
+",0
+tdha392,1694994476,2,"#include <stdio.h>
+
+int main(void)
+int input
+{
+    printf(""Enter letter :\n"");
+    scanf(%c, &input);
+    
+    printf(""%c -> %c"", input, input + 1);
+
+	return 0;
+}
+",0
+tdha392,1694994485,3,"#include <stdio.h>
+
+int main(void)
+int input;
+{
+    printf(""Enter letter :\n"");
+    scanf(%c, &input);
+    
+    printf(""%c -> %c"", input, input + 1);
+
+	return 0;
+}
+",0
+tdha392,1694994495,4,"#include <stdio.h>
+
+int main(void)
+
+{
+    int input;
+    printf(""Enter letter :\n"");
+    scanf(%c, &input);
+    
+    printf(""%c -> %c"", input, input + 1);
+
+	return 0;
+}
+",0
+tdha392,1694994508,5,"#include <stdio.h>
+
+int main(void)
+
+{
+    int input;
+    printf(""Enter letter :\n"");
+    scanf(""%c"", &input);
+    
+    printf(""%c -> %c"", input, input + 1);
+
+	return 0;
+}
+",0
+tdha392,1694994530,6,"#include <stdio.h>
+
+int main(void)
+
+{
+    char input;
+    printf(""Enter letter :\n"");
+    scanf(""%c"", &input);
+    
+    printf(""%c -> %c"", input, input + 1);
+
+	return 0;
+}
+",0
+tdha392,1694994547,7,"#include <stdio.h>
+
+int main(void)
+
+{
+    char input;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    
+    printf(""%c -> %c"", input, input + 1);
+
+	return 0;
+}
+",1
+tdu824,1694861312,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    output = (char)(input + 1);
+
+    printf(""%c -> %c\n"", input, output);
+    return 0;
+}",1
+tfai092,1695003231,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    input = input + 1;
+    printf(""\n%c"", input);
+
+    return 0;
+}",0
+tfai092,1695003274,2,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    char answer;
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    answer = input + 1;
+    printf(""\n%c -> %c"", input, answer);
+
+    return 0;
+}",1
+tfai653,1694932056,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    output = (char)input + 1;
+
+    printf(""%c -> %c\n"", input, output);
+
+    return 0;
+}",1
+thar970,1694840104,1,"#include <stdio.h>
+
+int main(){
+    char letter;
+    scanf(""%c"",&letter);
+    printf(""%c -> %c"",letter,(char)((int)letter+1));
+}",0
+thar970,1694840135,2,"#include <stdio.h>
+
+int main(){
+    char letter;
+    scanf(""%c"",&letter);
+    printf(""Enter letter:\n%c -> %c"",letter,(char)((int)letter+1));
+}",1
+thid924,1695007467,1,"#define _CRT_SECURE_NO_WARNINGS	
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char new;
+
+	printf(""Enter letter :\n"");
+	scanf(""%c"", &input);
+
+	new = input + 1;
+
+	printf(""%c -> %c"", input, new);
+
+}",0
+thid924,1695007480,2,"#define _CRT_SECURE_NO_WARNINGS	
+#include <stdio.h>
+
+int main(void)
+{
+	char input;
+	char new;
+
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+
+	new = input + 1;
+
+	printf(""%c -> %c"", input, new);
+
+}",1
+thua238,1694920345,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char letter;
+
+    /*get input letter*/
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+
+    /*disp next letter*/
+    printf(""%c -> %c\n"", letter, letter+1);
+
+    return 0;
+}
+",1
+tkan918,1695030189,1,"#include <stdio.h>
+int main(void)
+
+{
+    char x;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    printf(""%c -> %c"",x, x+1);
+    return 0;
+}",1
+tlal352,1695017563,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    int y;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    
+    y = x + 1;
+    
+    printf(""%c -> %c"", x, y);
+
+    return 0;
+}
+",1
+tluu816,1694924267,1,"#include <stdio.h>
+/*here is a program that prints the message ""Hello, world (ENGGEN131)""*/
+int main()
+{
+	char x, y;
+	printf(""Enter letter:"");
+	scanf(""%c"", &x);
+	y = x + 1;
+	printf(""\n%d -> %d"", x, y);
+
+}",0
+tluu816,1694924307,2,"#include <stdio.h>
+/*here is a program that prints the message ""Hello, world (ENGGEN131)""*/
+int main()
+{
+	char x, y;
+	printf(""Enter letter:"");
+	scanf(""%c"", &x);
+	y = x + 1;
+	printf(""\n%c -> %c"", x, y);
+
+}",1
+tsan986,1694847561,1,"#define _CRT_SECURE_WARNINGS_ 
+#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    char z;
+    scanf(""%c"", &x);
+    z = (char)x + 1;
+    
+    printf(""Enter letter:\n%c -> %c"", x, z);
+    
+    
+    return 0;
+}",1
+ttho505,1694938045,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &x);
+	char r;
+	r = x + 1;
+	printf(""%c -> %c"", x, r);
+	return 0;
+}",1
+tyou333,1694841416,1,"#include <stdio.h>
+
+int main(void) {
+    
+    char input;
+    
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+
+    printf(""%c -> %c"", input, (char)((int)(input) + 1));
+
+    return 0;
+}",1
+tyou421,1694824043,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    char output;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &input);
+
+    output = (char)(input + 1);
+    printf(""%c -> %c"", input, output);
+
+    return 0;
+}",1
+tzho903,1695005921,1,"#include <stdio.h>
+
+int main()
+{ 
+    char x;
+    printf(""Enter letter:"");
+    scanf(""%c"" , &x);
+    char i = x;
+    x = x+1;
+    printf(""\n%c -> %c"",i,x);
+    
+    return 0;
+} ",1
+uali517,1694896280,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char inputletter;
+	char newletter;
+	printf(""Enter letter:"");
+	scanf(""%c"", &inputletter);
+	
+	newletter = inputletter + 1;
+	printf(""%c"", inputletter);
+	printf("" -> %c"", newletter);
+
+
+	return 0;
+}",0
+uali517,1694896305,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char inputletter;
+	char newletter;
+	printf(""Enter letter:"");
+	scanf(""%c"", &inputletter);
+	
+	newletter = inputletter + 1;
+	printf(""%c\n"", inputletter);
+	printf("" -> %c"", newletter);
+
+
+	return 0;
+}",0
+uali517,1694896600,3,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char inputletter;
+	char newletter;
+	inputletter = input
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &inputletter);
+	
+	newletter = inputletter + 1;
+	printf("" -> %c"", newletter);
+
+
+	return 0;
+}",0
+uali517,1694896626,4,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char inputletter;
+	char newletter;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &inputletter);
+	
+	newletter = inputletter + 1;
+	printf("" -> %c"", newletter);
+
+
+	return 0;
+}",0
+uali517,1694896665,5,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char inputletter;
+	char newletter;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &inputletter);
+	
+	newletter = inputletter + 1;
+	printf(""%c"", inputletter);
+	printf("" -> %c"", newletter);
+
+
+	return 0;
+}",1
+vlai276,1694985324,1,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &x);
+    
+    y = x + 1;
+    
+    printf(""%c -> %c"",x, y);
+}",1
+vpat188,1694806612,1,"#include<stdio.h>
+
+int main(void){
+    
+    
+    char letter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    
+    printf(""Enter letter:\n"");
+    printf(""%c -> %c"", letter, letter+1);
+
+    
+    
+    return 0;
+}",0
+vpat188,1694806647,2,"#include<stdio.h>
+
+int main(void){
+    
+    
+    char letter;
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+    
+    printf(""%c -> %c"", letter, letter+1);
+
+    
+    return 0;
+}",1
+vpol480,1694832034,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    printf(""Enter letter: "");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, (input + 1));
+
+    return 0;
+}",0
+vpol480,1694832119,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, (input + 1));
+
+    return 0;
+}",1
+vto869,1695012891,1,"#include <stdio.h>
+int main(void)
+{
+	char letter, result;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &letter);
+	result = letter + 1;
+	printf(""%c -> %c\n"", letter, result);
+	return 0;
+}",1
+vwu693,1694996008,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char result;
+	printf(""Enter letter: "");
+	scanf(""%c"", &letter);
+
+	result = letter + 1;
+
+	printf(""\n%c -> %c "", letter, result);
+
+
+
+	return 0;
+}",1
+wlin709,1695014641,1,"#include <stdio.h>
+
+int main(void) 
+{
+    char inputLetter;
+
+    // Set up the variables
+    printf(""Enter letter: "");
+    scanf("" %c"", &inputLetter);
+
+    // Calculate the next letter
+    char outputLetter = inputLetter + 1;
+
+    // Print the results
+    printf(""%c -> %c\n"", inputLetter, outputLetter);
+
+    return 0;
+}
+",0
+wlin709,1695014664,2,"#include <stdio.h>
+
+int main(void) 
+{
+    char inputLetter;
+
+    // Set up the variables
+    printf(""Enter letter: \n"");
+    scanf("" %c"", &inputLetter);
+
+    // Calculate the next letter
+    char outputLetter = inputLetter + 1;
+
+    // Print the results
+    printf(""%c -> %c\n"", inputLetter, outputLetter);
+
+    return 0;
+}
+",1
+wmas516,1694842598,1,"#include <stdio.h>
+
+int main(){
+    char val;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&val);
+    printf(""%s ->"");
+    
+}",0
+wmas516,1694842607,2,"#include <stdio.h>
+
+int main(){
+    char val;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&val);
+    printf(""%s ->"",val);
+    
+}",0
+wmas516,1694842628,3,"#include <stdio.h>
+
+int main(){
+    char val;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&val);
+    printf(""%c ->"",val);
+    
+}",0
+wmas516,1694842650,4,"#include <stdio.h>
+
+int main(){
+    char val;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&val);
+    printf(""%c -> %c"",val,(val+1));
+    
+}",1
+wmas516,1694845424,5,"#include <stdio.h>
+
+int main(){
+    char val;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&val);
+    printf(""%c -> %c"",val,(val+1));
+}",1
+wwu295,1694859912,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char character;
+	printf(""Enter character: "");
+	scanf(""%c"", character);
+	printf(""\n%c -> %c"", character, (char)(character + 1);
+
+}",0
+wwu295,1694859985,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char character;
+	printf(""Enter character: "");
+	scanf(""%c"", character);
+	printf(""\n%c -> %c"", character, (char)(character + 1));
+
+}",0
+wwu295,1694860032,3,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char character;
+	printf(""Enter character: "");
+	scanf(""%c"", &character);
+	printf(""\n%c -> %c"", character, (char)(character + 1));
+
+}",0
+wwu295,1694860052,4,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char character;
+	printf(""Enter letter: "");
+	scanf(""%c"", &character);
+	printf(""\n%c -> %c"", character, (char)(character + 1));
+
+}",1
+xche362,1694921502,1,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    
+    scanf(%d, &character);
+    D=character+1;
+    printf(""Enter letter:\n%c -> %c"",x,D)
+    
+   
+    return 0;
+}",0
+xche362,1694921512,2,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    
+    scanf(%c, &character);
+    D=character+1;
+    printf(""Enter letter:\n%c -> %c"",x,D)
+    
+   
+    return 0;
+}",0
+xche362,1694921542,3,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    
+    scanf(%c, &x);
+    D=character+1;
+    printf(""Enter letter:\n%c -> %c"",x,D)
+    
+   
+    return 0;
+}",0
+xche362,1694921566,4,"#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    
+    scanf(%c, &x);
+    D=x+1;
+    printf(""Enter letter:\n%c -> %c"",x,D)
+    
+   
+    return 0;
+}",0
+xche362,1694921637,5,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    
+    scanf(%c, &x);
+    D=x+1;
+    printf(""Enter letter:\n%c -> %c"",x,D)
+    
+   
+    return 0;
+}",0
+xche362,1694921661,6,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    
+    scanf(%c, &x);
+    
+    printf(""Enter letter:\n%d,x)
+    
+   
+    return 0;
+}",0
+xche362,1694921685,7,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    
+    scanf(%c, &x);
+    
+    printf(""Enter letter:%d,x)
+    
+
+    return 0;
+}",0
+xche362,1694921704,8,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    
+    scanf(%d, &x);
+    
+    printf(""Enter letter:%d,x)
+    
+
+    return 0;
+}",0
+xche362,1694921733,9,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    x=a;
+    scanf(%c, &x);
+    
+    printf(""Enter letter:%d,x)
+    
+
+    return 0;
+}",0
+xche362,1694921907,10,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    scanf(%c, &x);
+    
+    
+    printf(""Enter letter:%d,x)
+    
+
+    return 0;
+}",0
+xche362,1694921912,11,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    scanf(%c, &x);
+
+    printf(""Enter letter:%d,x)
+
+    return 0;
+}",0
+xche362,1694922020,12,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    printf(""Enter a letter of the alphabet (not 'z' or 'Z'): "");
+    scanf("" %c"", &inputLetter); // Note the space before %c to consume any leading whitespace
+
+    // Check if the input is 'y' or 'Y' and handle them as special cases
+    if (inputLetter == 'y' || inputLetter == 'Y') {
+        nextLetter = 'a';
+    } else {
+        // Increment the ASCII value of the input letter to get the next letter
+        nextLetter = inputLetter + 1;
+    }
+
+    printf(""%c -> %c\n"", inputLetter, nextLetter);
+    
+    return 0;
+}
+In this program:
+
+We use printf to prompt the user to enter a letter.
+We use scanf with a space before %c to consume any leading whitespace or newline characters.
+We check if the input letter is 'y' or 'Y' as a special case because the letter after 'y' and 'Y' is 'a'. For other letters, we increment the ASCII value of the input letter to get the next letter in the alphabet.
+We use printf to display the original letter, an arrow (->), and the next letter.
+Remember to test the program with various input letters to ensure it works as expected.
+
+
+
+
+
+",0
+xche362,1694922030,13,"#include <stdio.h>
+
+int main() {
+    char inputLetter, nextLetter;
+
+    printf(""Enter a letter of the alphabet (not 'z' or 'Z'): "");
+    scanf("" %c"", &inputLetter); // Note the space before %c to consume any leading whitespace
+
+    // Check if the input is 'y' or 'Y' and handle them as special cases
+    if (inputLetter == 'y' || inputLetter == 'Y') {
+        nextLetter = 'a';
+    } else {
+        // Increment the ASCII value of the input letter to get the next letter
+        nextLetter = inputLetter + 1;
+    }
+
+    printf(""%c -> %c\n"", inputLetter, nextLetter);
+    
+    return 0;
+}
+
+
+",0
+xche362,1694922161,14,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    
+    scanf(""c"", &x);
+    y=x+1;
+    
+    printf(""Enter letter:\n%c -> &c"",x,y);
+
+    return 0;
+}",0
+xche362,1694922195,15,"#include <stdio.h>
+
+char main()
+{
+    char x;
+    char y;
+    
+    scanf(""c"", &x);
+    y=x+1;
+    
+    printf(""Enter letter:\n%c -> &c"",x,y);
+
+    return 0;
+}",0
+xche362,1694922411,16,"#include <stdio.h>
+
+int main()
+{
+    char x,y;
+    
+    scanf(""c"", &x);
+    y=x+1;
+    
+    printf(""Enter letter:\n%c -> &c"",x,y);
+
+    return 0;
+}",0
+xche362,1694922425,17,"#include <stdio.h>
+
+int main()
+{
+    char x,y;
+    
+    scanf(""d"", &x);
+    y=x+1;
+    
+    printf(""Enter letter:\n%c -> &c"",x,y);
+
+    return 0;
+}",0
+xche362,1694922440,18,"#include <stdio.h>
+
+int main()
+{
+    char x,y;
+    
+    scanf(""%c"", &x);
+    y=x+1;
+    
+    printf(""Enter letter:\n%c -> &c"",x,y);
+
+    return 0;
+}",0
+xche362,1694922448,19,"#include <stdio.h>
+
+int main()
+{
+    char x,y;
+    
+    scanf(""%c"", &x);
+    y=x+1;
+    
+    printf(""Enter letter:\n%c -> %c"",x,y);
+
+    return 0;
+}",1
+xche362,1694922460,20,"#include <stdio.h>
+
+int main()
+{
+    char x;
+    char y;
+    
+    scanf(""%c"", &x);
+    y=x+1;
+    
+    printf(""Enter letter:\n%c -> %c"",x,y);
+
+    return 0;
+}",1
+xkan320,1694835373,1,"#include <stdio.h>
+int main(void)
+{
+    char val;
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&val);
+    printf(""%c -> %c"",val,val+1);
+    return 0;
+}
+",1
+ybha528,1694864918,1,"#include <stdio.h>
+
+int.main(void)
+{
+    char Letter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &Letter);
+    char newLetter=Letter+1;
+    printf(""%c -> %c"",Letter, newLetter);
+    
+    return 0;
+}",0
+ybha528,1694864931,2,"#include <stdio.h>
+
+int main(void)
+{
+    char Letter;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &Letter);
+    char newLetter=Letter+1;
+    printf(""%c -> %c"",Letter, newLetter);
+    
+    return 0;
+}",1
+ycho749,1695000491,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+
+    printf(""%c -> %c"", input, (char)input+1);
+
+    return 0;
+} ",1
+ycho760,1694948476,1,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    char x;
+    printf (""Enter value: "");
+    scanf(""%c"", &input);
+    x = input + 1;
+    printf (""\n%c -> %c"",input,x );
+
+    return 0;
+}",0
+ycho760,1694948508,2,"#include <stdio.h>
+
+int main()
+{
+    char input;
+    char x;
+    printf (""Enter letter: "");
+    scanf(""%c"", &input);
+    x = input + 1;
+    printf (""\n%c -> %c"",input,x );
+
+    return 0;
+}",1
+ydar075,1694998001,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char x;
+	char y;
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &x);
+	
+	y = x + 1;
+
+	printf(""%c -> %c"", x, y);
+
+	return 0;
+}",1
+yilm466,1694838116,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char nletter;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &letter);  // Fixed mismatched quotation
+
+	nletter = letter + 1;  // Direct arithmetic on char type
+
+	// Proper escape sequences for the double quotes and correct format string
+	printf(""\""%c\"" -> \""%c\""\n"", letter, nletter); 
+
+	return 0;
+}
+",0
+yilm466,1694838141,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	char letter;
+	char nletter;
+
+	printf(""Enter letter: \n"");
+	scanf(""%c"", &letter);  // Fixed mismatched quotation
+
+	nletter = letter + 1;  // Direct arithmetic on char type
+
+	// Proper escape sequences for the double quotes and correct format string
+	printf(""%c -> %c \n"", letter, nletter); 
+
+	return 0;
+}
+",1
+ykwa219,1694847697,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	int x;
+	char value;
+	printf(""Enter letter: "");
+	scanf(""%c"", &value);
+
+	x = value + 1;
+
+	printf(""\n%c -> %c"", value, x);
+	return 0;
+}",1
+ytse120,1694764325,1,"#include <stdio.h>
+
+int main(void)
+{
+    char input;
+    printf(""Enter letter: \n"");
+    scanf(""%c"", &input);
+    printf(""%c -> %c"", input, input+1);
+    return 0;
+}",1
+zgar110,1695009929,1,"#include <stdio.h>
+
+int main(void) {
+    char inputLetter;
+
+    printf(""(A-Y): "");
+    scanf("" %c"", &inputLetter);
+
+    if ((inputLetter >= 'A' && inputLetter < 'Y') || (inputLetter >= 'a' && inputLetter < 'y')) {
+        char nextLetter = inputLetter + 1;
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""AY.\n"");
+    }
+
+    return 0;
+}
+",0
+zgar110,1695010016,2,"#include <stdio.h>
+
+int main() {
+    char input_letter, next_letter;
+
+    // Prompt the user to enter a letter
+    printf(""Enter letter: "");
+    scanf("" %c"", &input_letter);
+
+    // Check if the input is a valid lowercase letter from 'a' to 'y'
+    if (input_letter >= 'a' && input_letter <= 'y') {
+        // Calculate the next letter
+        next_letter = input_letter + 1;
+
+        // Display the result with a stylized arrow
+        printf(""%c \xE2\x86\x92 %c\n"", input_letter, next_letter);
+    } else {
+        printf(""Invalid input. Please enter a lowercase letter from 'a' to 'y'.\n"");
+    }
+
+    return 0;
+}
+",0
+zgar110,1695010048,3,"#include <stdio.h>
+
+int main(void) {
+    char inputLetter;
+
+    printf(""Please enter a letter of the alphabet (A-Y): "");
+    scanf(""%c"", &inputLetter);
+
+    if (inputLetter >= 'A' && inputLetter < 'Z') {
+        char nextLetter = inputLetter + 1;
+        printf(""%c -> %c\n"", inputLetter, nextLetter);
+    } else {
+        printf(""Invalid input. Please enter a letter between 'A' and 'Y'.\n"");
+    }
+
+    return 0;
+}
+",0
+zgar110,1695010061,4,12,0
+zgar110,1695010307,5,"#include <stdio.h>
+int main(void)
+{
+char input = 'G';
+input = (char)(input + 1);
+printf(""Result = %c"", input);
+return 0;
+}",0
+zgar110,1695010827,6,"#include <stdio.h>
+
+int main(void) {
+    char inputLetter;
+
+    printf(""Enter letter:\n"");
+    scanf("" %c"", &inputLetter);
+
+    if ((inputLetter >= 'A' && inputLetter < 'Z') || (inputLetter >= 'a' && inputLetter < 'z')) {
+        // Display the input letter along with a stylized arrow and the next letter
+        printf(""%c -> %c\n"", inputLetter, (char)(inputLetter + 1));
+    } else if (inputLetter == 'Z') {
+        // Special case for 'Z' to loop back to 'A'
+        printf(""Z -> A\n"");
+    } else if (inputLetter == 'z') {
+        // Special case for 'z' to loop back to 'a'
+        printf(""z -> a\n"");
+    } else {
+        // Invalid input
+        printf(""Invalid input. Please enter a letter of the alphabet.\n"");
+    }
+
+    return 0;
+}
+",1
+zgas053,1695020856,1,"#include <stdio.h>
+int main(void)
+{
+	char x;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+	printf(""%c"", x);
+	printf("" -> "");
+	
+	x = x + 1;
+	
+	printf(""%c"", x);
+	return 0;
+
+}",1
+zliu578,1694847285,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+	char x;
+	char result;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &x);
+	result = x + 1;
+	printf(""%c -> %c"", x,result);
+	return 0;
+}",1
+zpen457,1694937781,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+    
+int main(void)
+{
+    /*define input and output as characters.*/
+    char input;
+    char output;
+    
+    /*ask user to enter a character.*/
+    printf(""Enter letter:\n"");
+    scanf(""%c"",&input);
+    
+    /*output has an ASCII code of (input + 1).*/
+    output = (char)(input + 1);
+    
+    /*display the line.*/
+    printf(""%c -> %c"",input,output);
+}",1
+zshi453,1694775923,1,"#include <stdio.h>
+
+int main(void)
+{
+    char inputletter;
+    int asciiInput;
+    int asciiOutput;
+    char outputletter;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &inputletter);
+    asciiInput = (int)inputletter;
+    if (asciiInput == 90){
+        asciiOutput = 65;
+    } else{
+        asciiOutput = asciiInput + 1;
+    }
+    outputletter = (char)asciiOutput;
+    printf(""%c"",outputletter);
+}",0
+zshi453,1694775956,2,"#include <stdio.h>
+
+int main(void)
+{
+    char inputletter;
+    int asciiInput;
+    int asciiOutput;
+    char outputletter;
+    
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &inputletter);
+    asciiInput = (int)inputletter;
+    if (asciiInput == 90){
+        asciiOutput = 65;
+    } else{
+        asciiOutput = asciiInput + 1;
+    }
+    outputletter = (char)asciiOutput;
+    printf(""%c -> %c"",inputletter,outputletter);
+}",1
+zyah987,1694815309,1,"#include <stdio.h>
+
+char nextLetter(char ch) {
+    if (ch == 'z') return 'a';
+    if (ch == 'Z') return 'A';
+    if ((ch >= 'a' && ch < 'z') || (ch >= 'A' && ch < 'Z')) return ch + 1;
+    return 0; // indicates invalid input
+}
+
+int main() {
+    char letter, result;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+
+    result = nextLetter(letter);
+
+    if (result) {
+        printf(""%c -> %c\n"", letter, result);
+    } else {
+        printf(""Please enter a valid letter of the alphabet.\n"");
+    }
+
+    return 0;
+}
+",1
+zyah987,1694815327,2,"#include <stdio.h>
+
+char nextLetter(char ch) {
+    if (ch == 'z') return 'a';
+    if (ch == 'Z') return 'A';
+    if ((ch >= 'a' && ch < 'z') || (ch >= 'A' && ch < 'Z')) return ch + 1;
+    return 0; // indicates invalid input
+}
+
+int main() {
+    char letter, result;
+
+    printf(""Enter letter:\n"");
+    scanf(""%c"", &letter);
+
+    result = nextLetter(letter);
+
+    if (result) {
+        printf(""%c -> %c\n"", letter, result);
+    } else {
+        printf(""Enter a correct letter.\n"");
+    }
+
+    return 0;
+}
+",1
+zzol692,1695028606,1,"#include <stdio.h>
+int main(void)
+{
+    char input;
+	printf(""Enter letter:\n"");
+	scanf(""%c"", &input);
+	char letter= input + 1;
+	printf(""%c -> %c\n"", input, letter);
+	return 0;
+}",1

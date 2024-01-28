@@ -1,0 +1,8942 @@
+upi,time,try,answer,rawfraction
+aahk798,1695091660,1,"int TimesTwo(int n)
+{ int result; 
+	result=n*2;
+	return result; 
+
+}",1
+aakm278,1695628517,1,"int TimesTwo(int n)
+{
+	//n = n * 2;
+	return n * 2;
+}",1
+aana675,1695421768,1,"#include <stdio.h>
+
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}",1
+aaza463,1695086586,1,"int TimesTwo(int n)
+{
+	return n*2;
+}",1
+aazh582,1695633938,1,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int number = 5;
+    int result = TimesTwo(number); 
+    // You can now use the 'result' variable, but we won't print it as per the instructions.
+    return 0;
+}
+",0
+abha257,1695270869,1,"int TimesTwo(int n)
+{
+	return (n * 2);
+}",1
+abro522,1695079468,1,"int TimesTwo(int x) {
+    return 2*x;
+}",1
+acam267,1695450524,1,"int TimesTwo(int num) {
+    return num * 2
+}",0
+acam267,1695452050,2,"int TimesTwo(int num) {
+    return num * 2;
+}",1
+ache725,1695388781,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return 2 * n;
+}",1
+achi359,1695340054,1,"#include <stdio.h>
+
+ int a, b;
+//call the function
+ result = PrintTimesTwo(a);
+ printf(""Result = %d"", result);
+
+// function declaration 
+int PrintTimesTwo(int a)
+{
+ return 2*a;
+} ",0
+achi359,1695340220,2,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+ return 2*a;
+} ",1
+acoc261,1695163613,1,"int TimesTwo(int a)
+{
+    return (a * 2);
+}",1
+adav221,1695534107,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}",1
+adey750,1695300846,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int output;
+    output = input * 2; 
+    return output;
+}
+",1
+afal438,1695092307,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+	return a * 2;
+}",1
+afit324,1695532812,1,"#include <stdio.h>
+
+int TimesTwo(int a) {
+    return a * 2;
+}",1
+agan859,1695251764,1,"int TimesTwo(int n)
+{
+	int answer;
+
+	answer = n * 2;
+
+	return answer;
+}",1
+agay279,1695265928,1,"int TimesTwo(int n)
+{
+    int timestwo;
+    timestwo=n*2;
+    return timestwo;
+}
+",1
+agou682,1695567501,1,"#include <stdio.h>
+
+int TimesTwo(int number) 
+{
+    return (number*2);
+}",1
+ahac139,1695522305,1,"int TimesTwo(int a)
+{
+	return a * 2;
+}",1
+ahac223,1695610876,1,"int PrintTimesTwo(int Value)
+{
+    int Ans;
+    Ans = Value + Value;
+    
+    return Ans;
+    
+    
+}
+",0
+ahac223,1695610961,2,"int TimesTwo(int Value)
+{
+    int Ans;
+    Ans = Value + Value;
+    
+    return Ans;
+    
+    
+}",1
+ahai431,1695511670,1,"int TimesTwo(int n)
+{
+	int output;
+	output = n * 2;
+	return output;
+}",1
+ahas673,1695015082,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n){
+    return n*2;
+}",1
+ahij206,1695623607,1,"void TimesTwo(int input)
+{
+    int result = input * 2;
+    printf(""Result = %d\n"",result);
+}",0
+ahij206,1695624512,2,"int TimesTwo(int input)
+{
+    int result = input * 2;
+    return result;
+}",1
+ahua579,1695085218,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+ahus071,1695604743,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return (n*2);
+}",1
+ajam744,1695184148,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    int result;
+    
+    result = 2 * x;
+    
+    return result;
+}",1
+ajeo563,1695545727,1,"int TimesTwo(int n)
+{   
+	return n * 2;
+}",1
+ajhz010,1695163560,1,"int TimesTwo(int inputValue2)
+{
+    return inPutValue2 * 2;
+}",0
+ajhz010,1695163627,2,"int TimesTwo(int inputValue2)
+{
+    return inputValue2 * 2;
+}",1
+ajhz011,1695009821,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+	return input * 2;
+}
+",1
+ajhz216,1695436089,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2;
+}
+
+",1
+ajhz318,1695038547,1,"int TimesTwo(int result)
+{
+    return result * 2;
+}",1
+ajhz444,1695176703,1,"int TimesTwo(double a)
+{
+	int b = a * 2;
+}",0
+ajhz444,1695176755,2,"int TimesTwo(double a)
+{
+	int b = a * 2;
+	return b;
+}",1
+ajhz488,1695548140,1,"int TimesTwo(int n)
+{
+	n = n*2;
+	return n;
+}",1
+ajin489,1695120614,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    input = input * 2;
+    return input;
+}",1
+ajoh511,1695099283,1,"int TimesTwo(int n)
+{
+    int product;
+    product = n*2;
+    return product;
+}",1
+akam256,1695565357,1,"#include <stdio.h>
+int TimesTwo(int in)
+
+{
+int Result;
+Result = in * 2;
+
+return Result;
+
+}
+
+int main(void)
+
+{
+
+int e;
+int Result;
+scanf(""%d"", &e);
+TimesTwo(e);
+
+Result = TimesTwo(e);
+printf(""Result = %d\n"", Result);
+return 0;
+
+}",0
+akam256,1695612543,2,"#include <stdio.h>
+int TimesTwo(int in)
+
+{
+int Result;
+Result = in * 2;
+
+return Result;
+
+}
+",1
+akam677,1695638376,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+akam677,1695638445,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    // You can use the result as needed, such as printing it.
+    printf(""Result = %d\n"", result);
+    return 0;
+}
+",0
+aker238,1695092277,1,"int TimesTwo(int i)
+{
+    int t = 0;
+    
+    t = i * 2;
+    
+    return t;
+}",1
+akin699,1695252863,1,"// Author: Anahera Kingston
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+akmu146,1695351326,1,"int TimesTwo(int n)
+{
+    int answer;
+    answer = n + n;
+    return answer;
+}",1
+akod059,1695550986,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+	int ans;
+	ans = n * 2;
+
+	return ans;
+}",1
+akri368,1695613739,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int input)
+{
+	int val;
+
+	val = input * 2;
+	return val;
+}",1
+akwo440,1695634904,1,"int TimesTwo(int n)
+{
+	int output = n*2;
+	return output;
+}",1
+ali867,1695618469,1,"#include <stdio.h>
+
+int main() 
+{
+    int result;
+    
+
+    int TimesTwo(int input) 
+    {
+        return input * 2;
+    }
+
+    result = TimesTwo();
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+ali867,1695618526,2,"#include <stdio.h>
+
+int main() 
+{
+    void TimesTwo(int input) 
+    {
+        return input * 2;
+    }
+
+    int result = TimesTwo();
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+ali867,1695618816,3,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    return input * 2;
+}
+
+int main() 
+{
+    int result = TimesTwo();
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+ali867,1695619048,4,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+ali867,1695619128,5,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+}
+int main()
+{
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+ali867,1695619471,6,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    printf(""Result: %d\n"", result);
+}",0
+ali867,1695619513,7,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    printf(""Result: %d\n"", result);
+    return 0
+}",0
+ali867,1695619888,8,"#include <stdio.h>
+
+int TimesTwo(int input_value) {
+    int result = input_value * 2;
+    return result;
+}
+
+int main() {
+    int input;
+
+    int result = TimesTwo(input);
+
+    printf(""Result: %d\n"", result);
+
+    return 0;
+}",0
+ali867,1695620084,9,"#include <stdio.h>
+
+int TimesTwo(int input_value) {
+    int result = input_value * 2;
+    return result;
+}
+
+int main() {
+    int input = 5;
+    int result = TimesTwo(input);
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+ali867,1695620370,10,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    return result;
+}
+
+int main() 
+{
+    int input = 5;
+    int result = TimesTwo(input);
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+ali867,1695620390,11,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    printf(""Result = %d"", result);
+}
+",0
+ali867,1695620561,12,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    return result;
+}
+",1
+alum086,1695157331,1,"#include <stdio.h>
+
+int TimesTwo(int inputValue) {
+    int result = inputValue * 2;
+    return result;
+}
+
+int main() {
+    int input = 5; // You can change this value to test the function
+    int multipliedValue = TimesTwo(input);
+    printf(""Result: %d\n"", multipliedValue);
+    return 0;
+}
+",0
+alum086,1695582848,2,"#include <stdio.h>
+
+int TimesTwo(int inputValue) {
+    int result = inputValue * 2;
+    return result;
+}
+
+int main(TimesTwo) {
+    int input = 5; // You can change this value to test the function
+    int multipliedValue = TimesTwo(input);
+    printf(""Result: %d\n"", multipliedValue);
+    return 0;
+}
+",0
+alum086,1695597610,3,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+int main() {
+    int value = 5; // Replace this with the value you want to double.
+    int result = TimesTwo(value);
+    printf(""Result: %d\n"", result);
+    return 0;
+}
+",0
+alum086,1695599018,4,"#include <stdio.h>
+
+// Function prototype
+int TimesTwo(int value);
+
+int main() {
+    // Call the TimesTwo function
+    int result = TimesTwo(5);
+
+    // Print the result
+    printf(""Result: %d\n"", result);
+
+    return 0;
+}
+
+// Function definition
+int TimesTwo(int value) {
+    // Function body
+    int result = value * 2;
+    return result;
+}
+",0
+alum086,1695629235,5,"#include <stdio.h>
+
+// Function prototype
+int TimesTwo(int input);
+
+int main() {
+    int inputNumber = 5; // Replace 5 with your desired input value
+
+    int result = TimesTwo(inputNumber);
+
+    // Display the result using printf
+    printf(""Result: %d\n"", result);
+
+    return 0;
+}
+
+// Function definition
+int TimesTwo(int input) {
+    // Multiply the input by 2 and return the result
+    return input * 2;
+}
+",0
+alum086,1695629289,6,"#include <stdio.h>
+
+// Function prototype
+void TimesTwo(int *input);
+
+int main() {
+    int inputNumber = 5; // Replace 5 with your desired input value
+
+    TimesTwo(&inputNumber);
+
+    // Display the updated input value using printf
+    printf(""Updated input value: %d\n"", inputNumber);
+
+    return 0;
+}
+
+// Function definition
+void TimesTwo(int *input) {
+    // Multiply the input by 2 and update it directly
+    *input = (*input) * 2;
+}
+",0
+alum086,1695630149,7,"#include <stdio.h>
+
+// Function prototype
+int TimesTwo(int input);
+
+int main() {
+    int inputNumber = 5; // Replace 5 with your desired input value
+
+    int result = TimesTwo(inputNumber);
+
+    // Display the result using printf
+    printf(""Result: %d\n"", result);
+
+    return 0;
+}
+
+// Function definition
+int TimesTwo(int input) {
+    // Multiply the input by 2 and return the result
+    return input * 2;
+}
+",0
+amac853,1695159392,1,"int TimesTwo(int num)
+{
+    int output = num*2;
+    return output;
+}
+",1
+amag544,1695606524,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    return input*2;
+}
+",1
+amah664,1695611380,1,"#include <stdio.h> 
+
+int TimesTwo(int n)
+{ 
+    int result; 
+    result = n * 2; 
+    return result; 
+}",1
+amal783,1695169398,1,"#include <stdio.h>
+
+int TimesTwo(int value){
+    return value * 2;
+}",1
+amar516,1695182451,1,"#include <stdio.h>
+
+int TimesTwo(int value)
+{
+int Result;
+Result = value * 2;
+}
+",0
+amar516,1695182477,2,"#include <stdio.h>
+
+int TimesTwo(int value)
+{
+int Result;
+Result = value * 2;
+return Result;
+}
+",1
+amar704,1695204920,1,"#include <stdio.h>
+
+int TimesTwo(int num)
+{
+    num = num * 2;
+    return num;
+    
+}",1
+amar768,1695357289,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    return input*2;
+}
+",1
+amat407,1695161053,1,"int TimesTwo(int n)
+{
+ return n*2;
+}",1
+amcm539,1695509533,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int TimesTwo(int n)
+{
+	return n*2;
+}",1
+amhk276,1695518539,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+
+{
+    int Result;
+    
+    Result = n * 2;
+    return Result;
+}",1
+amhk647,1695101381,1,"int TimesTwo(int x) { // input value for TimesTwo
+	return 2 * x;
+}",1
+amok249,1695158902,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = 2*a;
+    return result; 
+}",1
+amur986,1695540772,1,"int TimesTwo(int a) {
+		int b;
+		b = 2 * a;
+		return b;
+
+}",1
+anig922,1695619100,1,"#include <stdio.h>
+
+int PrintTimesTwo(int num){
+    x = num * 2;
+    return x;
+}
+",0
+anig922,1695619132,2,"#include <stdio.h>
+
+int PrintTimesTwo(int num){
+    int x = num * 2;
+    return x;
+}
+",0
+anig922,1695619244,3,"#include <stdio.h>
+
+int TimesTwo(int num){
+    int x = num * 2;
+    return x;
+}
+",1
+aosm976,1695634961,1,"int TimesTwo(int num) 
+{
+    int double_num;
+    double_num = num * 2;
+
+    return double_num;
+}",1
+apan786,1695026730,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int output = input * 2;
+    return output;
+}",1
+apan786,1695026739,2,"#include <stdio.h>
+
+void TimesTwo(int input)
+{
+    int output = input * 2;
+    return output;
+}",0
+apan786,1695026750,3,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int output = input * 2;
+    return output;
+}",1
+apat750,1695094684,1,"#include <stdio.h>
+int result;
+int PrintTimesTwo(int n)
+{   
+    result= n *2;
+    printf(""%d\n"", result);
+
+}
+",0
+apat750,1695096390,2,"int TimesTwo(int n)
+{   
+    int result;
+    result= n *2;
+    return result;
+
+}
+",1
+apat824,1695095491,1,"int PrintTimesTwo(int number)
+
+{
+    int result ;
+   result = number * 2; 
+   printf(""Result = %d"", result);
+
+   
+}",0
+apat824,1695095561,2,"int PrintTimesTwo(int number)
+
+{
+    int result ;
+   result = number * 2; 
+   printf(""Result = %d"", result);
+    return result ;
+   
+}",0
+apat824,1695095654,3,"int TimesTwo(int number)
+
+{
+    int result ;
+   result = number * 2; 
+    return result ;
+   
+}",1
+apen181,1695366970,1,"#include <stdio.h>
+
+int TimesTwo(int number){
+	return number * 2;
+}",1
+apre444,1695627124,1,"#include <stdio.h>
+
+/*Author: Amy Prebble
+The function, TimesTwo takes a single input and returns the input multiplied by two. 
+The function does not print any values, and only returns them*/
+
+int TimesTwo(int input) 
+{
+    return input*2;
+}",1
+apur448,1695628447,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int inputTwice;
+
+    inputTwice = 2*n;
+    return inputTwice; 
+}",1
+aqu284,1695630673,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int Twice;
+    Twice = a + a;
+    return Twice;
+}
+
+int main(void)
+{
+    int a;  
+    scanf(""%d"", &a);
+    int result = TimesTwo(a);
+    printf(""Result = %d"", result);
+    return 0;
+}   ",0
+aqu284,1695631392,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int Twice;
+    Twice = a + a;
+    return Twice;
+}",1
+arah160,1695266702,1,"#include <stdio.h>
+
+int TimesTwo (int input)
+{
+   int result = input*2;
+   return result;
+    
+}",1
+arus530,1695089879,1,"int TimesTwo(int n)
+{
+    int ans = n*2;
+    return ans;
+}",1
+aryu462,1695604709,1,"int TimesTwo(int input)
+{
+    return input * 2;
+}",1
+asaa285,1695561143,1,"// Online C compiler to run C program online
+#include <stdio.h>
+
+int TimesTwo(int a) {
+    // Write C code here
+    
+    return a*2;
+
+}",1
+asah845,1695267771,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int PrintTimesTwo(int a)
+{
+
+	return 2*a;
+
+}",0
+asah845,1695267807,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+
+	return 2*a;
+
+}",1
+ashe298,1695608207,1,"int TimesTwo(int n)
+{
+    return n * 2;
+}
+",1
+ashi565,1695034460,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+int result = input * 2;
+return result;
+}
+
+int main() {
+int result;
+result = TimesTwo(5);
+printf(""Result = %d\n"", result);
+
+return 0;
+}",0
+ashi565,1695089049,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+int result = input * 2;
+return result;
+}
+
+",1
+asim819,1695440216,1,"int TimesTwo(int a)
+{
+
+	int b = a * 2;
+	
+	return b;
+
+}",1
+aski294,1695167895,1,"int TimesTwo(int input)
+{
+	int result;
+
+	result = input * 2;
+
+	return result;
+}",1
+asmi629,1695547626,1,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    int result = number * 2;
+    return result;
+}
+",1
+atay777,1695262768,1,"int TimesTwo(int n)
+{
+	int dbl;
+	dbl=n*2;
+	return dbl;
+}
+",1
+atee059,1695546962,1,"int TimesTwo(int num) {
+
+	int out;
+
+	out = num * 2;
+
+	return out;
+}",1
+atho643,1695285132,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void TimesTwo(int n)
+{
+ int Result = n*2;
+ Return Result;
+}
+",0
+atho643,1695285253,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void TimesTwo(int n)
+{
+ int result; 
+ int result = n*2;
+ Return result;
+}
+",0
+atho643,1695285320,3,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+ int result = n*2;
+ return result;
+}
+",1
+athu157,1695222321,1,"int TimesTwo(int n)
+{
+	int ans;
+
+	ans = n * 2;
+	return ans;
+}",1
+atup175,1695628000,1,"int TimesTwo(int a){
+    
+    int result = a * 2;
+    
+   return result;
+}",1
+avan381,1695433775,1,"int TimesTwo(int n)
+{
+    int product = n*2;
+    
+    return product;
+}",1
+awal599,1695264731,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+   int o = n*2;
+
+    return o;
+}",1
+awar747,1695544156,1,"int TimesTwo(int number) {
+    int result = number * 2;
+    return result;
+}",1
+awil907,1695004367,1,"#include <stdio.h>
+int TimesTwo(int input_param) {
+    int answer = input_param*2;
+    return answer;
+}",1
+awri757,1695270361,1,"int TimesTwo(int n){
+	n = n * 2;
+
+	return n;
+}
+",1
+ayan607,1695462914,1,"int TimesTwo(int a) {
+    a = a * 2;
+    return a;
+}",1
+ayou303,1695257148,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}",1
+ayou533,1695429200,1,"int TimesTwo(int value) {
+    return value * 2;
+}",1
+ayua214,1695611215,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+int main() {
+    int inputValue = 5;  // Example input value
+    int result = TimesTwo(inputValue);
+    printf(""Input multiplied by two: %d\n"", result);
+    return 0;
+}
+",0
+ayua214,1695611380,2,"#include <stdio.h>
+int main() {
+    int inputValue = 5;  // Example input value
+    int result = TimesTwo(inputValue);
+    printf(""Result = %d\n"", result);
+    return 0;
+}
+",0
+ayua214,1695611404,3,"int TimesTwo(int number) {
+    int result = number * 2;
+    return result;
+}
+",1
+bate521,1695092690,1,"#include <stdio.h>
+
+int PrintTimesTwo(int input) 
+{
+    int result = input * 2;
+    return result;
+    
+}
+",0
+bate521,1695092704,2,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    return result;
+    
+}
+",1
+bcar662,1695542408,1,"int TimesTwo(int n)
+{
+	int Result;
+	Result = n * 2;
+	return Result;
+}",1
+bcha389,1695089835,1,"int TimesTwo(int input)
+{
+	int output;
+
+	output = input * 2;
+
+	return output;
+}",1
+bcha726,1695258343,1,"#include <stdio.h>
+
+int TimesTwo(int x){
+
+    int y = 2*x;
+    return y;
+
+}",1
+bcos422,1695247778,1,"int TimesTwo(int n)
+{
+	int j;
+	int i = n;
+	j = i * 2;
+	return j;
+}",1
+bcru157,1695091888,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+}",0
+bcru157,1695092181,2,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    return result;
+}",1
+besk864,1695299535,1,"int TimesTwo(int a) 
+ { 
+ int result; 
+ result = a * 2;
+ return result;
+ } ",1
+bfis965,1695264953,1,"int TimesTwo(int value)
+{
+    return value * 2;
+}",1
+bfla774,1695272261,1,"int TimesTwo(int n)
+
+{
+	int result;
+	result = (n * 2);
+	return result;
+}",1
+bgib630,1695215129,1,"int TimesTwo(int n)
+{
+	int result = n * 2;
+
+	return result;
+}",1
+bgru726,1695082495,1,"int TimesTwo(int n)
+{
+	return (n * 2);
+}",1
+bguo360,1694999813,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+bhua898,1695005193,1,"int TimesTwo(int n)
+{
+	return n*2;
+}",1
+bjin223,1695361396,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+    result=n*2;
+    return result;
+}",1
+bjon836,1695633433,1,"#include <stdio.h>
+
+int TimesTwo(int x) {
+int result = x * 2;
+return result;
+}
+",1
+bkho028,1695091181,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a * 2;
+    return result;
+}
+
+int main()
+{
+    int result;
+
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+
+    return 0;
+}",0
+bkho028,1695091213,2,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a * 2;
+    return result;
+}",1
+blar030,1695170130,1,"#include <stdio.h>
+
+ int TimesTwo(int a)
+ {
+    int result;
+    result = 2 * a;
+    return result;
+ }
+ ",1
+bli482,1695376872,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+	int output;
+	output = input * 2;
+	return output;
+}",1
+bli775,1695122833,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+		int result = n * 2;
+		return result;
+	}",1
+bli775,1695122892,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+// This script takes and integer and then prints the value times by
+// 2.
+// Input: the integer that is being multiplied by 2.
+// Returns: none bro
+// Author: bei
+
+int TimesTwo(int n)
+{
+		int result = n * 2;
+		return result;
+	}",1
+blin888,1695337051,1,"int TimesTwo(int n)
+{
+	int result;
+    result = n * 2;
+
+    return result;
+}
+
+",1
+bmac148,1695298699,1,"int TimesTwo(int number) 
+{
+    return number * 2;
+}",1
+bora417,1695187580,1,"int TimesTwo(int n)
+{
+int result;
+result = n * 2;
+return result; 
+}",1
+bpak212,1695624211,1,"#include <stdio.h>
+
+void TimesTwo (int randominputvalue)
+{
+    int result  = randominputvalue * 2;
+    
+    printf(%d\n ,""Result = %d"" , result);
+    
+}
+",0
+bpak212,1695624352,2,"#include <stdio.h>
+
+void TimesTwo (int randominputvalue)
+{
+    int result  = randominputvalue * 2;
+    
+    return result; 
+    
+    printf(""Result = %d"" , result);
+    
+}
+",0
+bpak212,1695624523,3,"#include <stdio.h>
+
+int TimesTwo (int randominputvalue)
+{
+    int result  = randominputvalue * 2;
+// here we get the result of the random value we have chose to be multipled by two and is now returned, shown as result. 
+    return result; 
+}
+",1
+bpak212,1695624606,4,"#include <stdio.h>
+
+int TimesTwo (int randominputvalue)
+{
+    int result = randominputvalue * 2;
+    
+// here we get the result of the random value we have chose to be multipled by two and is now returned, shown as result. 
+    return result; 
+}
+",1
+bpat907,1695348862,1,"int TimesTwo(int n)
+{
+	int value;
+	value = n * 2;
+	return value;
+}",1
+bril841,1695611121,1,"#include <stdio.h>
+
+void TimesTwo(int a)
+{
+    result = a * 2;
+    return result;
+}
+
+",0
+bril841,1695611134,2,"#include <stdio.h>
+
+void TimesTwo(int a)
+{
+    int result;
+    result = a * 2;
+    return result;
+}
+
+",0
+bril841,1695611156,3,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a * 2;
+    return result;
+}
+
+",1
+bsil719,1695170228,1,"int TimesTwo(int n)
+{
+    int result = n * 2;
+    
+    return result;
+}",1
+bvau704,1695170150,1,"int TimesTwo(int n)
+{
+    
+   int result = n * 2;
+   
+   return result;
+    
+}",1
+bwil199,1695598944,1,"#include <stdio.h>
+
+int TimesTwo(int Input)
+{
+    int Output;
+    
+    Output = Input * 2;
+    
+    return Output;
+}",1
+bwis161,1695110628,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+	int result;
+	result = a + a;
+
+	return result;
+
+}",1
+bwoo348,1695609703,1,"int TimesTwo(int var)
+{
+    return var*2;
+}",1
+byiu331,1695014969,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+byul423,1695181464,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+cada577,1695376171,1,"#include <stdio.h>
+
+int TimesTwo (int n)
+
+{ 
+    int answer;
+    
+    answer = n*2;
+    
+    
+return (answer);
+
+
+}",1
+cana544,1695297028,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n) {
+    n = n * 2;
+    return n;
+}",1
+cang688,1695423498,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}",1
+cbee072,1695091007,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int Answer;
+    Answer = n*2;
+}",0
+cbee072,1695091142,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int Answer;
+    Answer = n*2;
+    return Answer;
+}",1
+cben375,1695172461,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a);
+
+int main(void) {
+
+	int a, result;
+	printf(""Enter value: "");
+	scanf(""%d"", &a);
+	result = TimesTwo(a);
+	printf(""Result = %d"", result);
+	return 0;
+}
+
+int TimesTwo(int a) {
+	int result;
+	result = a * 2;
+	return result;
+}",0
+cben375,1695172747,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a);
+
+int TimesTwo(int a) {
+	int result;
+	result = a * 2;
+	return result;
+}",1
+cbro223,1695014641,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n*2;
+}",1
+cbro435,1695104854,1,"#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int sum = n * 2;
+    return sum;
+}",1
+cbro989,1695165358,1,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int answer;
+    answer = input * 2;
+    return answer;
+}
+",1
+cbur703,1695267264,1,"#include <stdio.h>
+
+int TimesTwo (int a)
+{
+    int Result;
+    Result = a * 2;
+    
+    return Result;
+}",1
+ccha663,1695183686,1,"
+int TimesTwo(int n)
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return result;
+}
+",0
+ccha663,1695183848,2,"
+int TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    printf(""Result = %d"", result);
+    return result;
+}
+",0
+ccha663,1695184029,3,"
+int TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    return result;
+}
+",1
+ccha854,1695351070,1,"int TimesTwo(int n)
+{
+    int n2;
+    n2 = n*2;
+    
+    return n2
+}",0
+ccha854,1695351091,2,"int TimesTwo(int n)
+{
+    int n2;
+    n2 = n*2;
+    
+    return n2;
+}",1
+cche441,1695087730,1,"int TimesTwo(int n)
+{
+    int result_n = n * 2;
+    return result_n;
+}",1
+cche873,1695380450,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+cdel568,1695090989,1,"int TimesTwo(int n)
+{
+	int sum = n * 2;
+	return sum;
+}",1
+cdin152,1695476101,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+/* 
+This function returns the product of a single 
+input numerical value multiplied by two 
+*/
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	
+	return result;
+}",1
+cdin268,1695091082,1,"int TimesTwo(int input) {
+    input = input * 2;
+    return input;
+    
+}",1
+cdsi208,1695627203,1,"int TimesTwo(int n)
+{ 
+   int i;
+   i = n * 2;
+   
+  return i;
+}",1
+cgal160,1695175000,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+	int b;
+	b = a * 2;
+	return b;
+}",1
+cgaz516,1695005261,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+chua804,1695277520,1,"#include <stdio.h>
+
+int TimesTwo(int y)
+{ 
+  int result= 2*y;
+  printf(""Result = %d"",result);
+  
+}",0
+chua804,1695277715,2,"#include <stdio.h>
+
+int TimesTwo(int y)
+{ 
+  int result= 2*y;
+  return result;
+}",1
+civa625,1695177551,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    n = n * 2;
+    printf(""Result = %d"", n);
+    return n;
+}",0
+civa625,1695177612,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    n = n * 2;
+    return n;
+}",1
+cjun818,1695621589,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+clee482,1695556318,1,"int TimesTwo(int n)
+{
+    int multiple;
+    multiple = n*2;
+    return multiple;
+}",1
+cleu746,1695206106,1,"int TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    return result;
+}",1
+cli942,1695272600,1,"#include <stdio.h>
+
+    int TimesTwo(int a)
+{
+   int result;
+   result=a*2;
+   return result;
+}",1
+clob269,1695040701,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+
+int TimesTwo(float number) {
+
+	return number * 2;
+
+}
+",1
+cmac377,1695614507,1,"#include <stdio.h>
+int TimesTwo(int a){
+    int result;
+    
+    result = a*2;
+    return result;
+}
+",1
+cmad989,1695176858,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int multiply_2;
+	multiply_2 = n *2;
+	return multiply_2;
+}",1
+cmas527,1695255062,1,"int TimesTwo(int n)
+{
+    int result;
+result= n+n;
+return result;
+
+}",1
+cmcm317,1695259307,1,"#include <stdio.h>
+
+// Functions
+
+int TimesTwo(int input) {
+
+    input = input * 2;
+
+    return input;
+}",1
+cmia215,1695107077,1,"#include <stdio.h>
+
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input + input;
+    //printf(""%d"", result);
+    return result;
+
+}",1
+cmot464,1695085993,1,"int TimesTwo(int num) {
+    int output = num * 2;
+    return output;
+}",1
+cnai408,1695561124,1,"int TimesTwo(int start)
+{
+    int end;
+    end = start * 2;
+    
+    return end;
+}",1
+cnie825,1695553940,1,"#include <stdio.h>
+
+int TimesTwo(int num) {
+    return num * 2;
+}
+
+
+",1
+coli772,1695096101,1,"int TimesTwo(int n) {
+    return n * 2;
+}",1
+couy656,1695099379,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+  	 return n * 2;  
+}",1
+croa063,1695588444,1,"#include <stdio.h>
+
+ 
+ int TimesTwo (int input)
+ {
+ //takes the input of the user and mutiplies the value by 2
+ int output = input * 2; 
+ 
+ //returns the output
+ return output;
+ 
+}",1
+csan114,1695110203,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2; 
+}",1
+cset571,1695009013,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n + n;
+	return result;
+}",1
+csin574,1695248652,1,"int TimesTwo(int n)
+{
+	return 2*n;
+}",1
+cste189,1695179580,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int twice;
+	twice = n * 2;
+	return twice;
+}",1
+ctof106,1695349183,1,"int TimesTwo(int a)
+{
+int result;
+result = 2*a;
+return result;
+}
+",1
+ctub889,1695536562,1,"int TimesTwo(int n)
+{
+    int out;
+    
+    out = n * 2;
+    
+    return out;
+}",1
+cugn667,1695180550,1,"
+int TimesTwo(int n)
+{
+ int x;
+    
+     x = n * 2;
+    
+   
+   
+   return x; 
+}
+",1
+cwei506,1695098946,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+cwu200,1695469765,1,"int TimesTwo(int a){
+  int product = a * 2;
+  return product;
+}",1
+cyan312,1695289077,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+cyiu210,1695167522,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+    result = 2 * n;
+    return result;
+
+}",1
+dbar153,1695184334,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+dcha468,1695540169,1,"int TimesTwo(int num)
+{
+    int output;
+    
+    output = num * 2;
+    return output;
+}",1
+dche306,1695180483,1,"#include <stdio.h>
+
+void TimesTwo(int num){
+    Result = num * 2;
+
+}",0
+dche306,1695180497,2,"#include <stdio.h>
+
+void TimesTwo(int num){
+    int Result;
+    Result = num * 2;
+
+}",0
+dche306,1695180662,3,"#include <stdio.h>
+
+int TimesTwo(int num){
+    int Result;
+    Result = num * 2;
+    return  Result;
+}",1
+deri361,1695077450,1,"#include <stdio.h>
+int TimesTwo(int num)
+{
+	int numDouble;
+	numDouble = num * 2;
+	return numDouble;
+}",1
+dfor626,1695089381,1,"int TimesTwo(int a)
+{
+    int result = a * 2;
+    
+    return result
+}
+",0
+dfor626,1695089408,2,"int TimesTwo(int a)
+{
+    int result = a * 2;
+    
+    return result;
+}
+",1
+dgal735,1695087916,1,"void TimesTwo(int input)
+{
+    int result = input * 2;
+    return result;
+}",0
+dgal735,1695088083,2,"int TimesTwo(int input)
+{
+    int result = input * 2;
+    return result;
+}",1
+dha524,1695338797,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int num)
+{
+	int result;
+	result = num * 2;
+
+	return result;
+
+}",1
+dhah941,1695426069,1,"int TimesTwo(int n)
+{
+	int output = n * 2;
+	return output;
+}",1
+dhar714,1695187707,1,"int TimesTwo(int n)
+{
+	n = n *2;
+	return n;
+}",1
+dhen760,1695014145,1,"
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a*2;
+
+    return result;
+}
+
+",1
+dhul688,1695097689,1,"int TimesTwo(int value)
+{
+    value = value*2;
+    return value;
+}",1
+dkha055,1695028959,1,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}",1
+dkim848,1695090485,1,"int TimesTwo(int n)
+{
+    n = n * 2;
+    
+    return n;
+}",1
+dkur670,1695355732,1,"int TimesTwo(int n)
+{
+	int result = n * 2;
+	return result;
+}",1
+dli630,1695530404,1,"int TimesTwo(int x) {
+    int y;
+    y = x*2;
+    return y;
+}",1
+dlob194,1695105793,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+dma765,1695454386,1,"int TimesTwo(int n){
+	int result;
+	result = a + a;
+	return result;
+
+}
+",0
+dma765,1695454409,2,"int TimesTwo(int n){
+	int result;
+	result = n + n;
+	return result;
+
+}
+",1
+dmar494,1695195322,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+int TimesTwo(int n)
+{
+    return n*2;
+}
+",1
+dmcn107,1695198882,1,"int TimesTwo(int n)
+{
+    int result = n*2;
+    return result;
+}",1
+dmun793,1695606147,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+dosb979,1695109150,1,"int TimesTwo(int n)
+{   
+    //Initialises new variable t
+    int t;
+    //Multiplies the given value by 2 and alots it to variable t
+	t = 2*n;
+	//Returns the variable t
+	return t;
+}",1
+dpar783,1695624425,1,"int TimesTwo(int num)
+{
+	num = num * 2;
+	return num;
+}",1
+dpat391,1695174253,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int b;
+    result = a + a;
+    return b;
+}
+",0
+dpat391,1695174260,2,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int b;
+    b = a + a;
+    return b;
+}
+",1
+dpat674,1695108251,1," #include <stdio.h>
+
+int TimesTwo(int x)
+{
+    int value;
+    value= x * 2;
+}
+",0
+dpat674,1695116861,2," #include <stdio.h>
+int TimesTwo(int x)
+{
+    int value;
+    value= x * 2;
+    return value;
+}
+",1
+dpet289,1695247976,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int output;
+	output = 2 * n;
+}",0
+dpet289,1695248250,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = 2 * n;
+}",0
+dpet289,1695248902,3,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = 2 * n;
+	return result;
+}",1
+dric234,1695184252,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+drob588,1695612624,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}
+",1
+drob588,1695618153,2,"int TimesTwo(int n)
+{
+    // multiply input by two
+	n = n * 2;
+	
+	// return the new value
+	return n;
+}
+",1
+droj056,1695542198,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+dryu303,1695620099,1,"int TimesTwo(int a)
+{
+    a=a*2;
+    return a;
+}",1
+dsan845,1695183447,1,"void TimesTwo(int n) {
+
+    int Equvalient;
+    Equvalient = n * 2 ;
+    
+    return Equvalient ; 
+}",0
+dsan845,1695183485,2,"int TimesTwo(int n) {
+
+    int Equvalient;
+    Equvalient = n * 2 ;
+    
+    return Equvalient ; 
+}",1
+dsaw164,1695174711,1,"// The function TimesTwo takes a number and doubles it and returns a product of type int.
+int TimesTwo (int number)
+{
+    int prod = 0;
+    
+    prod = number * 2;
+    
+    return prod;
+}",1
+dsin316,1695120598,1,"int TimesTwo(int n)
+{
+	n = n*2;
+	return n;
+}",1
+dstr542,1695552754,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return;
+}",0
+dstr542,1695552959,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n*2;
+}",1
+dstr542,1695552990,3,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    n = n*2;
+	return;
+}",0
+dstr542,1695553007,4,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n*2;
+}",1
+dstr542,1695553058,5,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int output;
+	output = n * 2;
+	return output;
+}",1
+dsut709,1695527382,1,"int TimesTwo(int n)
+{
+	int product = n * 2;
+	return product;
+}",1
+dtem664,1695622146,1,"int TimesTwo(int input)
+{
+	int result = input * 2;
+	return result;
+}",1
+dten781,1695265394,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h> 
+
+int TimesTwo(int n)
+{
+    int product;
+    product = 2 * n;
+    return product;
+}",1
+dtie151,1695108710,1,"int TimesTwo(int n)
+{
+	return 2 * n;
+}",1
+dtol781,1695165483,1,"int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result;
+}",1
+dtua408,1695631870,1,"#include <stdio.h>
+
+int PrintTimesTwo(int x) 
+{
+    int result = 2 * x;
+    return result;
+}",0
+dtua408,1695631901,2,"#include <stdio.h>
+
+int TimesTwo(int x) 
+{
+    int result = 2 * x;
+    return result;
+}",1
+dver839,1695607460,1,"int TimesTwo(int input)
+{
+    return input*2;
+}",1
+dvu878,1695432104,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n*2;
+}",1
+dwar594,1695613274,1,"#include <stdio.h>
+
+
+int TimesTwo(int n)
+{
+    int result  = n * 2;
+    
+    return result;
+    
+}
+",1
+dwu617,1695013985,1,"#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h> 
+
+int TimesTwo(int x)
+{
+	int result;
+	result = x * 2;
+	return result;
+}
+",1
+dyad002,1695623174,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+    n = (2*n);
+    
+    return n;
+}",1
+dyu343,1695004393,1,"int TimesTwo(int number)
+{
+    return number * 2;
+}
+",1
+dzha497,1695015434,1,"int TimesTwo (int a)
+
+{
+    result = a + a;
+    return result;
+    
+}
+",0
+dzha497,1695015507,2,"int TimesTwo (int a, int result)
+
+{
+    result = a + a;
+    return result;
+    
+}",0
+dzha497,1695015874,3,"int TimesTwo (int a)
+
+{
+    a = a + a;
+    return a;
+    
+}",1
+ealg928,1695625906,1,"#include <stdio.h>
+
+void TimesTwo(int input_number) 
+{
+    int result = input_number * 2;
+    return result;
+}",0
+ealg928,1695625979,2,"#include <stdio.h>
+
+int TimesTwo(int input_number) 
+{
+    int Result = input_number * 2;
+    return Result;
+}",1
+eara128,1695032951,1,"int TimesTwo(int n) {
+	return n * 2; 
+}
+",1
+earn712,1695262911,1,"#include <stdio.h>
+
+void TimesTwo(int firstValue)
+
+{
+    int finalValue;
+    
+    finalValue = firstValue * 2;
+    
+    printf(""Result %d"", finalValue);
+    
+
+}",0
+earn712,1695263337,2,"#include <stdio.h>
+
+int TimesTwo(int firstValue)
+
+{
+    int finalValue;
+    
+    finalValue = firstValue * 2;
+    
+    return finalValue;
+
+}",1
+ebar824,1695236693,1,"int TimesTwo(int n)
+{
+    int result = n*2;
+    return result;
+}",1
+echa931,1695596815,1,"int TimesTwo(int number)
+{
+    number += number;
+
+    return number;
+}",1
+eche101,1695282756,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}",1
+edha780,1695634906,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+
+int main() {
+    int inputValue = 5; // Replace with your desired input value
+    int doubledValue = TimesTwo(inputValue);
+    printf(""Result: %d\n"", doubledValue);
+    return 0;
+}",0
+edha780,1695634949,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}",0
+eejl344,1695637102,1,"#include <stdio.h>
+
+void (PrintTimesTwo int n)
+{
+    int result;
+    result = n + n;
+    return result;
+}",0
+eejl344,1695637181,2,"#include <stdio.h>
+
+void (PrintTimesTwo int n)
+{
+int a = 10;
+int b;
+
+b = TimesTwo (a);
+printf(""b = %d\n"", b)
+}",0
+eejl344,1695637240,3,"#include <stdio.h>
+
+void PrintTimesTwo (int n)
+{
+    
+int a = 10;
+int b;
+
+b = TimesTwo (a);
+printf(""b = %d\n"", b)
+}",0
+eejl344,1695637262,4,"#include <stdio.h>
+
+void PrintTimesTwo (int n)
+{
+    
+int a = 10;
+int b;
+
+b = PrintTimesTwo (a);
+printf(""b = %d\n"", b);
+}",0
+eejl344,1695637315,5,"#include <stdio.h>
+
+void TimesTwo (int n)
+{
+    
+int a = 10;
+int b;
+
+b = TimesTwo (a);
+printf(""b = %d + %d"", b);
+}",0
+eejl344,1695637388,6,"#include <stdio.h>
+
+int TimesTwo (int n)
+{
+
+int a = 5;
+int b;
+
+b = TimesTwo (a);
+printf(""b = %d\n"", b);
+}",0
+eejl344,1695637397,7,"#include <stdio.h>
+
+void TimesTwo (int n)
+{
+
+int a = 5;
+int b;
+
+b = TimesTwo (a);
+printf(""b = %d\n"", b);
+}",0
+eejl688,1695628602,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+    int output = n*2;
+}",0
+eejl688,1695629927,2,"#include <stdio.h>
+int TimesTwo(int n)
+{
+    int output = n * 2;
+    return output;
+}",1
+eejl932,1695180307,1,"int TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    
+    return result;
+}",1
+efra318,1695191003,1,"int TimesTwo(int n)
+{
+	int result;
+	result = (n*2);
+	return result;
+}",1
+egho902,1695166828,1,"#include <stdio.h>
+
+int PrintTimesTwo(int x)
+{
+    int y;
+    y = x + x;
+    
+    return y;
+}",0
+egho902,1695166868,2,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    int y;
+    y = x + x;
+    
+    return y;
+}",1
+ehan360,1695092124,1,"int TimesTwo(int a)
+{
+	int b;
+	b = a * 2;
+	return b;
+}",1
+ehua682,1695095586,1,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    int result = value * 2;
+    return result;
+}
+",1
+ejeo051,1695446196,1,"int TimesTwo(int n)
+{
+    int times_two;
+    times_two = n * 2;
+    
+    return times_two;
+}
+",1
+ekmu195,1695004563,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+elau447,1695471970,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+eles952,1695616317,1,"/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+
+int TimesTwo(int input){
+    
+    int output;
+    input = 2*input;
+        
+    }
+    return output;
+}
+
+",0
+eles952,1695616341,2,"/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+
+int TimesTwo(int input){
+    
+    int output;
+    input = 2*input;
+        
+    return output;
+}
+
+",0
+eles952,1695616418,3,"/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+
+int TimesTwo(int input){
+    
+    int output;
+    output = 2*input;
+        
+    return output;
+}
+
+",1
+elia955,1695608715,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+	int InputTimesTwo;
+	InputTimesTwo = input * 2;
+	return InputTimesTwo;
+}",1
+else264,1695264493,1,"#include <stdio.h>
+// this function does the same thing as PrintTimesTwo, except it doens't print an output, but instead returns one
+// Author Sophia Lee
+int TimesTwo(int num) {
+   
+    int result;
+    result = num * 2;
+    return result;
+}",1
+ely207,1695114822,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+ema340,1695273446,1,"int TimesTwo(int n)
+{
+	int timesTwo;
+	timesTwo = n * 2;
+
+	return timesTwo;
+}",1
+emah834,1695340547,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int a;
+    a = 2*input;
+    return a;
+
+}",1
+emah921,1695612888,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return n * 2;
+}",1
+emar179,1695631502,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+
+	return n;
+
+}",1
+emar189,1695362768,1,"int TimesTwo(int Value)
+{
+	int NewValue;
+	NewValue = Value*2;
+	return NewValue;
+}",1
+eqiu349,1695207350,1,"int TimesTwo(int input)
+{
+	int output = 0;
+
+	output = input * 2;
+
+	return output;
+}",1
+esia821,1695475594,1,"int TimesTwo(int n)
+{
+	int product;
+	product = n * 2;
+	return product;
+}",1
+eteo952,1695282334,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+etri556,1695272587,1,"int TimesTwo(int n)
+{
+	int result = n * 2;
+	return result;
+}",1
+evic904,1695605270,1,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+	int product = x*2;
+	return product;
+}",1
+ewil853,1695550410,1,"int TimesTwo(int n)
+{
+		int value;
+	value = n*2;
+	return value;
+}",1
+exu922,1695636400,1,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}",0
+exu922,1695636576,2,"int TimesTwo(int value) {
+    return value * 2;
+}
+",1
+eyeo346,1695335388,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result;
+}",1
+fcoo305,1695199579,1,"int PrintTimesTwo(int value) {
+	return (value * 2);
+}",0
+fcoo305,1695199597,2,"int TimesTwo(int value) {
+	return (value * 2);
+}",1
+fesp714,1695348692,1,"int TimesTwo(int input) {
+    int product = input * 2;
+    return product;
+}",1
+fgor787,1695515466,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return n*2;
+}
+",1
+fkee774,1695170996,1,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{ 
+    int result; 
+    result = input + input; 
+    return result; 
+} ",1
+fobr691,1695590697,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result = a * 2;
+    return result;
+}",1
+fwij709,1695092999,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+fwil727,1695334806,1,"#include <stdio.h>
+
+int TimesTwo(int inputValue) {
+    return inputValue * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+fwil727,1695422956,2,"
+#include <stdio.h>
+
+int TimesTwo(int inputValue) {
+    return inputValue * 2;
+}
+ {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+fwil727,1695423877,3,"#include <stdio.h>
+
+int TimesTwo(int inputValue) {
+    return inputValue * 2;
+}
+",1
+fyan180,1695394997,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+  return input * 2;
+}",1
+gcha636,1695357369,1,"int TimesTwo(int input){
+    int output;
+    output = input * 2;
+    return output;
+}",1
+ggao363,1695036435,1,"//
+// Created by Trapiezeium on 18/09/2023.
+//
+int TimesTwo(int num) {
+    return num*2;
+}",1
+gge561,1695441014,1,"#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+int TimesTwo(int a)
+{
+	return 2 * a;
+}
+",1
+gjom886,1695199984,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{ 
+    int Timesby2 = 0; // Initialise Timesby2 variable.
+
+    Timesby2 = n*2;  // Times the input by 2.
+return Timesby2;     // Give the desired answer.
+}",1
+gmal045,1695024072,1,"#include <stdio.h>
+
+int PrintTimesTwo(int a)
+{
+    return a*2;
+}",0
+gmal045,1695024101,2,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    return a*2;
+}",1
+gmoh887,1695091355,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+gpen695,1695348589,1,"int TimesTwo(int a)
+
+{ 
+    int result;
+    result = 2*a;
+    return result;
+    
+
+}
+",1
+gren419,1695624633,1,"int TimesTwo(int n)
+{
+    n = n*2;
+}",0
+gren419,1695626832,2,"int TimesTwo(int n)
+{
+    n = n*2;
+    
+    return n;
+}",1
+gvan573,1695618730,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+	int result = a + a;
+	return result;
+}
+",1
+gxu660,1695208066,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+gzho986,1695376261,1,"#include <stdio.h>
+
+int TimesTwo (int number){
+    int result = number *2;
+    return result;
+}",1
+hama210,1695182850,1,"#include <stdio.h> 
+
+int TimesTwo(int n)
+
+{
+	int result = 0; 
+	result = n * 2; 
+	return result; 
+}",1
+haus879,1695160591,1,"	int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+hbas168,1695287781,1,"int TimesTwo(int val) {
+	return val * 2;
+}",1
+hber510,1695166736,1,"int TimesTwo(int n)
+{
+    int doubled = n*2;
+    return doubled;
+}",1
+hbhe454,1695626190,1,"int TimesTwo(int x)
+{
+    int Result=x*2;
+    return Result;
+    
+}",1
+hbou314,1695262786,1,"int TimesTwo(int n)
+{
+	int output;
+	output = n * 2;
+	return output;
+}",1
+hcha410,1695300674,1,"#include <stdio.h>
+
+int TimesTwo(int result)
+{
+    return result * 2;
+}
+",1
+hche410,1695603628,1,"#include <stdio.h>
+int TimesTwo(int input) {
+int result = input * 2;
+printf(""Result: %d\n"", result);
+}",0
+hche410,1695603772,2,"#include <stdio.h>
+int TimesTwo(int input) {
+return input * 2;
+}
+int main() {
+int result = TimesTwo(5);
+printf(""Result = %d\n"", result);
+return 0;
+}",0
+hche410,1695603903,3,"#include <stdio.h>
+int TimesTwo(int input) {
+return input * 2;
+}
+int main() {
+int result;
+result = TimesTwo(5);
+printf(""Result = %d\n"", result);
+return 0;
+}",0
+hche410,1695604162,4,"#include <stdio.h>
+int TimesTwo(int input) {
+    return input * 2;
+}",1
+hche864,1695090540,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n + n;
+	return result;
+
+}",1
+hcop563,1695102600,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+// Takes an input value and returns that input value multiplied by 2
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+hcro730,1695097747,1,"int TimesTwo(int n)
+{
+	return n = n * 2;
+}",1
+hdeg917,1695601216,1,"int TimesTwo(int n)
+{
+	int result;
+	n = n + n;
+	return n;
+}
+",0
+hdeg917,1695601263,2,"int TimesTwo(int n)
+{
+	n = n + n;
+	return n;
+}
+",1
+hgao080,1695009056,1,"int TimesTwo(int n)
+{
+	return (n * 2);
+}",1
+hgou636,1695117576,1,"#include <stdio.h>
+
+int TimesTwo(int num) {
+    int result;
+    result = num * 2;
+}
+
+",0
+hgou636,1695117802,2,"#include <stdio.h>
+
+int TimesTwo(int num) {
+    int NewNum;
+    NewNum = num * 2;
+    return NewNum;
+}",1
+hhil451,1695628704,1,"#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+int TimesTwo(int input)
+{
+	int output = input * 2;
+	return output;
+}",1
+hjoo911,1695170767,1,"#include <stdio.h> 
+
+int TimesTwo(int input) 
+
+{ 
+    int output; 
+    output = input*2; 
+    return output; 
+}",1
+hkah523,1695601752,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+// Function definition for TimesTwo
+int TimesTwo(int n) {
+
+    // Multiply the input value by 2 and store the result in the 'result' variable
+    int result = n * 2;
+
+    // Return the result as an integer
+    return result;
+
+}
+
+int main() {
+    // Declare an integer variable 'result'
+    int result;
+
+    // Call the TimesTwo function with an input value of 5 and store the result in 'result'
+    result = TimesTwo(5);
+
+    // Print the result using printf
+    printf(""Result = %d\n"", result); // This will print ""Result = 10""
+    return 0;
+}",0
+hkah523,1695623205,2,"#include <stdio.h>
+
+// Define a function called TimesTwo that returns an int
+int TimesTwo(int input) {
+    // Multiply the input value by two
+    int result = input * 2;
+    
+    // Return the result
+    return result;
+}
+
+int main() {
+    // Test the function with an example input
+    int result;
+    result = TimesTwo(5);
+    
+    // Print the result using printf
+    printf(""Result = %d\n"", result);
+    
+    return 0;
+}",0
+hkah523,1695624393,3,"#include <stdio.h>
+
+// Define a function called TimesTwo that returns an int
+int TimesTwo(int input) {
+    // Multiply the input value by two
+    int result = input * 2;
+    
+    // Return the result
+    return result;
+}
+
+int main() {
+    // Test the function with an example input
+    int result;
+    result = TimesTwo(5);
+    
+    // Print the result using printf
+    printf(""Result = %d\n"", result);
+    
+    return 0;
+}
+You should save this code in a separate C file (e.g., exercise2.c), compile it, and run it separately from the code provided in the first exercise.
+
+
+
+
+
+
+Regenerate
+",0
+hkah523,1695633523,4,"#include <stdio.h>
+
+// Function definition for TimesTwo
+int TimesTwo(int n) {
+    // Multiply the input value by 2 and store the result in the 'result' variable
+    int result = n * 2;
+    // Return the result as an integer
+    return result;",0
+hkah523,1695633546,5,"#include <stdio.h>
+
+int main() {
+
+    // Declare an integer variable 'result'
+    int result;
+
+    // Call the TimesTwo function with an input value of 5 and store the result in 'result'
+    result = TimesTwo(5);
+
+    // Print the result using printf
+    printf(""Result = %d\n"", result); // This will print ""Result = 10""
+    return 0;
+
+}",0
+hkah523,1695633594,6,"#include <stdio.h>
+
+// Function definition for TimesTwo
+int TimesTwo(int n) {
+    // Multiply the input value by 2 and store the result in the 'result' variable
+    int result = n * 2;
+    // Return the result as an integer
+    return result;
+
+}
+
+",1
+hkee941,1695632038,1,"int TimesTwo(int n)
+{
+	int result = 2 * n;
+	return result;
+}",1
+hkim807,1695616370,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n + n;
+
+	return result;
+}",1
+hkon883,1695535469,1,"#include <stdio.h>
+int TimesTwo(int y);
+int main() {
+int result;
+result = TimesTwo(5);
+printf(""Result = %d"", result);
+    return 0;
+}
+int TimesTwo(int y) { return 2*y; }
+",0
+hkon883,1695535597,2,"int TimesTwo(int y) { return 2*y; }
+",1
+hlee999,1695091033,1,"int TimesTwo(int input)
+{
+	return 2 * input;
+}
+",1
+hleu459,1695091483,1,"int TimesTwo(int x)
+{
+    int result;
+    result = x * 2;
+    return result;
+}",1
+hliu836,1695274938,1,"int TimesTwo(int n)
+{
+    int answer;
+    answer= n*2;
+    return answer;
+    
+}
+",1
+hly852,1695437773,1,"int TimesTwo (int number)
+{
+    int product;
+    product = number*2;
+    return product;
+}",1
+hma481,1695290653,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+hmcm582,1695092467,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n) {
+    return n * 2;
+}",1
+hmel649,1695089357,1,"int TimesTwo(int input) 
+{
+    int output = input*2;
+    return output;
+    
+}",1
+hmof971,1695247385,1,"int TimesTwo(int n)
+{
+	int product;
+	product = n * 2;
+	return product;
+}",1
+hnew638,1695008451,1,"int TimesTwo(int a)
+{
+    int b = a * 2;
+    return b;
+
+}",1
+hpan363,1695278328,1,"#include <stdio.h>
+
+int TimesTwo(int hello) 
+{ 
+    return hello*2;
+}",1
+hpat916,1695015694,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+hpir641,1695266411,1,"int PrintTimesTwo(int input)
+{
+	return input * 2;
+}
+",0
+hpir641,1695266430,2,"int TimesTwo(int input)
+{
+	return input * 2;
+}
+",1
+hrob997,1695604743,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+hsan267,1695185507,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+    
+    return result;
+}",1
+hson435,1695578786,1,"int TimesTwo(int balls) {
+    int bytwo;
+    bytwo = balls * 2;
+    return bytwo;
+}",1
+htew916,1695187796,1,"#define _CRT_NO_WARNINGS
+#include <stdio.h>
+
+// The function, TimesTwo takes a single input parameter and it returns that input value multiplied by two.
+
+int TimesTwo(int input)
+{
+    int result = input * 2;
+    return result;
+}
+
+int main(void)
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+}
+
+",0
+htew916,1695188001,2,"#define _CRT_NO_WARNINGS
+#include <stdio.h>
+
+// The function, TimesTwo takes a single input parameter and it returns that input value multiplied by two.
+
+int TimesTwo(int input)
+{
+    int result = input * 2;
+    return result;
+}
+
+void main(void)
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+}
+
+",0
+htew916,1695635391,3,"#define _CRT_NO_WARNINGS
+#include <stdio.h>
+
+// The function, TimesTwo takes a single input parameter and it returns that input value multiplied by two.
+
+int TimesTwo(int input)
+{
+    int result = input * 2;
+    return result;
+}
+
+
+",1
+htho943,1695080615,1,"#include <stdio.h>
+// author hamish thompson intent of this function is to multiply a number by 2 and display it if wanted
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+",1
+htyl682,1695623743,1,"#include <stdio.h>
+#include <math.h>
+
+int TimesTwo(int a)   
+{
+    return a*2;
+}   ",1
+hugn924,1695633909,1,"#include <stdio.h>
+
+void TimesTwo (int num)
+{
+    int result = num * 2;
+
+    printf(""Result = %d\n"", result);
+
+}",0
+hugn924,1695634253,2,"#include <stdio.h>
+
+int TimesTwo(int num)
+{
+    return num * 2;
+
+}
+
+int main()
+{
+
+    int value = TimesTwo(5);
+    
+    printf(""Result = %d\n"", value);
+
+}",0
+hugn924,1695634470,3,"#include <stdio.h>
+
+int TimesTwo(int num)
+{
+    return num * 2;
+
+}
+",1
+hwen116,1695012971,1,"//TimesTwo() returns a value of type int. 
+//Input: A single input parameter
+//Output: Input value multiplied by two
+
+//TimesTwoTS
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    return result;
+}
+
+",1
+hwin877,1695185502,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}
+",1
+hyan713,1695245949,1,"int TimesTwo(int n)
+{
+    n = n*2;
+    return n;
+}",1
+hye071,1695573583,1,"/******************************************************************************
+
+LAB 8 (Question 2)
+
+*******************************************************************************/
+#include <stdio.h>
+
+int TimesTwo(int inputted_num) {
+    
+    int double_num;
+    
+    double_num=inputted_num * 2;
+    
+    return double_num;
+}
+",1
+ibha186,1695248765,1,"int TimesTwo(int number) {
+    number = number * 2;
+    return number;
+}",1
+ibur427,1695426823,1,"int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result;
+}",1
+iche428,1695624931,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n*2;
+}",1
+ihoo440,1695284613,1,"int TimesTwo(int n)
+{
+	int o;
+	o = n*2;
+	return o;
+}",1
+ikis164,1695549334,1,"#include <stdio.h>
+#include <math.h>
+
+int TimesTwo(int n)
+{
+    int ans;
+
+    ans = n * 2;
+
+    return ans;
+}",1
+iko203,1695375243,1,"#include <stdio.h>
+
+int TimesTwo(int n) 
+{
+    int result;
+    result = n * 2;
+    return result;
+}",1
+ilee973,1695178304,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+ return n*2;  
+}",1
+imac384,1695103365,1,"int TimesTwo(int value)
+{
+	int result;
+	result = value * 2;
+	return result;
+}",1
+imoh000,1695268481,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+iwes050,1695090514,1,"#include <stdio.h>
+int TimesTwo(int a)
+{
+    int sum = 0;
+    sum = a + a;
+    return sum;
+}",1
+iwil997,1695262870,1,"int TimesTwo(int value)
+{
+    int result;
+    result = 2 * value;
+    return result;
+}",1
+iwoo382,1695003032,1,"int TimesTwo(int a)
+{
+    return a*2;
+}",1
+ixia229,1695225736,1,"int TimesTwo(int result)
+{
+    result = result * 2;
+    return result;
+}",1
+ixu871,1695370321,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    
+    return result;
+}",1
+jahn224,1695210288,1,"#include <stdio.h>
+int TimesTwo(int a);
+
+int main(void)
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    return result;
+}
+",0
+jahn224,1695212051,2,"int TimesTwo(int n)
+{
+    int result;
+    result = n + n;
+    return result;
+}",1
+jaus241,1695165657,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+    return n * 2;
+}
+",1
+jbag235,1695609486,1,"int TimesTwo(int inputNumber)
+{
+    int outputNumber;
+    outputNumber = inputNumber * 2;
+
+    return outputNumber;
+}",1
+jbam701,1695269523,1,"int TimesTwo(int n)
+{
+	n = 2 * n;
+}",0
+jbam701,1695269746,2,"int TimesTwo(int n)
+{
+	n = 2 * n;
+	return n;
+}",1
+jbam753,1695462708,1,"#include <stdio.h>
+
+int TimesTwo(int a) {
+    a = a*2;
+    return a;
+}
+
+int main()
+{
+    
+int result;
+result = TimesTwo(5);
+printf(""Result = %d"", result);
+    return 0;
+}
+",0
+jbam753,1695519269,2,"int TimesTwo(int a) {
+    a = a*2;
+    return a;
+}
+
+
+",1
+jbis394,1695479760,1,"void TimesTwo(int input)
+{
+    int result;
+    result = input*2;
+    printf(""Result = %d"", result);
+}",0
+jbis394,1695479863,2,"int main() {
+    int result;
+    result = TimesTwo(a);
+    printf(""Result = %d\n"", result);
+    return 0;
+}
+
+int TimesTwo(int a) {
+    return input * 2;
+}",0
+jbis394,1695479959,3,"void PrintTimesTwo(int a)
+{
+    int result;
+    result = a*2;
+    printf(""Result = %d"", result);
+    return result;
+}",0
+jbis394,1695480015,4,"void PrintTimesTwo(int a)
+{
+    int result;
+    result = a*2;
+    return result;
+}",0
+jbis394,1695480071,5,"int TimesTwo(int a)
+{
+    int result = a * 2;
+    return result;
+}",1
+jbro301,1695088365,1,"int TimesTwo(int n)
+{
+    int x;
+    x=n*2;
+    return x;
+    
+}",1
+jbru537,1695620041,1,"void TimesTwo(int input)
+
+{
+   int result = input * 2;
+   return result;
+
+}",0
+jbru537,1695620120,2,"int TimesTwo(int input)
+
+{
+   int result = input * 2;
+   return result;
+
+}",1
+jbuc296,1695471471,1,"int TimesTwo(int n)
+{
+    int result;
+	result = n * 2;
+    return result;
+}
+",1
+jcha513,1695551699,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+    return n*2;
+}",1
+jcha574,1695170150,1,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    int result;
+    result = x*2;
+    return result;
+}",1
+jcha972,1695332194,1,"int TimesTwo(int input)
+{
+    int twotimes = input*2;
+    return twotimes;
+
+}",1
+jche456,1695624213,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+jchi648,1695549763,1,"int TimesTwo(int a) {
+    int b = a*2;
+    return b;
+}",1
+jchu579,1695161837,1,"int TimesTwo(int num){
+    return num*2;
+}",1
+jcla431,1695090304,1,"#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = 2 * n;
+	return result;
+}",1
+jcla755,1695016352,1,"int TimesTwo(int x)
+{
+    return(x*2);
+}",1
+jdal353,1695366160,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return (n * 2);
+}",1
+jdal353,1695366170,2,"#include <stdio.h>
+
+int TimesTwo(int number)
+{
+    return (n * 2);
+}",0
+jdal353,1695366177,3,"#include <stdio.h>
+
+int TimesTwo(int number)
+{
+    return (number * 2);
+}",1
+jdea126,1695384985,1,"int TimesTwo(int n)
+{
+	int result;
+
+	result = n * 2;
+
+	return result;
+}",1
+jdu853,1695362069,1,"int TimesTwo(int n)
+{
+	n = n*2;
+	return n;
+}",1
+jear460,1695462412,1,"#include <stdio.h>
+
+void TimesTwo(int n)
+{
+    int result = 0;
+    result = n*2;
+    return result;
+}
+",0
+jear460,1695462542,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result = 0;
+    result = n*2;
+    return result;
+}
+",1
+jfen705,1695341937,1,"int TimesTwo(int n)
+{
+    int number;
+    number = n * 2;
+    return number;
+}",1
+jfet156,1695268536,1,"int TimesTwo(int n)
+{
+    int timesTwo;
+    timesTwo = 2*n;
+    return timesTwo;
+}",1
+jgeo610,1695262206,1,"int TimesTwo(int n)
+{
+	int result;
+
+	result = n * 2;
+	return result;
+}",1
+jgol495,1694999238,1,"int TimesTwo(int in){
+    return in *2;
+}",1
+jgre894,1695606521,1,"int TimesTwo(int input){
+    
+    int result;
+    result = input * 2;
+    return result;
+
+}",1
+jhor229,1695613807,1,"#include <stdio.h>
+
+void PrintTimesTwo(int input)
+{
+  int input_times_2 = input*2;
+  return input_times_2
+}
+",0
+jhor229,1695613839,2,"#include <stdio.h>
+
+void TimesTwo(int input)
+{
+  int input_times_2 = input*2;
+  return input_times_2;
+}
+",0
+jhor229,1695613862,3,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+  int input_times_2 = input*2;
+  return input_times_2;
+}
+",1
+jhwa027,1695630531,1,"#include <stdio.h>
+
+// Definition of PrintTimesTwo function
+void PrintTimesTwo(int number) {
+    printf(""%d\n"", number * 2);
+}
+
+// Definition of main function
+int main() {
+    PrintTimesTwo(5);  // This will print 10
+    return 0;  // indicates successful execution
+}
+",0
+jhwa027,1695630791,2,"#include <stdio.h>
+
+int TimesTwo(int n) {
+    return n * 2;
+}
+",1
+jjeo627,1695526193,1,"int TimesTwo(int n)
+{
+	int sum;
+	sum = n * 2;
+	
+}",0
+jjeo627,1695526528,2,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+	
+}",1
+jjon350,1695594973,1,"int TimesTwo(int n)
+{   int timestwo;
+    timestwo= n * 2;
+	return timestwo;
+}",1
+jjos057,1695612859,1,"#include <stdio.h>
+
+int TimesTwo(int value)
+{
+	int result;
+	result = value * 2;
+
+	return result;
+
+}",1
+jjun879,1695126133,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int number);
+
+int main(void)
+{
+	// Identify ithe nput and the output
+	int number, result;
+
+	// Call the defined function
+	result = TimesTwo(number);
+
+	printf(""Result = %d"", result);
+	
+	return 0;
+}
+// Define the function TmesTwo
+int TimesTwo(int number)
+{
+	return 2 * number;
+}",0
+jjun879,1695126545,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int number);
+
+int main()
+{
+	// Identify the nput and the output
+	int number, result;
+
+	// Call the defined function
+	result = TimesTwo(number);
+
+	printf(""Result = %d"", result);
+	printf(""\n"");
+	
+	return 0;
+}
+// Define the function TmesTwo
+int TimesTwo(int number)
+{
+	return 2 * number;
+}",0
+jjun879,1695167774,3,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int number);
+
+// Define the function TmesTwo
+int TimesTwo(int number)
+{
+	return 2 * number;
+}",1
+jkah253,1695119298,1,"int TimesTwo(int n)
+{
+    return n*2;
+}",1
+jkan172,1695090495,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result; 
+    result = a * 2;
+    return result;
+
+}",1
+jkim828,1695466383,1,"int TimesTwo(int n)
+{
+	int a = n + n;
+	return a;
+}",1
+jkim837,1695333714,1,"int TimesTwo(int input)
+{
+	int result;
+	result = input * 2;
+	return result;
+}",1
+jkim933,1695097404,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+jkim960,1695180406,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+jlah077,1695633289,1,"int TimesTwo(int input)
+{
+	return input * 2;
+}",1
+jlal056,1695119671,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n *2;
+	return result;
+
+}",1
+jlew699,1695196046,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+    int result = n * 2;
+    return result;
+}",1
+jli463,1695258029,1,"#include <stdio.h>
+
+int TimesTwo(int value)
+{
+	int product;
+	product = value * 2;
+
+	return product;
+}",1
+jli876,1695086102,1,"int TimesTwo(int n) {
+    return n * 2;
+}",1
+jli917,1695464974,1,"int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+
+",1
+jli917,1695465051,2,"int TimesTwo(int n) {
+    int result = n * 2;
+    return result;
+}
+
+",1
+jlia486,1695260280,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+int result = n * 2;
+return result;
+}",1
+jlia948,1695382679,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+",1
+jliu295,1695266699,1,"int TimesTwo(int n)
+{
+    int Result;
+    Result = n * 2;
+    return Result;
+}",1
+jliu778,1695018112,1,"int TimesTwo(int n)
+{
+    n=n*2;
+    return(n);
+}",1
+jluo379,1695353599,1,"int TimesTwo (int n){
+    return n * 2;
+}",1
+jmak320,1695546597,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+jmat941,1695374480,1,"#include <stdio.h>
+
+int TimesTwo(int x) //defining the function
+{
+    int result = x * 2;
+    return result;
+}",1
+jmei608,1695368564,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+jmil737,1695091645,1,"#include <stdio.h>
+
+int TimesTwo(int number)
+{
+    
+   int result = number * 2;
+   return 0;
+
+}
+",0
+jmil737,1695091676,2,"#include <stdio.h>
+
+int TimesTwo(int number)
+{
+    
+   int result = number * 2;
+   return result;
+
+}
+",1
+jmul290,1695089885,1,"int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result;
+}",1
+joka775,1695623635,1,"int TimesTwo(int n)
+{
+	int doubled;
+	doubled = n*2;
+	return doubled;
+}",1
+jpar523,1695250538,1,"#include <stdio.h>
+
+int PrintTimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    printf(""%d\n"", result);
+    
+    
+}",0
+jpar523,1695250865,2,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    return result;
+    
+}",1
+jpar611,1695503697,1,"#include <stdio.h>
+
+// Function definition
+int TimesTwo(int number) {
+    return number * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+jpar611,1695538370,2,"int TimesTwo(int n)
+{
+    return n * 2;
+}
+",1
+jpat915,1695178775,1,"#include <stdio.h>
+
+int TimesTwo(int value)
+{
+    int result = 0;
+    result = 2 * value;
+    return result;
+}",1
+jpau410,1695095662,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    return a * 2;
+}",1
+jpaz106,1695628364,1,"int TimesTwo(int n)
+{
+	int timesTwo;
+	timesTwo = n * 2;
+	
+	return timesTwo;
+}",1
+jpud993,1695555590,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n + n;
+	return result;
+}",1
+jros811,1695251186,1,"int TimesTwo(int number)
+{
+    number = number * 2;
+    
+    return number;
+}",1
+jsan813,1695599036,1,"int TimesTwo(int num)
+{
+    int result;
+
+    result = num * 2;
+
+    return result;
+}",1
+jsch842,1695166099,1,"#include <stdio.h>
+void TimesTwo(int input)
+{
+    int result = input * 2;
+}
+",0
+jsch842,1695166144,2,"#include <stdio.h>
+void TimesTwo(int input)
+{
+    int result = input * 2;
+    return result;
+}
+",0
+jsch842,1695166234,3,"#include <stdio.h>
+int TimesTwo(int input)
+{
+    int result = input * 2;
+    return result;
+}
+",1
+jshe464,1695556681,1,"int TimesTwo(int a)
+{
+	int z;
+	z = a + a;	
+	return z;
+}",1
+jshi444,1695343409,1,"int TimesTwo(int x)
+
+{
+	x = x * 2;
+	return x;
+}",1
+jshr431,1695620567,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return 2 * n;
+}",1
+jsim418,1695085789,1,"#include <stdio.h>
+
+int TimesTwo(int a) {
+    return a*2;
+}
+",1
+jsim643,1695533240,1,"#include <stdio.h>
+
+int TimesTwo(int n) {
+    int result = n * 2;
+    return result;
+}
+",1
+jsin385,1695263773,1,"int TimesTwo(int a)
+{
+    int result;
+    result = 2*a;
+    return result;
+}",1
+jsta466,1695266941,1,"int TimesTwo(int n)
+{
+	int x = n * 2;
+}",0
+jsta466,1695267208,2,"int TimesTwo(int n)
+{
+	int x = n * 2;
+	return x;
+}",1
+jsun284,1695454921,1,"int TimesTwo(int num) {
+    return num * 2;
+}
+",1
+jsun284,1695455006,2,"#include <stdio.h>
+
+int TimesTwo(int num) {
+    return num * 2;
+}
+",1
+jvil318,1695090878,1,"#include <stdio.h>
+
+int TimesTwo(int INPUT) {
+    int OUTPUT;
+    OUTPUT = INPUT * 2;
+    return OUTPUT;
+}
+",1
+jwed606,1695020642,1,"int TimesTwo(int num) {
+    return num * 2;
+}",1
+jwil813,1695358682,1,"int TimesTwo(int input)
+{
+	int timestwo;
+
+	timestwo = input * 2;
+
+}",0
+jwil813,1695359214,2,"int TimesTwo(int input)
+{
+	int a;
+
+	a = input * 2;
+
+	return a;
+}",1
+jwon248,1695114010,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+jwon253,1695285525,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+jwon323,1695169478,1,"#include <stdio.h>
+
+int TimesTwo(int a) 
+{
+    return a*2;
+}",1
+jyan420,1695089738,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+jyua529,1695379210,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int output;
+    
+    output = input * 2;
+
+    return (output);
+}",1
+jzho786,1695090791,1,"int TimesTwo(int x)
+{
+    int result;
+    result = x * 2;
+    
+    return result;
+}
+",1
+kabb319,1695172454,1,"int TimesTwo(int a)
+{
+    return a * 2; 
+}",1
+kahk161,1695089740,1,"int TimesTwo(int n)
+{
+	int result = n * 2;
+	return result;
+}",1
+kbar402,1695630058,1,"int TimesTwo(int a) 
+{
+    int b;
+    b = a * 2;
+    
+    return b;
+}",1
+kbha969,1695180061,1,"#define _CRT_SECURITY_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+     int res = (a*2);
+}",0
+kbha969,1695181495,2,"#define _CRT_SECURITY_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+     int res = (a*2);
+     return res;
+}",1
+kcao565,1695593264,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}
+",0
+kcao565,1695594338,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}",1
+kcao657,1695454418,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+
+}",0
+kcao657,1695454873,2,"int TimesTwo(int result)
+{
+	result = result * 2;
+
+}",0
+kcao657,1695462925,3,"int TimesTwo(int result)
+{
+    int num;
+	num = result * 2;
+	return num;
+
+}",1
+kfep063,1695608291,1,"int TimesTwo(int x)
+{
+   
+    int y = x * 2 ;
+    
+    return y;
+    
+}",1
+kfer833,1695595547,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int x)
+{
+
+
+return x * 2;
+
+
+
+}
+
+",1
+kgra470,1695282421,1,"int TimesTwo(int value) {
+    int new_value;
+    new_value = value *2;
+    return new_value;
+}
+",1
+khew624,1695469942,1,"int TimesTwo(int input) 
+{
+    return input * 2;
+}",1
+kjoe685,1695467696,1,"double TimesTwo(double x)
+{
+	double y;
+	y = x * 2;
+	return y;
+}",1
+kjun638,1695166209,1,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    return x * 2;
+}",1
+kkha484,1695263013,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int Output = n * 2;
+    return Output;
+}",1
+kkim985,1695178987,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+
+	return result;
+}",1
+klam376,1695376443,1,"int TimesTwo(int n)
+{
+	int x;
+	x = n * 2;
+	return x;
+}",1
+kluc619,1695622149,1,"int TimesTwo(int Value) {
+  
+  printf(""Result = %d"", (Value * 2));
+}
+",0
+kluc619,1695622321,2,"int TimesTwo(int Value) {
+  
+ return (Value * 2);
+}
+",1
+kmag441,1695180258,1,"#include <stdio.h>
+
+void TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    printf(""Result = &d"", result);
+}
+
+",0
+kmag441,1695180430,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    return result;
+}
+
+",1
+kmal768,1695180963,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+kmck133,1695011350,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int input);
+
+int main(void)
+{
+	int result;
+	result = TimesTwo(5);
+	printf(""Result = %d"", result);
+	return 0;
+}
+
+int TimesTwo(int input)
+{
+	return input + input;
+}",0
+kmck133,1695011918,2,"int TimesTwo(int input)
+{
+	return input + input;
+}",1
+kmcv530,1695355098,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int sum;
+	sum = n * 2;
+    return sum;
+}",1
+kng361,1695091739,1,"// Basic function that doubles any integer, returns the value of type int 
+// Author: Kai Ng
+
+#include <stdio.h>
+
+// Function prototype
+int TimesTwo(int value);
+
+// Function definition
+int TimesTwo(int value) {
+    int result = value * 2;
+    return result;
+}
+",1
+kpat303,1695010065,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+",1
+kpau893,1695098132,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+
+{
+	int result;
+
+	result = n * 2;
+
+	
+	return result;
+	
+}",1
+kpay633,1695173106,1,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+	int result;
+	result = 2 * x;
+	return result;
+}",1
+kpir468,1695178380,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+kpla566,1695194938,1,"int TimesTwo(int n)
+{
+int resualt;
+  result = n * 2;
+  return result; 
+}",0
+kpla566,1695354569,2,"int TimesTwo(int n)
+{
+int result = n * 2;  
+return result; 
+}
+",1
+kqua446,1695472187,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int n2;
+
+    n2 = n * 2;
+
+    return n2;
+}",1
+kraj720,1695503599,1,"#include <stdio.h>
+
+int TimesTwo(int num) 
+{
+    int num_multiplied = num * 2;
+    return num_multiplied;
+}
+",1
+kraw552,1695102682,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n + n;
+	return result;
+}",1
+krec980,1695091277,1,"int TimesTwo(int n)
+{
+
+	int number;
+	number = 2 * n;
+
+	return number;
+}",1
+ksai757,1695534468,1,"int TimesTwo(int n)
+{
+	int result = n * 2;
+	return result;
+}",1
+ksik996,1695086662,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	n = n * 2; 
+	return n;
+}",1
+kwan244,1695177268,1,"int TimesTwo(int a)
+{
+	int twice_a;
+	twice_a = a * 2;
+
+	return twice_a;
+}",1
+kwan797,1695089852,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int output = input*2;
+
+    return output;
+}",1
+kyoo839,1695283071,1,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    x = x * 2;
+    
+    return x;
+}",1
+kzha391,1695444373,1,"#include <stdio.h>
+
+int TimesTwo (int num)
+{
+    return num * 2;
+}
+
+int main(void)  
+{
+    int result;
+    int input;
+    int a;
+
+    input = a;
+    result = TimesTwo (a);
+    printf(""Result = %d\n"", result);
+    return 0;
+}",0
+kzha391,1695629248,2,"#include <stdio.h>
+
+int TimesTwo(int a)
+ {
+   int result;
+   result = a * 2;
+   return result;
+ }",1
+kzhu796,1695255043,1,"int TimesTwo(int value)
+{
+	int result = value * 2;
+	return result;
+}",1
+laba812,1695538555,1,"int TimesTwo(int value)
+{
+    int result;
+    
+    result = value * 2;
+    
+    return result;
+}
+",1
+lazz729,1695170839,1,"int TimesTwo(int n)
+{	
+	int doubled = n * 2;
+	return doubled;
+}",1
+lbla772,1695515818,1,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    int result = number + number;
+    return result
+}",0
+lbla772,1695515856,2,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    int result = number + number;
+    return result;
+}",1
+lbou433,1695103253,1,"int TimesTwo(int input)
+{
+	int output = 2 * input;
+	return output;
+}",1
+lbyr117,1695184634,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    int result;
+    result=2*x;
+    return result;
+}
+",1
+lcam453,1695629105,1,"#include <stdio.h>
+int TimesTwo(int, inputnum) {
+    int output = inputnum * 2;
+    return output;
+}",0
+lcam453,1695629125,2,"#include <stdio.h>
+int TimesTwo(int, input) {
+    int output = input * 2;
+    return output;
+}",0
+lcam453,1695629342,3,"#include <stdio.h>
+int TimesTwo(int input) {
+    int output = input * 2;
+    return output;
+}",1
+lcan243,1695509836,1,"int TimesTwo(int n)
+{
+    int a;
+	a = n * 2;
+}",0
+lcan243,1695510237,2,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+lche668,1695282477,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int Result = 2 * n;
+
+}",0
+lche668,1695282733,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int Result = 2 * n;
+	return Result;
+}",1
+lchu848,1695466148,1,"int TimesTwo(int n)
+{
+int ans; 
+
+ans = n * 2;
+
+printf(""%i\n"", ans);
+}",0
+lchu848,1695468028,2,"int TimesTwo(int n)
+{
+int ans; 
+
+ans = n * 2;
+
+return ans;
+}",1
+ldam917,1695205765,1,"#include <stdio.h>
+int TimesTwo(int x)
+{
+    int result=2*x;
+    return result;
+}",1
+ldea753,1695247132,1,"int TimesTwo(int num) {
+    num = num*2;
+    return num;
+}",1
+ldou101,1695339894,1,"int TimesTwo(int n)
+{
+    return<n=n*2>;
+}",0
+ldou101,1695340050,2,"int TimesTwo(int n)
+{
+    return n*2;
+}",1
+lfan827,1695602385,1,"int TimesTwo(int x)
+{
+    x = x * 2;
+    return x;
+}",1
+lgan833,1695248812,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int TimesTwo(int n)
+{
+	int timetwo;
+	timetwo = 2 * n;
+	return timetwo;
+}",1
+lhal844,1695082776,1,"int TimesTwo(int val) {
+    val = val * 2;
+    return val;
+}",1
+lhua313,1695631932,1,"int TimesTwo(int n)
+{
+    return n*2;
+}",1
+ljer106,1695565268,1,"#include <stdio.h>
+int TimesTwo(int a)
+    {   
+        return a * 2;
+    }
+
+",1
+ljon623,1695612287,1,"int PrintTimesTwo(int inputint)
+{
+	return 2*inputint;
+}",0
+ljon623,1695612309,2,"int TimesTwo(int inputint)
+{
+	return 2*inputint;
+}",1
+ljun123,1695621215,1,"int TimesTwo(int n)
+{
+    int answer;
+    answer = n * 2;
+    return answer;
+
+}
+",1
+lkel942,1695244932,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+llat663,1695547386,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+
+	int product; 
+
+	product = input * 2;
+
+	return product;
+
+}",1
+llei074,1695342526,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+	a = 2 * a ;
+	printf(""%d"", a);
+}",0
+llei074,1695342877,2,"int TimesTwo(int a)
+{
+	a = 2 * a;
+}
+",0
+llei074,1695343167,3,"int TimesTwo(int a)
+{
+	return 2 * a;
+}
+",1
+lli393,1695091250,1,"int TimesTwo(int n)
+{
+	int result = 0;
+	result = n * 2;
+	return result;
+}",1
+llia622,1695272611,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return(n+2);
+}
+",0
+llia622,1695272650,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return(n*2);
+}
+",1
+llig859,1695615065,1,"int TimesTwo(int a)
+{
+    int result = a + a;
+    return result;
+}",1
+lliu182,1695380831,1,"#include <stdio.h>
+int TimesTwo(int num1) {
+	int result = num1 * 2;
+	return result;
+}",1
+lliu848,1695463684,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+// function declaration
+int TimesTwo(int n) 
+
+	// function define
+	{
+		int multTwo;
+		multTwo = n * 2;
+		return multTwo;
+	}
+",1
+llu744,1695628721,1,"int TimesTwo(int n)
+{
+    int output;
+    output = n*2;
+    return output;
+}",1
+lmen032,1695604239,1,"#include <stdio.h>
+void TimesTwo(value){
+    int product = value * 2;
+
+    return product;
+}",0
+lmen032,1695604548,2,"#include <stdio.h>
+int TimesTwo(value){
+    int product = value * 2;
+
+    return product;
+}",0
+lmen032,1695604656,3,"#include <stdio.h>
+int TimesTwo(int value){
+    int product = value * 2;
+
+    return product;
+}",1
+lmor438,1695207600,1,"int TimesTwo(int n){
+    
+    int multiple;
+    
+    multiple=2*n;
+    
+    return multiple;
+    
+}",1
+lpry623,1695016719,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    return input * 2;
+}",1
+lrei069,1695256099,1,"int TimesTwo(int a) 
+{
+    return a*2;
+}",1
+lros711,1695296231,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+	result = n*2;
+	return result;
+}
+
+",1
+lrya284,1695539069,1,"#include <stdio.h>
+
+int TimesTwo(int x) {
+    int n;
+    n = x*2;
+    return n;
+}",1
+lsal082,1695627800,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result = n * 2;
+	printf(""Result = %d"", result);
+}",0
+lsal082,1695628048,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result = n * 2;
+	
+	return result;
+}",1
+lsen376,1695183559,1,"int TimesTwo(int input)
+{
+    return input * 2;
+}",1
+lsha172,1695552492,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    printf(""Result = %d"", result);
+    return result;  
+}",0
+lsha172,1695554148,2,"int TimesTwo(int n)
+{
+    return n * 2;
+}",1
+lspu128,1695178636,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+int result = input * 2;
+return result;
+}",1
+lsu376,1695093258,1,"#include <stdio.h>
+int TimesTwo(int x)
+{
+	return x * 2;
+}",1
+lsua311,1695632749,1,"#include <stdio.h>
+
+int PrintTimesTwo(int a);
+
+int main()
+{
+    int num1 = 5;
+    int Result = PrintTimesTwo(num1); 
+    
+   printf(""Result = %d"", Result);
+    
+    return 0;
+}
+
+int PrintTimesTwo(int a) {
+    int Result = a * 2;
+    return Result;
+}
+",0
+lsua311,1695633296,2,"#include <stdio.h>
+
+int TimesTwo(int input){
+int result = input*2;
+return result ;
+}
+
+int main(){
+    int result ;
+    result = TimesTwo(5);
+    printf(""Result = %d"" , result);
+    return 0;
+}
+",0
+lsua311,1695634193,3,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    printf(""Result = %d\n"", result);
+    return result; 
+}
+
+",0
+lsua311,1695634231,4,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    printf(""Result = %d\n"", result);
+}
+
+",0
+lsua311,1695634439,5,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    printf(""Result = %d\n"", result);
+    return result; 
+}
+",0
+lsua311,1695634703,6,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result; 
+}
+",1
+ltan813,1695610658,1,"
+int TimesTwo(int number)
+{
+    int result;
+    result = number*2;
+
+}
+",0
+ltan813,1695610901,2,"#include <stdio.h>
+
+int TimesTwo(int number)
+{
+    int result;
+    result = number*2;
+    return result;
+
+}
+",1
+lvan346,1695466155,1,"int TimesTwo(int x)
+{
+	x = x * 2;
+	return x;
+}",1
+lvin900,1695093836,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+
+	int timestwo = input * 2;
+
+	return timestwo;
+}",1
+lwer802,1695617608,1,"int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}
+",0
+lwer802,1695617697,2,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}
+",0
+lwer802,1695617731,3,"#include <stdio.h>
+
+// Function to multiply the given value by 2
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);  // This should print ""Result = 10""
+    return 0;
+}
+",0
+lwer802,1695617757,4,"#include <stdio.h>
+
+// Function declaration
+int TimesTwo(int value);
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);  // This should print ""Result = 10""
+    return 0;
+}
+
+// Function definition
+int TimesTwo(int value) {
+    return value * 2;
+}
+",0
+lwer802,1695617787,5,"#include <stdio.h>
+
+int TimesTwo(int value);
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}
+",0
+lwer802,1695617808,6,"int TimesTwo(int value) {
+    return value * 2;
+}
+",1
+lwon290,1695091272,1,"#include <stdio.h>
+
+int TimesTwo(int x);
+
+int TimesTwo(int x)
+{
+	return x * 2;
+}",1
+lyou975,1695454263,1,"int TimesTwo(int n)
+{
+	int result;
+
+	result = 2 * n;
+
+	return result;
+}",1
+mabb997,1695096926,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = 2 * n;
+	return result;
+}",1
+mahu925,1695003828,1,"#include <stdio.h>
+int TimesTwo(int inputInteger)
+{
+    return inputInteger*2;
+}",1
+mala824,1695199026,1,"#include <stdio.h>
+
+int PrintTimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    printf(""%d"", result);
+
+    return result;
+}",0
+mala824,1695199044,2,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    printf(""%d"", result);
+
+    return result;
+}",0
+mala824,1695199116,3,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    printf(""%d/n"", result);
+
+    return result;
+}",0
+mala824,1695199209,4,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    printf(""Result = %d/n"", result);
+
+    return result;
+}",0
+mala824,1695199310,5,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    printf(""Result = %d"", result);
+
+    return result;
+}",0
+mala824,1695199374,6,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    printf(""Result = %d"", result);
+
+}",0
+mala824,1695199425,7,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    return result;
+    printf(""Result = %d"", result);
+
+}",1
+mbah279,1695417647,1,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    int result = number * 2;
+    return result;
+}",1
+mbal759,1695090253,1,"int TimesTwo(int num)
+{
+    int result;
+    result = num * 2;
+    return result;
+}",1
+mboy221,1695014182,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    return result;
+}",1
+mbut885,1695361922,1,"int TimesTwo(int x) {
+
+    int y;
+
+    y = x * 2;
+
+    return y;
+}",1
+mcam799,1695461959,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n) 
+{
+	int result;
+	result = n * 2;
+
+	return result; 
+
+}
+",1
+mcha833,1695175527,1,"#include <stdio.h>
+
+int TimesTwo(int num)
+{
+    return num*2;
+}
+",1
+mcha876,1695211607,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{ 
+    int result;
+    result = input * 2;
+}
+",0
+mcha876,1695211801,2,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result;
+    result = input * 2;
+    return result;
+}",1
+mche403,1695279497,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+mcro807,1695604833,1,"#include <stdio.h>
+
+ int PrintTimesTwo(int x)
+    { 
+    
+        
+        int result = x + x;
+    
+        printf(""Result = %d"", result);
+    
+        return int result;
+    }",0
+mcro807,1695604938,2,"#include <stdio.h>
+
+ int TimesTwo(int x)
+    { 
+    
+        
+        int result = x + x;
+    
+        printf(""Result = %d"", result);
+    
+        return result;
+    }",0
+mcro807,1695605384,3,"#include <stdio.h>
+
+ int TimesTwo(int x)
+    { 
+    
+        
+        int Result = x + x;
+    
+        
+    
+        return Result;
+    }",1
+mdav506,1695356765,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+	int timestwo;
+
+	timestwo = input + input;
+
+	return timestwo;
+}",1
+mdea492,1695513563,1,"int TimesTwo (int a)
+{
+    return 2*a; 
+}",1
+mfle888,1695291006,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int output = input *2;
+    return output; 
+}",1
+mfuj750,1695177854,1,"int TimesTwo(int input)
+{
+	int result;
+	result = input * 2;
+	return result;
+}",1
+mger154,1695342089,1,"//TimesTwo function returns a value of type int that multiplies a value by two.
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+mgoy303,1695141006,1,"int TimesTwo(int num) {
+    return num * 2;
+}",1
+mgua740,1695099728,1," int TimesTwo(int a)
+{
+	 a = a + a;
+	 return a; 
+
+}",1
+mhua821,1695551359,1,"int TimesTwo(int n)
+{
+	int x = n*2;
+	return x;
+}",1
+mjun868,1695598352,1,"#define _CRT_SECURE_NO_WARNING
+#include <stdio.h> 
+
+int TimesTwo(int input)
+{
+    int output = input * 2;
+    return output; 
+}
+",1
+mkab524,1695533805,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+mkaj411,1695091664,1,"int TimesTwo(int n)
+{
+	int output;
+	output = n * 2;
+	return output; 
+}",1
+mkee115,1695097485,1,"int TimesTwo(int Input)
+{
+
+int Doubled;
+Doubled = Input * 2;
+return Doubled;
+
+}",1
+mken566,1695163985,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    printf(""Result = %d"", result);
+    return result;
+}",0
+mken566,1695164266,2,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    result = input * 2;
+    return result;
+}",0
+mken566,1695167009,3,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    return result;
+}",1
+mket106,1695430003,1,"int TimesTwo(int n) {
+	return n*2;
+}",1
+mkim670,1695267562,1,"int TimesTwo(int n)
+{
+	int m;
+	m = n * 2;
+	return m;
+}",1
+mkim719,1695097035,1,"// multiplies the input by two
+int TimesTwo(int n)
+{
+    return n *2 ;
+}",1
+mlal864,1695616642,1,"#include <stdio.h>
+
+int TimesTwo(input) {
+    int result = input * 2;
+    return result;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0
+}",0
+mlal864,1695616692,2,"#include <stdio.h>
+
+int TimesTwo(input) {
+    int result = input * 2;
+    return result;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}",0
+mlal864,1695621223,3,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+",1
+mlaw649,1695185208,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n + n;
+	return result;
+}",1
+mle063,1695346004,1,"int TimesTwo(int a)
+{
+    int result ;
+    result = a*2;
+    return result;
+    
+}",1
+mlen121,1695636154,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    return result;
+}
+
+int main ()
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+}",0
+mlen121,1695636165,2,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    return result;
+}
+
+",1
+mlin729,1695005063,1,"#include <stdio.h>
+
+int TimesTwo(int Result) { 
+    return Result * 2;
+}",1
+mloh302,1695001312,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int b = a*2;
+    return b;
+}",1
+mmak111,1695616635,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+mman402,1695538068,1,"int TimesTwo(int n)
+{
+	int result;
+	result= n+n;
+	return result;
+}",1
+mman808,1695627403,1,"int TimesTwo(int n)
+{
+int m = 2*n;
+return m;
+}",1
+mmas199,1695617331,1,"int TimesTwo(int n)
+{
+	int result; 
+	result = (n * 2); 
+	return result; 
+}",1
+mmca276,1695227759,1,"void TimesTwo(int n)
+{
+    int ans;
+    ans = n*2;
+    printf(""Result = %d"" , ans);
+}
+",0
+mmca276,1695559206,2,"int TimesTwo(int n)
+{
+    int result;
+    result = n*2;
+    return result;
+}
+",1
+mmcg745,1695252201,1,"#include <stdio.h>
+
+
+int TimesTwo(int value) {
+    
+    int new_val;
+    
+    new_val = value*2;
+    
+    return new_val;
+    
+}",1
+mmoh314,1695636154,1,"int TimesTwo(int n)
+{
+	n *= 2;
+	return n;
+}",1
+mmoh456,1695334744,1,"int TimesTwo(x)
+{
+	int Result;
+	Result = x * 2;
+	return  Result;
+}",0
+mmoh456,1695334907,2,"int TimesTwo(int x)
+{
+	int Result;
+	Result = x * 2;
+	return  Result;
+}",1
+mnay503,1695545919,1,"#include <stdio.h>
+void  TimesTwo(int n) 
+{
+    int result = n * 2;
+    printf(""Twice the input value is: %d\n"", result);
+}
+",0
+mnay503,1695551440,2,"#define _CRT_Secure_NO_WARNINGS
+#include <stdio.h>
+ int  TimesTwo(int n) 
+ {
+    int result = n * 2;
+    return result;
+}
+",1
+mnic190,1695616245,1,"#include <stdio.h>
+
+int TimesTwo(int x) {
+  return x * 2;
+}
+",1
+moco678,1695090670,1,"#include <stdio.h>
+
+int TimesTwo(int Input)
+{
+    int newValue;
+    newValue = Input*2;
+    return newValue;
+}
+
+int main()
+{
+   int result;
+   result = TimesTwo(5);
+   printf(""Result = %d"", result);
+}
+
+",0
+moco678,1695090783,2,"#include <stdio.h>
+
+int TimesTwo(int Input)
+{
+    int newValue;
+    newValue = Input*2;
+    return newValue;
+}
+
+
+",1
+mpar342,1695593088,1,"#include <stdio.h>
+
+int TimesTwo(int x) 
+{
+    return x * 2;
+}
+
+int main() 
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+mpar342,1695593247,2,"int TimesTwo(int x) 
+{
+    return x * 2;
+}",1
+mpat501,1695097634,1,"void PrintTimesTwo(int n)
+{
+	printf(""%d \n"", n*2);
+}",0
+mpat501,1695097966,2,"int TimesTwo(int n)
+{
+	int result= n*2;
+	return result;
+}",1
+mpey262,1695024487,1,"#include <stdio.h>
+
+int TimesTwo(int n) {
+    
+    return n * 2; 
+}
+
+
+void main()
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+
+}",0
+mpey262,1695091793,2,"#include <stdio.h>
+
+int TimesTwo(int n) {
+    return n * 2; 
+}
+",1
+mran851,1695552663,1,"int PrintTimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result;
+ 
+}",0
+mran851,1695552694,2,"int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result;
+ 
+}",1
+mris618,1695097789,1,"int TimesTwo(int input)
+{
+	int result;
+	result = input * 2;
+	
+	return result;
+}",1
+mrog757,1695216708,1,"int TimesTwo(int n)
+{
+    int result = n*2;
+    return result;
+}",1
+mron793,1695356478,1,"int TimesTwo(int n)
+{
+	int y;
+
+	y = n * 2;
+
+	return y;
+
+}",1
+mshi672,1695511603,1,"int TimesTwo(int n)
+{
+	int product;
+	product = n * 2;
+	return product;
+}",1
+msil440,1695633572,1,"#include <stdio.h>
+
+int TimesTwo(int number) 
+
+{
+    int answer = number * 2;
+    return answer;
+}",1
+msin609,1695518809,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+msu975,1695442131,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h> 
+
+int TimesTwo(int n) 
+{
+	n = n * 2;
+	return n;
+}",1
+msuv992,1695251983,1,"#include <stdio.h>
+
+int TimesTwo(int mia)
+{
+    
+mia = mia + mia; 
+
+return mia;
+}",1
+mtam709,1695245322,1,"int TimesTwo(int n)
+{
+	int product;
+	product = n + n;
+	return product;
+}",1
+mtha724,1695169547,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return (n*2);
+}",1
+mtob213,1695101548,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+mwan364,1695094649,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}
+",1
+myou984,1695096774,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+nabr105,1695089398,1,"int TimesTwo(int n)
+{
+	int answer; 
+	answer = n*2; 
+	return answer;
+}",1
+nalg484,1695028713,1,"#include <stdio.h>
+int TimesTwo(int input) {
+    return input * 2; 
+}",1
+nask472,1695098065,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return n*2;
+}",1
+ncha509,1695162979,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int num) {
+    int c= 2*num;
+}",0
+ncha509,1695163072,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int num) {
+    int c= 2*num;
+    return c;
+}",1
+ndas832,1695178531,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result; 
+    result = n*2; 
+    return result; 
+
+}
+",1
+ndso791,1695513119,1,"# include <stdio.h>
+
+int TimesTwo(int a)
+{
+	return a * 2;
+}",1
+ngam724,1695262808,1,"int TimesTwo(int n)
+{
+	int x = n + n;
+	return x;	
+}",1
+ngan146,1695199138,1," int TimesTwo(int a) {
+
+        int result = 0;
+        result = a*2;
+        return result;
+    }
+",1
+ngna565,1695090806,1,"int TimesTwo(int parameter) {
+
+  int result = parameter*2;
+  //printf(""Result = %d"", result);
+   
+   return result; 
+}",1
+nhar865,1695086868,1,"int TimesTwo(int number) {
+    return number * 2;
+}",1
+nhrs452,1695153277,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+
+    return result;
+}",1
+nhua986,1695090879,1,"int TimesTwo(int n)
+{
+    n = n * 2;
+    return n;
+}",1
+nhut042,1695355414,1,"int TimesTwo(int Input)
+{
+    int Result;
+    Result = Input * 2;
+    
+    return Result;
+}",1
+nisa397,1695090884,1,"int TimesTwo(int n)
+{
+	n *= 2;
+	return n;
+}",1
+njon803,1695276663,1,"int TimesTwo(int n)
+{
+	int result;
+
+	result = n * 2;
+
+	return result;
+}",1
+nlal162,1695387597,1,"int TimesTwo(int n)
+{
+	int result = n * 2;
+	return result;
+}
+",1
+nmah920,1695411472,1,"int TimesTwo(int input);
+{
+result = 2 * input;
+}",0
+nmah920,1695412401,2,"int TimesTwo(int input)
+{
+int result = 2 * input;
+return result;
+}",1
+nqua370,1695630180,1,"#inlude <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result = input + input;
+    return result;
+}",0
+nqua370,1695630192,2,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result = input + input;
+    return result;
+}",1
+nren130,1695607628,1,"#include <stdio.h>
+
+
+int TimesTwo(int n)
+{
+    int result;
+    result = 2 * n;
+}",0
+nren130,1695607851,2,"#include <stdio.h>
+
+
+int TimesTwo(int n)
+{
+    int x;
+    x = 2 * n;
+    return x;
+}",1
+nrub019,1695180091,1,"#include <stdio.h>
+
+int TimesTwo(int x){
+
+    x = x + x;
+
+    return x;
+}
+",1
+nthe160,1695530215,1,"TimesTwo(int num)
+{
+	return num * 2;
+}",0
+nthe160,1695530294,2,"TimesTwo(int num)
+{
+	int n = num;
+	int calc;
+	calc = n * 2;
+}
+
+",0
+nthe160,1695530570,3,"int TimesTwo(int n)
+{
+	return n * 2;
+}
+
+",1
+ntia856,1695470603,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+ntur101,1695180548,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+nwei818,1695113999,1,"#include <stdio.h>
+
+int TimesTwo(int a) {
+    return a * 2;
+}",1
+nwil850,1695162803,1,"#include <stdio.h>
+
+int TimesTwo(int a) {
+    int result = a * 2;
+    return result;
+}",1
+nyua944,1695025057,1,"#include <stdio.h>
+
+int TimesTwo(int num) {
+    int calc;
+    calc = num*2;
+    return calc;
+}",1
+obar199,1695625525,1,"
+int TimesTwo(int a){
+    int n;
+    n = a*2
+    return n;
+}",0
+obar199,1695625819,2,"int TimesTwo(int a){
+    return a*2;
+}",1
+ogab251,1695102063,1,"#include <stdio.h>
+
+int TimesTwo(int value)
+{
+    int result = value * 2;
+    return result;
+}
+",1
+ogan176,1695466223,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+ogar584,1695166811,1,"int TimesTwo(int num)
+{   
+    int num2;
+    num2 = num * 2;
+    return num2;
+}",1
+oguo680,1695268003,1,"int TimesTwo(int n)
+{
+    int n_doubled;
+    n_doubled = n*2;
+}",0
+oguo680,1695268317,2,"int TimesTwo(int n)
+{
+   return n*2;
+}",1
+oko158,1695375729,1,"#include <stdio.h>
+
+    int TimesTwo(int number) {
+    int result = number * 2;
+    return result;
+   
+}",1
+onic423,1695633083,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return n * 2;
+}
+
+int main()
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}",0
+opat597,1695609674,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+opre469,1695525867,1,"//TimesTwo function multiplies a inputed number by 2 and returns it to be used in main function//
+int TimesTwo(int n)
+{
+	int result;
+
+	//multiplying function input by 2//
+	result = n * 2;
+
+	//returns the result of the input * 2//
+	return result;
+}",1
+orow585,1695544624,1,"#include <stdio.h>
+
+int TimesTwo(int x) {
+	x = 2 * x;
+
+	return x;
+}",1
+osca399,1695624847,1,"#include <stdio.h>
+
+int TimesTwo(int input);
+{
+	int result;
+		result = input * 2;
+		printf(""Result = %d"", result);
+
+}
+",0
+osca399,1695625330,2,"#include <stdio.h>
+
+void TimesTwo(int input)
+
+{
+	int result;
+		result = input * 2;
+		printf(""Result = %d"", result);
+
+}
+",0
+osca399,1695631907,3,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    
+    result = input * 2;
+    
+    return result;
+}",1
+oshi740,1695159747,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+osko432,1695548870,1,"#include <stdio.h>
+#define Times_Two
+int TimesTwo(int a)
+{
+    int b;
+    b=a*2;
+    return b;
+}",1
+pchh683,1695606999,1,"int TimesTwo(int input)
+{
+    return input * 2;
+}",1
+pfil701,1695633411,1,"#include <stdio.h>
+
+int TimesTwo(int inpt)
+
+{
+    inpt = 2*inpt;
+    return inpt;
+}",1
+pfon568,1695179668,1,"void TimesTwo(int n)
+
+{ 
+    
+ int product = n * 2; 
+ 
+} ",0
+pfon568,1695179877,2,"#include <stdio.h> 
+
+int TimesTwo(int n)
+
+{ 
+    
+ int result = n * 2; 
+ 
+} ",0
+pfon568,1695179916,3,"#include <stdio.h> 
+
+int TimesTwo(int n)
+
+{ 
+    
+ return n * 2; 
+ 
+} ",1
+phao209,1695615814,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+phao209,1695615938,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}",0
+phao209,1695616137,3,"#include <stdio.h>
+
+int TimesTwo(int input_value) {
+    int result = input_value * 2;
+    return result;
+}
+
+int main() {
+    int input_number = 5;
+    int output_number = TimesTwo(input_number);
+    printf(""%d\n"", output_number); // This will print 10
+    return 0;
+}",0
+phao209,1695616764,4,"#include <stdio.h>
+
+int TimesTwo(int input_value) {
+    int result = input_value * 2;
+    return result;
+}",1
+pkim777,1695005216,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int TimesTwo(int input) {
+    int output = input * 2;
+    return output;
+}
+
+",1
+plah275,1695100177,1,"#include <stdio.h>
+
+int TimesTwo(int var1)
+{
+    var1 *= 2;
+    return var1;
+}",1
+plan310,1695270257,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+ppax865,1695610833,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int b;
+    b = a * 2;
+    return b;
+}",1
+pper327,1695463622,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = 2 * n;
+	return result;
+}",1
+pshe539,1695269885,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+psin207,1695170697,1,"int TimesTwo(int parameter) { 
+    int result;
+    result = parameter + parameter;
+    return result;
+}",1
+pwat943,1695164081,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int TimesTwo(int n)
+{
+	//Author: Dimitri Watt
+	int result = n * 2;
+	return result;
+}",1
+pwil422,1695635278,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+
+int main() {
+    int input;
+    printf(""Enter a number: "");
+    scanf(""%d"", &input);
+
+    int doubled = TimesTwo(input);
+
+    return doubled;
+}
+",0
+pwil422,1695635317,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+
+",1
+pwu278,1695122412,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int InputValue)
+{
+	int OutputValue;
+	OutputValue = InputValue * 2;
+	return OutputValue;
+}",1
+pxie161,1695111283,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+	int result;
+    result = n+n;
+    return result;
+}",1
+pyou182,1695095935,1,"int TimesTwo(int n)
+{
+    int result;
+    result = n + n;
+    return result;
+}",1
+qche619,1695634455,1,"#include <stdio.h>
+
+int TimesTwo(int z)
+{
+    z=z * 2;
+    return z;
+}",1
+qkan386,1695342545,1,"int TimesTwo(int n)
+{
+    return n * 2;
+}",1
+qmcc945,1695091686,1,"int TimesTwo(int n)
+{
+        return n * 2;
+}",1
+qtra338,1695010723,1,"#include <stdio.h>
+
+int TimesTwo(int input); 
+
+int TimesTwo(int input) {
+    int result; 
+    result = input * 2;
+
+    return result;
+}
+",1
+qwu129,1695636175,1,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+qwu129,1695636215,2,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+qwu129,1695636302,3,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}",0
+qwu129,1695636933,4,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+",1
+qzho943,1695089553,1,"#include <stdio.h>
+int TimesTwo(int input)
+{
+    int output = 2*input;
+    return output;
+}
+",1
+raic989,1695097608,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{ 
+    int sum = n*2;
+    return sum;
+}",1
+rand321,1695095613,1,"int TimesTwo(int n)
+{
+    n = n*2;
+    return n;
+}",1
+rbaj698,1695623282,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo (int result)
+{
+	return result * 2;
+}",1
+rbat374,1695151558,1,"int TimesTwo(double a)
+    {
+        double sum = a * 2;
+        return (int)sum;
+    }",1
+rbat561,1695016616,1,"int TimesTwo(int n)
+{
+	int output = n * 2;
+	return output;
+}",1
+rbui853,1695184790,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+rbus291,1695092144,1,"#include<stdio.h>
+int TimesTwo(value) {
+	int result;
+	result = value * 2;
+	return result;
+}",0
+rbus291,1695092294,2,"int TimesTwo(int value) {
+	int result;
+	result = value * 2;
+	return result;
+}",1
+rchi339,1695298295,1,"#include <stdio.h>
+
+int TimesTwo(int value) 
+ { 
+     int answer;
+     
+     answer = value * 2;
+     
+     return answer;
+ }
+ ",1
+rcou530,1695008765,1,"#include <stdio.h>
+
+void PrintTimesTwo(int input) {
+    int result = input * 2;
+}
+",0
+rcou530,1695008788,2,"#include <stdio.h>
+
+void TimesTwo(int input) {
+    int result = input * 2;
+}
+",0
+rcou530,1695008991,3,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+",1
+rdic384,1695616197,1,"int TimesTwo(int n) {
+    int result = n * 2;
+    return result;
+}
+",1
+rdon807,1695630816,1,"#include <stdio.h>
+int TimesTwo(int a)
+{
+    int results;
+    results=a+a;
+    return results;
+}",1
+rdun690,1695212382,1,"int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result;
+}",1
+rger104,1695165711,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+rgre692,1695632763,1,"void PrintTimesTwo(int value) {
+    int result = value * 2;
+    printf(""%d\n"", result);
+    return result
+}",0
+rgre692,1695632777,2,"void PrintTimesTwo(int value) {
+    int result = value * 2;
+    printf(""%d\n"", result);
+    return result;
+}",0
+rgre692,1695632833,3,"void PrintTimesTwo(int value) {
+    int result = value * 2;
+    printf(""Result = %d\n"", result);
+    return result;
+}",0
+rgre692,1695632869,4,"int TimesTwo(int value) {
+    int result = value * 2;
+    printf(""Result = %d\n"", result);
+    return result;
+}",0
+rgre692,1695632889,5,"int TimesTwo(int value) {
+    int result = value * 2;
+    return result;
+}",1
+rhua827,1695595720,1,"int PrintTimesTwo(int x) 
+{
+    int y; 
+    y = x * 2; 
+    return y; 
+}
+
+int main(void)
+{
+    int x; 
+    int result; 
+    
+    printf(""Enter value:""); 
+    scanf(""%d"", &x); 
+    
+    result = PrintTimesTwo(x); 
+    
+    printf(""Result = %d"", result);
+
+    return 0;
+}",0
+rhua827,1695596088,2,"int PrintTimesTwo(int x) 
+{
+    int y; 
+    y = x * 2; 
+    return y; 
+}
+
+int main(void)
+{
+    int x; 
+    int result; 
+    
+    result = PrintTimesTwo(5); 
+    
+    printf(""Result = %d"", result);
+
+    return 0;
+}",0
+rhua827,1695627611,3,"int PrintTimesTwo(int x) 
+{
+    int y; 
+    y = x * 2; 
+    return y; 
+}
+",0
+rhua827,1695627652,4,"int TimesTwo(int x) 
+{
+    int y; 
+    y = x * 2; 
+    return y; 
+}
+",1
+rkan756,1695163993,1,"int TimesTwo(int n)
+
+{
+	int result;
+	result = n * 2;
+
+	return result;
+}",1
+rkar406,1695087698,1,"int TimesTwo(int n)
+{
+	int product = n * 2;
+	return product;
+}",1
+rkha931,1695090917,1,"#include <stdio.h>
+
+int PrintTimesTwo(int x) {
+    int value  = x*2;
+    return value;
+}
+
+",0
+rkha931,1695091068,2,"#include <stdio.h>
+
+int TimesTwo(int x) {
+    int value  = x*2;
+    return value;
+}
+
+",1
+rkir245,1695102247,1,"int TimesTwo(int n)
+{
+	int calculation;
+    calculation = n * 2;
+	return calculation;
+}",1
+rleg709,1695094139,1,"#include <stdio.h>
+
+#define MULTIPLIER 2
+
+int TimesTwo(int inputP)
+{
+	int result;
+    result = inputP * MULTIPLIER;
+	return result;
+
+}",1
+rlin108,1695367269,1,"int TimesTwo(int value)
+{
+	int result;
+
+	result = value * 2;
+	return result;
+}",1
+rmar633,1695450690,1,"int TimesTwo(int n)
+{
+    return 2*n;
+}",1
+rmur989,1695554226,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = a+a;
+    return result;
+}",1
+rnga701,1695200429,1,"# include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result=a*2;
+    return result;
+}",1
+rnig735,1695089769,1,"int TimesTwo(int num)
+{
+    int two;
+    two = num*2;
+    return two;
+}",1
+rpar376,1695102694,1,"int TimesTwo(int Timer)
+{
+    int result = Timer*2;
+    return result;
+}",1
+rpat943,1695101784,1,"#include <stdio.h>
+
+/*
+function takes an integer input and returns an integer output twice
+the input
+*/
+
+int TimesTwo(int a){
+    int output;
+    output = 2 * a;
+    return output;
+}",1
+rraj313,1695027206,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+rroz381,1695165617,1,"int TimesTwo(int num)
+{
+    int ans;
+    ans = (num * 2);
+    return ans;
+}",1
+rsha769,1695098484,1,"#include <stdio.h>
+
+void TimesTwo(int input) {
+    int result = input * 2;
+    
+    return result;
+
+}
+
+",0
+rsha769,1695098729,2,"int TimesTwo(int input) {
+    int result = input * 2;
+    
+    return result;
+
+}
+
+",1
+rsha970,1695366494,1,"// Function multiplies input by 2 and returns value
+int TimesTwo(int n) {
+    int result = n * 2;
+    return result;
+}",1
+rsin531,1695617311,1,"#include <stdio.h>
+
+int TimesTwo(int inputValue) {
+    int result = inputValue * 2;
+    return result;
+}",1
+rsin719,1695595722,1,"int TimesTwo(int x) 
+{
+    int result;
+    
+    result = x * 2;
+    printf(""Result = %d"", result);
+}
+",0
+rsin719,1695596045,2,"
+int TimesTwo(int x) 
+{
+    int result;
+    
+    result = x * 2;
+    printf(""Result = %d"", result);
+    
+    return result;
+}
+",0
+rsin719,1695596164,3,"
+int TimesTwo(int x) 
+{
+    int result;
+    
+    result = x * 2;
+    
+    return result;
+}
+",1
+rsmi948,1695342284,1,"int TimesTwo(double input_value)
+{
+    double output_value;
+
+    output_value = input_value * 2;
+
+    return (int)round(output_value);
+}",1
+rsta265,1695113232,1,"#define _CRT_SECURITY_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    return a*2;
+}",1
+rtan654,1695090354,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result; 
+}",1
+rtap592,1695535326,1,"int TimesTwo(int n)
+{
+	return n = n * 2;
+}",1
+rvog842,1695600053,1,"int TimesTwo(int input)
+{
+    int x 
+    
+    input = x + x
+    return input
+}",0
+rvog842,1695600169,2,"int TimesTwo(int input) {
+    int x; // Added a semicolon to declare the variable x
+    
+    x = input + input; // Changed x + x to input + input
+    return x; // Return the value of x
+}
+",1
+rwar748,1695083079,1,"int TimesTwo(int n)
+{
+	return n*2;
+}",1
+rzha972,1695113623,1,"#include <stdio.h>
+
+int TimesTwo(int x){
+    return x * 2;
+}",1
+sabo272,1695074914,1,"#include <stdio.h>
+int TimesTwo(int val)
+{
+	int doubleVal;
+	// Function will double input and return the value to specified new variable.
+	doubleVal = 2 * val;
+
+	return doubleVal; //Returns result of multiplication.
+
+}",1
+sali153,1695518001,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+sban919,1695004152,1,"#include <stdio.h>
+
+/* TimesTwo() function takes a single input parameter and prints input multiplied by two. */
+
+int TimesTwo(int n)
+{
+    return n*2;
+}",1
+sbas887,1695458874,1,"int TimesTwo(int inputNumber) {
+    int output;
+    output = inputNumber * 2;
+    return output;
+}",1
+sben564,1695344961,1,"int TimesTwo(int a) {
+    
+    int output = a * 2;
+    return output;
+    
+}",1
+sbha564,1695471380,1,"int TimesTwo(int input){
+    int result = input * 2;
+    return result;
+}
+",1
+sbou664,1695544644,1,"/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+void functionTimesTwo(int number) {
+    int result = number * 2;
+    printf(""Result = %d"", result);
+}
+
+
+int main() {
+ int number;
+ scanf(""%d"", &number);
+ functionTimesTwo(number);
+
+
+    return 0;
+}
+
+
+",0
+sbou664,1695547836,2,"/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+ 
+
+
+int TimesTwo(int number) {
+    int result = number * 2;
+    printf(""\nResult = %d"", result);
+}
+
+{
+ int result, number;
+ scanf(""%d"", &number);
+ result = TimesTwo(number);
+ return result;
+}
+
+
+
+
+",0
+sbou664,1695550174,3,"/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+ 
+
+
+void TimesTwo(int number) {
+    int result = number * 2;
+    printf(""\nResult = %d"", result);
+}
+
+{
+ int result, number;
+ scanf(""%d"", &number);
+ result = TimesTwo(number);
+ return result;
+}
+
+
+
+
+",0
+sbou664,1695552847,4,"#include <stdio.h>
+
+
+int TimesTwo(int number); 
+
+
+int main(void){
+ int result, number;
+ scanf(""%d"", &number);
+ result = TimesTwo(number);
+ printf(""\nResult = %d"", result);
+ return 0;
+}
+
+int TimesTwo(int number)
+{
+    return 2 * number;
+    
+}
+
+
+",0
+sbou664,1695552905,5,"#include <stdio.h>
+
+
+int TimesTwo(int number); 
+
+
+{
+ int result, number;
+ scanf(""%d"", &number);
+ result = TimesTwo(number);
+ printf(""\nResult = %d"", result);
+ return 0;
+}
+
+int TimesTwo(int number)
+{
+    return 2 * number;
+    
+}
+
+
+",0
+sbou664,1695552955,6,"#include <stdio.h>
+
+
+int TimesTwo(int number); 
+
+
+int primary{
+ int result, number;
+ scanf(""%d"", &number);
+ result = TimesTwo(number);
+ printf(""\nResult = %d"", result);
+ return 0;
+}
+
+int TimesTwo(int number)
+{
+    return 2 * number;
+    
+}
+
+
+",0
+sbou664,1695552978,7,"#include <stdio.h>
+
+
+int TimesTwo(int number); 
+
+
+int primary(void){
+ int result, number;
+ scanf(""%d"", &number);
+ result = TimesTwo(number);
+ printf(""\nResult = %d"", result);
+ return 0;
+}
+
+int TimesTwo(int number)
+{
+    return 2 * number;
+    
+}
+
+
+",1
+sbro373,1695015522,1,"int TimesTwo(int value) {
+
+    int valueTimesTwo = value * 2;
+
+    return valueTimesTwo;
+}",1
+scar362,1695606702,1,"int TimesTwo(int value) {
+    int output = value * 2;
+    return output;
+}
+",1
+sche525,1695035858,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    return x * 2;
+}",1
+scho575,1695429681,1,"#include <stdio.h>
+
+int TimesTwo(int inputValue) {
+    return inputValue * 2;
+}
+
+int main() {
+    int result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+scho575,1695429687,2,"#include <stdio.h>
+
+int TimesTwo(int inputValue) {
+    return inputValue * 2;
+}
+
+",1
+schu718,1695349841,1,"#include <stdio.h>
+
+int TimesTwo(int num)
+
+{
+    int product;
+    product = num * 2; 
+    return product;
+}
+",1
+schu800,1695423976,1,"#include <stdio.h>
+
+int TimesTwo(int input_value)
+{
+    int result;
+    result = input_value * 2;
+    return result;
+}
+int main() 
+{
+    int input_value = 5;
+    int result;
+    result = TimesTwo(input_value);
+    printf(""Result = %d"",result);
+    
+    return 0;
+}",0
+schu800,1695593422,2,"int TimesTwo(int input_value)
+{
+    int result;
+    result = input_value * 2;
+    return result;
+}",1
+scol559,1695538601,1,"#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+/* This program tells the sequence */
+int TimesTwo(int num)
+{
+	int times;
+	times = num * 2;
+	return times;
+}",1
+sdal739,1695391195,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+}",0
+sdal739,1695391271,2,"int TimesTwo(int n)
+{
+	n = n * 2;
+}",0
+sdal739,1695464116,3,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+sden589,1695629789,1,"int TimesTwo(int n) 
+{
+    int result = n * 2;
+    return result;
+}",1
+sekb555,1695093146,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int a;
+	a = n*2;
+	return a;
+}",1
+sfry192,1695549211,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+    
+    result = n * 2;
+    return result;
+}",1
+sgal263,1695472045,1,"int TimesTwo(int n)
+{
+int result = n + n;
+return result;
+}",1
+sgib237,1695444697,1,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    int y;
+    y = x*2;
+    return y;
+
+    
+}",1
+shan333,1695524043,1,"int TimesTwo(int n)
+{
+	return n*2;
+}",1
+shan790,1695449484,1,"int TimesTwo(int n)
+{
+	int ans = n * 2;
+	return ans;
+}",1
+she940,1695091256,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+shsa718,1695440386,1,"int TimesTwo(int n)
+{
+	int product;
+	product = n*2;
+
+	return product;
+
+}",1
+shua365,1695085824,1,"#include <stdio.h>
+int TimesTwo(int input){
+    int result;
+    result=input+input;
+    return result;
+};",1
+shum116,1695088901,1,"int TimesTwo(int a)
+{
+	int result;
+	result = a + a;
+	return result;
+
+}",1
+sike083,1695190205,1,"int TimesTwo(int n)
+{
+    return n = n * 2;
+}",1
+sjaf029,1695289932,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+	int Result;
+	Result = a * 2;
+	return Result;
+
+}",1
+sjai563,1695447208,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{ 
+    int result = 2 * n ;
+    return result ;
+}",1
+sjam309,1695098718,1,"int TimesTwo(int n)
+{
+	int result = n * 2;
+	return result;
+}",1
+sjob296,1695545538,1,"#include <stdio.h>
+
+int TimesTwo(int value) 
+{
+    return value * 2;
+}
+
+int main() 
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);
+    return 0;
+}
+",0
+sjob296,1695613677,2,"#include <stdio.h>
+
+int TimesTwo(int inputvalue) 
+{
+    int result = inputvalue * 2;
+    return result;
+}
+",1
+skan221,1695175464,1,"#include <stdio.h>
+
+int TimesTwo (int n)
+
+{
+return n * 2;
+}",1
+skea516,1695093207,1,"int TimesTwo(int n)
+{
+	int two;
+	two = n * 2;
+	return two;
+}",1
+skmu887,1695597400,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int value = input * 2;
+}",0
+skmu887,1695597540,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+}",0
+skmu887,1695597580,3,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}",1
+skop291,1695451327,1,"#include <stdio.h>
+
+// Function declaration
+int TimesTwo(int value);
+
+int main() {
+    int result;
+    // Use the function and store its return value in 'result'
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+
+// Function definition
+int TimesTwo(int value) {
+    return value * 2;
+}
+",0
+skop291,1695452390,2,"int TimesTwo(int n)
+{
+    return value * 2;
+}
+",0
+skop291,1695452890,3,"int TimesTwo(int n) 
+{
+    return n * 2;
+}",1
+skul970,1695100909,1,"#include <stdio.h>
+
+void TimesTwo(int input) {
+    
+    int result;
+    result = input*2;
+    
+    return result;
+}
+",0
+skul970,1695101155,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    int result
+    result = input*2;
+    
+    return result;
+}
+",0
+skul970,1695101188,3,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    int result;
+    result = input*2;
+    
+    return result;
+}
+",1
+slam669,1695258277,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int num)
+{
+    int result;
+    result = num*2;
+    return result;
+}
+
+
+",1
+slie508,1695252419,1,"int TimesTwo(int n)
+{
+	int result = n *2;
+	return result;
+}",1
+sluo487,1695183674,1,"#include <stdio.h>
+
+int TimesTwo (int a)
+{
+
+    return 2 * a;
+    
+}",1
+smac708,1695092592,1,"#include <stdio.h>
+
+int TimesTwo (int a)
+{ 
+    int result; 
+    result = 2*a; 
+    return result; 
+}",1
+sman821,1695529750,1,"int TimesTwo(int n)
+{
+	int result;
+	result = 2*n;
+	return result;
+}",1
+sman833,1695166239,1,"int TimesTwo(int n)
+{
+    return n*2;
+}",1
+smck855,1695087618,1,"#include <stdio.h>
+
+int TimesTwo(int value){
+    return value*2;
+}",1
+smou122,1695091492,1,"int TimesTwo(int a)
+{
+    int result;
+    result = a + a;
+    return result;
+
+}",1
+smun623,1695530466,1,"int TimesTwo(int n)
+{
+	int answer;
+	answer = n * 2;
+	
+    
+}",0
+smun623,1695530669,2,"
+int TimesTwo(int n)
+{
+	return n * 2;
+
+}",1
+snas404,1695618223,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+int TimesTwo(int a)
+{
+	int Multiply;
+	Multiply = a * 2;
+	return Multiply;
+
+}",1
+span558,1695010799,1,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int output = input * 2;
+    return output;
+}",1
+spar473,1695220372,1,"#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    return result;
+}",1
+spar820,1695606725,1,"#include <stdio.h>
+
+int TimesTwo(int n) {
+	int result;
+	result = n * 2;
+
+	return result;
+}",1
+srak374,1695268502,1,"int TimesTwo(int a){
+    int result;
+    result = a*2;
+    
+    printf(""Result = %d"", result);
+    
+}",0
+srak374,1695268640,2,"int TimesTwo(int a){
+    
+    int result;
+    result = a*2;
+    return result;
+}",1
+sran136,1695348915,1,"
+#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int value = a * 2;
+    return value;
+    
+}
+",1
+srou953,1695183162,1,"int TimesTwo(int n)
+{
+    int sum = (n * 2);
+return sum; 
+}",1
+ssan467,1695441611,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+ssco465,1695460203,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int input) 
+{
+    int result;
+    result = input * 2;
+    return result;
+}",1
+ssey266,1695547471,1,"int TimesTwo(int n) 
+{    
+return n * 2;
+}",1
+ssiv093,1695624047,1,"int TimesTwo(int n)
+{
+return n*2;
+}
+",1
+sson972,1695090198,1,"int TimesTwo(int value)
+{
+	return value * 2;
+}",1
+sspa275,1695264356,1,"int TimesTwo(int input)
+{
+    input = input*2;
+    return input;
+}",1
+ssri357,1695090239,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+
+int TimesTwo(int inputValue)
+
+{
+	int doubled;
+	doubled = inputValue * 2;
+
+	return doubled;
+}",1
+steb012,1695091037,1,"int TimesTwo(int a){
+    int b;
+    b = a * 2;
+    
+    return b;
+}
+",1
+stia357,1695285580,1,"int TimesTwo(int input) 
+{
+    int M2;
+    M2 = input * 2;
+    return result;
+}",0
+stia357,1695285799,2,"int TimesTwo(int input) 
+{
+    int M2;
+    M2 = input * 2;
+    return M2;
+}",1
+sum778,1695551021,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+sval918,1695364249,1,"int TimesTwo (int a)
+{
+    int result;
+    result = 2 * a;
+    printf(""%d"",result);
+    return result;
+}
+",0
+sval918,1695364388,2,"int TimesTwo (int a)
+{
+    int result;
+    result = 2 * a;
+    printf(""%d "",result);
+}
+",0
+sval918,1695364468,3,"int TimesTwo (int a)
+{
+    int result;
+    result = 2 * a;
+}
+",0
+sval918,1695364589,4,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    result = 2 * a;
+    return result; // Return the doubled result without printing it.
+}",1
+swan472,1695169016,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}",1
+sweb390,1695100550,1,"int TimesTwo(int n)
+{
+	int timestwo;
+	timestwo = n * 2;
+	return timestwo;
+}
+",1
+swil676,1695349781,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result; 
+	result = n + n; 
+	return result; 
+}",1
+syok443,1695023403,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+	int xTwo = 2 * input;
+    return xTwo;
+}
+",1
+syua841,1695629261,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    int result = input * 2;
+    return result;
+}
+
+int main(void) {
+    int number;
+    
+    printf(""Enter number: "");
+    scanf(""%d"", &number);
+    
+    int multiplied = TimesTwo(number);
+    
+    printf(""Result: %d\n"", multiplied);
+    
+    return 0;
+}
+",0
+syua841,1695630359,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    int Result = input*2;
+    return Result;
+    
+}
+
+",1
+szen566,1695090363,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+
+	return result;
+}",1
+szho466,1695543713,1,"
+#include <stdio.h>
+
+void PrintTimesTwo(int n)
+{
+    
+    int result;
+    result = n*2;
+    return result;",0
+szho466,1695544134,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int f;
+    f = n*2;
+    return f;
+    
+}
+int main(void)
+{
+
+    int result;
+    result = TimesTwo(5);
+	printf(""Result = %d"", result);
+
+    return 0;
+}",0
+szho466,1695544144,3,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int f;
+    f = n*2;
+    return f;
+    
+}
+",1
+tais804,1695089187,1,"int TimesTwo(int n)
+{
+	int result = n+n;
+	return result;
+}",1
+tbad483,1695248728,1,"#include <stdio.h>
+
+int PrintTimesTwo(int a){
+    int b;
+    b = a*2;
+}",0
+tbad483,1695248764,2,"#include <stdio.h>
+
+int TimesTwo(int a){
+    int b;
+    b = a*2;
+}",0
+tbad483,1695249022,3,"#include <stdio.h>
+
+int TimesTwo(int a){
+    int b;
+    b = a*2;
+    return b;
+}",1
+tbar968,1695225404,1,"#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+int TimesTwo(int Number) {
+	Number = Number * 2;
+	return Number;
+}",1
+tbar971,1695090280,1,"int TimesTwo(int n)
+{
+	int ans;
+	ans = 2 * n;
+	return ans;
+}",1
+tbas606,1695611228,1,"#include <stdio.h>
+// This function  returns a value of type int, it takes a single input parameter and it returns that input value multiplied by two
+// Author: Taha Basar
+int TimesTwo(int input) 
+{
+    int result = input * 2;
+    return result;
+}",1
+tbed601,1695584767,1,"#include <stdio.h>
+    int TimesTwo(int x) {
+        int result 
+        result = x * 2;
+         printf(""%d "", result);
+        return result;
+    }
+    ",0
+tbed601,1695587004,2,"#include <stdio.h>
+int TimesTwo(int x)
+{
+	int result;
+	result = x * 2;
+	printf(""Result = %d"", result);
+	
+	return;
+}
+    ",0
+tbed601,1695587339,3,"#include <stdio.h>
+int TimesTwo(int x)
+{
+	int r;
+	r = x * 2;
+	printf(""Result = %d"", r);
+	
+	return r;
+}
+    ",0
+tbed601,1695587410,4,"#include <stdio.h>
+int TimesTwo(int x)
+{
+	int r;
+	r = x * 2;
+	
+	return r;
+}
+    ",1
+tbri557,1695342216,1,"int PrintTimesTwo(int a){
+    a *= 2;
+    return a;
+
+}",0
+tbri557,1695342266,2,"int TimesTwo(int a){
+    a *= 2;
+    return a;
+
+}",1
+tche867,1695539336,1,"int TimesTwo(int number) {
+	return number * 2;
+}",1
+tcoo725,1695273903,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int Result;
+    Result = n + n;
+    return  n + n;
+}",0
+tcoo725,1695273946,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    
+    return  n + n;
+}",1
+tden200,1695444220,1,"int TimesTwo(int n)
+{
+
+	int Result = n * 2;
+
+	return Result;
+
+}",1
+tdha392,1695542880,1,"int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+}",0
+tdha392,1695543341,2,"int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return = result;
+}",0
+tdha392,1695543557,3,"int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result;
+}",1
+tdic873,1695082504,1,int TimesTwo(int a) {return a * 2;},1
+tdon950,1695200568,1,"#include <stdio.h>
+
+int main(int x)
+{   
+
+    return (x * 2);
+}",0
+tdon950,1695200591,2,"#include <stdio.h>
+
+int TimesTwo(int x)
+{   
+
+    return (x * 2);
+}",1
+tdu824,1695619857,1,"int TimesTwo(int a)
+ {
+ int b;
+ b = a + a;
+ return b;
+ } ",1
+tfai092,1695195603,1,"int TimesTwo(int n)
+{
+    int answer;
+    answer = n*2;
+    return answer;
+}",1
+tfai653,1695089510,1,"int TimesTwo(int n)
+{
+	int result;
+
+	result = n * 2;
+	return result;
+}",1
+tfru173,1695624561,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result = a*2;
+    return result;
+}",1
+thal182,1695178553,1,"int TimesTwo(int input) {
+    return input * 2;
+}",1
+thar970,1695135211,1,"#include <stdio.h>
+
+int TimesTwo(int num){
+    return(num*2);
+}",1
+thid924,1695338344,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+thua238,1695249626,1,"int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+thut580,1695095213,1,"int TimesTwo(int value)
+{
+	int doublevalue;
+	doublevalue = value + value;
+
+	return doublevalue;
+}",1
+tkan918,1695523952,1,"int TimesTwo(int n)
+{
+	return n*2;
+}
+",1
+tlal352,1695618558,1,"int TimesTwo(int n)
+{
+    return n * 2;
+}",1
+tlin438,1695273283,1,"int TimesTwo(int input)
+{
+  int a;
+  a=2*input;
+  return a;
+}
+
+int main()
+{
+   int result;
+   result=TimesTwo(5);
+   printf(""Result = %d"", result);
+   
+   return 0;
+   
+}",0
+tlin438,1695273454,2,"int TimesTwo(int input)
+{
+  int a;
+  a=2*input;
+  return a;
+}
+
+",1
+tlu253,1695089992,1,"int TimesTwo(int n)
+{
+	int product;
+	product = n * 2;
+	return product;
+}",1
+tluu816,1695586287,1,"int TimesTwo(int n)
+{
+	return 2 * n;
+}",1
+tmcl219,1695253360,1,"/*This is a function that multiplies the input by two.*/
+int TimesTwo (int a)
+{
+    a = 120;
+    return a*2;
+}",0
+tmcl219,1695253529,2,"/*This is a function that multiplies the input by two.*/
+int TimesTwo (int a)
+{
+    return a*2;
+}",1
+tmen190,1695020490,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+//	TimesTwo is a function that multiplies a number by two
+//
+//	Input:
+//	number = The integer number to be multiplied by two
+
+// Function that multiplies a number by 2
+int TimesTwo(int number) {
+	return number * 2;
+}",1
+tmir110,1695539756,1,"#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+int TimesTwo (int input) {
+    
+    return input*2;
+}",1
+tmun974,1695432783,1,"int TimesTwo(int n)
+{
+    n=n*2;
+    return n;
+}",1
+tpan328,1695093481,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int output;
+    output = input * 2;
+
+    return output;
+}",1
+tpat456,1695182457,1,"int TimesTwo(int n)
+{
+  n = n * 2;
+  return n;
+}",1
+tpil529,1695352019,1,"int TimesTwo(int n)
+{
+    int doubled;
+
+    doubled = n + n;
+    
+    return doubled;
+}",1
+tpra228,1695606535,1,"int TimesTwo(int input){
+    int result;
+    result = input * 2;
+    return result;
+}",1
+tpur744,1695100439,1,"int TimesTwo(int input){
+    int answer = answer * 2;
+    return answer;
+}",0
+tpur744,1695100462,2,"int TimesTwo(int input){
+    int answer = input * 2;
+    return answer;
+}",1
+tqhu735,1695005570,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    return a*2;
+}",1
+tron042,1695090786,1,"#include <stdio.h>
+
+int TimesTwo(int A)
+{   
+    int result; 
+    result = A*2; 
+    return result; 
+} ",1
+tsan986,1695158364,1,"int PrintTimesTwo(int value) {
+    value = value + value;
+    return value;
+}",0
+tsan986,1695158611,2,"int TimesTwo(int value) {
+    value = value + value;
+    return value;
+}",1
+tsin304,1695509103,1,"int TimesTwo(double input)
+{
+    int output = input*2;
+    
+    return output;
+
+}",1
+ttho505,1695270383,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+		return n*2;	
+}",1
+ttho743,1695089425,1,"int TimesTwo(int input)
+{
+   int result = input*2;
+   return result;
+}
+",1
+twad520,1695638095,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+
+
+int result;
+result = TimesTwo(5);
+printf(""Result = %d"", result);
+return 0;
+",0
+twad520,1695638170,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    timestwo = input * 2
+    
+    return timestwo;
+}
+
+
+int result;
+result = TimesTwo(5);
+printf(""Result = %d"", result);
+
+",0
+twad520,1695638185,3,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    int timestwo
+    timestwo = input * 2
+    
+    return timestwo;
+}
+
+
+int result;
+result = TimesTwo(5);
+printf(""Result = %d"", result);
+
+",0
+twad520,1695638201,4,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    int timestwo;
+    timestwo = input * 2
+    
+    return timestwo;
+}
+
+
+int result;
+result = TimesTwo(5);
+printf(""Result = %d"", result);
+
+",0
+twad520,1695638214,5,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    int timestwo;
+    timestwo = input * 2;
+    
+    return timestwo;
+}
+
+
+int result;
+result = TimesTwo(5);
+printf(""Result = %d"", result);
+
+",0
+twad520,1695638359,6,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    int timestwo;
+    timestwo = input * 2;
+    return timestwo;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+twad520,1695639268,7,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    
+    int timestwo;
+    timestwo = input * 2;
+    return timestwo;
+}
+",1
+twol698,1695113588,1,"#include<stdio.h>
+
+int TimesTwo(int input){
+    input = input * 2; 
+    return input;
+
+}",1
+tyou333,1695017912,1,"#include <stdio.h>
+
+int TimesTwo(int inputNumber) {
+    return inputNumber * 2;
+}",1
+tyou421,1695251002,1,"int TimesTwo(int n)
+{
+	/*This function takes a single input parameter to produce an
+	 output value that is twice as large as the input value. This
+	 function returns the value rather than printing it.
+
+	 Inputs:
+			n: An input value that will be used to produce the
+			output.
+	 Outputs:
+			result: The value of n when it is multiplied by 2.
+
+	 Author: Toma Yousif*/
+
+	// Declare the output.
+	int result;
+
+	// Calculate the output.
+	result = n * 2;
+
+	// Return the output.
+	return result;
+}",1
+tzha578,1695008202,1,"#include <stdio.h>
+
+int TimesTwo(int input){
+    int output = input * 2;
+    return output;
+}",1
+tzho903,1695466156,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    n = n*2;
+    return n;
+}",1
+uali517,1695093483,1,"int TimesTwo(int number)
+{
+	number = number * 2;
+	printf(""%d"", number);
+	return number;
+}",0
+uali517,1695093560,2,"int TimesTwo(int number)
+{
+	number = number * 2;
+	return number;
+}",1
+ujai264,1695172797,1,"int TimesTwo(int n)
+{
+    int sum;
+    sum = n + n;
+    return sum;
+}",1
+uuel157,1695636131,1,"#include <stdio.h>
+
+int TimesTwo(int input) {
+    return input * 2;
+}
+",1
+vbar374,1695633842,1,"#include <stdio.h>
+int TimesTwo(int value){
+    int result = value * 2;
+    return result;
+}",1
+vkap589,1695173125,1,"int TimesTwo(int n)
+{
+    int cookie;
+    cookie = n + n;
+    return cookie;
+}",1
+vlai276,1695522135,1,"int TimesTwo(int x){
+    
+    x = x*2;
+    
+    printf(""Result = %d"", x);
+
+    
+}",0
+vlai276,1695522788,2,"int TimesTwo(int result){
+    
+    result = result*2;
+    
+    printf(""Result = %d"", result);
+
+    return result;
+}",0
+vlai276,1695523205,3,"int TimesTwo(int result){
+    
+    result = result*2;
+    
+
+    return result;
+}",1
+vpat188,1695515817,1,"int TimesTwo(int input){
+    return input * 2;
+}",1
+vpol480,1695616822,1,"int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+vto869,1695531541,1,"int TimesTwo(int x)
+{
+	return x * 2;
+}
+",1
+vwon573,1695465618,1,"#include <stdio.h>
+
+
+
+int TimesTwo(int n)
+{	
+	int result = n * 2;
+	return result; 
+
+}",1
+vwu693,1695593647,1,"#define _CRT_SECURE_NO_WARNINGS_
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+vxie208,1695261965,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+wany079,1695221036,1,"#include <stdio.h>
+int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+wany722,1695179970,1,"#include<stdio.h>
+int TimesTwo(int x)
+{
+    x = x*2;
+    return x;
+}",1
+wany843,1695083481,1,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    return number * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d\n"", result);  // 这将打印：Result = 10
+    return 0;
+}
+",0
+wany843,1695083503,2,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    return number * 2;
+}",1
+wany897,1695177162,1,"
+
+int TimesTwo(int n)
+{
+	scanf(""%d"", &n);
+	int sum = n * 2;
+	printf(""%d"", sum);
+}",0
+wany897,1695177569,2,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+wany932,1695010930,1,"#include <stdio.h>
+int TimesTwo(int number){
+    
+    int output = number + number;
+    
+    return output;
+}",1
+wkev690,1695247786,1,"int TimesTwo(int n)
+{
+	n = n*2;
+	return n;
+}",1
+wli798,1695100323,1,"int TimesTwo(int n)
+{
+int value;
+value = n + n;
+return value;
+}",1
+wlin709,1695630510,1,"#include <stdio.h>
+
+void TimesTwo(int input) 
+{
+    return input * 2;
+}
+
+",0
+wlin709,1695630720,2,"#include <stdio.h>
+
+void TimesTwo(int input) 
+{
+    int output;
+    
+    output=input*2;
+    
+    return input * 2;
+}
+
+",0
+wlin709,1695631178,3,"#include <stdio.h>
+
+int TimesTwo(int a) 
+{
+    int result;
+    result= a + a;
+    return result;
+}
+
+",1
+wliy226,1695622498,1,"#include <stdio.h>
+
+// Function to double the input value
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+
+    // Calling TimesTwo function with input 5
+    result = TimesTwo(5);
+
+    // Printing the result
+    printf(""Result = %d\n"", result);
+
+    return 0;
+}
+",0
+wliy226,1695624347,2,"#include <stdio.h>
+
+int TimesTwo(int a) {
+    int result;
+    result = a + a;
+    return result;
+}
+",1
+wmas516,1695040458,1,"#include <stdio.h>
+int TimesTwo(int val) 
+{
+    return(val*2);
+}",1
+wste800,1695349840,1,"#include <stdio.h>
+
+int TimesTwo(int a) {
+    int value = a*2;
+    return value;
+}",1
+wwan296,1695259212,1,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+	x = x * 2;
+	return x;
+}",1
+wwon485,1695395222,1,"int TimesTwo(int number) {
+    return number * 2;
+}",1
+wwu295,1695494163,1,"int TimesTwo(int number)
+{
+	return number * 2;
+}",1
+wyan309,1695605412,1,"int TimesTwo(int n){
+    n = n*2;
+    return n;
+};",1
+wyu523,1695246738,1,"int TimesTwo(int n)
+{
+    int a;
+    a=n*2;
+    return a;
+}",1
+wyua331,1695602757,1,"int TimesTwo(int n)
+{
+    return  n*2;
+}",1
+wzha508,1695177310,1,"int TimesTwo (int input)
+{
+	int doubleA;
+	doubleA = input * 2;
+	return doubleA;
+}",1
+xche362,1695362081,1,"void PrintTimesTwo(int a)
+{
+    int result;
+    result= a*2;
+    
+    return result;
+}",0
+xche362,1695362869,2,"void TimesTwo(int a)
+{
+    int answer;
+    answer= a*2;
+    
+}",0
+xche362,1695362928,3,"int TimesTwo(int a)
+{
+    int answer;
+    answer= a*2;
+    
+}",0
+xche362,1695362946,4,"int TimesTwo(int a)
+{
+    int answer;
+    answer= a*2;
+    return answer;
+}",1
+xche933,1695631663,1,"// TimesTwo takes a single input as parameter and returns a result from the input multiplied by two.
+int TimesTwo(int a)
+
+{
+    int result;
+    result = a * 2;
+   return result;
+
+}
+",1
+xkan320,1695199835,1,"int TimesTwo(int n)
+{
+	return n*2;
+}",1
+xli330,1695186660,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	return n * 2;
+}",1
+xlia603,1695461829,1,"#include <stdio.h>
+int TimesTwo(int n) {
+    int result = n * 2;
+    return result;
+}",1
+xmet073,1695094032,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int TimesTwo(int number)
+{
+    return 2*number;
+}",1
+xsny378,1695195995,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+    result = n + n;
+    return result;
+}",1
+xtan207,1695586817,1,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+int result;
+result = TimesTwo(5);
+printf(""Result = %d\n"", result);
+return 0;
+}",0
+xtan207,1695608161,2,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    int value + value;
+return result",0
+xtan207,1695608215,3,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    int result = value + value;
+return result;
+}",1
+xugn489,1695121528,1,"int TimesTwo(int n)
+{
+	int double_n;
+	double_n = n * 2;
+	return double_n;
+}
+",1
+yayo322,1695604525,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    return n*2;
+}",1
+ybha528,1695440045,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result = n * 2;
+
+	printf(""Result = %d"", result);
+
+}",0
+ybha528,1695440481,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result = n * 2;
+
+	return result;
+
+}
+",1
+ycho749,1695253508,1,"int TimesTwo(int input)
+{
+    input = input*2;
+    return input; 
+}
+",1
+ycho760,1695611486,1,"int TimesTwo(int n)
+{
+	return (n * 2);
+}",1
+ydai729,1695636539,1,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    int result = number * 2;
+    return result;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5); // Replace with the desired input value
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+ydai729,1695637022,2,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    int result = number * 2;
+    return result;
+}
+",1
+ydar075,1695629722,1,"int TimesTwo(int input) {
+	int result;
+	result = input * 2;
+	return result;
+}",1
+yfan919,1695388110,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    
+    result = a * 2;
+    
+    printf(""Result = %d"",result);
+    return result;
+}
+",0
+yfan919,1695388133,2,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    
+    result = a * 2;
+    
+    printf(""%d"",result);
+    return result;
+}
+",0
+yfan919,1695388143,3,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int result;
+    
+    result = a * 2;
+    
+    return result;
+}
+",1
+yfen481,1695091890,1,"int TimesTwo (int n)
+{
+    int result = n * 2;
+    return result;
+}",1
+yhaf839,1695086823,1,"#include <stdio.h>
+
+int TimesTwo(int n) {
+    int answer = n * 2;
+    return answer;
+}",1
+yilm466,1695270374,1,"int TimesTwo(int input)
+{
+   int result; 
+   result = input*2;
+   return result;
+}",1
+yjun129,1695012571,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+ykwa219,1695390332,1,"int TimesTwo(int n)
+{
+	int result;
+
+	result = 2 * n;
+	
+	return result;
+}",1
+ylee818,1695594981,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    return result;
+}",1
+yrah128,1695639068,1,"int TimesTwo(int x) {
+    return x * 2;
+}",1
+ysun512,1695129043,1,"#include <stdio.h>
+
+int TimesTwo(int num) {
+    return num * 2;
+}
+",1
+ytho155,1695179457,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    input = input * 2;
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+ytho155,1695246408,2,"#include <stdio.h>
+
+// Function to multiply an input by 2 and print the result
+//Author: Yi Shun
+int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    printf(""Result = %d\n"", result);
+    return result; 
+}",0
+ytho155,1695246418,3,"#include <stdio.h>
+
+// Function to multiply an input by 2 and print the result
+//Author: Yi Shun
+int TimesTwo(int n)
+{
+    int result;
+    result = n * 2;
+    return result; 
+}",1
+ytse120,1695085941,1,"int TimesTwo(int n)
+{
+    return n*2;
+}",1
+yxie884,1695011837,1,"//Lab 8 task 2: Create a function which returns the input value times two
+// Author: Jessica Xie
+
+#include <stdio.h>
+
+//defining the function as multiplying the input parameter by 2
+int TimesTwo(int a)
+{
+    int Result;
+    Result = a + a;
+    printf(""Result = %d"", Result); // printing the output as per required
+    return 0;
+}",0
+yxie884,1695012186,2,"//Lab 8 task 2: Create a function which returns the input value times two
+// Author: Jessica Xie
+
+#include <stdio.h>
+
+//defining the function as multiplying the input parameter by 2
+int TimesTwo(int a)
+{
+    int Result;
+    Result = a*2;
+    return Result; // return the output
+}",1
+yyin299,1695263207,1,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    printf(""Result = %d"", result);
+    
+    return result;
+}
+",0
+yyin299,1695263233,2,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+    int result;
+    result = input * 2;
+    
+    return result;
+}
+",1
+yyin440,1695087420,1,"#include <stido.h>
+
+void TimesTwo (int input){
+    int result;
+    result = input * 2 
+    return result;
+}",0
+yyin440,1695093725,2,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;",0
+yyin440,1695094378,3,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}",0
+yyin440,1695095368,4,"#include <stido.h>
+
+void TimesTwo (int input){
+    int result;
+    result = input * 2 
+    printf(""%i"", result);
+}",0
+yyin440,1695095556,5,"#include <stido.h>
+
+int TimesTwo(int input)
+{
+	result = input * 2;
+	return result
+}",0
+yyin440,1695095571,6,"#include <stdio.h>
+
+int TimesTwo(int input)
+{
+	result = input * 2;
+	return result
+}",0
+yyin440,1695095625,7,"int TimesTwo(int input)
+{
+	int result = input * 2;
+	return result;
+}",1
+yzhe520,1695181170,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+	int result;
+	result = n * 2;
+	return result;
+}",1
+zche975,1695617882,1,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    return number * 2;
+}",1
+zcol623,1695277997,1,"//PrintTimesTwo() takes an integer and multiplies it by two
+//Author:zcol623
+int TimesTwo(int n)
+{
+	n * 2;
+}
+",0
+zcol623,1695278171,2,"//PrintTimesTwo() takes an integer and multiplies it by two
+//Author:zcol623
+int TimesTwo(int n)
+{
+	return n * 2;
+}
+",1
+zcra120,1695252598,1,"int TimesTwo(int number)
+{
+    int result;
+    result = number*2;
+    
+}",0
+zcra120,1695253120,2,"int TimesTwo(int number)
+{
+int result;
+result = number*2;
+return result;
+}",1
+zfu276,1695270691,1,"#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int TimesTwo(int n)
+{
+    int result;
+
+    result = n * 2;
+
+    return result;
+}
+",1
+zgab423,1695100918,1,"#include <stdio.h>
+
+int TimesTwo(int n)
+
+{   
+    // multiply n by 2
+    return (n*2);
+}
+
+int main ()
+{
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+}
+",0
+zgab423,1695100933,2,"#include <stdio.h>
+
+int TimesTwo(int n)
+
+{   
+    // multiply n by 2
+    return (n*2);
+}
+
+",1
+zgar110,1695614083,1,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main() {
+    int result;
+     result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+zgar110,1695614516,2,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+
+int main(void) {
+    int result;
+     result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+",0
+zgar110,1695615112,3,"#include <stdio.h>
+
+
+int TimesTwo(int value);
+
+int main(void) {
+    int result;
+    result = TimesTwo(5);
+    printf(""Result = %d"", result);
+    return 0;
+}
+
+int TimesTwo(int value) {
+    return value * 2;
+}",0
+zgar110,1695623351,4,"#include <stdio.h>
+
+int TimesTwo(int value) {
+    return value * 2;
+}
+",1
+zgas053,1695630968,1,"void TimesTwo(int x)
+{
+    x = x * 2;
+    printf(""Result = %d"", x);
+}",0
+zgas053,1695631131,2,"int TimesTwo(int x)
+{
+    return x*2;
+}",1
+zgin653,1695004422,1,"int TimesTwo(int n){
+    return n*2;
+}",1
+zguo839,1695532452,1,"#include <stdio.h>
+int TimesTwo(int input) {
+    return input * 2;
+}",1
+zhon780,1695596978,1,"int TimesTwo(int i)
+{
+    return i * 2;
+}",1
+zliu381,1695339197,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+
+	return n;
+}",1
+zliu578,1695432828,1,"int TimesTwo(int n)
+{
+	int result = n * 2;
+}",0
+zliu578,1695433484,2,"int TimesTwo(int n)
+{
+	n = n * 2;
+}",0
+zliu578,1695433673,3,"int TimesTwo(int n)
+{
+	return n = n * 2;
+}",1
+zpen457,1695462257,1,"int TimesTwo(int n)
+{
+    return 2*n;
+}",1
+zqia091,1695606373,1,"int TimesTwo (int n)
+{   return n*2;
+}",1
+zshi453,1695008553,1,"#include <stdio.h>
+
+int TimesTwo(int a)
+{
+    int output;
+    output = a + a;
+    return output;
+}",1
+zvor566,1695536443,1,"int TimesTwo(int n)
+{
+	n = n * 2;
+	return n;
+}",1
+zwan373,1695179793,1,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    int doubledValue;
+    doubledValue = number << 1;  // Bitwise left shift to double the value
+    return doubledValue;
+}",1
+zwan373,1695184241,2,"#include <stdio.h>
+
+int TimesTwo(int number) {
+    int doubledValue;
+    doubledValue = number << 1;
+    return doubledValue;
+}",1
+zwil198,1695613611,1,"#include <stdio.h>
+
+void TimesTwo(int input) {
+  int output;
+  output = input + input;
+ 
+    return output;
+}",0
+zwil198,1695613776,2,"#include <stdio.h>
+
+int TimesTwo(int input) {
+  int output;
+  output = input + input;
+ 
+    return output;
+}",1
+zwon694,1695115664,1,"int TimesTwo(int n)
+{
+	int timestwo;
+
+	timestwo = n * 2;
+
+	return timestwo;
+}",1
+zwu591,1695294373,1,"int TimesTwo(int n)
+{
+	n = n*2;
+	return n;
+}",1
+zyah987,1695369225,1,"#include <stdio.h>
+
+int TimesTwo(int a) 
+{
+    return a * 2;
+}
+
+",1
+zyao804,1695016479,1,"#include <stdio.h>
+
+int TimesTwo(int x)
+{
+    return x*2;
+}",1
+zyu100,1695091897,1,"int TimesTwo(int n)
+{
+    int result;
+    result=2*n;
+    return result;
+}",1
+zzho965,1695522185,1,"int TimesTwo(int n) 
+{
+    int result = n * 2;
+    return result;
+    
+}
+",1
+zzol692,1695381135,1,"// Author: Zara Zoll
+// this function will multiply the initial number by two
+int PrintTimesTwo(int initial) { 
+    int final = initial * 2;
+    return final;
+}",0
+zzol692,1695381278,2,"// Author: Zara Zoll
+// this function will multiply the initial number by two
+int TimesTwo(int initial) { 
+    int final = initial * 2;
+    return final;
+}",1

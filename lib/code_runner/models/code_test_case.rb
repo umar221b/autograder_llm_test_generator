@@ -24,6 +24,10 @@ module CodeRunner
       template.gsub(regex, sub_hash)
     end
 
+    def test
+      @code
+    end
+
     def to_s
       "Code:\n#{@code}\nOutput:\n#{@output}"
     end

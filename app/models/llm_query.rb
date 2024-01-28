@@ -18,6 +18,8 @@ class LlmQuery < ApplicationRecord
 
   has_many :llm_query_messages, inverse_of: :llm_query, dependent: :destroy
 
+  before_save :update_reference_solution_digest, if: :will_save_change_to_reference_solution?
+
   def is_detailed_problem_statement?
     query_type == QUERY_TYPE_DETAILED_PROBLEM_STATEMENT
   end
@@ -51,6 +53,10 @@ class LlmQuery < ApplicationRecord
   end
 
   private
+
+  def update_reference_solution_digest
+    self.reference_solution_digest = Digest::MD5.hexdigest(reference_solution)
+  end
 
   def response_fields_exist
     return if finish_reason.present? && response.present? && output_tokens.present?

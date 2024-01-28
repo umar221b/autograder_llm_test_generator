@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 311759  -->
+  <question type="coderunner">
+    <name>
+      <text>Text histogram</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p><span lang="EN-US"></span></p><h5><em>[This
+ is a challenge exercise - good practice if you would like a slightly more 
+difficult exercise to try, however it is only worth 0.5 marks out of 
+the 10 marks for this lab; that is the equivalent of 0.1% contribution 
+towards your final grade... good luck!]</em></h5><p><br></p>Let’s say that we have the following 6
+data values representing frequencies of some measurement:<p></p>
+
+<p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3,
+1, 2, 0, 4, 1</span></p>
+
+<p><span lang="EN-US">&nbsp;and we now would like to plot these on a
+histogram.&nbsp; We could do this easily using
+many graphical plotting programs such as Excel:</span></p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp; <img src="@@PLUGINFILE@@/image.png" alt="" role="presentation" class="img-fluid"><br></span></p><p><span lang="EN-US"></span></p><p><span lang="EN-US">We could also represent the same data
+using a textual representation, where the bars are represented by “X”
+characters:</span></p>
+
+<pre><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; X&nbsp; <br></span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; X&nbsp;&nbsp; X <br></span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; X X X<br></span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; XXX XX</span></pre><p></p><p><span lang="EN-US">And to make this look a little nicer, we could
+surround the bars with a border of ‘</span><span lang="EN-US">*</span><span lang="EN-US">’ characters:</span></p>
+
+<p><span lang="EN-US"></span></p><pre><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; ********<br></span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp; X * <br></span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; *X&nbsp;&nbsp; X *<br></span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; *X X X *<br></span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; *XXX XX*<br></span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; ********</span></pre><p><span lang="EN-US">Define a function
+called <b>Histogram()</b> that takes an array
+of integers representing the data to be plotted, and generates a string (representing
+the histogram) in precisely the format described above. &nbsp;Please take note of the following:</span></p><p><span lang="EN-US"></span></p><ul><li><span lang="EN-US">each line of text in the string ends with
+a new line (‘\n’) <i>except</i> for the very
+last line</span></li><li>
+
+<span lang="EN-US">there must be <i>no extra space characters</i> anywhere at the beginning or end of a
+line</span></li></ul><p><span lang="EN-US"></span></p><p><span lang="EN-US">The <b>Histogram()</b>
+function should take three input values.&nbsp;
+The second and third input values represent the data to be plotted.&nbsp; This is stored as an array of integers, and
+the number of elements in the array.&nbsp; The
+first input to the function is the string into which you should store the
+resulting histogram.&nbsp; </span></p><br><p></p><br><p></p><p></p><p><span lang="EN-US"><br></span></p><p><span lang="EN-US"><br></span></p><br>]]></text>
+<file name="image.png" path="/" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAARYAAADCCAYAAACMle3CAAAdt0lEQVR4Xu1dB3BUVdt+N5tNDyWEFkREQVR6BxEQP+l8+ikBQcAG4UPHNoOOo47lVxRpOoplLOM4MjiIyscgEEBFwI8efn5A0SiQQhCVIiWbZFN2//MeshjD7t57Dje57O5zM5nN5p763PM+9y2nOPLy8nwJCQmECwgAASBgBQKVlZXkOHr0qK9FixZWlIcygAAQAAIkOAXEgnEABICAtQj89ttvIBZrIUVpQAAIgFgwBoAAELAcARCL5ZCiQCAABEAsGANAAAhYjgCIxXJIUSAQAAIglggcA/xQGzVqROE4N6m4uJjEvCq67rrryOl0RuDTiY4ugVguwee8Zs0aWr9+PT3++OPUtGlT2cKKigpasGAB8Xyje+65J2irvV4vffLJJzRgwABq27ZtnfWusLCQysvLqV27dkp17Nmzhy6//HJq3LhxwHxMKm+99RbNmjUrIDHu27ePMjIyqEmTJkr1InH9IgBiqV+8TdX20Ucf0YoVK2jixIk0btw4mWfnzp30zjvvUJcuXSSxeDweat68ubx3+PBh+XdcXBz5fD4qKCigli1bUllZmfw9efIkJSYmUuvWrSk3N1cK7JVXXinvnTp1SpbFaTp06EBJSUmyzIMHD9Kff/4pyYmFmDWJkpISOn36NDkcDlq3bp28P3nyZGrTpo1sw++//y7r4LacOXNGlstpmOyuueYaef+ll16ivn370rBhw86TJtfH6ZisuJ61a9fS008/Ldtx4MABmb9jx4509uxZevHFF2VZt956K6Wnp9PPP/8s21Wz7aZARqI6RQDEUqfw6hX+4YcfSoHnadGPPPIIxcfHS1Jh7YUFtmfPnpJ4nnnmGTpy5Ai99957UrtJSUmRQjhnzhy666676Pvvv6dVq1bR8OHDiTUFl8tFV199tfz7jjvukFrDCy+8QP369ZNmR1FRET366KOUnZ0tzREW4M2bN9N9990n28NtGDJkCF177bW0bds2On78uCQ+bt93330nCYU/H374YVnWBx98QKNGjaIffviBevToQe3bt5faCOcfOnQotWrVSgLEhPP+++9Tt27daP/+/XTixAl6+eWXafXq1RQbG0s8SPkaM2YMvfrqq7IcJiY/+XGf8/PzJVYwn/TGnNW5QCxWI2pBeUwUrO7z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</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_function</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>1</allornothing>
+    <penaltyregime>0, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>18</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[int MaxArrayValue(int *values, int numValues)
+{
+	int i, max = values[0];
+	for(i = 1; i < numValues; i++){
+		if(values[i] > max){
+			max = values[i];
+		}
+	}
+	return max;
+}
+
+void Histogram(char *result, int *values, int numValues)
+{
+	int maxValue = MaxArrayValue(values, numValues);
+	int i, j;
+	result[0] = 0; //reset the results array
+	for(i = 0; i < numValues + 2; i++){
+		strcat(result, "*");
+	}
+	strcat(result, "\n");
+	for(i = maxValue; i > 0; i--){
+		strcat(result, "*");
+		for(j = 0; j < numValues; j++){
+			if(values[j] >= i){
+				strcat(result, "X");
+			} else {
+				strcat(result, " ");
+			}
+		}
+		strcat(result, "*\n");
+	}
+	for(i = 0; i < numValues + 2; i++){
+		strcat(result, "*");
+	}
+	strcat(result, "\0");
+}
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald>{}</templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values1[10] = {1, 0, 3, 1, 2, 4, 5, 6, 2, 2};
+int values2[3] = {1, 0, 1};
+char formatted[1000];
+char example[1000] = "*****\n*X X*\n*****";
+
+Histogram(formatted, values1, 10);
+printf("%s\n\n", formatted);
+
+Histogram(formatted, values2, 3);
+printf("%s\n", formatted);
+if (strcmp(example, formatted) == 0) {
+    printf("This matches EXACTLY and is correct");
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>************
+*       X  *
+*      XX  *
+*     XXX  *
+*  X  XXX  *
+*  X XXXXXX*
+*X XXXXXXXX*
+************
+
+*****
+*X X*
+*****
+This matches EXACTLY and is correct
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {1, 2, 3, 4, 5};
+Histogram(result, values, 5);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>*******
+*    X*
+*   XX*
+*  XXX*
+* XXXX*
+*XXXXX*
+*******</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {5};
+Histogram(result, values, 1);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>***
+*X*
+*X*
+*X*
+*X*
+*X*
+***</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {2, 1};
+Histogram(result, values, 2);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>****
+*X *
+*XX*
+****
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {7, 0, 7, 0, 7, 0, 7, 0, 7, 0, 7};
+Histogram(result, values, 11);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>*************
+*X X X X X X*
+*X X X X X X*
+*X X X X X X*
+*X X X X X X*
+*X X X X X X*
+*X X X X X X*
+*X X X X X X*
+*************</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {1, 2, 4, 8, 16, 32, 32, 32, 32, 32, 32, 30, 25, 20, 15, 10, 5, 5, 5, 5};
+Histogram(result, values, 20);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>**********************
+*     XXXXXX         *
+*     XXXXXX         *
+*     XXXXXXX        *
+*     XXXXXXX        *
+*     XXXXXXX        *
+*     XXXXXXX        *
+*     XXXXXXX        *
+*     XXXXXXXX       *
+*     XXXXXXXX       *
+*     XXXXXXXX       *
+*     XXXXXXXX       *
+*     XXXXXXXX       *
+*     XXXXXXXXX      *
+*     XXXXXXXXX      *
+*     XXXXXXXXX      *
+*     XXXXXXXXX      *
+*    XXXXXXXXXX      *
+*    XXXXXXXXXXX     *
+*    XXXXXXXXXXX     *
+*    XXXXXXXXXXX     *
+*    XXXXXXXXXXX     *
+*    XXXXXXXXXXX     *
+*    XXXXXXXXXXXX    *
+*    XXXXXXXXXXXX    *
+*   XXXXXXXXXXXXX    *
+*   XXXXXXXXXXXXX    *
+*   XXXXXXXXXXXXX    *
+*   XXXXXXXXXXXXXXXXX*
+*  XXXXXXXXXXXXXXXXXX*
+*  XXXXXXXXXXXXXXXXXX*
+* XXXXXXXXXXXXXXXXXXX*
+*XXXXXXXXXXXXXXXXXXXX*
+**********************</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {1, 2, 3, 2, 3, 4, 3, 4, 5, 4, 5, 6, 5, 6, 7, 6, 7, 8, 7, 8};
+Histogram(result, values, 20);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>**********************
+*                 X X*
+*              X XXXX*
+*           X XXXXXXX*
+*        X XXXXXXXXXX*
+*     X XXXXXXXXXXXXX*
+*  X XXXXXXXXXXXXXXXX*
+* XXXXXXXXXXXXXXXXXXX*
+*XXXXXXXXXXXXXXXXXXXX*
+**********************</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {1, 2, 3, 2, 1, 2, 3, 2, 1, 2, 3, 2, 1, 2, 3, 2, 1, 2, 3, 2};
+Histogram(result, values, 20);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>**********************
+*  X   X   X   X   X *
+* XXX XXX XXX XXX XXX*
+*XXXXXXXXXXXXXXXXXXXX*
+**********************</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {0, 1, 3, 1, 0};
+Histogram(result, values, 5);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>*******
+*  X  *
+*  X  *
+* XXX *
+*******</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {1};
+Histogram(result, values, 1);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>***
+*X*
+***</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {1, 1, 1, 1, 1, 1, 1, 1};
+Histogram(result, values, 8);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>**********
+*XXXXXXXX*
+**********</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {4, 4, 4, 4, 4};
+Histogram(result, values, 5);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>*******
+*XXXXX*
+*XXXXX*
+*XXXXX*
+*XXXXX*
+*******</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {0, 4, 4, 9, 0};
+Histogram(result, values, 5);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>*******
+*   X *
+*   X *
+*   X *
+*   X *
+*   X *
+* XXX *
+* XXX *
+* XXX *
+* XXX *
+*******</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 1};
+Histogram(result, values, 10);
+
+printf("%s", result);
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>************
+*         X*
+************</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {2, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+Histogram(result, values, 10);
+
+printf("%s", result);
+
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>************
+*X         *
+*X         *
+************
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {6, 3, 2, 4, 8, 7, 1, 9};
+Histogram(result, values, 8);
+
+printf("%s", result);
+
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>**********
+*       X*
+*    X  X*
+*    XX X*
+*X   XX X*
+*X   XX X*
+*X  XXX X*
+*XX XXX X*
+*XXXXXX X*
+*XXXXXXXX*
+**********</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {8, 7, 6, 5, 4, 3, 2, 1};
+Histogram(result, values, 8);
+
+printf("%s", result);
+
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>**********
+*X       *
+*XX      *
+*XXX     *
+*XXXX    *
+*XXXXX   *
+*XXXXXX  *
+*XXXXXXX *
+*XXXXXXXX*
+**********</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char result[1000];
+
+int values[100] = {1, 2, 1, 1, 1, 1, 1, 5, 1, 1, 1, 1, 1, 2, 1};
+Histogram(result, values, 15);
+
+printf("%s", result);
+
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>*****************
+*       X       *
+*       X       *
+*       X       *
+* X     X     X *
+*XXXXXXXXXXXXXXX*
+*****************</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

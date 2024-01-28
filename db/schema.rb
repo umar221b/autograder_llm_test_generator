@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_13_201957) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_27_174608) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -41,5 +41,65 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_13_201957) do
     t.index ["llm_query_id"], name: "index_llm_query_messages_on_llm_query_id"
   end
 
+  create_table "solution_test_suite_grades", force: :cascade do |t|
+    t.bigint "test_suite_id", null: false
+    t.bigint "solution_id", null: false
+    t.float "grade", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["solution_id"], name: "index_solution_test_suite_grades_on_solution_id"
+    t.index ["test_suite_id", "solution_id"], name: "solution_test_suite_index"
+    t.index ["test_suite_id"], name: "index_solution_test_suite_grades_on_test_suite_id"
+  end
+
+  create_table "solutions", force: :cascade do |t|
+    t.bigint "test_problem_id", null: false
+    t.string "student_unique_reference", null: false
+    t.integer "try", null: false
+    t.text "code", null: false
+    t.text "code_digest", null: false
+    t.datetime "submission_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["code_digest"], name: "index_solutions_on_code_digest"
+    t.index ["test_problem_id", "student_unique_reference", "try"], name: "unique_problem_solution_index", unique: true
+    t.index ["test_problem_id"], name: "index_solutions_on_test_problem_id"
+  end
+
+  create_table "test_cases", force: :cascade do |t|
+    t.bigint "test_suite_id", null: false
+    t.text "test", null: false
+    t.text "expected_output", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["test_suite_id"], name: "index_test_cases_on_test_suite_id"
+  end
+
+  create_table "test_problems", force: :cascade do |t|
+    t.string "title", default: "Untitled Problem", null: false
+    t.text "problem_statement", null: false
+    t.string "programming_language", null: false
+    t.text "reference_solution", null: false
+    t.string "reference_solution_digest", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["reference_solution_digest", "title"], name: "index_test_problems_on_reference_solution_digest_and_title", unique: true
+    t.index ["reference_solution_digest"], name: "index_test_problems_on_reference_solution_digest"
+  end
+
+  create_table "test_suites", force: :cascade do |t|
+    t.bigint "test_problem_id", null: false
+    t.string "generated_by", null: false
+    t.string "test_type", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["test_problem_id"], name: "index_test_suites_on_test_problem_id"
+  end
+
   add_foreign_key "llm_query_messages", "llm_queries"
+  add_foreign_key "solution_test_suite_grades", "solutions"
+  add_foreign_key "solution_test_suite_grades", "test_suites"
+  add_foreign_key "solutions", "test_problems"
+  add_foreign_key "test_cases", "test_suites"
+  add_foreign_key "test_suites", "test_problems"
 end

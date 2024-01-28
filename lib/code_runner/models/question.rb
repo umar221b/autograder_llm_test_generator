@@ -25,6 +25,14 @@ module CodeRunner
       @test_cases = prepare_test_cases(test_cases)
     end
 
+    def programming_language
+      case @problem_type
+      when Constants::TYPE_C_PROGRAM
+      when Constants::TYPE_C_FUNCTION
+        Constants::PROGRAMMING_LANGUAGE_C
+      end
+    end
+
   private
 
     def parse_test_cases_from_xml(xml_test_cases)

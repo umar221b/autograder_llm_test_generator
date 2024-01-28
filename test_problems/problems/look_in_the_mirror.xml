@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 308212  -->
+  <question type="coderunner">
+    <name>
+      <text>Look in the mirror</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Write
+a function called <b>ReverseArray</b>() that is passed two inputs: an array of
+integers, and the number of elements in the array. The function should modify
+the array so that the elements are arranged in the reverse order to their
+original order. The function prototype declaration will look like the
+following:</p>
+
+<pre>void ReverseArray(int *values, int length)
+</pre><p>For example, if the array {1, 2, 3, 4, 5} is provided
+as input to the function, when the function ends, the order of the elements
+should be {5, 4, 3, 2, 1}.<br></p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_function</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>1</allornothing>
+    <penaltyregime>0, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>18</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[void ReverseArray(int *values, int length) { 
+    int temp, i; 
+    for (i = 0; i < length/2; i++) { 
+        temp = values[i]; 
+        values[i] = values[length - 1- i]; 
+        values[length - 1 - i] = temp; 
+    } 
+}
+
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[7] = {1, 2, 3, 4, 5, 6, 7}; 
+
+ReverseArray(values, 7); 
+
+for (int i = 0; i < 7; i++) { 
+   printf("%d ", values[i]); 
+}]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>7 6 5 4 3 2 1 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[7] = {1, 2, 1, 2, 1, 2, 1}; 
+ReverseArray(values, 7); 
+for (int i = 0; i < 7; i++) { 
+   printf("%d ", values[i]); 
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>1 2 1 2 1 2 1 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[6] = {1, 2, 1, 2, 1, 2}; 
+ReverseArray(values, 6); 
+for (int i = 0; i < 6; i++) { 
+   printf("%d ", values[i]); 
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>2 1 2 1 2 1 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[1] = {9999}; 
+ReverseArray(values, 1); 
+for (int i = 0; i < 1; i++) { 
+   printf("%d ", values[i]); 
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>9999 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[5] = {10, 20, 30, 40, 50};
+ReverseArray(values, 5); 
+for (int i = 0; i < 5; i++) { 
+   printf("%d ", values[i]); 
+}]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>50 40 30 20 10 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[5] = {10, 20, 20, 20, 50}; 
+ReverseArray(values, 5); 
+for (int i = 0; i < 5; i++) { 
+   printf("%d ", values[i]); 
+}]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>50 20 20 20 10 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[4] = {10, 20, 20, 50}; 
+ReverseArray(values, 4); 
+for (int i = 0; i < 4; i++) { 
+   printf("%d ", values[i]); 
+}]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>50 20 20 10 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[4] = {10, 20, 30, 40}; 
+ReverseArray(values, 4); 
+for (int i = 0; i < 4; i++) { 
+   printf("%d ", values[i]); 
+}]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>40 30 20 10 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[12] = {1,2,3,4,5,6,7,8,9,10,11,12}; 
+ReverseArray(values, 12); 
+for (int i = 0; i < 12; i++) { 
+   printf("%d ", values[i]); 
+}]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>12 11 10 9 8 7 6 5 4 3 2 1 
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="1" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int values[13] = {1,2,3,4,5,6,7,8,9,10,11,12,13}; 
+ReverseArray(values, 13); 
+for (int i = 0; i < 13; i++) { 
+   printf("%d ", values[i]); 
+}
+]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>13 12 11 10 9 8 7 6 5 4 3 2 1 </text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>
