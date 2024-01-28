@@ -27,8 +27,7 @@ module CodeRunner
 
     def programming_language
       case @problem_type
-      when Constants::TYPE_C_PROGRAM
-      when Constants::TYPE_C_FUNCTION
+      when Constants::TYPE_C_PROGRAM, Constants::TYPE_C_FUNCTION
         Constants::PROGRAMMING_LANGUAGE_C
       end
     end

@@ -1,3 +1,5 @@
+require 'hashing'
+
 class TestProblem < ApplicationRecord
   include ProgrammingLanguages
 
@@ -8,11 +10,11 @@ class TestProblem < ApplicationRecord
   has_many :test_suites, inverse_of: :test_problem
   has_many :solutions, inverse_of: :test_problem
 
-  before_save :update_reference_solution_digest, if: :will_save_change_to_reference_solution?
+  before_validation :update_reference_solution_digest, if: :will_save_change_to_reference_solution?
 
 private
 
   def update_reference_solution_digest
-    self.reference_solution_digest = Digest::MD5.hexdigest(reference_solution)
+    self.reference_solution_digest = Hashing.hash_code(reference_solution)
   end
 end

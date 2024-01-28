@@ -68,7 +68,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_27_174608) do
 
   create_table "test_cases", force: :cascade do |t|
     t.bigint "test_suite_id", null: false
-    t.text "test", null: false
+    t.text "test"
     t.text "expected_output", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

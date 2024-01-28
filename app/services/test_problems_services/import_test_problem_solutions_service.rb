@@ -9,7 +9,7 @@ module TestProblemsServices
     end
 
     def perform
-      full_file_path = "test_problems/solutions/#{@problem_file}"
+      full_file_path = "test_problems/solutions/#{@problem_file}.csv"
       unless File.file?(full_file_path)
         errors.add(:base, "File #{full_file_path} does not exist.")
         return false
