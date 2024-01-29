@@ -34,7 +34,7 @@ matching_outputs: |
   {{6}}
   ```
 
-unit_tests: |
+python3_unit_tests: |
   Scenario Section:
 
   {{1}}

@@ -3,6 +3,7 @@ require 'code_runner/parser'
 require 'code_runner/models/parser_test_case'
 require 'code_runner/models/stdin_test_case'
 require 'code_runner/models/code_test_case'
+require 'html_to_plain_text'
 
 module CodeRunner
   class Question
@@ -14,7 +15,7 @@ module CodeRunner
 
     def initialize(xml_question, combine_cases)
       @problem_title = Parser.extract_question_title(xml_question)&.inner_html
-      @problem_statement = Parser.extract_question_statement(xml_question)&.inner_html
+      @problem_statement = HtmlToPlainText.plain_text(Parser.extract_question_statement(xml_question)&.inner_html)
       @problem_type = Parser.extract_question_type(xml_question)&.inner_html
       @reference_solution = Parser.extract_question_answer(xml_question)&.inner_html
       test_cases = Parser.extract_question_test_cases(xml_question)
@@ -71,6 +72,7 @@ module CodeRunner
       end
       [ParserTestCase.new(input, output, code)]
     end
+
     def prepare_test_cases(test_cases)
       cases = []
       test_cases.each do |test_case|

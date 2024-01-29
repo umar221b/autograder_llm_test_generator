@@ -1,13 +1,13 @@
 import { Controller } from "@hotwired/stimulus"
 import axios from "lib/axios";
 
-const SUBMIT_ENDPOINT = '/llm_queries';
+const SUBMIT_ENDPOINT = '/LlmChatQueries';
 
 function setInputs(target, enable) {
     target.problem_statement.disabled = enable;
     target.reference_solution.disabled = enable;
     target.programming_language.disabled = enable;
-    target.query_type.disabled = enable;
+    target.test_type.disabled = enable;
 }
 
 export default class extends Controller {
@@ -27,7 +27,7 @@ export default class extends Controller {
             problem_statement: event.target.problem_statement.value,
             reference_solution: event.target.reference_solution.value,
             programming_language: event.target.programming_language.value,
-            query_type: event.target.query_type.value
+            test_type: event.target.test_type.value
         }
 
         axios.post(SUBMIT_ENDPOINT, { llm_query: params }).then((resp) => {
@@ -39,7 +39,7 @@ export default class extends Controller {
             const responseTextarea = document.getElementById("response-area");
             responseTextarea.innerHTML = resp.data.data.message;
 
-            if (event.target.query_type.value === 'unit_tests') {
+            if (event.target.test_type.value === 'unit_tests') {
                 const responseCodeTextarea = document.getElementById("response-code-area");
                 responseCodeTextarea.innerHTML = resp.data.data.code;
             }

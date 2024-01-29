@@ -1,6 +1,6 @@
-class CreateLlmQueries < ActiveRecord::Migration[7.0]
+class CreateLlmChatQueries < ActiveRecord::Migration[7.0]
   def change
-    create_table :llm_queries do |t|
+    create_table :llm_chat_queries do |t|
       t.text :problem_statement, null: false
       t.text :reference_solution, null: false
       t.string :reference_solution_digest, null: false, index: true

@@ -1,4 +1,4 @@
-module TestProblemsServices
+module ProblemsServices
   class ImportAllTestProblemsService < ApplicationService
     def perform
       messages = {}

@@ -1,11 +1,11 @@
 require 'csv'
 
-module TestProblemsServices
+module ProblemsServices
   class ImportTestProblemSolutionsService < ApplicationService
     def initialize(problem_file, test_suite)
       @problem_file = problem_file
       @test_suite = test_suite
-      @test_problem = test_suite.test_problem
+      @problem = test_suite.problem
     end
 
     def perform
@@ -17,7 +17,7 @@ module TestProblemsServices
 
       CSV.foreach(full_file_path, headers: true) do |row|
         solution = Solution.new(
-          test_problem_id: @test_problem.id, student_unique_reference: row['upi'],
+          problem_id: @problem.id, student_unique_reference: row['upi'],
           try: row['try'], code: row['answer'], submission_time: Time.at(row['time'].to_i)
         )
 

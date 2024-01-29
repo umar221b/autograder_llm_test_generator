@@ -1,7 +1,7 @@
 require 'json'
 
-module LlmQueryServices
-  class GenerateUnitTestsService < QueryService
+module LlmServices
+  class GeneratePythonUnitTestsService < ChatQueryService
     def initialize(problem_statement, detailed_problem_statement, reference_solution, programming_language)
       super
       @problem_statement = problem_statement
@@ -12,10 +12,10 @@ module LlmQueryServices
     end
 
     def perform
-      new_query_log(LlmQuery::QUERY_TYPE_UNIT_TESTS)
+      new_query_log(LlmChatQuery::QUERY_TYPE_PYTHON3_UNIT_TESTS)
 
-      system_query = get_system_template(LlmQuery::QUERY_TYPE_UNIT_TESTS)
-      user_query = get_user_template(LlmQuery::QUERY_TYPE_UNIT_TESTS,
+      system_query = get_system_template(LlmChatQuery::QUERY_TYPE_PYTHON3_UNIT_TESTS)
+      user_query = get_user_template(LlmChatQuery::QUERY_TYPE_PYTHON3_UNIT_TESTS,
                                      @detailed_problem_statement["scenario"],
                                      @detailed_problem_statement["inputs"],
                                      @detailed_problem_statement["outputs"],
@@ -35,14 +35,14 @@ module LlmQueryServices
       add_query_request_fields(input_token_count, messages)
       return unless save_query_log
 
-      # response = @client.chat(
-      #   parameters: {
-      #     model: Rails.application.credentials.dig(:openai, :model),
-      #     messages: messages,
-      #     temperature: Rails.application.credentials.dig(:openai, :temperature),
-      #   })
+      response = @client.chat(
+        parameters: {
+          model: Rails.application.credentials.dig(:openai, :model),
+          messages: messages,
+          temperature: Rails.application.credentials.dig(:openai, :temperature),
+        })
 
-      response = fake_response # TODO: Remove
+      # response = fake_response # TODO: Remove
 
       finish_reason = response.dig("choices", 0, "finish_reason")
       content = response.dig("choices", 0, "message", "content")
@@ -51,9 +51,9 @@ module LlmQueryServices
       add_query_response_fields(finish_reason, content, output_token_count)
       return unless save_query_log
 
-      code = @llm_query.code&.to_s
+      code = @llm_chat_query.code&.to_s
 
-      @data = { message: content, code: code, llm_query: @llm_query }
+      @data = { message: content, code: code, llm_chat_query: @llm_chat_query }
     end
 
     private

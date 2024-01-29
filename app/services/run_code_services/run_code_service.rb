@@ -1,15 +1,15 @@
 module RunCodeServices
   class RunCodeService < ApplicationService
     def initialize(llm_query)
-      @llm_query = llm_query
+      @llm_chat_query = llm_query
     end
 
     def perform
-      case @llm_query.query_type
-      when LlmQuery::QUERY_TYPE_MATCHING_OUTPUTS
-        service = RunMatchingOutputsService.new(@llm_query)
-      when LlmQuery::QUERY_TYPE_UNIT_TESTS
-        service = RunUnitTestsService.new(@llm_query)
+      case @llm_chat_query.test_type
+      when LlmChatQuery::QUERY_TYPE_MATCHING_OUTPUTS
+        service = RunMatchingOutputsService.new(@llm_chat_query)
+      when LlmChatQuery::QUERY_TYPE_PYTHON3_UNIT_TESTS
+        service = RunPythonUnitTestsService.new(@llm_chat_query)
       else
         errors.add(:base, 'Invalid query type')
         return false

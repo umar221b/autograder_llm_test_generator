@@ -1,7 +1,7 @@
 module RunCodeServices
   class RunUnitTestsService < ApplicationService
     def initialize(llm_query)
-      @llm_query = llm_query
+      @llm_chat_query = llm_query
     end
 
     def perform

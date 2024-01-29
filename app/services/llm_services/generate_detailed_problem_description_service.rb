@@ -1,51 +1,51 @@
 require 'json'
 
-module LlmQueryServices
-  class GenerateDetailedProblemDescriptionService < QueryService
-    def initialize(problem_statement, reference_solution, programming_language)
+module LlmServices
+  class GenerateDetailedProblemDescriptionService < ChatQueryService
+    def initialize(problem)
       super
-      @problem_statement = problem_statement
-      @reference_solution = reference_solution
-      @programming_language = programming_language
+      @problem = problem
       @client = OpenAI::Client.new
     end
 
     def perform
-      new_query_log(LlmQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT)
+      new_query_log(LlmChatQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT)
 
-      system_query = get_system_template(LlmQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT)
-      user_query = get_user_template(LlmQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT, @problem_statement, @reference_solution)
-
-      input_token_count = OpenAI.rough_token_count(system_query)
-      input_token_count += OpenAI.rough_token_count(user_query)
+      system_query = get_system_template(LlmChatQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT)
+      user_query = get_user_template(LlmChatQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT, @problem.statement, @problem.reference_solution)
 
       messages = [
         { role: LlmQueryMessage::ROLE_SYSTEM, content: system_query },
         { role: LlmQueryMessage::ROLE_USER, content: user_query }
       ]
 
-      add_query_request_fields(input_token_count, messages)
+      add_messages(messages)
+
       return unless save_query_log
 
-      # response = @client.chat(
-      #   parameters: {
-      #     model: Rails.application.credentials.dig(:openai, :model),
-      #     response_format: { type: "json_object" },
-      #     messages: messages,
-      #     temperature: Rails.application.credentials.dig(:openai, :temperature),
-      #   }
-      # )
 
-      response = fake_response_matching_outputs # TODO: Remove
+      response = @client.chat(
+        parameters: {
+          model: Rails.application.credentials.dig(:openai, :model),
+          response_format: { type: "json_object" },
+          messages: messages,
+          temperature: Rails.application.credentials.dig(:openai, :temperature),
+        }
+      )
+
+      # response = fake_response_matching_outputs # TODO: Remove
 
       finish_reason = response.dig("choices", 0, "finish_reason")
       content = response.dig("choices", 0, "message", "content")
-      output_token_count = content ? OpenAI.rough_token_count(content) : 0
 
-      add_query_response_fields(finish_reason, content, output_token_count)
+      input_token_count = response.dig("usage", "prompt_tokens")
+      output_token_count = response.dig("usage", "completion_tokens")
+
+      add_query_response_fields(finish_reason, content, input_token_count, output_token_count)
+
       save_query_log
 
-      @data = { llm_query: @llm_query }
+      @data = { llm_chat_query: @llm_chat_query }
     end
 
     private

@@ -1,14 +1,14 @@
 require 'json'
 require 'hashing'
 
-class LlmQuery < ApplicationRecord
+class LlmChatQuery < ApplicationRecord
   include ProgrammingLanguages
 
   QUERY_TYPES = [
     QUERY_TYPE_DETAILED_PROBLEM_STATEMENT = 'detailed_problem_statement'.freeze,
-    QUERY_TYPE_MATCHING_OUTPUTS = 'matching_outputs'.freeze,
-    QUERY_TYPE_UNIT_TESTS = 'unit_tests'.freeze
   ]
+
+  before_validation :update_reference_solution_digest, if: :will_save_change_to_reference_solution?
 
   validates :problem_statement, :reference_solution, :reference_solution_digest, :ai_model, :temperature, :input_tokens, :query_type, presence: true
   validates :completed_response, inclusion: { in: [true, false] }
@@ -17,24 +17,16 @@ class LlmQuery < ApplicationRecord
 
   validate :response_fields_exist, if: :completed_response
 
-  has_many :llm_query_messages, inverse_of: :llm_query, dependent: :destroy
+  belongs_to :problem, inverse_of: :llm_chat_queries
+  has_many :llm_chat_query_messages, inverse_of: :llm_chat_query, dependent: :destroy
 
-  before_validation :update_reference_solution_digest, if: :will_save_change_to_reference_solution?
 
   def is_detailed_problem_statement?
     query_type == QUERY_TYPE_DETAILED_PROBLEM_STATEMENT
   end
 
-  def is_matching_outputs?
-    query_type == QUERY_TYPE_MATCHING_OUTPUTS
-  end
-
-  def is_unit_tests?
-    query_type == QUERY_TYPE_UNIT_TESTS
-  end
-
   def query_json
-    return nil unless is_matching_outputs? || is_detailed_problem_statement?
+    return nil unless is_detailed_problem_statement?
 
     JSON.parse(response)
   end
@@ -46,12 +38,12 @@ class LlmQuery < ApplicationRecord
     JSON.pretty_generate(json)
   end
 
-  def code
-    return nil unless is_unit_tests?
-
-    code_regex = /`{3}([\w]*)\n([\S\s]+?)\n`{3}/
-    response.match(code_regex)
-  end
+  # def code
+  #   return nil unless is_unit_tests?
+  #
+  #   code_regex = /`{3}([\w]*)\n([\S\s]+?)\n`{3}/
+  #   response.match(code_regex)
+  # end
 
   private
 

@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_27_174608) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_29_150125) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "llm_queries", force: :cascade do |t|
+  create_table "llm_chat_queries", force: :cascade do |t|
     t.text "problem_statement", null: false
     t.text "reference_solution", null: false
     t.string "reference_solution_digest", null: false
@@ -29,16 +29,30 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_27_174608) do
     t.string "query_type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["reference_solution_digest"], name: "index_llm_queries_on_reference_solution_digest"
+    t.bigint "problem_id", null: false
+    t.index ["problem_id"], name: "index_llm_chat_queries_on_problem_id"
+    t.index ["reference_solution_digest"], name: "index_llm_chat_queries_on_reference_solution_digest"
   end
 
-  create_table "llm_query_messages", force: :cascade do |t|
+  create_table "llm_chat_query_messages", force: :cascade do |t|
     t.string "role", null: false
     t.text "content", null: false
-    t.bigint "llm_query_id", null: false
+    t.bigint "llm_chat_query_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["llm_query_id"], name: "index_llm_query_messages_on_llm_query_id"
+    t.index ["llm_chat_query_id"], name: "index_llm_chat_query_messages_on_llm_chat_query_id"
+  end
+
+  create_table "problems", force: :cascade do |t|
+    t.string "title", default: "Untitled Problem", null: false
+    t.text "statement", null: false
+    t.string "programming_language", null: false
+    t.string "test_type", null: false
+    t.text "reference_solution", null: false
+    t.string "reference_solution_digest", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["reference_solution_digest"], name: "index_problems_on_reference_solution_digest"
   end
 
   create_table "solution_test_suite_grades", force: :cascade do |t|
@@ -53,7 +67,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_27_174608) do
   end
 
   create_table "solutions", force: :cascade do |t|
-    t.bigint "test_problem_id", null: false
+    t.bigint "problem_id", null: false
     t.string "student_unique_reference", null: false
     t.integer "try", null: false
     t.text "code", null: false
@@ -62,8 +76,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_27_174608) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["code_digest"], name: "index_solutions_on_code_digest"
-    t.index ["test_problem_id", "student_unique_reference", "try"], name: "unique_problem_solution_index", unique: true
-    t.index ["test_problem_id"], name: "index_solutions_on_test_problem_id"
+    t.index ["problem_id", "student_unique_reference", "try"], name: "unique_problem_solution_index", unique: true
+    t.index ["problem_id"], name: "index_solutions_on_problem_id"
   end
 
   create_table "test_cases", force: :cascade do |t|
@@ -75,31 +89,19 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_27_174608) do
     t.index ["test_suite_id"], name: "index_test_cases_on_test_suite_id"
   end
 
-  create_table "test_problems", force: :cascade do |t|
-    t.string "title", default: "Untitled Problem", null: false
-    t.text "problem_statement", null: false
-    t.string "programming_language", null: false
-    t.text "reference_solution", null: false
-    t.string "reference_solution_digest", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["reference_solution_digest", "title"], name: "index_test_problems_on_reference_solution_digest_and_title", unique: true
-    t.index ["reference_solution_digest"], name: "index_test_problems_on_reference_solution_digest"
-  end
-
   create_table "test_suites", force: :cascade do |t|
-    t.bigint "test_problem_id", null: false
+    t.bigint "problem_id", null: false
     t.string "generated_by", null: false
-    t.string "test_type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["test_problem_id"], name: "index_test_suites_on_test_problem_id"
+    t.index ["problem_id"], name: "index_test_suites_on_problem_id"
   end
 
-  add_foreign_key "llm_query_messages", "llm_queries"
+  add_foreign_key "llm_chat_queries", "problems"
+  add_foreign_key "llm_chat_query_messages", "llm_chat_queries"
   add_foreign_key "solution_test_suite_grades", "solutions"
   add_foreign_key "solution_test_suite_grades", "test_suites"
-  add_foreign_key "solutions", "test_problems"
+  add_foreign_key "solutions", "problems"
   add_foreign_key "test_cases", "test_suites"
-  add_foreign_key "test_suites", "test_problems"
+  add_foreign_key "test_suites", "problems"
 end

@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "llm_queries#new"
-  resources :llm_queries, only: %i[index show new create]
+  resources :problems, only: %i[index show new create]
 
 end

@@ -1,0 +1,13 @@
+detailed_problem_statement: |
+  Here is a step-by-step guide that you should follow to answer me.
+
+  You are going to receive a programming problem description along with its optimal solution. You are required to respond with a detailed problem statement based on the provided description and solution. The detailed problem statement must only have the following 5 sections: The problem scenario, the problem inputs, the problem outputs, an example, and a limits section that contains any memory limits, time limits, or code complexity limits that are defined in the problem description or can be infered from the optimal solution. If you cannot generate an example, just fill the Example section with "None". If there are no limits defined in the problem description and you could not infer the limits from the optimal solution, just fill the section with "Not Available".
+  
+  After you provide the detailed problem statement, please reflect on it to make sure the sections in it correctly represent the problem. If there are any mistakes point them out.
+  
+  After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the detailed problem statement that you generated.
+  
+  Finally, use the following format to print the final improved detailed problem statement. If the feedback did not improve the detailed problem statement, print the detailed problem statement anyway.
+
+  Here is the format:
+  Print a native JSON object that only contains the following keys: "scenario", "inputs", "outputs", "example", "limits". The value of each key must be a string that corresponds to the appropriate value from the detailed problem statement. The JSON object must not have any comments in it.
