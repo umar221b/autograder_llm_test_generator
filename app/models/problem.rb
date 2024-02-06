@@ -14,6 +14,18 @@ class Problem < ApplicationRecord
   has_many :solutions, inverse_of: :problem, dependent: :destroy
   has_many :llm_chat_queries, inverse_of: :problem, dependent: :destroy
 
+  def test_type=(new_test_type)
+    new_value = new_test_type
+    case new_test_type
+    when 'c_program'
+      new_value = TEST_TYPE_MATCHING_OUTPUTS
+    when 'c_function'
+      new_value = TEST_TYPE_C_UNIT_TESTS
+    end
+
+    super(new_value)
+  end
+
 private
 
   def update_reference_solution_digest

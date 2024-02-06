@@ -1,0 +1,24 @@
+<div id="<%= dom_id problem %>">
+  <h2 class="mb-4"><%= problem.title %></h2>
+
+  <p><strong>Test type:</strong> <%= problem.test_type.humanize %></p>
+
+  <p><strong>Problem statement:</strong></p>
+  <pre><%= problem.statement %></pre>
+
+  <p><strong>Reference solution:</strong></p>
+  <pre><%= problem.reference_solution %></pre>
+
+  <p><strong>Reference solution digest:</strong> <%= problem.reference_solution_digest %></p>
+
+  <p><strong>Programming_language:</strong> <%= problem.programming_language %></p>
+
+  <% if problem.llm_chat_queries.present? %>
+    <div class="mt-5">
+      <h2 class="mb-4">LLM Chat Queries</h2>
+      <% problem.llm_chat_queries.each do |llm_chat_query| %>
+        <%= render 'llm_chat_queries/llm_chat_query_show', llm_chat_query: llm_chat_query %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

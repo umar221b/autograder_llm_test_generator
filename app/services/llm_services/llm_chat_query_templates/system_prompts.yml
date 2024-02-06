@@ -11,3 +11,42 @@ detailed_problem_statement: |
 
   Here is the format:
   Print a native JSON object that only contains the following keys: "scenario", "inputs", "outputs", "example", "limits". The value of each key must be a string that corresponds to the appropriate value from the detailed problem statement. The JSON object must not have any comments in it.
+
+matching_outputs: |
+  Here is a step-by-step guide that you should follow to answer me.
+  
+  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections. With each edge case description, generate a plain text example for that edge case.
+  
+  After you generate the edge cases, please reflect on them to make sure they cover all edge cases, and double check that the each plain text example actually conforms to its edge case description. If there are any mistakes point them out.
+  
+  After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the edge cases or their plain text examples.
+
+  Finally, provide me with Python3 code that generates a file called "test_cases.json" that contains native JSON output that includes all the improved edge cases in addition to another 100 completely random test cases, if possible. The input of the random test cases the code will generate must be within any limits defined in the Input Format Section in the problem description. The native JSON must start with an array at the root that contains the cases. Each case has only one key: \"input\" which is a string that contains all the input. The code should not include the output of the case in the JSON. Attempt to run the code to make sure it has no errors. If you find any errors, fix them and provide me with the final working code.
+
+python3_unit_tests: |
+  Here is a step-by-step guide that you should follow to answer me.
+  
+  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
+  
+  After you generate the edge case descriptions, please reflect on them to make sure they cover all edge cases. If there are any mistakes point them out.
+  
+  After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the edge cases.
+
+  Finally, provide python3 code that contains complete unit tests for the problem. The unit tests should be generated as follows:
+  
+  1. Import the unittest library.
+  2. Import the solution to be tested from a file called "solution".
+  3. Add the optimal solution to the file as a function called "reference_solution".
+  4. Create a class that contains unit tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
+  5. Each test must call the "reference_solution" function and assert that its result is equal to the tested solution.  For example, if the tested solution is called "calculate_result":
+  
+  ```
+  def test_empty_array(self):
+    to_test = calculate_result(10)
+    expected = reference_solution(10)
+    self.assertEqual(to_test, expected)
+  ```
+  
+  6. Make sure you write a separate function for each test.
+  7. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
+  8. Do not attempt to run the tests or change the provided optimal solution.

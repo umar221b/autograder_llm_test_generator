@@ -1,0 +1,13 @@
+<h1>Problems</h1>
+
+<%= link_to "New Problem", new_problem_path %>
+
+<div id="problems">
+  <% @problems.each do |problem| %>
+    <%= render 'problems/problem_index', problem: problem %>
+    <p>
+      <%= link_to "Show this Problem", problem %>
+      <hr>
+    </p>
+  <% end %>
+</div>

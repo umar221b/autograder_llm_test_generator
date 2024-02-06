@@ -1,0 +1,29 @@
+<div id="<%= dom_id llm_chat_query %>" class="mt-4">
+  <h2 class="mb-4">Query: <%= llm_chat_query.query_type.humanize %></h2>
+
+  <p><strong>AI model:</strong> <%= llm_chat_query.ai_model %></p>
+
+  <p><strong>Temperature:</strong> <%= llm_chat_query.temperature %></p>
+
+  <p><strong>Finish reason:</strong> <%= llm_chat_query.finish_reason %></p>
+
+  <p><strong>Completed response:</strong> <%= llm_chat_query.completed_response %></p>
+
+  <p><strong>Response:</strong></p>
+  <pre><%= query_response(llm_chat_query) %></pre>
+
+  <p><strong>Input tokens:</strong> <%= llm_chat_query.input_tokens %></p>
+
+  <p><strong>Output tokens:</strong> <%= llm_chat_query.output_tokens %></p>
+
+  <% if llm_chat_query.llm_query_messages.present? %>
+    <div class="mt-5">
+      <h2 class="mb-4">LLM Query Messages</h2>
+      <div class="accordion" id="llm_query_messages_<%= llm_chat_query.id %>">
+        <% llm_chat_query.llm_query_messages.each do |llm_query_message| %>
+          <%= render 'llm_query_messages/llm_query_message_show', llm_query_message: llm_query_message %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

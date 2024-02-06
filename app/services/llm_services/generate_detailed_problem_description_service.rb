@@ -33,6 +33,12 @@ module LlmServices
         }
       )
 
+      puts "==============="
+      puts response
+      puts "==============="
+      puts response.dig("choices", 0, "message", "content")
+      puts "==============="
+
       # response = fake_response_matching_outputs # TODO: Remove
 
       finish_reason = response.dig("choices", 0, "finish_reason")

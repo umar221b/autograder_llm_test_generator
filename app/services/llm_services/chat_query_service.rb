@@ -38,7 +38,7 @@ module LlmServices
       return true if @llm_chat_query.save
 
       errors.merge!(@llm_chat_query.errors)
-      @llm_chat_query.llm_chat_query_messages.each { |llm_chat_query_message| errors.merge!(llm_chat_query_message.errors) }
+      @llm_chat_query.llm_query_messages.each { |llm_query_message| errors.merge!(llm_query_message.errors) }
       false
     end
 

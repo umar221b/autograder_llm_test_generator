@@ -1,9 +1,10 @@
 import { Controller } from "@hotwired/stimulus"
 import axios from "lib/axios";
 
-const SUBMIT_ENDPOINT = '/LlmChatQueries';
+const SUBMIT_ENDPOINT = '/problems';
 
 function setInputs(target, enable) {
+    target.problem_title.disabled = enable;
     target.problem_statement.disabled = enable;
     target.reference_solution.disabled = enable;
     target.programming_language.disabled = enable;
@@ -24,25 +25,25 @@ export default class extends Controller {
         setInputs(event.target, true);
 
         let params = {
-            problem_statement: event.target.problem_statement.value,
+            title: event.target.problem_title.value,
+            statement: event.target.problem_statement.value,
             reference_solution: event.target.reference_solution.value,
             programming_language: event.target.programming_language.value,
             test_type: event.target.test_type.value
         }
 
-        axios.post(SUBMIT_ENDPOINT, { llm_query: params }).then((resp) => {
+        axios.post(SUBMIT_ENDPOINT, { problem: params }).then((resp) => {
             const responseDiv = document.getElementById("response-div");
 
-            const responseBadge = document.getElementById("response-badge");
-            responseBadge.innerHTML = resp.data.data.tokens.join(' + ');
+            let llm_chat_query = resp.data.data.llm_chat_query;
 
             const responseTextarea = document.getElementById("response-area");
-            responseTextarea.innerHTML = resp.data.data.message;
+            responseTextarea.innerHTML = llm_chat_query.response;
 
-            if (event.target.test_type.value === 'unit_tests') {
-                const responseCodeTextarea = document.getElementById("response-code-area");
-                responseCodeTextarea.innerHTML = resp.data.data.code;
-            }
+            // if (event.target.test_type.value === 'unit_tests') {
+            //     const responseCodeTextarea = document.getElementById("response-code-area");
+            //     responseCodeTextarea.innerHTML = resp.data.data.code;
+            // }
 
             responseDiv.classList.remove("d-none");
             event.target.submitButton.innerHTML = 'Generate'
@@ -57,15 +58,17 @@ export default class extends Controller {
         });
     }
     switchOutputType(event) {
+        return // TODO: Remove after fixing responses returned from backend
+
         const responseDiv = document.getElementById("response-div");
         const programmingLanguageSelect = document.getElementById("programming_language");
 
         if (event.target.value === 'matching_outputs') {
-            responseDiv.innerHTML = '<div class="col-12"> <h3>Response</h3> </div> <div class="col-12"> <h4 class="mt-4">Inputs <span id="response-badge" class="badge bg-success"></span></h4> <textarea disabled id="response-area" class="form-control" rows="16"></textarea> </div>'
+            responseDiv.innerHTML = '<div class="col-12"> <h3>Response</h3> </div> <div class="col-12"> <h4 class="mt-4">Inputs</h4> <textarea disabled id="response-area" class="form-control" rows="16"></textarea> </div>'
             programmingLanguageSelect.innerHTML = '<option value="c">C</option><option selected="selected" value="python3">Python 3</option>'
         }
         else if (event.target.value === 'unit_tests') {
-            responseDiv.innerHTML = '<div class="col-12"> <h3>Response</h3> </div> <div class="col-12 col-md-6"> <h4 class="mt-4">Full Response <span id="response-badge" class="badge bg-success"></span></h4> <textarea disabled id="response-area" class="form-control" rows="16"></textarea> </div> <div class="col-12 col-md-6"> <h4 class="mt-4">Extracted Code</h4> <textarea disabled id="response-code-area" class="form-control" rows="16"></textarea> </div>'
+            responseDiv.innerHTML = '<div class="col-12"> <h3>Response</h3> </div> <div class="col-12 col-md-6"> <h4 class="mt-4">Full Response</h4> <textarea disabled id="response-area" class="form-control" rows="16"></textarea> </div> <div class="col-12 col-md-6"> <h4 class="mt-4">Extracted Code</h4> <textarea disabled id="response-code-area" class="form-control" rows="16"></textarea> </div>'
             programmingLanguageSelect.innerHTML = '<option selected="selected" value="python3">Python 3</option>'
         }
     }

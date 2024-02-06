@@ -3,7 +3,7 @@ class ProblemsController < ApplicationController
 
   # GET /problems or /problems.json
   def index
-    @problem = Problem.all
+    @problems = Problem.includes(llm_chat_queries: :llm_query_messages)
   end
 
   # GET /problems/1 or /problems/1.json
@@ -16,55 +16,43 @@ class ProblemsController < ApplicationController
 
   # POST /problems or /problems.json
   def create
-    # fake_matching_outputs_create_response # TODO: Remove
-    # return
+    fake_matching_outputs_create_response # TODO: Remove
+    return
 
-    problem_description_service = LlmServices::GenerateDetailedProblemDescriptionService.new(
-      llm_query_params[:problem_statement],
-      llm_query_params[:reference_solution],
-      llm_query_params[:programming_language]
-    )
+    @problem = Problem.new(problem_params)
+
+    unless @problem.save
+      render json: { error: @problem.errors.full_messages.join(', and ') }, status: :bad_request
+      return
+    end
+
+    problem_description_service = LlmServices::GenerateDetailedProblemDescriptionService.new(@problem)
 
     test_type = LlmChatQuery::QUERY_TYPE_MATCHING_OUTPUTS
-    if llm_query_params[:test_type] == 'unit_tests'
-      if llm_query_params[:test_type] == LlmChatQuery::PROGRAMMING_LANGUAGE_C
+    if problem_params[:test_type] == 'unit_tests'
+      if problem_params[:test_type] == LlmChatQuery::PROGRAMMING_LANGUAGE_C
         test_type = LlmChatQuery::QUERY_TYPE_C_UNIT_TESTS
-      elsif llm_query_params[:test_type] == LlmChatQuery::PROGRAMMING_LANGUAGE_PYTHON3
+      elsif problem_params[:test_type] == LlmChatQuery::PROGRAMMING_LANGUAGE_PYTHON3
         test_type = LlmChatQuery::QUERY_TYPE_PYTHON3_UNIT_TESTS
       end
     end
 
     tokens = [0, 0]
     if problem_description_service.run
-      @llm_chat_query = problem_description_service.data[:llm_chat_query]
-      tokens[0] +=  @llm_chat_query.input_tokens
-      tokens[1] += @llm_chat_query.output_tokens
+      @llm_detailed_query = problem_description_service.data[:llm_chat_query]
+
       case test_type
-      when LlmChatQuery::QUERY_TYPE_MATCHING_OUTPUTS
-        service = LlmServices::GenerateMatchingOutputsService.new(
-          llm_query_params[:problem_statement],
-          @llm_chat_query.query_json,
-          llm_query_params[:reference_solution],
-          llm_query_params[:programming_language]
-        )
-      when LlmChatQuery::QUERY_TYPE_PYTHON3_UNIT_TESTS
-        service = LlmServices::GeneratePythonUnitTestsService.new(
-          llm_query_params[:problem_statement],
-          @llm_chat_query.query_json,
-          llm_query_params[:reference_solution],
-          llm_query_params[:programming_language]
-        )
+      when Problem::TEST_TYPE_MATCHING_OUTPUTS
+        service = LlmServices::GenerateMatchingOutputsService.new(@problem, @llm_detailed_query.query_json)
+      when Problem::TEST_TYPE_PYTHON3_UNIT_TESTS
+        service = LlmServices::GeneratePythonUnitTestsService.new(@problem, @llm_detailed_query.query_json)
       else
         service = nil
       end
 
       if service
         if service.run
-          @llm_chat_query = service.data[:llm_chat_query]
-          tokens[0] +=  @llm_chat_query.input_tokens
-          tokens[1] += @llm_chat_query.output_tokens
-
-          render json: { data: { **service.data, tokens: tokens } }
+          render json: { data: { **service.data } }
         else
           render json: { error: service.errors.full_messages.join(', and') }, status: :bad_request
         end
@@ -84,18 +72,18 @@ class ProblemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def problem_params
-      params.require(:problem).permit(:statement, :reference_solution, :programming_language, :test_type)
+      params.require(:problem).permit(:title, :statement, :reference_solution, :programming_language, :test_type)
     end
 
     def fake_matching_outputs_create_response
       @problem = Problem.find_by(test_type: Problem::TEST_TYPE_MATCHING_OUTPUTS)
 
-      render json: { data: { problem: @problem, llm_chat_queries: @problem.llm_chat_queries } }
+      render json: { data: { llm_chat_query: @problem.llm_chat_queries.where.not(query_type: LlmChatQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT).last } }
     end
 
     def fake_python3_unit_tests_create_response
       @problem = Problem.find_by(test_type: Problem::TEST_TYPE_PYTHON3_UNIT_TESTS)
 
-      render json: { data: { problem: @problem, llm_chat_queries: @problem.llm_chat_queries } }
+      render json: { data: { llm_chat_query: @problem.llm_chat_queries.where.not(query_type: LlmChatQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT).last } }
     end
 end

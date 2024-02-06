@@ -10,7 +10,7 @@ class CreateLlmChatQueries < ActiveRecord::Migration[7.0]
       t.string :finish_reason
       t.boolean :completed_response, null: false, default: false
       t.text :response
-      t.integer :input_tokens, null: false
+      t.integer :input_tokens
       t.integer :output_tokens
       t.string :query_type, null: false
 

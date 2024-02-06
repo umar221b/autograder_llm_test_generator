@@ -3,13 +3,19 @@
     <h1>Autograder Generator</h1>
   </div>
   <div class="col-2 text-end">
-    <%= link_to "Back", llm_queries_path %>
+    <%= link_to "Back", problems_path %>
   </div>
   <div class="col-12 mt-4">
-    <form data-controller="llm_queries" data-action="llm_queries#submit">
+    <form data-controller="problems" data-action="problems#submit">
       <div class="row gy-3">
+        <div class="col-12">
+          <h3>Problem Title</h3>
+          <input required name="problem_title" class="form-control form-control-lg" placeholder="Add your problem title here..">
+        </div>
+      </div>
+      <div class="row mt-2 gy-3">
         <div class="col-12 col-md-6">
-          <h3>Your Problem Statement</h3>
+          <h3>Problem Statement</h3>
           <textarea required name="problem_statement" class="form-control" rows="16" placeholder="Add your problem statement here.."></textarea>
         </div>
         <div class="col-12 col-md-6">
@@ -20,7 +26,7 @@
       <div class="row mt-4 gy-3">
         <div class="col-12 col-md-6">
           <h4>What are you looking to generate?</h4>
-          <%= select_tag(:test_type, options_for_select([["Test Case Inputs", :matching_outputs], ["Unit Tests", :unit_tests]], :matching_outputs ), { class: "form-control form-control-lg", "data-controller" => "LlmChatQueries", "data-action" => "LlmChatQueries#switchOutputType" }) %>
+          <%= select_tag(:test_type, options_for_select([["Test Case Inputs", :matching_outputs], ["Unit Tests", :unit_tests]], :matching_outputs ), { class: "form-control form-control-lg", "data-controller" => "problems", "data-action" => "problems#switchOutputType" }) %>
         </div>
         <div class="col-12 col-md-6">
           <h4>Reference Solution Programming Language</h4>
@@ -42,7 +48,6 @@
     <h3>Response</h3>
   </div>
   <div class="col-12">
-    <h4 class="mt-4">Inputs <span id="response-badge" class="badge bg-success"></span></h4>
     <textarea disabled id="response-area" class="form-control" rows="16"></textarea>
   </div>
 </div>

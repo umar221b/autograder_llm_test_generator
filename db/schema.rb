@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_29_150125) do
     t.string "finish_reason"
     t.boolean "completed_response", default: false, null: false
     t.text "response"
-    t.integer "input_tokens", null: false
+    t.integer "input_tokens"
     t.integer "output_tokens"
     t.string "query_type", null: false
     t.datetime "created_at", null: false
@@ -34,13 +34,13 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_29_150125) do
     t.index ["reference_solution_digest"], name: "index_llm_chat_queries_on_reference_solution_digest"
   end
 
-  create_table "llm_chat_query_messages", force: :cascade do |t|
+  create_table "llm_query_messages", force: :cascade do |t|
     t.string "role", null: false
     t.text "content", null: false
     t.bigint "llm_chat_query_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["llm_chat_query_id"], name: "index_llm_chat_query_messages_on_llm_chat_query_id"
+    t.index ["llm_chat_query_id"], name: "index_llm_query_messages_on_llm_chat_query_id"
   end
 
   create_table "problems", force: :cascade do |t|
@@ -98,7 +98,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_29_150125) do
   end
 
   add_foreign_key "llm_chat_queries", "problems"
-  add_foreign_key "llm_chat_query_messages", "llm_chat_queries"
+  add_foreign_key "llm_query_messages", "llm_chat_queries"
   add_foreign_key "solution_test_suite_grades", "solutions"
   add_foreign_key "solution_test_suite_grades", "test_suites"
   add_foreign_key "solutions", "problems"
