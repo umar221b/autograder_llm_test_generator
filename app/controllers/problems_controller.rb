@@ -28,7 +28,7 @@ class ProblemsController < ApplicationController
 
     problem_description_service = LlmServices::GenerateDetailedProblemDescriptionService.new(@problem)
 
-    test_type = LlmChatQuery::QUERY_TYPE_MATCHING_OUTPUTS
+    test_type = LlmChatQuery::QUERY_TEMPLATE_MATCHING_OUTPUTS
     if problem_params[:test_type] == 'unit_tests'
       if problem_params[:test_type] == LlmChatQuery::PROGRAMMING_LANGUAGE_C
         test_type = LlmChatQuery::QUERY_TYPE_C_UNIT_TESTS
@@ -45,7 +45,7 @@ class ProblemsController < ApplicationController
       when Problem::TEST_TYPE_MATCHING_OUTPUTS
         service = LlmServices::GenerateMatchingOutputsService.new(@problem, @llm_detailed_query.query_json)
       when Problem::TEST_TYPE_PYTHON3_UNIT_TESTS
-        service = LlmServices::GeneratePythonUnitTestsService.new(@problem, @llm_detailed_query.query_json)
+        service = LlmServices::GeneratePython3UnitTestsService.new(@problem, @llm_detailed_query.query_json)
       else
         service = nil
       end
@@ -78,12 +78,12 @@ class ProblemsController < ApplicationController
     def fake_matching_outputs_create_response
       @problem = Problem.find_by(test_type: Problem::TEST_TYPE_MATCHING_OUTPUTS)
 
-      render json: { data: { llm_chat_query: @problem.llm_chat_queries.where.not(query_type: LlmChatQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT).last } }
+      render json: { data: { llm_chat_query: @problem.llm_chat_queries.where.not(query_template: LlmChatQuery::QUERY_TEMPLATE_DETAILED_PROBLEM_STATEMENT).last } }
     end
 
     def fake_python3_unit_tests_create_response
       @problem = Problem.find_by(test_type: Problem::TEST_TYPE_PYTHON3_UNIT_TESTS)
 
-      render json: { data: { llm_chat_query: @problem.llm_chat_queries.where.not(query_type: LlmChatQuery::QUERY_TYPE_DETAILED_PROBLEM_STATEMENT).last } }
+      render json: { data: { llm_chat_query: @problem.llm_chat_queries.where.not(query_template: LlmChatQuery::QUERY_TEMPLATE_DETAILED_PROBLEM_STATEMENT).last } }
     end
 end

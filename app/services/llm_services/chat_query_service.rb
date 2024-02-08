@@ -16,14 +16,14 @@ module LlmServices
       get_template('user', template_name, *args)
     end
 
-    def new_query_log(query_type)
+    def new_query_log(query_template)
       @llm_chat_query = LlmChatQuery.new(
         problem_statement: @problem.statement,
         reference_solution: @problem.reference_solution,
         programming_language: @problem.programming_language,
         ai_model: Rails.application.credentials.dig(:openai, :model),
         temperature: Rails.application.credentials.dig(:openai, :temperature),
-        query_type: query_type,
+        query_template: query_template,
         problem_id: @problem.id
       )
     end

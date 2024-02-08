@@ -60,3 +60,57 @@ python3_unit_tests: |
   ```
   {{6}}
   ```
+
+c_unit_tests: |
+  Scenario Section:
+
+  {{1}}
+
+  Input Format Section:
+
+  {{2}}
+
+  Output Format Section:
+
+  {{3}}
+
+  Example Section:
+
+  {{4}}
+
+  Limits Section:
+
+  {{5}}
+
+  Optimal Solution Section:
+
+  ```
+  {{6}}
+  ```
+
+c_unit_tests_matching: |
+  Scenario Section:
+
+  {{1}}
+
+  Input Format Section:
+
+  {{2}}
+
+  Output Format Section:
+
+  {{3}}
+
+  Example Section:
+
+  {{4}}
+
+  Limits Section:
+
+  {{5}}
+
+  Optimal Solution Section:
+
+  ```
+  {{6}}
+  ```

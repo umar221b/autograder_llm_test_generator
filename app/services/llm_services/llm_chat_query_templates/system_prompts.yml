@@ -50,3 +50,108 @@ python3_unit_tests: |
   6. Make sure you write a separate function for each test.
   7. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
   8. Do not attempt to run the tests or change the provided optimal solution.
+
+c_unit_tests: |
+  Here is a step-by-step guide that you should follow to answer me.
+
+  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
+
+  After you generate the edge case descriptions, please reflect on them to make sure they cover all edge cases. If there are any mistakes point them out.
+
+  After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the edge cases.
+
+  Finally, provide C code that contains complete unit tests for the problem. The unit tests should be generated as follows:
+
+  1. Include the libraries "stdio.h", "ctype.h", "string.h", "stdbool.h", "math.h", "assert.h", "time.h", and "stdlib.h".
+  2. Include a file called "solution.c", it contains the solution to be tested, which will have the same arguments and return type as the reference solution, but its name will be solutionToTest. Do not attempt to generate the "solution.c" file, just assume it exists and include it.
+  3. Add the optimal solution to the file after the includes as a function called "referenceSolution".
+  4. Create a main function that begins with the line "srand(time(NULL));", then contains unit tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
+  5. Each test must call the "referenceSolution" function and use the assert function to check that its result is equal to the result of the function solutionToTest. For example:
+
+  ```
+  #include <stdio.h>
+  #include <ctype.h>
+  #include <string.h>
+  #include <stdbool.h>
+  #include <math.h>
+  #include <assert.h>
+  #include <time.h>
+  #include <stdlib.h>
+  
+  int main() {
+      {
+          // Test 1
+          int toTest = solutionToTest(10);
+          int expected = referenceSolution(10);
+          assert(toTest == expected);
+      }
+
+      {
+          // Test 2
+          int toTest = solutionToTest(30);
+          int expected = referenceSolution(30);
+          assert(toTest == expected);
+      }
+
+      return 0;
+  }
+  ```
+
+  6. Make sure you write each test in its own scope inside curly brackets { and }.
+  7. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
+  8. Do not forget to include any other libraries you use in the code.
+  9. Do not attempt to run the tests or change the provided optimal solution.
+
+c_unit_tests_matching: |
+  Here is a step-by-step guide that you should follow to answer me.
+
+  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
+
+  After you generate the edge case descriptions, please reflect on them to make sure they cover all edge cases. If there are any mistakes point them out.
+
+  After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the edge cases.
+
+  Finally, provide C code that tests the problem. The code should be generated as follows:
+
+  1. Include the libraries "stdio.h", "ctype.h", "string.h", "stdbool.h", "math.h", "time.h", and "stdlib.h".
+  2. Include a file called "solution.c", it contains the optimal solution provided below. Do not attempt to generate the "solution.c" file, just assume it exists and include it> do not attempt to add the optimal solution to the code.
+  3. Create a main function that begins with the line "srand(time(NULL));", then contains tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
+  4. Each test must call the optimal solution provided in the optimal solution section below. If the optimal solution's return type is not void, print its output using printf on a separate line.  Then print the separator "#<ab@17943918#@>#" after it on a new line.
+
+  For example, if the optimal solution was called "solutionToTest":
+
+  ```
+  #include <stdio.h>
+  #include <ctype.h>
+  #include <string.h>
+  #include <stdbool.h>
+  #include <math.h>
+  #include <time.h>
+  #include <stdlib.h>
+  #include "solution.c"
+
+  char SEPARATOR[] = "#<ab@17943918#@>#";
+
+  int main() {
+    {
+        // Test 1
+        int result = solutionToTest(10);
+        printf("%d\n", result);
+        printf("%s\n", SEPARATOR);
+    }
+
+    {
+        // Test 2
+        int result = solutionToTest(21);
+        printf("%d\n", result);
+        printf("%s\n", SEPARATOR);
+    }
+
+    return 0;
+  }
+  ```
+
+  5. Make sure you write each test in its own scope inside curly brackets { and }.
+  6. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
+  7. Do not forget to include any other libraries you use in the code.
+  8. Do not attempt to run the tests or change the provided optimal solution.

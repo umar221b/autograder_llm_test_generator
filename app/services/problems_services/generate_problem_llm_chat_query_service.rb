@@ -15,15 +15,7 @@ module ProblemsServices
 
       @llm_details_query = problem_description_service.data[:llm_chat_query]
 
-      # no python problems in the testing problems so far
-      case @problem.test_type
-      when Problem::TEST_TYPE_MATCHING_OUTPUTS
-        service = LlmServices::GenerateMatchingOutputsService.new(@problem, @llm_details_query.query_json)
-      when Problem::TEST_TYPE_PYTHON3_UNIT_TESTS
-        service = LlmServices::GeneratePythonUnitTestsService.new(@problem, @llm_details_query.query_json)
-      else
-        service = nil
-      end
+      service = LlmServices::GenerateTestsService.new(@problem, @llm_details_query.query_json)
 
       unless service&.run
         puts "Failed to generate problem tests"

@@ -6,7 +6,7 @@ module RunCodeServices
 
     def perform
       case @llm_chat_query.test_type
-      when LlmChatQuery::QUERY_TYPE_MATCHING_OUTPUTS
+      when LlmChatQuery::QUERY_TEMPLATE_MATCHING_OUTPUTS
         service = RunMatchingOutputsService.new(@llm_chat_query)
       when LlmChatQuery::QUERY_TYPE_PYTHON3_UNIT_TESTS
         service = RunPythonUnitTestsService.new(@llm_chat_query)
