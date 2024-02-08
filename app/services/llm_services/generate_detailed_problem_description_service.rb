@@ -23,16 +23,16 @@ module LlmServices
 
       return unless save_query_log
 
-      response = fake_response_matching_outputs # TODO: Remove
+      # response = fake_response_matching_outputs # TODO: Remove
 
-      # response = @client.chat(
-      #   parameters: {
-      #     model: Rails.application.credentials.dig(:openai, :model),
-      #     response_format: { type: "json_object" },
-      #     messages: messages,
-      #     temperature: Rails.application.credentials.dig(:openai, :temperature),
-      #   }
-      # )
+      response = @client.chat(
+        parameters: {
+          model: Rails.application.credentials.dig(:openai, :model),
+          response_format: { type: "json_object" },
+          messages: messages,
+          temperature: Rails.application.credentials.dig(:openai, :temperature),
+        }
+      )
 
       puts "==============="
       puts response
