@@ -27,6 +27,14 @@ class Problem < ApplicationRecord
     super(new_value)
   end
 
+  def is_matching_outputs_problem?
+    test_type == TEST_TYPE_MATCHING_OUTPUTS
+  end
+
+  def is_c_unit_tests_matching_problem?
+    test_type == TEST_TYPE_C_UNIT_TESTS_MATCHING
+  end
+
 private
 
   def update_reference_solution_digest

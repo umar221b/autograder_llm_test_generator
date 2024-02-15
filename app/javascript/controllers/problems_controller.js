@@ -7,6 +7,7 @@ function setInputs(target, enable) {
     target.problem_title.disabled = enable;
     target.problem_statement.disabled = enable;
     target.reference_solution.disabled = enable;
+    target.extra_code.disabled = enable;
     target.programming_language.disabled = enable;
     target.test_type.disabled = enable;
 }
@@ -28,6 +29,7 @@ export default class extends Controller {
             title: event.target.problem_title.value,
             statement: event.target.problem_statement.value,
             reference_solution: event.target.reference_solution.value,
+            extra_code: event.target.extra_code.value,
             programming_language: event.target.programming_language.value,
             test_type: event.target.test_type.value
         }

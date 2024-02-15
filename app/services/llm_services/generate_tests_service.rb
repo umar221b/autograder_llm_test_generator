@@ -10,7 +10,7 @@ module LlmServices
     def perform
       new_query_log(query_template)
 
-      system_query = get_system_template(query_template)
+      system_query = get_system_template(query_template, @problem.extra_code)
       user_query = get_user_template(
         query_template,
         @detailed_problem_statement["scenario"], @detailed_problem_statement["inputs"],

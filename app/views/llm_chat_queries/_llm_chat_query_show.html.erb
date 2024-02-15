@@ -1,5 +1,5 @@
 <div id="<%= dom_id llm_chat_query %>" class="mt-4">
-  <h2 class="mb-4">Query: <%= llm_chat_query.query_template.humanize %></h2>
+  <h3 class="mb-4">Query: <%= llm_chat_query.query_template.humanize %></h3>
 
   <p><strong>AI model:</strong> <%= llm_chat_query.ai_model %></p>
 
@@ -18,9 +18,9 @@
 
   <% if llm_chat_query.llm_query_messages.present? %>
     <div class="mt-5">
-      <h2 class="mb-4">LLM Query Messages</h2>
+      <h4 class="mb-4">LLM Query Messages</h4>
       <div class="accordion" id="llm_query_messages_<%= llm_chat_query.id %>">
-        <% llm_chat_query.llm_query_messages.each do |llm_query_message| %>
+        <% llm_chat_query.llm_query_messages.order(id: :asc).each do |llm_query_message| %>
           <%= render 'llm_query_messages/llm_query_message_show', llm_query_message: llm_query_message %>
         <% end %>
       </div>

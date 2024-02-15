@@ -7,6 +7,11 @@ detailed_problem_statement: |
   {{2}}
   ```
 
+  Extra Code Section:
+  ```
+  {{3}}
+  ```
+
 matching_outputs: |
   Scenario Section:
 
@@ -32,6 +37,11 @@ matching_outputs: |
     
   ```
   {{6}}
+  ```
+  
+  Extra Code Section:
+  ```
+  {{7}}
   ```
 
 python3_unit_tests: |
@@ -60,6 +70,11 @@ python3_unit_tests: |
   ```
   {{6}}
   ```
+  
+  Extra Code Section:
+  ```
+  {{7}}
+  ```
 
 c_unit_tests: |
   Scenario Section:
@@ -86,6 +101,11 @@ c_unit_tests: |
 
   ```
   {{6}}
+  ```
+  
+  Extra Code Section:
+  ```
+  {{7}}
   ```
 
 c_unit_tests_matching: |

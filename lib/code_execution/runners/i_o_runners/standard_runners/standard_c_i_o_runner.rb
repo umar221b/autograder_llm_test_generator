@@ -5,16 +5,18 @@ module CodeExecution
 
   private
     def run
-      %x( ./#{OBJECT_FILE} <#{input_file} >#{output_file} 2>#{ERROR_FILE} )
+      puts "Running #{file_path(OBJECT_FILE)}.."
+      %x( ./#{RUNGUARD} -C 5 -o #{file_path(output_file)} -e #{file_path(ERROR_FILE)} #{file_path(OBJECT_FILE)} <#{file_path(input_file)} 2>#{file_path(RUNGUARD_ERROR)} )
+      puts "Finished running #{file_path(OBJECT_FILE)}.."
     end
 
     # TODO: Move to a parent class
     def input_file
-      'tmp/input.txt'.freeze
+      'input.txt'.freeze
     end
 
     def output_file
-      'tmp/output.txt'.freeze
+      'output.txt'.freeze
     end
   end
 end

@@ -4,15 +4,17 @@ module CodeExecution
   class Python3IORunner < IORunner
 
   private
-    def prepare; end
+    def prepare
+      [] # no preparation so no errors
+    end
 
     def code_file
-      'tmp/code.py'.freeze
+      'code.py'.freeze
     end
 
     def clean
       super
-      %x( rm #{code_file} )
+      %x( rm #{file_path(code_file)} )
     end
   end
 end

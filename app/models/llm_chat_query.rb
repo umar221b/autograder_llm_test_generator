@@ -13,6 +13,7 @@ class LlmChatQuery < ApplicationRecord
   ].freeze
 
   PYTHON_CODE_REGEX = /`{3}python([\w]*)\n([\S\s]+?)\n`{3}/
+  C_CODE_REGEX = /`{3}c([\w]*)\n([\S\s]+?)\n`{3}/
 
   before_validation :update_reference_solution_digest, if: :will_save_change_to_reference_solution?
 
@@ -25,6 +26,7 @@ class LlmChatQuery < ApplicationRecord
 
   belongs_to :problem, inverse_of: :llm_chat_queries
   has_many :llm_query_messages, inverse_of: :llm_chat_query, dependent: :destroy
+  has_many :test_suites, inverse_of: :llm_chat_query, dependent: :destroy
 
 
   def is_detailed_problem_statement?
@@ -53,7 +55,17 @@ class LlmChatQuery < ApplicationRecord
   end
 
   def python_code
-    response.match(PYTHON_CODE_REGEX)
+    matches = response.match(PYTHON_CODE_REGEX)
+    matches[2] if matches.present?
+  end
+
+  def c_code
+    matches = response.match(C_CODE_REGEX)
+    matches[2] if matches.present?
+  end
+
+  def no_inputs?
+    response.include?("No inputs")
   end
 
   private

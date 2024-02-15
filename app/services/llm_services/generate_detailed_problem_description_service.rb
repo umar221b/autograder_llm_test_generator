@@ -12,7 +12,7 @@ module LlmServices
       new_query_log(LlmChatQuery::QUERY_TEMPLATE_DETAILED_PROBLEM_STATEMENT)
 
       system_query = get_system_template(LlmChatQuery::QUERY_TEMPLATE_DETAILED_PROBLEM_STATEMENT)
-      user_query = get_user_template(LlmChatQuery::QUERY_TEMPLATE_DETAILED_PROBLEM_STATEMENT, @problem.statement, @problem.reference_solution)
+      user_query = get_user_template(LlmChatQuery::QUERY_TEMPLATE_DETAILED_PROBLEM_STATEMENT, @problem.statement, @problem.reference_solution, @problem.extra_code)
 
       messages = [
         { role: LlmQueryMessage::ROLE_SYSTEM, content: system_query },

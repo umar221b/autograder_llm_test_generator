@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_08_165932) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_11_200147) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -52,6 +52,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_08_165932) do
     t.string "reference_solution_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "extra_code"
     t.index ["reference_solution_digest"], name: "index_problems_on_reference_solution_digest"
   end
 
@@ -83,9 +84,11 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_08_165932) do
   create_table "test_cases", force: :cascade do |t|
     t.bigint "test_suite_id", null: false
     t.text "test"
-    t.text "expected_output", null: false
+    t.text "expected_output"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "rejected", default: false, null: false
+    t.text "reference_solution_errors"
     t.index ["test_suite_id"], name: "index_test_cases_on_test_suite_id"
   end
 
@@ -94,6 +97,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_08_165932) do
     t.string "generated_by", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "llm_chat_query_id"
+    t.index ["llm_chat_query_id"], name: "index_test_suites_on_llm_chat_query_id"
     t.index ["problem_id"], name: "index_test_suites_on_problem_id"
   end
 

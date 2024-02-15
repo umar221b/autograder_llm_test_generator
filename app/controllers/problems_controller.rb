@@ -72,7 +72,7 @@ class ProblemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def problem_params
-      params.require(:problem).permit(:title, :statement, :reference_solution, :programming_language, :test_type)
+      params.require(:problem).permit(:title, :statement, :reference_solution, :extra_code, :programming_language, :test_type)
     end
 
     def fake_matching_outputs_create_response

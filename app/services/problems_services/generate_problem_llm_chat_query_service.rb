@@ -20,10 +20,7 @@ module ProblemsServices
       unless service&.run
         puts "Failed to generate problem tests"
         errors.merge!(service.errors)
-        return
       end
-
-      true
     end
   end
 end

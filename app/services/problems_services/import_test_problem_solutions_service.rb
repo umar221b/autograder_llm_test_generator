@@ -12,7 +12,7 @@ module ProblemsServices
       full_file_path = "test_problems/solutions/#{@problem_file}.csv"
       unless File.file?(full_file_path)
         errors.add(:base, "File #{full_file_path} does not exist.")
-        return false
+        return
       end
 
       CSV.foreach(full_file_path, headers: true) do |row|
@@ -30,8 +30,6 @@ module ProblemsServices
           next
         end
       end
-
-      true
     end
   end
 end

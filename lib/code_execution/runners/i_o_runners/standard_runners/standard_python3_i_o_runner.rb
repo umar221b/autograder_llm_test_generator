@@ -6,16 +6,16 @@ module CodeExecution
   private
 
     def run
-      %x( python3 #{code_file} <#{input_file} >#{output_file} 2>#{ERROR_FILE} )
+      %x( python3 #{file_path(code_file)} <#{file_path(input_file)} >#{file_path(output_file)} 2>#{file_path(ERROR_FILE)} )
     end
 
     # TODO: Move to a parent class
     def input_file
-      'tmp/input.txt'.freeze
+      'input.txt'.freeze
     end
 
     def output_file
-      'tmp/output.txt'.freeze
+      'output.txt'.freeze
     end
   end
 end

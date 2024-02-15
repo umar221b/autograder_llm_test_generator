@@ -6,6 +6,7 @@ class PythonTestParser
   CLASS_REGEX = /class.+/
   METHOD_NAMES_REGEX = /def\s(\S+)\(/
   MAIN_REGEX = /(if __name__[\S\s]+)/
+  COMMENTS_REGEX = /[ \t]+#.+\n/
 
   class << self
     def imports(code)
@@ -46,7 +47,7 @@ class PythonTestParser
     def remove_comments(code)
       return nil unless code
 
-      code.gsub(/[ \t]+#.+\n/, '')
+      code.gsub(COMMENTS_REGEX, '')
     end
   end
 

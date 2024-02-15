@@ -25,7 +25,6 @@ module ProblemsServices
         puts "Problem: #{problem_name}"
         puts errors.join(', and ')
       end
-      true
     end
   end
 end

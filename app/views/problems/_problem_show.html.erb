@@ -11,6 +11,9 @@
 
   <p><strong>Reference solution digest:</strong> <%= problem.reference_solution_digest %></p>
 
+  <p><strong>Extra Code (if any):</strong></p>
+  <pre><%= problem.extra_code.present? ? problem.extra_code : 'None' %></pre>
+
   <p><strong>Programming_language:</strong> <%= problem.programming_language %></p>
 
   <% if problem.llm_chat_queries.present? %>

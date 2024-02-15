@@ -1,7 +1,7 @@
 detailed_problem_statement: |
   Here is a step-by-step guide that you should follow to answer me.
 
-  You are going to receive a programming problem description along with its optimal solution. You are required to respond with a detailed problem statement based on the provided description and solution. The detailed problem statement must only have the following 5 sections: The problem scenario, the problem inputs, the problem outputs, an example, and a limits section that contains any memory limits, time limits, or code complexity limits that are defined in the problem description or can be infered from the optimal solution. If you cannot generate an example, just fill the Example section with "None". If there are no limits defined in the problem description and you could not infer the limits from the optimal solution, just fill the section with "Not Available".
+  You are going to receive a programming problem description along with its optimal solution and any extra code required to solve the problem. You are required to respond with a detailed problem statement based on the provided description, solution, and extra code if any. The detailed problem statement must only have the following 5 sections: The problem scenario, the problem inputs, the problem outputs, an example, and a limits section that contains any memory limits, time limits, or code complexity limits that are defined in the problem description or can be infered from the optimal solution. If you cannot generate an example, just fill the Example section with "None". If there are no limits defined in the problem description and you could not infer the limits from the optimal solution, just fill the section with "Not Available".
   
   After you provide the detailed problem statement, please reflect on it to make sure the sections in it correctly represent the problem. If there are any mistakes point them out.
   
@@ -15,18 +15,22 @@ detailed_problem_statement: |
 matching_outputs: |
   Here is a step-by-step guide that you should follow to answer me.
   
-  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections. With each edge case description, generate a plain text example for that edge case.
+  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then by the Optimal Solution Section which contains the problem's optimal solution, and finally by an an optional Extra Code Section that contains any extra code that is required to test the problem's solution.
+  
+  If the problem does not have inputs, please respond with the text "No inputs." without quotes and do not respond with anything else.
+  
+  Otherwise, you are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections. With each edge case description, generate a plain text example for that edge case.
   
   After you generate the edge cases, please reflect on them to make sure they cover all edge cases, and double check that the each plain text example actually conforms to its edge case description. If there are any mistakes point them out.
   
   After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the edge cases or their plain text examples.
 
-  Finally, provide me with Python3 code that generates a file called "test_cases.json" that contains native JSON output that includes all the improved edge cases in addition to another 100 completely random test cases, if possible. The input of the random test cases the code will generate must be within any limits defined in the Input Format Section in the problem description. The native JSON must start with an array at the root that contains the cases. Each case has only one key: \"input\" which is a string that contains all the input. The code should not include the output of the case in the JSON. Attempt to run the code to make sure it has no errors. If you find any errors, fix them and provide me with the final working code.
+  Finally, provide me with Python3 code that generates a file called "test_cases.json" that contains native JSON output that includes all the improved edge cases in addition to another 100 completely random test cases, if possible. The input of the test cases the code will generate must follow the format defined in the Input Format Section and as can be inferred from the optimal solution. Separate the inputs of the same case with new lines or spaces as appropriate, do not use commas or other characters unless it is described in the Input Section Format as part of the input. The inputs should also be within any limits defined in the Input Format Section in the problem description. The native JSON must start with an array at the root that contains the cases. Each case has only one key: \"input\" which is a string that contains all the input. The code should not include the output of the case in the JSON. Attempt to run the code to make sure it has no errors. If you find any errors, fix them and provide the final working code.
 
 python3_unit_tests: |
   Here is a step-by-step guide that you should follow to answer me.
   
-  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
+  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then by the Optimal Solution Section which contains the problem's optimal solution, and finally by an an optional Extra Code Section that contains any extra code that is required to test the problem's solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
   
   After you generate the edge case descriptions, please reflect on them to make sure they cover all edge cases. If there are any mistakes point them out.
   
@@ -36,9 +40,10 @@ python3_unit_tests: |
   
   1. Import the unittest library.
   2. Import the solution to be tested from a file called "solution".
-  3. Add the optimal solution to the file as a function called "reference_solution".
-  4. Create a class that contains unit tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
-  5. Each test must call the "reference_solution" function and assert that its result is equal to the tested solution.  For example, if the tested solution is called "calculate_result":
+  3. If the Extra Code Section is not empty, copy its content after the import.
+  4. Add the optimal solution to the file as a function called "reference_solution".
+  5. Create a class that contains unit tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
+  6. Each test must call the "reference_solution" function and assert that its result is equal to the tested solution.  For example, if the tested solution is called "calculate_result":
   
   ```
   def test_empty_array(self):
@@ -47,14 +52,14 @@ python3_unit_tests: |
     self.assertEqual(to_test, expected)
   ```
   
-  6. Make sure you write a separate function for each test.
-  7. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
-  8. Do not attempt to run the tests or change the provided optimal solution.
+  7. Make sure you write a separate function for each test.
+  8. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
+  9. Do not attempt to run the tests or change the provided optimal solution.
 
 c_unit_tests: |
   Here is a step-by-step guide that you should follow to answer me.
 
-  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
+  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then by the Optimal Solution Section which contains the problem's optimal solution, and finally by an an optional Extra Code Section that contains any extra code that is required to test the problem's solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
 
   After you generate the edge case descriptions, please reflect on them to make sure they cover all edge cases. If there are any mistakes point them out.
 
@@ -62,11 +67,12 @@ c_unit_tests: |
 
   Finally, provide C code that contains complete unit tests for the problem. The unit tests should be generated as follows:
 
-  1. Include the libraries "stdio.h", "ctype.h", "string.h", "stdbool.h", "math.h", "assert.h", "time.h", and "stdlib.h".
-  2. Include a file called "solution.c", it contains the solution to be tested, which will have the same arguments and return type as the reference solution, but its name will be solutionToTest. Do not attempt to generate the "solution.c" file, just assume it exists and include it.
-  3. Add the optimal solution to the file after the includes as a function called "referenceSolution".
-  4. Create a main function that begins with the line "srand(time(NULL));", then contains unit tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
-  5. Each test must call the "referenceSolution" function and use the assert function to check that its result is equal to the result of the function solutionToTest. For example:
+  1. Include the libraries "stdio.h", "ctype.h", "string.h", "stdbool.h", "math.h", "limits.h", "assert.h", "time.h", and "stdlib.h".
+  2. Include a file called "solution.c", it contains the solution to be tested, which will have the same name, arguments and return type as the optimal solution. Do not attempt to generate the "solution.c" file, just assume it exists and include it.
+  3. If the Extra Code Section is not empty, copy its content after the include.
+  4. Then add the optimal solution that is defined in the Optimal Solution Section to the file as a function called "referenceSolution".
+  5. Create a main function that begins with the line "srand(time(NULL));", then contains unit tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
+  6. Each test must call the "referenceSolution" function and use the assert function to check that its result is equal to the result of the function that is being tested. For example, if the function's name is solutionToTest:
 
   ```
   #include <stdio.h>
@@ -74,11 +80,23 @@ c_unit_tests: |
   #include <string.h>
   #include <stdbool.h>
   #include <math.h>
+  #include <limits.h>
   #include <assert.h>
   #include <time.h>
   #include <stdlib.h>
+  #include "solution.c"
   
+  // Extra code goes here if any
+  
+  // Reference solution
+  int referenceSolution(int number) {
+      return number;
+  }
+  
+  // main
   int main() {
+      srand(time(NULL));
+  
       {
           // Test 1
           int toTest = solutionToTest(10);
@@ -97,61 +115,66 @@ c_unit_tests: |
   }
   ```
 
-  6. Make sure you write each test in its own scope inside curly brackets { and }.
-  7. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
-  8. Do not forget to include any other libraries you use in the code.
-  9. Do not attempt to run the tests or change the provided optimal solution.
+  7. If the function accepts pointer parameters the test case should also check and assert the values of the variables that were sent to the function.  
+  8. Make sure you write each test in its own scope inside curly brackets { and }.
+  9. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description. The random tests must also be inside their own scope in curly brackets { and }.
+  10. Do not forget to include any other libraries you use in the code at the top.
+  11. Do not attempt to run the tests or change the provided optimal solution.
 
 c_unit_tests_matching: |
   Here is a step-by-step guide that you should follow to answer me.
 
-  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then finally by the Optimal Solution Section which contains the problem's optimal solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
+  You are going to receive a programming problem description. The problem description begins with the Scenario Section that describes the problem, it is then followed by the Input Format Section that describes the input of the problem, then by the Output Format Section that describes the output of the problem, then by an optional Example Section that may have an example, and then by an optional Limits Section that describes the problem's memory limits, time limits, and code complexity limits if any, then by the Optimal Solution Section which contains the problem's optimal solution, and finally by an an optional Extra Code Section that contains any extra code that is required to test the problem's solution. You are required to respond with the description of edge cases that test the problem based on its input limits and constraints that are present in the Input Format and the Limits Sections.
 
   After you generate the edge case descriptions, please reflect on them to make sure they cover all edge cases. If there are any mistakes point them out.
 
   After you finish the reflection, please take into account the feedback from the reflection, and fix any issues in the edge cases.
 
-  Finally, provide C code that tests the problem. The code should be generated as follows:
-
-  1. Include the libraries "stdio.h", "ctype.h", "string.h", "stdbool.h", "math.h", "time.h", and "stdlib.h".
-  2. Include a file called "solution.c", it contains the optimal solution provided below. Do not attempt to generate the "solution.c" file, just assume it exists and include it> do not attempt to add the optimal solution to the code.
-  3. Create a main function that begins with the line "srand(time(NULL));", then contains tests that cover all the improved edge cases in addition to another 100 completely random test cases, if possible.
-  4. Each test must call the optimal solution provided in the optimal solution section below. If the optimal solution's return type is not void, print its output using printf on a separate line.  Then print the separator "#<ab@17943918#@>#" after it on a new line.
-
-  For example, if the optimal solution was called "solutionToTest":
-
+  Finally, provide C code that tests the problem. The code should be generated using the following template. Do not remove any code from the template, just add to it:
+  
   ```
   #include <stdio.h>
   #include <ctype.h>
   #include <string.h>
   #include <stdbool.h>
   #include <math.h>
+  #include <limits.h>
   #include <time.h>
   #include <stdlib.h>
-  #include "solution.c"
-
-  char SEPARATOR[] = "#<ab@17943918#@>#";
-
+  
+  {{1}}
+  
   int main() {
-    {
-        // Test 1
-        int result = solutionToTest(10);
-        printf("%d\n", result);
-        printf("%s\n", SEPARATOR);
-    }
-
-    {
-        // Test 2
-        int result = solutionToTest(21);
-        printf("%d\n", result);
-        printf("%s\n", SEPARATOR);
-    }
-
+    srand(time(NULL));
+  
+    // Add the tests here
+  
     return 0;
   }
   ```
 
-  5. Make sure you write each test in its own scope inside curly brackets { and }.
-  6. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description.
-  7. Do not forget to include any other libraries you use in the code.
-  8. Do not attempt to run the tests or change the provided optimal solution.
+  1. Start by adding code to the main function. You should add tests that cover all the improved edge cases. Make sure you write each test in its own scope inside curly brackets { and }. Make sure you write all the improved edge cases fully without any placeholders. Each test case must start with:
+  ```
+  printf("Test starting\n");
+  {
+  ```
+  and must end with:
+  ```
+  }
+  printf("Test ending\n");
+  ```
+  2. Each test must call the optimal solution function. If the optimal solution function's return type is not void, print its output using printf on a separate line.
+  3. If the function accepts pointer parameters, the test case should also print the values of the variables that were sent to the function.
+  4. After the edge cases you generated, generate another 100 completely random test cases, if possible. The input of the random test cases you generate must be within any limits defined in the Input Format Section or the Limits Section in the problem description. The random tests must also be inside their own scope in curly brackets { and } and start with:
+    ```
+  printf("Random tests starting\n");
+  {
+  ```
+  and must end with:
+  ```
+  }
+  printf("Random tests ending\n");
+  ```
+  5. Do not forget to include any additional libraries you use in the code at the top of the file.
+  6. Do not attempt to add the optimal solution to the code, just call it as if it exists in the code.
+  7. Do not put any placeholders for me to fill out. The code you generate must have all the cases generated by you.

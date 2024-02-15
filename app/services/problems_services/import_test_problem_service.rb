@@ -10,7 +10,7 @@ module ProblemsServices
       full_file_path = "test_problems/problems/#{@problem_file}.xml"
       unless File.file?(full_file_path)
         errors.add(:base, "File #{full_file_path} does not exist.")
-        return false
+        return
       end
 
       parser = CodeRunner::Parser.new(full_file_path)
@@ -33,11 +33,10 @@ module ProblemsServices
         errors.merge!(problem.errors)
         errors.merge!(test_suite.errors)
         test_suite.test_cases.each { |test_case| errors.merge!(test_case.errors) }
-        return false
+        return
       end
 
       @data = { test_suite: test_suite }
-      true
     end
   end
 end

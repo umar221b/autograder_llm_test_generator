@@ -62,6 +62,9 @@ gem 'nokogiri'
 # Use html_to_plain_text to convert html to text
 gem 'html_to_plain_text', '~> 1.0.5'
 
+# USe parallel to run code in parallel
+gem 'parallel'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
