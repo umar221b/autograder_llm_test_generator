@@ -51,7 +51,7 @@ module ProblemsServices
         puts test_case
         puts "================"
         if @please_create
-          @test_suite.test_cases.build(test: test_case.input, expected_output: test_case.output.strip)
+          @test_suite.test_cases.build(test: test_case.input, expected_output: test_case.output)
         end
       end
 
@@ -85,7 +85,7 @@ module ProblemsServices
       case_outputs = test_case.output.split(SEPARATOR)
       case_outputs.each_with_index do |output, index|
         if @please_create
-          @test_suite.test_cases.build(test: @instructor_test_cases[index].test, expected_output: output.strip)
+          @test_suite.test_cases.build(test: @instructor_test_cases[index].test, expected_output: output)
         end
       end
 

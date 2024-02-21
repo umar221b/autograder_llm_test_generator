@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_11_200147) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_19_225917) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -56,6 +56,18 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_11_200147) do
     t.index ["reference_solution_digest"], name: "index_problems_on_reference_solution_digest"
   end
 
+  create_table "solution_test_case_results", force: :cascade do |t|
+    t.bigint "solution_id", null: false
+    t.bigint "test_case_id", null: false
+    t.text "output"
+    t.text "runtime_errors"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["solution_id", "test_case_id"], name: "unique_solution_test_case_result", unique: true
+    t.index ["solution_id"], name: "index_solution_test_case_results_on_solution_id"
+    t.index ["test_case_id"], name: "index_solution_test_case_results_on_test_case_id"
+  end
+
   create_table "solution_test_suite_grades", force: :cascade do |t|
     t.bigint "test_suite_id", null: false
     t.bigint "solution_id", null: false
@@ -63,7 +75,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_11_200147) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["solution_id"], name: "index_solution_test_suite_grades_on_solution_id"
-    t.index ["test_suite_id", "solution_id"], name: "solution_test_suite_index"
+    t.index ["test_suite_id", "solution_id"], name: "solution_test_suite_index", unique: true
     t.index ["test_suite_id"], name: "index_solution_test_suite_grades_on_test_suite_id"
   end
 
@@ -98,12 +110,15 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_11_200147) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "llm_chat_query_id"
+    t.integer "random_seed", default: -> { "(random() * (100000)::double precision)" }
     t.index ["llm_chat_query_id"], name: "index_test_suites_on_llm_chat_query_id"
     t.index ["problem_id"], name: "index_test_suites_on_problem_id"
   end
 
   add_foreign_key "llm_chat_queries", "problems"
   add_foreign_key "llm_query_messages", "llm_chat_queries"
+  add_foreign_key "solution_test_case_results", "solutions"
+  add_foreign_key "solution_test_case_results", "test_cases"
   add_foreign_key "solution_test_suite_grades", "solutions"
   add_foreign_key "solution_test_suite_grades", "test_suites"
   add_foreign_key "solutions", "problems"

@@ -93,7 +93,7 @@ module ProblemsServices
     def handle_c_unit_tests_matching
       testing_code = @llm_chat_query.c_code
       if testing_code
-        parser = CTestParser.new(testing_code)
+        parser = CTestParser.new(testing_code, @test_suite.random_seed)
         c_tests = parser.tests + parser.random_tests
         puts "All C Tests", c_tests
 

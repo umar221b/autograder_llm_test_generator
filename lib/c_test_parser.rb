@@ -7,7 +7,7 @@ class CTestParser
   GLOBALS_REGEX = /^(?!typedef )(\w+\s*\*?\s+\w+(?:\[\w*\])?(?:\s*=|;)\S*.*;)/
   METHOD_NAMES_REGEX = /^(?!typedef )\w+\s*\*?\s+(\w+)(\[\w*\])?\(/
   MAIN_REGEX = /((?!typedef )(?:\w+\s*\*?\s+)+main(?:\[\w*\])?\((?:\s|.)*?[\s\S]*)/
-  IN_MAIN_BEFORE_TESTS_REGEX = /srand\(time\(NULL\)\);\n([\S\s]+?)\s+printf\("Test starting\\n"\);/
+  IN_MAIN_BEFORE_TESTS_REGEX = /srand\(10\);\n([\S\s]+?)\s+printf\("Test starting\\n"\);/
   COMMENTS_REGEX = /([ \t]+\/\/.+|\/\*[^*]*\*+(?:[^\/*][^*]*\\*+)*\/)/
   TEST_REGEX = /printf\("Test starting\\n"\);\n([\S\s]+?)^\s*printf\("Test ending\\n"\);/
   RANDOM_TESTS_REGEX = /printf\("Random tests starting\\n"\);\n([\S\s]+?)^\s*printf\("Random tests ending\\n"\);/
@@ -48,12 +48,6 @@ class CTestParser
     def tests(code)
       all_random_tests = random_tests(code)
 
-      # add random seed to random tests
-      all_random_tests.each do |random_test|
-        random_number = Time.now.to_i % 1_000_000_007
-        random_test = "srand(#{random_number});\n" + random_test
-      end
-
       non_random_tests = []
       main(code).scan(TEST_REGEX).flatten.each do |test|
         add = true
@@ -85,8 +79,9 @@ class CTestParser
     end
   end
 
-  def initialize(source, path = false)
+  def initialize(source, rand_seed = nil, path = false)
     @code = path ? File.read(source): source
+    @rand_seed = rand_seed.present? ? rand_seed : Time.now.to_i % 1_000_000_007
   end
 
   def uncommented_auxiliary_method_codes
@@ -124,15 +119,23 @@ class CTestParser
   end
 
   def tests
-    CTestParser.tests(@code)
+    test_codes = CTestParser.tests(@code)
+    test_codes.each_with_index do |test_code, index|
+      test_codes[index] = "srand(#{@rand_seed});\n#{test_code}"
+    end
+    test_codes
   end
 
   def random_tests
-    CTestParser.random_tests(@code)
+    test_codes = CTestParser.random_tests(@code)
+    test_codes.each_with_index do |test_code, index|
+      test_codes[index] = "srand(#{@rand_seed});\n#{test_code}"
+    end
+    test_codes
   end
 
   def single_test_code(test)
-    pre_processors.join("\n") + "\n" + globals.join("\n") + "\n" + uncommented_auxiliary_method_codes.join("\n") + "\n#include \"solution.c\"\n" + "int main() {\n    srand(time(NULL));\n" + in_main_before_tests + "\n" + test + "\n    return 0;\n}"
+    pre_processors.join("\n") + "\n" + globals.join("\n") + "\n" + uncommented_auxiliary_method_codes.join("\n") + "\n#include \"solution.c\"\n" + "int main() {\n    srand(10);\n" + in_main_before_tests  + "\n" + test + "\n    return 0;\n}"
   end
 
   def full_test_code

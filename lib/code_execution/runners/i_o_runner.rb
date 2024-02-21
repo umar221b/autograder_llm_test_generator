@@ -10,10 +10,11 @@ module CodeExecution
 
     attr_reader :code, :inputs
 
-    def initialize(code, inputs, extra_files = {})
+    def initialize(code, inputs, extra_files = {}, verbose_message = "")
       @code = code
       @inputs = inputs
-      @dir_name = Hashing.hash_code(@code)[0..4] + SecureRandom.urlsafe_base64
+      @verbose_message = "#{verbose_message}"
+      @dir_name = @verbose_message + '_' + Hashing.hash_code(@code)[0..4] + '_' + SecureRandom.urlsafe_base64
       @unique_dir = "tmp/code_execution/#{@dir_name}"
       Dir.mkdir(@unique_dir)
       @extra_files = extra_files
@@ -22,30 +23,22 @@ module CodeExecution
     def generate_test_outputs
       tests = []
 
-      puts "Writing to file #{file_path(code_file)}.."
       write_file(code_file, @code)
 
       preparation_errors = prepare
 
       if preparation_errors.present? && preparation_errors[0].present?
-        puts "======="
-        puts "File: #{file_path(code_file)}"
-        puts preparation_errors
-        puts "======="
         clean
         raise PreparationError, "Solution preparation failed: #{preparation_errors.join(', and ')}"
       end
 
       @inputs.each do |input_json|
         stdin = input_json['input']
-        puts "Writing test case #{input_file} for #{file_path(code_file)}"
         write_file(input_file, stdin)
 
         run
 
-        puts "Reading output for #{file_path(code_file)}"
         stdout = read_output
-        puts "Reading errors for #{file_path(code_file)}"
         stderr = read_error + "\n" + read_runguard_error
         tests << CodeExecution::InputOutputTestCase.new(stdin, stdout, stderr)
       end

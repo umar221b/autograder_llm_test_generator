@@ -1,5 +1,5 @@
 module EvaluationServices
-  class EvaluateProblemService < ApplicationService
+  class RegradeInstructorTestSuitesService < ApplicationService
     def initialize(test_suite)
       @test_suite = test_suite
       @problem = @test_suite.problem
@@ -8,9 +8,9 @@ module EvaluationServices
     def perform
       case @problem.test_type
       when Problem::TEST_TYPE_MATCHING_OUTPUTS
-        service = EvaluateMatchingOutputsProblemsService.new(@test_suite)
+        service = RegradeInstructorMatchingOutputsProblemsService.new(@test_suite)
       when Problem::TEST_TYPE_C_UNIT_TESTS_MATCHING
-        service = EvaluateCUnitTestsMatchingProblemsService.new(@test_suite)
+        service = RegradeInstructorCUnitTestsMatchingProblemsService.new(@test_suite)
       else
         errors.add(:base, 'Invalid problem type')
         return

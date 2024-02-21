@@ -4,4 +4,6 @@ class TestCase < ApplicationRecord
   belongs_to :test_suite, inverse_of: :test_cases
 
   scope :accepted, -> { where(rejected: false) }
+
+  has_many :solution_test_case_results, inverse_of: :test_case, dependent: :destroy
 end

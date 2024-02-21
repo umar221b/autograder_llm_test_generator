@@ -7,12 +7,10 @@ module CodeExecution
 
   private
     def prepare
-      puts "Adding extra files - if any.."
       @extra_files.each do |filename, content|
         write_file(filename, content)
       end
 
-      puts "Compiling #{file_path(code_file)}.."
       compilation_errors_file = file_path(COMPILATION_FILE)
       %x( gcc #{file_path(code_file)} -o #{file_path(OBJECT_FILE)} -lm 2>#{compilation_errors_file})
       compilation_errors = []

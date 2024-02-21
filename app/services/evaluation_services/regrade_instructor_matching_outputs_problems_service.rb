@@ -2,7 +2,7 @@ require 'code_execution'
 require 'differ'
 
 module EvaluationServices
-  class EvaluateMatchingOutputsProblemsService < ApplicationService
+  class RegradeInstructorMatchingOutputsProblemsService < ApplicationService
     PARALLEL_BATCH = 15
 
     def initialize(test_suite)

@@ -1,6 +1,7 @@
 problems = Problem.order(:id)
 issues = []
 problems.each_with_index do |problem, index|
+  next if index == 0
   puts "INDEX: #{index}"
   puts "=============="
   puts problem.title

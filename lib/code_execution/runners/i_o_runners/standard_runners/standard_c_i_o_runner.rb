@@ -5,9 +5,7 @@ module CodeExecution
 
   private
     def run
-      puts "Running #{file_path(OBJECT_FILE)}.."
-      %x( ./#{RUNGUARD} -C 5 -o #{file_path(output_file)} -e #{file_path(ERROR_FILE)} #{file_path(OBJECT_FILE)} <#{file_path(input_file)} 2>#{file_path(RUNGUARD_ERROR)} )
-      puts "Finished running #{file_path(OBJECT_FILE)}.."
+      %x( ./#{RUNGUARD} -C 6 -o #{file_path(output_file)} -e #{file_path(ERROR_FILE)} #{file_path(OBJECT_FILE)} <#{file_path(input_file)} 2>#{file_path(RUNGUARD_ERROR)} )
     end
 
     # TODO: Move to a parent class

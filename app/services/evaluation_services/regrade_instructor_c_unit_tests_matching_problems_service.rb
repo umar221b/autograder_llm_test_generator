@@ -1,9 +1,8 @@
 require 'code_execution'
-require 'c_test_parser'
 require 'differ'
 
 module EvaluationServices
-  class EvaluateCUnitTestsMatchingProblemsService < ApplicationService
+  class RegradeInstructorCUnitTestsMatchingProblemsService < ApplicationService
 
     PARALLEL_BATCH = 15
     SEPARATOR = "#<ab@17943918#@>#\n".freeze
@@ -17,10 +16,15 @@ module EvaluationServices
 
     def perform
       accepted_cases = @test_suite.test_cases.accepted.order(:id).load
-      all_tests = accepted_cases.map(&:test).join("\n#{PRINT_SEPARATOR}\n")
-      llm_chat_query = @problem.llm_chat_queries.last
-      parser = CTestParser.new(llm_chat_query.c_code, @test_suite.random_seed)
-      testing_code = parser.single_test_code(all_tests)
+      all_tests = accepted_cases.map(&:test).map { |test| "{\n    #{test}\n}"}.join("\n#{PRINT_SEPARATOR}\n")
+
+      sub_hash = {}
+      testing_code = c_function_template
+      sub_hash["{{ STUDENT_ANSWER }}"] = "{{ STUDENT_ANSWER }}"
+      sub_hash["{{ EXTRA_CODE }}"] = @problem.extra_code || ""
+      sub_hash["{{ TEST_CASES }}"] = all_tests
+      regex = /{{ [A-Z_]+ }}/
+      testing_code.gsub!(regex, sub_hash)
 
       test_inputs = [{ 'input' => '' }]
       optimal_outputs = accepted_cases.map { |test| test.expected_output }
@@ -35,6 +39,10 @@ module EvaluationServices
       solution_grades = Parallel.map(solutions) do |solution|
         puts "Working on Solution ##{solution.id} for Test Suite ##{@test_suite.id}"
 
+        sub_hash = {}
+        sub_hash["{{ STUDENT_ANSWER }}"] = solution.code
+        student_code = testing_code.gsub(regex, sub_hash)
+
         solution_evaluation = {
           solution_id: solution.id, test_suite_id: @test_suite.id,
           grade: 0
@@ -43,10 +51,7 @@ module EvaluationServices
         all_test_cases_results = []
 
         runner = CodeExecution::StandardCIORunner.new(
-          testing_code, test_inputs,
-          {
-            'solution.c' => solution.code
-          },
+          student_code, test_inputs, {},
           solution.id
         )
 
@@ -96,6 +101,28 @@ module EvaluationServices
         solution_evaluation
       end
       @data = { results: solution_grades }
+    end
+
+  private
+
+    def c_function_template
+      <<-TEXT
+      #include <stdio.h>
+      #include <stdlib.h>
+      #include <ctype.h>
+      #include <string.h>
+      #include <stdbool.h>
+      #include <math.h>
+      
+      {{ EXTRA_CODE }}
+
+      {{ STUDENT_ANSWER }}
+
+      int main() {
+        {{ TEST_CASES }}
+        return 0;
+      }
+      TEXT
     end
   end
 end

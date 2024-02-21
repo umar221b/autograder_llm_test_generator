@@ -145,7 +145,7 @@ c_unit_tests_matching: |
   {{1}}
   
   int main() {
-    srand(time(NULL));
+    srand(10);
   
     // Add the tests here
   
