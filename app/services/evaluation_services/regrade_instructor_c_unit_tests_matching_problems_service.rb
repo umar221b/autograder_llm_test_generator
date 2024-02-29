@@ -9,9 +9,10 @@ module EvaluationServices
     PRINT_SEPARATOR = 'printf("#<ab@17943918#@>#\n");'.freeze
 
 
-    def initialize(test_suite)
+    def initialize(test_suite, solution = nil)
       @test_suite = test_suite
       @problem = @test_suite.problem
+      @solutions = solution.present? ? [solution] : nil
     end
 
     def perform
@@ -28,15 +29,17 @@ module EvaluationServices
 
       test_inputs = [{ 'input' => '' }]
       optimal_outputs = accepted_cases.map { |test| test.expected_output }
-      solutions = @problem.solutions.not_evaluated(@test_suite.id).order(:id).limit(PARALLEL_BATCH).load
+      if @solutions.blank?
+        @solutions = @problem.solutions.not_evaluated(@test_suite.id).order(:id).limit(PARALLEL_BATCH).load
+      end
 
-      if solutions.empty?
+      if @solutions.empty?
         puts "No more solutions to process"
         @data = nil
         return
       end
 
-      solution_grades = Parallel.map(solutions) do |solution|
+      solution_grades = Parallel.map(@solutions) do |solution|
         puts "Working on Solution ##{solution.id} for Test Suite ##{@test_suite.id}"
 
         sub_hash = {}
@@ -74,6 +77,7 @@ module EvaluationServices
             if test_case.error.present?
               error = test_case.error
             else
+              puts test_case.output
               case_outputs = test_case.output.split(SEPARATOR)
             end
           rescue Encoding::CompatibilityError, ArgumentError => e

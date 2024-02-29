@@ -5,24 +5,27 @@ module EvaluationServices
   class RegradeInstructorMatchingOutputsProblemsService < ApplicationService
     PARALLEL_BATCH = 15
 
-    def initialize(test_suite)
+    def initialize(test_suite, solution = nil)
       @test_suite = test_suite
       @problem = test_suite.problem
+      @solutions = solution.present? ? [solution] : nil
     end
 
     def perform
       accepted_cases = @test_suite.test_cases.accepted.order(:id).load
       test_inputs = accepted_cases.map { |test| { 'input' => test.test } }
       optimal_outputs = accepted_cases.map { |test| test.expected_output }
-      solutions = @problem.solutions.not_evaluated(@test_suite.id).order(:id).limit(PARALLEL_BATCH).load
+      if @solutions.blank?
+        @solutions = @problem.solutions.not_evaluated(@test_suite.id).order(:id).limit(PARALLEL_BATCH).load
+      end
 
-      if solutions.empty?
+      if @solutions.empty?
         puts "No more solutions to process"
         @data = nil
         return
       end
 
-      solution_grades = Parallel.map(solutions) do |solution|
+      solution_grades = Parallel.map(@solutions) do |solution|
         puts "Working on Solution ##{solution.id} for Test Suite ##{@test_suite.id}"
 
         solution_evaluation = {

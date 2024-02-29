@@ -13,6 +13,7 @@ class Solution < ApplicationRecord
 
   # gets solutions that do not have records in "solution_test_suite_grades" for the specified test_suite
   scope :not_evaluated, ->(test_suite_id) { joins("LEFT OUTER JOIN solution_test_suite_grades ON solutions.id = solution_test_suite_grades.solution_id AND solution_test_suite_grades.test_suite_id = #{test_suite_id}").where("solution_test_suite_grades.id is NULL") }
+  scope :have_empty_outputs, ->(test_suite_id) { joins(solution_test_case_results: :test_case).where('solution_test_case_results.output IS NULL AND test_cases.test_suite_id = ?', test_suite_id) }
 
 private
 

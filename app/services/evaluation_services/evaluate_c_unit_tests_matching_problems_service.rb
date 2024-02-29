@@ -10,13 +10,18 @@ module EvaluationServices
     PRINT_SEPARATOR = 'printf("#<ab@17943918#@>#\n");'.freeze
 
 
-    def initialize(test_suite)
+    def initialize(test_suite, solution = nil, only_valid = false)
       @test_suite = test_suite
       @problem = @test_suite.problem
+      @solutions = solution.present? ? [solution] : nil
+      @only_valid = only_valid
     end
 
     def perform
-      accepted_cases = @test_suite.test_cases.accepted.order(:id).load
+      accepted_cases = @test_suite.test_cases.accepted.order(:id)
+      accepted_cases = accepted_cases.valid if @only_valid
+      accepted_cases.load
+
       all_tests = accepted_cases.map(&:test).join("\n#{PRINT_SEPARATOR}\n")
       llm_chat_query = @problem.llm_chat_queries.last
       parser = CTestParser.new(llm_chat_query.c_code, @test_suite.random_seed)
@@ -24,15 +29,19 @@ module EvaluationServices
 
       test_inputs = [{ 'input' => '' }]
       optimal_outputs = accepted_cases.map { |test| test.expected_output }
-      solutions = @problem.solutions.not_evaluated(@test_suite.id).order(:id).limit(PARALLEL_BATCH).load
 
-      if solutions.empty?
+      if @solutions.blank?
+        @solutions = @problem.solutions.not_evaluated(@test_suite.id).order(:id).limit(PARALLEL_BATCH).load
+      end
+
+      if @solutions.empty?
         puts "No more solutions to process"
         @data = nil
         return
       end
 
-      solution_grades = Parallel.map(solutions) do |solution|
+      # solution_grades = Parallel.map(@solutions) do |solution|
+      solution_grades = @solutions.map do |solution|
         puts "Working on Solution ##{solution.id} for Test Suite ##{@test_suite.id}"
 
         solution_evaluation = {
@@ -41,7 +50,6 @@ module EvaluationServices
         }
 
         all_test_cases_results = []
-
         runner = CodeExecution::StandardCIORunner.new(
           testing_code, test_inputs,
           {

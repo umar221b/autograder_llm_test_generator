@@ -24,23 +24,25 @@ module EvaluationServices
         results.each do |result|
           all_test_cases_results += result.delete(:test_case_results)
         end
-        unless SolutionTestSuiteGrade.upsert_all(results, unique_by: %i[test_suite_id solution_id])
-          errors.add(:base, 'There was an issue saving the solution final result')
-        end
         begin
-          unless SolutionTestCaseResult.upsert_all(all_test_cases_results, unique_by: %i[solution_id test_case_id])
-            errors.add(:base, "There was an issue saving the solution's test case results")
-          end
+          SolutionTestCaseResult.upsert_all(all_test_cases_results, unique_by: %i[solution_id test_case_id])
         rescue PG::Error, PG::CharacterNotInRepertoire, ArgumentError, ActiveRecord::StatementInvalid => e
           puts "Before", all_test_cases_results
           puts e.message
           all_test_cases_results.each do |test_case_result|
             # some strings have invalid bytes that break in the db
-            # we replace them with a message
-            test_case_result[:output] = 'Original output had invalid bytes that cannot be represented'
-            SolutionTestCaseResult.create(test_case_result)
+            # we replace them with a message if their insertion fails
+            begin
+              SolutionTestCaseResult.upsert(test_case_result, unique_by: %i[solution_id test_case_id])
+            rescue PG::Error, PG::CharacterNotInRepertoire, ArgumentError, ActiveRecord::StatementInvalid => e
+              test_case_result[:output] = test_case_result[:output].encode('UTF-8', :invalid => :replace, :undef => :replace)
+              test_case_result[:output] = test_case_result[:output].gsub("\u0000", '')
+              test_case_result[:output] += "\nOriginal output had invalid bytes that cannot be represented"
+              SolutionTestCaseResult.upsert(test_case_result, unique_by: %i[solution_id test_case_id])
+            end
           end
         end
+        SolutionTestSuiteGrade.upsert_all(results, unique_by: %i[test_suite_id solution_id])
         @data = {
           solution_test_suite_grades: results,
           solution_test_case_results: all_test_cases_results
